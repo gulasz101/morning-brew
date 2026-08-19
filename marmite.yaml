@@ -1,0 +1,10 @@
+name: Morning Brew
+tagline: "Yesterday's bookmarks, summarized"
+url: https://gulasz101.github.io/morning-brew
+language: en
+pagination: 10
+menu:
+  - ["About", "about.html"]
+  - ["Pages", "pages.html"]
+  - ["Tags", "tags.html"]
+  - ["Archive", "archive.html"]
