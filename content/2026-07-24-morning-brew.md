@@ -149,7 +149,7 @@ Egg-free scrambled eggs. 25 min, 2 large servings, 178 kcal/100g, 9g protein, no
 
 ---
 
-## 1. Zupa krem z groszku z puszki w 5 minut — WegePedia
+## 14. Zupa krem z groszku z puszki w 5 minut — WegePedia
 - **Source:** https://wegepedia.pl/zupa-krem-z-groszku-z-puszki-w-5-minut-fit-przepis/
 - **Karakeep doc:** `gxv4fctidvjfzpteiq62p5lm`
 
@@ -269,7 +269,7 @@ The author rebuilt their LinkedIn carousel workflow around **Paper Desktop**, a 
 
 ---
 
-## 27. Wegańskie ciasto drożdżowe z kruszką
+## 26. Wegańskie ciasto drożdżowe z kruszką
 - **Source:** https://jadlonomia.com/przepisy/weganski-placek-drozdzowy-z-kruszonka/
 - **Karakeep doc:** `eivvuvr2j7o4zzoqaklgdhcf`
 
