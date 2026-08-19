@@ -1,5 +1,6 @@
 ---
 date: 2026-08-17
+slug: 2026-08-17-morning-brew
 tags: digest,karakeep
 ---
 # Morning Brew — 2026-08-17
