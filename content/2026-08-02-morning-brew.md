@@ -9,7 +9,9 @@ Hoarded 2 bookmarks on 2026-08-02, both links (no videos). Theme of the day: **f
 
 ---
 
-## 1. The Largest Collection of Presets/Profiles brought together
+## 1. The Largest Collection of Presets/Profiles brought together — by marcrphoto.wordpress.com
+
+![marcrphoto.wordpress.com](https://i0.wp.com/marcrphoto.wordpress.com/wp-content/uploads/2025/05/addtext_com_mdcymjmyomv1odoxnti1.jpg?fit=1200%2C675&#038;ssl=1)
 - **Source:** https://marcrphoto.wordpress.com/the-largest-collection-of-film-simulation-presets-profiles-brought-together/
 - **Karakeep doc:** `w451ri5jmv03cq466alnq8hd`
 
@@ -32,7 +34,9 @@ Darktable side:
 
 ---
 
-## 2. Entire — a new developer platform is coming
+## 2. Entire — a new developer platform is coming — by entire.io
+
+![entire.io](https://entire.io/images/og/home.png?v=9)
 - **Source:** https://entire.io/
 - **Karakeep doc:** `hcmy1djk93atzoushfollbny`
 

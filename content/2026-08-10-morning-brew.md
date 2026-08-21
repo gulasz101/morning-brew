@@ -7,21 +7,27 @@ tags: digest,karakeep,Cybersecurity
 # Morning Brew — 2026-08-10
 Backfill of 3 bookmarks from my hoard: a meeting-recording platform that left 181k calls wide open, an LLM running inside a PDF file, and a video on the music industry (now transcribed).
 
-## 1. tl;dv — 181,874 meetings wide open, and the CTO ghosted the researcher for six months
+## 1. tl;dv — 181,874 meetings wide open, and the CTO ghosted the researcher for six months — by bobdahacker.com
+
+![bobdahacker.com](https://bobdahacker.com/static/images/blogs/tldv/blogHeader.png)
 
 "Too Lazy; Didn't Validate." tl;dv is an AI meeting-recording platform (2M+ users) that drops a bot into your Google Meet/Zoom/Teams call and transcribes + summarizes it — job interviews, sales calls, performance reviews, internal strategy. It's SOC2/GDPR/EU-AI-Act "compliant," hosted in the EU, six compliance badges in a row. The Firestore `meetings` collection has **no tenant isolation**: any authenticated user can enumerate every meeting on the platform — creator email, joinable conference ID, recording status, timestamps. ~1,000 live `recording` calls at any time; an attacker can grab an ID and walk in uninvited. The researcher joined a Malaysian Ministry of Education call (157 participants) and a US university startup session. 181,874 records, 84,312 users, 35,003 domains — government (23 countries), universities, corporate (Mitsui-Soko, HubSpot, Confluent). 1,000+ meetings were public, 715 invitee emails exposed. Even a fun-coded World Cup 2026 "Pick'em" app leaks 19 employee emails with zero auth. Reported Jan 28, the CTO never responded. Six months later, still not fixed — every other collection has tenant isolation, they just *forgot* meetings.
 
 - 🔗 https://bobdahacker.com/blog/tldv-hack
 - karakeep id: `yrad8zbl3vbvvap3knvnoxc4`
 
-## 2. llm.pdf — an LLM running inside a PDF
+## 2. llm.pdf — an LLM running inside a PDF — by x.com
+
+![x.com](https://pbs.twimg.com/media/HPIDDh4XEAA0swi.jpg:large)
 
 Dan Kornas's proof-of-concept: a PDF that *runs* an entire LLM instead of just displaying content. Compiles llama.cpp to asm.js via Emscripten, injects the JS into the PDF, and embeds the model as base64 for local inference. Uses a legacy PDF JS injection point. `scripts/generatePDF.py` builds a PDF from a compatible model; GGUF-only, Q8 recommended. Repo: `github.com/EvanZhouDev/llm.pdf`. "Running Doom inside a PDF and now this." It's a stunt — a tiny Q8 GGUF PDF model won't replace your chatbot — but it's a genuinely clever hack of a document format that'll make the right kind of nerd smile.
 
 - 🔗 https://x.com/i/status/2085732944031699242
 - karakeep id: `jyns9hrf14pyt4vnuao6e9g4`
 
-## 3. The Music Industry is Broken — every single one of you is the product
+## 3. The Music Industry is Broken — every single one of you is the product — by Drew Gooden
+
+![Drew Gooden](https://i.ytimg.com/vi/Yx7baJMQuVA/maxresdefault.jpg)
 
 Drew's hour-long autopsy, and the thesis is bleak enough to make you put down the guitar and pick up a day job: the industry is *more* money than ever and somehow also falling apart. Nobody — not Spotify, not the labels, not Ticketmaster — actually wants the artist to get paid. Based on Liz Pelly's *Mood Machine*, his read is brutal: Spotify has never cared about artists; it's done everything it can to undermine and replace them. The company wasn't even founded as a music service — it was built to sell ads, and if moving more ad units meant streaming pictures of feet, that's what they'd be selling today.
 

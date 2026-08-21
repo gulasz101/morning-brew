@@ -10,7 +10,9 @@ tags:
 # Morning Brew — 2026-08-15
 Two saves today, both Linux-adjacent. One is Nvidia finally shipping a native app so you don't have to squint at cloud gaming through a browser tab. The other is a hype-cycle promise of building your own distro with AI, delivered pre-alpha and held together by a developer's goodwill and a 9 GB ISO.
 
-## 1. Nvidia just made gaming on Linux a whole lot easier
+## 1. Nvidia just made gaming on Linux a whole lot easier — by share.google
+
+![share.google](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/08/nvidia-geforce-now-linux.jpg?w=1600&amp;h=900&amp;fit=crop)
 
 **Publisher:** How-To Geek · **Link:** https://share.google/JSFG8R9kCkcT91HKO (→ https://www.howtogeek.com/nvidia-geforce-now-linux-app-release-game-streaming/) · **Karakeep doc:** `asbqg7b9plix540slei4y5cw`
 
@@ -22,7 +24,9 @@ Now the catch, because there's always a catch: the free tier is 1080p with ads. 
 
 The skeptical take, and the commenters nailed it: this is browser gaming with better seats, not "gaming on Linux." It's the fun of NOT owning your hardware. If you like running things yourself, Proton's right there. But if you just want to hit play and stop messing with driver purgatory, this is the first real cloud-streaming option that doesn't feel like a beta apology.
 
-## 2. I used OpenFactory to build my own Linux distro overnight — this AI tool is going to be big
+## 2. I used OpenFactory to build my own Linux distro overnight — this AI tool is going to be big — by zdnet.com
+
+![zdnet.com](https://www.zdnet.com/a/img/resize/a80fcaabc7036a0d6159758d7f7db2e2e73572cd/2026/08/12/8170b645-202e-46bb-84c2-9e1e5981dd2a/openfactoryhero.jpg?auto=webp&amp;fit=crop&amp;height=675&amp;width=1200)
 
 **Publisher:** ZDNET · **Link:** https://www.zdnet.com/article/openfactory-is-an-impressive-new-service-that-allows-you-to-build-your-own-linux-distribution/ · **Karakeep doc:** `h8ptcacyjqb56etamugec9kv`
 

@@ -9,7 +9,9 @@ Hoarded 3 bookmarks on 2026-08-04 — three articles, no video. The day splits c
 
 ---
 
-## 1. Dealing with Surprising Human Emotions: Desk Moves
+## 1. Dealing with Surprising Human Emotions: Desk Moves — by larahogan.me
+
+![larahogan.me](https://larahogan.me/images/li-card.jpg)
 - **Source:** https://larahogan.me/blog/desk-moves/
 - **Karakeep doc:** `w8yrpp0bfmnayoekkbpp8jye`
 
@@ -23,7 +25,9 @@ Her manager playbook: name the change early, tie it to broader strategy, hand pe
 
 ---
 
-## 2. How Miro Tests Agentic Features at Scale with Signadot
+## 2. How Miro Tests Agentic Features at Scale with Signadot — by signadot.com
+
+![signadot.com](https://www.signadot.com/images/cms/case-studies/how-miro-builds-and-tests-agentic-features-at-scale-main.png)
 - **Source:** https://www.signadot.com/case-studies/how-miro-builds-and-tests-agentic-features-at-scale/
 - **Karakeep doc:** `rlnojlgzfd28nbezerfgqxbg`
 
@@ -37,7 +41,9 @@ The agentic angle is the actual interesting part. Miro uses coding agents (Claud
 
 ---
 
-## 3. NYT — What Are Companies Getting for All That A.I. Spending?
+## 3. NYT — What Are Companies Getting for All That A.I. Spending? — by nytimes.com
+
+![nytimes.com](https://nytimes.com/favicon.ico)
 - **Source:** https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html
 - **Karakeep doc:** `j4pkl40maowzwn6e3ywuizqa`
 

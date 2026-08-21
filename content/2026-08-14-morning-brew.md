@@ -9,7 +9,9 @@ Only 3 bookmarks today, and they're a weird little trio: an AI security paper th
 
 ---
 
-## 1. Researchers can now reverse-engineer LLM prompts from output text with near-perfect accuracy
+## 1. Researchers can now reverse-engineer LLM prompts from output text with near-perfect accuracy — by share.google
+
+![share.google](https://the-decoder.com/wp-content/uploads/2026/08/prompt_extracting.png)
 - **Source:** https://share.google/6g5pNgsTVdvPYDwXl
 - **Karakeep doc:** `auwhgk2g179fwce2qmhodokt`
 
@@ -23,7 +25,9 @@ The nasty bit: an inverse model trained on the tiny **Qwen-3-0.6B** could still 
 
 ---
 
-## 2. EITWatch open-source ESP32-S3 smartwatch with planar EIT hand gesture recognition
+## 2. EITWatch open-source ESP32-S3 smartwatch with planar EIT hand gesture recognition — by cnx-software.com
+
+![cnx-software.com](https://www.cnx-software.com/wp-content/uploads/2026/08/EITWatch.jpg)
 - **Source:** https://www.cnx-software.com/2026/08/14/eitwatch-open-source-esp32-s3-smartwatch-implements-planar-eit-hand-gesture-recognition/
 - **Karakeep doc:** `p6d30x3ds8ern9cmrupachv0`
 
@@ -39,7 +43,9 @@ Because a flat array can't wrap the wrist, they use a **multi-depth scanning pro
 
 ---
 
-## 3. Modder straps two desktop CPU coolers to a ZTE phone to make a gaming PC
+## 3. Modder straps two desktop CPU coolers to a ZTE phone to make a gaming PC — by tomshardware.com
+
+![tomshardware.com](https://cdn.mos.cms.futurecdn.net/baWuDWM9eHpsvWSSNaSD3o-1920-80.jpg)
 - **Source:** https://www.tomshardware.com/pc-components/cooling/modder-straps-two-desktop-cpu-coolers-to-zte-nubia-z70-ultra-turns-smartphone-into-a-gaming-pc-snapdragon-8-elite-soc-with-24gb-of-ram-runs-the-witcher-3-at-1080p-ultra
 - **Karakeep doc:** `o7omfzxvz5hikgpi1ukcz3mk`
 

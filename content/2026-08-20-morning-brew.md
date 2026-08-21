@@ -1,7 +1,7 @@
 ---
 date: 2026-08-20
 slug: 2026-08-20-morning-brew
-tags: digest,karakeep,AI,LLM,devops,networking,ccna,retro-gaming
+tags: AI Agents,APIs,Analog Scalers,App Development,Apple Vision Pro,Apple iPod,Artificial Intelligence,Ask Me Anything,Automation,Automotive Design,Business Strategy,Business Technology,CCNA,CRT Displays,Career Advice,Career Development,Certification,Chatbots,China,Cisco,Cisco CCNA,Claude AI,Cloud Computing,Console Gaming,Console Modding,Console Repair,Containerization,Continuous Integration,Cybersecurity,DIY Projects,Deep Learning,DeepSeek,DevOps,Developer Tools,Digital Media,Edge Computing,Electronics,Embedded Systems,Emojis,Encryption,Engineering,Entrepreneurship,FPGA,Frontend Engineering,Gaming,Gaming Conventions,Gaming Hardware,Gaming PCs,Gaming Technology,GitHub Actions,HTTPS,Handheld Gaming,Handheld PC,Hardware Design,Hardware Restoration,Hardware Technology,Home Assistant,Humanoid Robots,ISP,IT Certification,IT Education,IT Training,Image Processing,Information Technology,Internet Technology,JavaScript,Kubernetes,Large Language Models,Linux,Machine Learning,Microcontrollers,Model Comparison,Music Technology,Natural Language Processing,Networking,Nintendo GameCube,Online Privacy,Open Source,Open Source Hardware,PC Restoration,PlayStation,PlayStation 2,Portable Consoles,Power Supply,Problem Solving,Productivity,Productivity Tips,Productivity Tools,Programming,Prompt Engineering,Q&A Session,Raspberry Pi,Reactive Programming,RealityKit,Retro Computing,Retro Gaming,Robotics,Scale Models,Small Language Models,Smart Home,Software Architecture,Software Development,Software Engineering,Software Management,Software Tutorial,SolidJS,Spotify,Startups,Stock Market,Storage Devices,SwiftUI,Tech Comparison,Tech Gadgets,Technology,Technology Education,Technology News,Technology Reviews,Technology Trends,User Interface,VPN,Video Games,Vintage Technology,Watermark Removal,Web Development,Web Security,Xbox Prototypes,visionOS
 ---
 
 # Morning Brew — 2026-08-20
@@ -10,7 +10,9 @@ Day of the hoard where the whole feed clustered into about four obsessive lanes:
 
 ---
 
-## 1. GeekWire — Amazon is slicing up rare books and scanning them for AI training
+## 1. GeekWire — Amazon is slicing up rare books and scanning them for AI training — by geekwire.com
+
+![geekwire.com](https://geekwire.com/favicon.ico)
 
 **Source:** https://www.geekwire.com/2026/how-an-airtag-planted-by-a-reporter-led-to-a-secret-amazon-site-where-old-books-are-cut-apart-and-scanned/
 **Karakeep doc:** `lk1hqugkljecmyypnvasd45x`
@@ -19,7 +21,9 @@ Todd Bishop at GeekWire recapping the 404 Media scoop, and honestly the reportin
 
 ---
 
-## 2. Bankier.pl — Chińskie roboty podbijają giełdę. Akcje Unitree wzrosły o blisko 500 proc.
+## 2. Bankier.pl — Chińskie roboty podbijają giełdę. Akcje Unitree wzrosły o blisko 500 proc. — by bankier.pl
+
+![bankier.pl](https://galeria.bankier.pl/p/5/d/4030f27d44dd21-948-568-0-179-4500-2699.jpg)
 
 **Source:** https://www.bankier.pl/wiadomosc/Chinskie-roboty-podbijaja-gielde-Akcje-Unitree-wzrosly-o-blisko-500-proc-9184130.html
 **Karakeep doc:** `nqd9jxs5jqyaafdof3l385tn`
@@ -28,7 +32,9 @@ Unitree — the humanoid-robot maker from Hangzhou, now also the one whose robot
 
 ---
 
-## 3. KDnuggets — What Can I Actually Do with a Small Language Model?
+## 3. KDnuggets — What Can I Actually Do with a Small Language Model? — by kdnuggets.com
+
+![kdnuggets.com](https://www.kdnuggets.com/wp-content/uploads/kdn-what-can-i-actually-do-with-a-small-language-model-feature.png)
 
 **Source:** https://www.kdnuggets.com/what-can-i-actually-do-with-a-small-language-model
 **Karakeep doc:** `am38gisygsuotmaq7cpkxxve`
@@ -37,7 +43,9 @@ Matthew Mayo's practical take on small language models (SLM), i.e. 8B-and-under 
 
 ---
 
-## 4. InfoQ — DeepSeek Open-Sources Harness: Modular, Unbundled AI Agent Infrastructure
+## 4. InfoQ — DeepSeek Open-Sources Harness: Modular, Unbundled AI Agent Infrastructure — by infoq.com
+
+![infoq.com](https://res.infoq.com/news/2026/08/deep-seek-harness/en/card_header_image/generatedCard-1787063458783.jpg)
 
 **Source:** https://www.infoq.com/news/2026/08/deep-seek-harness/
 **Karakeep doc:** `s3djx7wdf2zn5lvyeenmrx9h`
@@ -46,7 +54,9 @@ DeepSeek dropped **DeepSeek Harness (dsh)** as an MIT-licensed, open-source deve
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/sHOwbyMbun0/maxresdefault.jpg)
 
 **Title:** 4 Billion Free LLM Tokens… One API (FreeLLMAPI)
 **Source:** https://www.youtube.com/watch?v=sHOwbyMbun0
@@ -56,7 +66,9 @@ The premise: there's a shit-ton of free LLM capacity scattered around (Grok's fr
 
 ---
 
-## 5. GitHub — piBrick Pocket-CM5: Open-Source Smartphone-Sized PC
+## 5. GitHub — piBrick Pocket-CM5: Open-Source Smartphone-Sized PC — by github.com
+
+![github.com](https://opengraph.githubassets.com/5f6cafce73f63272b157a387ad36dc6fffff2a1ff0066c949e88f37beabbae72/amarullz/piBrick)
 
 **Source:** https://github.com/amarullz/piBrick/blob/main/Pocket-CM5/README.md
 **Karakeep doc:** `g6dga6at8zo3kiq5dut3o8q3`
@@ -65,7 +77,9 @@ Amarullz's **piBrick Pocket-CM5** — a smartphone-sized handheld PC running a f
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Jdaie Lin
+
+![Jdaie Lin](https://i.ytimg.com/vi/RRRYjOe-WLQ/maxresdefault.jpg)
 
 **Title:** I Turned a Raspberry Pi Chatbot Into an AI Agent
 **Source:** https://www.youtube.com/watch?v=RRRYjOe-WLQ
@@ -75,7 +89,9 @@ Continuing a previous video where he gave his "Wisplay" chatboard OpenClaw acces
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Donut
+
+![Donut](https://i.ytimg.com/vi/2BbGpN2Jvjs/maxresdefault.jpg)
 **Title:** We Built a Tiny Fake GTR (full build)
 **Source:** https://www.youtube.com/watch?v=2BbGpN2Jvjs
 **Karakeep doc:** `hvsa6049qio18qcl1r9nipi5`
@@ -84,7 +100,9 @@ A Tokyo tuning video: two weeks to take a tiny Japanese K-car — a Suzuki — a
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/aVf9JxsRBT8/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYYCBlKEEwDw==&rs=AOn4CLA6-7BA-wnmeCFxggCW4wzBSdsz-A)
 **Title:** Codex vs Claude which is better?
 **Source:** https://www.youtube.com/shorts/aVf9JxsRBT8
 **Karakeep doc:** `yfxnrcm6n1t3wkl6hcl4uo7w`
@@ -93,7 +111,9 @@ A 60-second verdict from the BetterStack channel: **Claude** wins for writing co
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/9e6ghZm3Oxo/maxresdefault.jpg)
 **Title:** Can You Actually Run DeepSeek V4 Pro For Free With Ads?
 **Source:** https://www.youtube.com/shorts/9e6ghZm3Oxo
 **Karakeep doc:** `w0s0row1d8lqmybodki1vfrp`
@@ -102,7 +122,9 @@ A company called **Freebuff** claims you can run DeepSeek V4 Pro free "forever" 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/M24yg6ZM7-I/maxresdefault.jpg)
 **Title:** I Can't Believe This AI Model Fits in 14 Megabytes (Needle 2)
 **Source:** https://www.youtube.com/watch?v=M24yg6ZM7-I
 **Karakeep doc:** `ukw3xmjyq3in9bqovmu7kbmi`
@@ -111,7 +133,9 @@ A company called **Freebuff** claims you can run DeepSeek V4 Pro free "forever" 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/sr4q-Jj7uiM/maxresdefault.jpg)
 **Title:** Solid 2 is a MASSIVE Update (Goodbye SolidStart)
 **Source:** https://www.youtube.com/watch?v=sr4q-Jj7uiM
 **Karakeep doc:** `teeumenmh2l3x4hlfzmu3zt9`
@@ -120,7 +144,9 @@ Solid 2 just shipped and it's a big rework. Headline: **async is now a first-cla
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/avx1RrqBrZs/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBlKEUwDw==&rs=AOn4CLBu0uxgsyxWwHw2oxRJ_G-xxqviyQ)
 **Title:** How to use Claude for FREE
 **Source:** https://www.youtube.com/shorts/avx1RrqBrZs
 **Karakeep doc:** `pdnii3ed1zdmtw24xvs7exno`
@@ -129,7 +155,9 @@ Short promo for **OmniRut** ("OmniRoot" as transcribed), a free tool that wires 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/JPb5Ttlzsd8/maxresdefault.jpg)
 **Title:** 99% of AI Startups Will Fail
 **Source:** https://www.youtube.com/shorts/JPb5Ttlzsd8
 **Karakeep doc:** `o8zip0ii8e0ywntyo4ko86kq`
@@ -138,7 +166,9 @@ Blunt thesis: 99% of AI startups will be dead in two years. The giants — OpenA
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/xaNWEuDLcIg/maxresdefault.jpg)
 **Title:** AI Watermark Removers Are Everywhere. None of Them Work.
 **Source:** https://www.youtube.com/shorts/xaNWEuDLcIg
 **Karakeep doc:** `n9bzrb7r39rnv960ai85kxg8`
@@ -147,7 +177,9 @@ Anthropic announced invisible watermarks on everything Claude writes (from Aug 2
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/1-pRci-Wd7w/maxresdefault.jpg)
 **Title:** So Emojis Are Apparently Executable Now??!
 **Source:** https://www.youtube.com/shorts/1-pRci-Wd7w
 **Karakeep doc:** `n44s8hu7f6pk15odnmxhaymt`
@@ -156,7 +188,9 @@ A dev named **GloriousCow** accidentally discovered emojis are valid x86 machine
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/TK1LvtX-Bqs/maxresdefault.jpg)
 **Title:** Spotify Made an Agent Harness… I Don't Hate It
 **Source:** https://www.youtube.com/watch?v=TK1LvtX-Bqs
 **Karakeep doc:** `m3dcwnqncr1t01xs5cllbich`
@@ -165,7 +199,9 @@ Spotify built an internal "agentic development environment" called **Zerg** to m
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/HvOKuSwJeNk/maxresdefault.jpg)
 **Title:** OpenClaw Hacked a Gym To Help Him
 **Source:** https://www.youtube.com/shorts/HvOKuSwJeNk
 **Karakeep doc:** `jlb1m6vddwlt0c6878d9jjmf`
@@ -174,7 +210,9 @@ A guy in Australia ran **OpenClaw** on top of Claude and asked it to book him a 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/cx1AQnyj15E/maxresdefault.jpg)
 **Title:** How to Build The Perfect CLAUDE.md (Top 5 Rules)
 **Source:** https://www.youtube.com/shorts/cx1AQnyj15E
 **Karakeep doc:** `hs421q2zbd9hku5t2l063urh`
@@ -183,7 +221,9 @@ Five rules for a great CLAUDE.md: (1) **autocomplete** — every time your agent
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Better Stack
+
+![Better Stack](https://i.ytimg.com/vi/mzQC9UK9n84/maxresdefault.jpg)
 **Title:** I Tried Both New 30B Models… One Of Them Is a DISASTER! (Muse Glimmer & Lightning 3.5)
 **Source:** https://www.youtube.com/watch?v=mzQC9UK9n84
 **Karakeep doc:** `ff2t4mglk1ijd2o26nfbd617`
@@ -192,7 +232,9 @@ Meta and Nvidia both dropped 30B-parameter models a day apart, both aimed at run
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Mischa van den Burg
+
+![Mischa van den Burg](https://i.ytimg.com/vi/UAIsZ_YdvXs/maxresdefault.jpg)
 **Title:** my honest advice to someone who wants to master devops
 **Source:** https://www.youtube.com/watch?v=UAIsZ_YdvXs
 **Karakeep doc:** `x9uqbj4glv4fah8w3k9s9itw`
@@ -201,7 +243,9 @@ This one's a "sovereign craftsman" career video: the most important DevOps lesso
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Mischa van den Burg
+
+![Mischa van den Burg](https://i.ytimg.com/vi/c1LJ29pQ_1Y/maxresdefault.jpg)
 **Title:** The DevOps Routine That Made Me Rich (Not What You Think)
 **Source:** https://www.youtube.com/watch?v=c1LJ29pQ_1Y
 **Karakeep doc:** `wkqcv2whh8ndx50f0j3gdilm`
@@ -210,7 +254,9 @@ A "day in the life of a DevOps engineer" — with the honest caveat that the tit
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Mischa van den Burg
+
+![Mischa van den Burg](https://i.ytimg.com/vi/SPP2XTf-IoQ/maxresdefault.jpg)
 **Title:** I've used Kubernetes for 5 years, but I never knew these 13 facts
 **Source:** https://www.youtube.com/watch?v=SPP2XTf-IoQ
 **Karakeep doc:** `bd8ehw5ednnlbp3mr1edra42`
@@ -219,7 +265,9 @@ A Kubernetes community personality goes "completely blind" through a 13-fact cha
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/IFVDY75tR5A/maxresdefault.jpg)
 **Title:** This Mod Fixes The "Un-Fixable" PlayStation 2
 **Source:** https://www.youtube.com/watch?v=IFVDY75tR5A
 **Karakeep doc:** `t6y8cdn9grl4h8toia3qou77`
@@ -228,7 +276,9 @@ The **Sony PSX** — a Japan-only home-media system that's also a fully function
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/ZUCBOSHQ7is/maxresdefault.jpg)
 **Title:** The PlayStation Was Capable of This All Along?
 **Source:** https://www.youtube.com/watch?v=ZUCBOSHQ7is
 **Karakeep doc:** `qtn8kjaqx8gjfk3s5w4eyimu`
@@ -237,7 +287,9 @@ The OG PlayStation shipped with just 2MB of RAM — yet ran Resident Evil, FF7, 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/DOvaprD9YhA/maxresdefault.jpg)
 **Title:** I Wasn't Prepared for This Retro Gaming Convention | SEGE 2026
 **Source:** https://www.youtube.com/watch?v=DOvaprD9YhA
 **Karakeep doc:** `q3g8nmtd8v00hj5w7qskwr2p`
@@ -246,7 +298,9 @@ The Southeast Game Exchange (SEGE) 2026 — the largest gaming expo in the Carol
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/d2QLFKayeSE/maxresdefault.jpg)
 **Title:** The Morph 2K Analog Scaler Has Arrived
 **Source:** https://www.youtube.com/watch?v=d2QLFKayeSE
 **Karakeep doc:** `pwk7n963don0pmtypm2cbaok`
@@ -255,7 +309,9 @@ While HDMI mods are the preferred way to connect retro consoles to modern TVs, n
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/hSAfMJfdW64/maxresdefault.jpg)
 **Title:** Swiss-Made Retro Controller Tester Kit
 **Source:** https://www.youtube.com/watch?v=hSAfMJfdW64
 **Karakeep doc:** `pioi8qlw3ke61c5y8dfzd5w7`
@@ -264,7 +320,9 @@ Tito of Macho Nacho reviews the **controller tester kit from "Consoles for You" 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/XlnIv6dO4TM/maxresdefault.jpg)
 **Title:** Fixing One of the PSP Go's Biggest Flaws By Making It Thicker
 **Source:** https://www.youtube.com/watch?v=XlnIv6dO4TM
 **Karakeep doc:** `o3ops6fnf0irb4sdzf2wanzf`
@@ -273,7 +331,9 @@ The **PSP Go** (2009) was Sony's sleekest handheld — Bluetooth, all-digital li
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/9UvF2jW7ekc/maxresdefault.jpg)
 **Title:** I Have 2 JUNK PSOne Slim consoles … Let's Try to Fix Them! | 6.5.2026 Live Stream
 **Source:** https://www.youtube.com/watch?v=9UvF2jW7ekc
 **Karakeep doc:** `jdlu9blb9yrfypj2791v4gd0`
@@ -282,7 +342,9 @@ A live-stream (Macho Nacho) where the host fixes two broken PSOne Slim consoles.
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/bIy5odHFPGI/maxresdefault.jpg)
 **Title:** New FPGA Handheld May Have Just Made the Analogue Pocket Obsolete
 **Source:** https://www.youtube.com/watch?v=bIy5odHFPGI
 **Karakeep doc:** `j6vm6zm8hy57dkz3rwz71wam`
@@ -291,7 +353,9 @@ The **Game Bab** — an open-source, FPGA-powered gaming handheld from **Eli Lip
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/xEJ0BbSDslQ/maxresdefault.jpg)
 **Title:** More Storage Than A GameCube Would Ever Need | USB Dolphin
 **Source:** https://www.youtube.com/watch?v=xEJ0BbSDslQ
 **Karakeep doc:** `iuxvh1x2xa0llu6y8zsd7ziv`
@@ -300,7 +364,9 @@ Two new GameCube storage devices that give it an insane amount of storage, one d
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/Mt-Tr3I5RSI/maxresdefault.jpg)
 **Title:** Can't Believe This Is a REAL GameCube
 **Source:** https://www.youtube.com/watch?v=Mt-Tr3I5RSI
 **Karakeep doc:** `i8pte4jbt381zbnyb2lkgz7o`
@@ -309,7 +375,9 @@ The **Nintendo Kōr** (also written "Kauai") — a real GameCube shrunken down t
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/003dlE1fCpI/maxresdefault.jpg)
 **Title:** It's So EASY, Just Drop It Into ANY PlayStation And Play EVERY Game | ArcStation
 **Source:** https://www.youtube.com/watch?v=003dlE1fCpI
 **Karakeep doc:** `hsdhx3t92ggrvi55giwnyfgy`
@@ -318,7 +386,9 @@ A Raspberry Pi Pico-based **optical-drive emulator (ODE)** for the original Play
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/FKyRD_dPZXU/maxresdefault.jpg)
 **Title:** Making a MODERN Apple iPod is now EASY
 **Source:** https://www.youtube.com/watch?v=FKyRD_dPZXU
 **Karakeep doc:** `ge002jog2b3953du8e169dml`
@@ -347,7 +417,9 @@ The **RetroTap** power-distribution system from **Ki Tort Industries** (Kyle) �
 
 
 
-## 🎬 Video
+## 🎬 Video — by Macho Nacho Productions
+
+![Macho Nacho Productions](https://i.ytimg.com/vi/Zk0Nk1KJuSc/maxresdefault.jpg)
 **Title:** I Flew to Japan for One of the RAREST CRTs Ever Made… Then It BROKE (Happy Ending)
 **Source:** https://www.youtube.com/watch?v=Zk0Nk1KJuSc
 **Karakeep doc:** `bbfgxsug76wd8u0zbu2tp9d5`
@@ -356,7 +428,9 @@ The host collects every official variant of the PC Engine — one of the largest
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Beyond Fireship
+
+![Beyond Fireship](https://i.ytimg.com/vi/yfBtjLxn_6k/maxresdefault.jpg)
 **Title:** How GitHub Actions 10x my productivity
 **Source:** https://www.youtube.com/watch?v=yfBtjLxn_6k
 **Karakeep doc:** `zzlfbpljjp7qn0r1kv009hgz`
@@ -365,7 +439,9 @@ A GitHub Actions productivity video, with the running joke "why spend 5 minutes 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by Beyond Fireship
+
+![Beyond Fireship](https://i.ytimg.com/vi/_xfZIr5sDLw/maxresdefault.jpg)
 **Title:** I built an Apple Vision Pro app… visionOS tutorial
 **Source:** https://www.youtube.com/watch?v=_xfZIr5sDLw
 **Karakeep doc:** `z2hcp0h5i768k71a4j1f70p2`
@@ -374,7 +450,9 @@ After an earlier video roasted the Apple Vision Pro (with Mark Zuckerberg), the 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/9fA2wAWvhJM/maxresdefault.jpg)
 
 **Title:** HTTPS Doesn't Hide This From Your ISP!!
 **Source:** https://www.youtube.com/shorts/9fA2wAWvhJM
@@ -384,7 +462,9 @@ That padlock in your browser does NOT hide which sites you visit — your ISP (a
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/YC77Lb_cN6c/maxresdefault.jpg)
 
 **Title:** Fable 5 is back.....run these prompts before July 12th
 **Source:** https://www.youtube.com/watch?v=YC77Lb_cN6c
@@ -394,7 +474,9 @@ Context is April-fools-style drama: "Fable 5" is a (joke?) "too powerful" AI tha
 
 ---
 
-## 🎬 Video (LIVE AMA)
+## 🎬 Video (LIVE AMA) — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/7-CouekrkOc/maxresdefault.jpg)
 **Title:** LIVE AMA | Summer of CCNA | 07/09/2026
 **Source:** https://www.youtube.com/watch?v=7-CouekrkOc
 **Karakeep doc:** `mnfdx403bf8wpblvx0z51iab`
@@ -412,7 +494,9 @@ The Summer of CCNA program from Network Chuck Academy — a 4-month series to pa
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/W-uDWefB-6c/maxresdefault.jpg)
 **Title:** Certification Questions | LIVE AMA | Summer of CCNA
 **Source:** https://www.youtube.com/watch?v=W-uDWefB-6c
 **Karakeep doc:** `itv0nlb27w2n6yg7mh3wj7wn`
@@ -421,7 +505,9 @@ Another Summer of CCNA check-in/AMA (streamed to Network Chuck's YouTube) hosted
 
 ---
 
-## 🎬 Video Short
+## 🎬 Video Short — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/l1L0OTlI00k/maxresdefault.jpg)
 **Title:** Cisco Just Showed the Future of Networking
 **Source:** https://www.youtube.com/shorts/l1L0OTlI00k
 **Karakeep doc:** `ds3g02ap3kmq5hok8pdolawo`
@@ -430,7 +516,9 @@ From Cisco Live: **Cisco Cloud Control** — the "single pane of glass" for all 
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/IQX3MIzIBBA/maxresdefault.jpg)
 **Title:** Certification Questions | LIVE AMA | Summer of CCNA | 06/18/2026
 **Source:** https://www.youtube.com/watch?v=IQX3MIzIBBA
 **Karakeep doc:** `dakira7bpicltme2xlvatct6`
@@ -439,7 +527,9 @@ Same Summer of CCNA AMA series, June 18th, hosted by Zach (Network Chuck Academy
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/axfNxZ1R6C4/maxresdefault.jpg)
 **Title:** I was wrong about VPNs
 **Source:** https://www.youtube.com/watch?v=axfNxZ1R6C4
 **Karakeep doc:** `c7wkbv6tidmnw60h29mizrbm`
@@ -448,7 +538,9 @@ Hosted (and *sponsored by NordVPN* — he admits the conflict-of-interest and sa
 
 ---
 
-## 🎬 Shorts
+## 🎬 Shorts — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/8aArJSRLpJw/maxresdefault.jpg)
 **Hermes has a Home Assistant skill and it's unreal!**
 **Source:** https://www.youtube.com/shorts/8aArJSRLpJw
 **Karakeep doc:** `c2xlcc3blury28n7dzfe6t7v`
@@ -457,7 +549,9 @@ A short demo of **Hermes' Home Assistant skill** — the user runs Home Assistan
 
 ---
 
-## 🎬 Video
+## 🎬 Video — by NetworkChuck
+
+![NetworkChuck](https://i.ytimg.com/vi/tgmEHQv7ozQ/maxresdefault.jpg)
 
 **Title:** shadow AI is terrifying
 **Source:** https://www.youtube.com/shorts/tgmEHQv7ozQ

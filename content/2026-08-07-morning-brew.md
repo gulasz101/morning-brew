@@ -9,7 +9,9 @@ Hoarded 5 bookmarks on 2026-08-07: 4 articles and 1 video (transcribed). Theme o
 
 ---
 
-## 1. Clowder — Kitty terminal system panel
+## 1. Clowder — Kitty terminal system panel — by github.com
+
+![github.com](https://opengraph.githubassets.com/b95fa2bab1774645ce2f35bc443254c4f8f859f979224ac0f2f94649a1223041/5hubham5ingh/clowder)
 - **Source:** https://github.com/5hubham5ingh/clowder
 - **Karakeep doc:** `e5mkg4uerju3nnhn9bi8gj6b`
 
@@ -19,7 +21,9 @@ A system panel that lives inside the Kitty terminal, driven by Kitty's remote-co
 
 ---
 
-## 2. The Unicorn Project — DevOps, but from the devs' side of the trench
+## 2. The Unicorn Project — DevOps, but from the devs' side of the trench — by oreilly.com
+
+![oreilly.com](https://oreilly.com/favicon.ico)
 - **Source:** https://www.oreilly.com/library/view/the-unicorn-project/9781098124175/
 - **Karakeep doc:** `q8noh7jgv70c2d8coh8g9vmh`
 
@@ -29,7 +33,9 @@ Gene Kim's companion to *The Phoenix Project*, set at Parts Unlimited on the sam
 
 ---
 
-## 3. The Linux Command Line — the free book that taught a generation to talk to a prompt
+## 3. The Linux Command Line — the free book that taught a generation to talk to a prompt — by linuxcommand.org
+
+![linuxcommand.org](https://linuxcommand.org/favicon.ico)
 - **Source:** https://linuxcommand.org/tlcl.php
 - **Karakeep doc:** `p4gzycisph3gsyk3xi1k85u5`
 
@@ -39,7 +45,9 @@ William Shotts's *The Linux Command Line*, Seventh Internet Edition, 596 pages �
 
 ---
 
-## 4. Integrate Shell Commands Into Vi Workflow — `!` is your wizard wand
+## 4. Integrate Shell Commands Into Vi Workflow — `!` is your wizard wand — by rwx.gg
+
+![rwx.gg](https://rwx.gg/favicon.ico)
 - **Source:** https://rwx.gg/tools/editors/vi/how/magic/
 - **Karakeep doc:** `nyewfjnachwntjsnrcvp1va7`
 
@@ -49,7 +57,9 @@ The single most underrated Vi feature: full shell integration via `!`. The "magi
 
 ---
 
-## 5. 🎬 I made an apple peel itself
+## 5. 🎬 I made an apple peel itself — by Stuff Made Here
+
+![Stuff Made Here](https://i.ytimg.com/vi/RpslsMqPFWA/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/watch?v=RpslsMqPFWA
 - **Karakeep doc:** `ly8mre1zcjoxy12zc69aqbr4`
 

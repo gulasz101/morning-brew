@@ -9,7 +9,9 @@ Hoarded 26 bookmarks on 2026-07-24 (25 articles + 1 video, now transcribed). The
 
 ---
 
-## 1. 4 free apps that make a cheap Android tablet worth keeping
+## 1. 4 free apps that make a cheap Android tablet worth keeping — by makeuseof.com
+
+![makeuseof.com](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2025/12/touch-portal-control-screen-showing-apps-icon-on-a-huawei-honor-pad-8.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.makeuseof.com/make-cheap-android-tablet-worth-using/
 - **Karakeep doc:** `gfoagc4p4r14538e6d6d1gr6`
 
@@ -17,7 +19,9 @@ A budget Android tablet gets dug out of a drawer instead of collecting dust, and
 
 **Verdict:** Gadget-salvage list, but Spacedesk and Touch Portal genuinely earn their keep for anyone with a dead slab lying around.
 
-## 2. These 5 open-source software cost me nothing, but are worth paying for
+## 2. These 5 open-source software cost me nothing, but are worth paying for — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/05/karakeep-running-on-a-mac.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/free-open-source-software-worth-paying-for/
 - **Karakeep doc:** `vqgtnzxsmmqf1pr2ccdar2o7`
 
@@ -27,7 +31,9 @@ Five self-hosted tools the writer would happily pay for even though he doesn't h
 
 ---
 
-## 3. Sawyer Merritt (@SawyerMerritt) on X — Tesla shuts down S&X lines for Optimus
+## 3. Sawyer Merritt (@SawyerMerritt) on X — Tesla shuts down S&X lines for Optimus — by x.com
+
+![x.com](https://pbs.twimg.com/media/HN25vdYXYAA6N2E.jpg:large)
 - **Source:** https://x.com/SawyerMerritt/status/2080023099618021646
 - **Karakeep doc:** `mxdinm7icbu79qg44pfdv2xb`
 
@@ -37,7 +43,9 @@ Tesla says it has **decommissioned the Model S & X manufacturing lines at Fremon
 
 ---
 
-## 4. OSINT: Find Everything About Anyone!
+## 4. OSINT: Find Everything About Anyone! — by CyberFlow
+
+![CyberFlow](https://i.ytimg.com/vi/zhTjzscNLEI/maxresdefault.jpg)
 - **Source:** https://m.youtube.com/watch?v=zhTjzscNLEI
 - **Karakeep doc:** `e9dzgoqor6ndo07jutsi40o4`
 
@@ -61,7 +69,9 @@ An OSINT tools roundup from the Cyberflow Academy guy (the one who shoves a cour
 
 ---
 
-## 5. Chłodnik z melona, ogórka i mięty
+## 5. Chłodnik z melona, ogórka i mięty — by rozkoszny.pl
+
+![rozkoszny.pl](https://www.rozkoszny.pl/wp-content/uploads/2021/08/DSC04724-Duzy.jpg)
 - **Source:** https://www.rozkoszny.pl/chlodnik-z-melona-ogorka-i-miety/
 - **Karakeep doc:** `rc9cc9s8l7cp6dnwcvroeu7z`
 
@@ -71,7 +81,9 @@ Maciej Korkosz's summer cold soup. Melon rounds out the sweetness, cucumber keep
 
 ---
 
-## 6. Masala Dosa — Rice & Lentil Pancake with Potato Stuffing
+## 6. Masala Dosa — Rice & Lentil Pancake with Potato Stuffing — by bakinghermann.com
+
+![bakinghermann.com](https://bakinghermann.com/favicon.ico)
 - **Source:** https://bakinghermann.com/masala-dosa-rice-lentil-pancake-with-potato-stuffing/
 - **Karakeep doc:** `fcn40ccpadjf69hdotb6ezph`
 
@@ -81,7 +93,9 @@ A Bengaluru-style masala dosa from Hermann's cookbook — the Vidyarthi Bhavan l
 
 ---
 
-## 7. The server monitor I run on everything is 5MB
+## 7. The server monitor I run on everything is 5MB — by howtogeek.com
+
+![howtogeek.com](https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2026/04/screenshot_2026-04-12_235132-1.png?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.howtogeek.com/the-server-monitor-i-run-on-everything-is-5mb-and-tracks-every-metric-i-need/
 - **Karakeep doc:** `k4i0ziwiysp23s332e64epdo`
 
@@ -91,7 +105,9 @@ A Bengaluru-style masala dosa from Hermann's cookbook — the Vidyarthi Bhavan l
 
 ---
 
-## 8. Tofu-klopsy z masłem orzechowym
+## 8. Tofu-klopsy z masłem orzechowym — by ervegan.com
+
+![ervegan.com](https://ervegan.com/wp-content/uploads/2014/11/IMG_04741.jpg)
 - **Source:** https://ervegan.com/2014/11/tofu-klopsy-z-maslem-orzechowym/
 - **Karakeep doc:** `idw633rkiis6dh8xc1c2djmq`
 
@@ -101,7 +117,9 @@ Tofu meatballs with peanut butter — firm, crispy, protein-packed, 20 minutes. 
 
 ---
 
-## 9. Wegan Nerd — Kotolety, sznycle z granulatu sojowego
+## 9. Wegan Nerd — Kotolety, sznycle z granulatu sojowego — by wegannerd.com
+
+![wegannerd.com](https://wegannerd.com/favicon.ico)
 - **Source:** https://www.wegannerd.com/2018/01/kotlety-sznycle-z-granulatu-sojowego.html
 - **Karakeep doc:** `tjkpfe12oqq0042go2ov1dw3`
 
@@ -111,7 +129,9 @@ Soy-granule cutlets from the Wegan Nerd blog. The comments are the real value: m
 
 ---
 
-## 10. Markdown + Astro = 🧡
+## 10. Markdown + Astro = 🧡 — by css-tricks.com
+
+![css-tricks.com](https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/02/mdx-astro.webp)
 - **Source:** https://css-tricks.com/markdown-astro/
 - **Karakeep doc:** `nyj58uc4e337dt1mzcu90ito`
 
@@ -121,7 +141,9 @@ Zell Liew's guide to doing Markdown "properly" in Astro via **MDX**. Three patte
 
 ---
 
-## 11. Wegańska bomba żelaza — Sałatka z tofu, pieczonym burakiem i pesto z pietruszki
+## 11. Wegańska bomba żelaza — Sałatka z tofu, pieczonym burakiem i pesto z pietruszki — by szczesliwibezcukru.pl
+
+![szczesliwibezcukru.pl](https://szczesliwibezcukru.pl/wp-content/uploads/1-logotyp-szczesliwi-bez-cukru/fundajca-szczesliwi-bez-cukru-no-sugar-logotyp-rgb-500.webp)
 - **Source:** https://szczesliwibezcukru.pl/weganska-bomba-zelaza-salatka-z-tofu-pieczonym-burakiem-i-domowym-pesto-z-pietruszki/
 - **Karakeep doc:** `jjbp1s3g5jwegufdanew58vn`
 
@@ -131,7 +153,9 @@ A vegan iron-bomb salad that tackles plant-iron *bioavailability* (not amount) b
 
 ---
 
-## 12. Żelazna sałatka — przepisy.pl (Access Denied)
+## 12. Żelazna sałatka — przepisy.pl (Access Denied) — by przepisy.pl
+
+![przepisy.pl](https://przepisy.pl/favicon.ico)
 - **Source:** https://www.przepisy.pl/przepis/zelazna-salatka
 - **Karakeep doc:** `s1evv76r01q1ctvxfxrgsbes`
 
@@ -139,7 +163,9 @@ The przepisy.pl page for "Żelazna sałatka" (iron salad) served "Access Denied"
 
 ---
 
-## 13. Tofucznica
+## 13. Tofucznica — by aniagotuje.pl
+
+![aniagotuje.pl](https://cdn.aniagotuje.com/pictures/articles/2024/04/59246682-v-1500x1500.jpg)
 - **Source:** https://aniagotuje.pl/przepis/tofucznica
 - **Karakeep doc:** `t2zwesxrilr48hvfc59w6w87`
 
@@ -149,7 +175,9 @@ Egg-free scrambled eggs. 25 min, 2 large servings, 178 kcal/100g, 9g protein, no
 
 ---
 
-## 14. Zupa krem z groszku z puszki w 5 minut — WegePedia
+## 14. Zupa krem z groszku z puszki w 5 minut — WegePedia — by wegepedia.pl
+
+![wegepedia.pl](https://wegepedia.pl/wp-content/uploads/2023/06/zupa-krem-z-groszku-z-puszki-w-5-minut-fit.jpg)
 - **Source:** https://wegepedia.pl/zupa-krem-z-groszku-z-puszki-w-5-minut-fit-przepis/
 - **Karakeep doc:** `gxv4fctidvjfzpteiq62p5lm`
 
@@ -159,7 +187,9 @@ A 5-minute canned-pea cream soup, fit + vegan. Two jars of peas (~500g drained),
 
 ---
 
-## 15. Nova Brasilia
+## 15. Nova Brasilia — by novabrasilia.bg
+
+![novabrasilia.bg](https://www.novabrasilia.bg/siteassets/nova-brasilia-logo.png)
 - **Source:** https://www.novabrasilia.bg/
 - **Karakeep doc:** `ocjpg9pf6v3r6k1eo2jgyvwe`
 
@@ -169,7 +199,9 @@ A Bulgarian coffee brand site. "Always follow the fire within" — the whole bra
 
 ---
 
-## 16. 7 Near-Perfect 1990s Anime No One Remembers
+## 16. 7 Near-Perfect 1990s Anime No One Remembers — by cbr.com
+
+![cbr.com](https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/07/Manga-English-Releases-Ghost-Sweeper.jpg?w=1200&amp;h=675&amp;fit=crop)
 - **Source:** https://www.cbr.com/perfect-90s-anime-no-one-remembers/
 - **Karakeep doc:** `lxwzbofzuwz50qqrbf0tvrt5`
 
@@ -179,7 +211,9 @@ Seven '90s anime that slipped through the cracks: **Giant Robo** (retro robot), 
 
 ---
 
-## 17. OpenClaudeLinux — GitHub
+## 17. OpenClaudeLinux — GitHub — by github.com
+
+![github.com](https://opengraph.githubassets.com/175578c01f7927f29a337b81a5acc21095b5f7ced44d675571bd8c3dc6e5bc1e/AbuZar-Ansarii/OpenClaudeLinux)
 - **Source:** https://github.com/AbuZar-Ansarii/OpenClaudeLinux
 - **Karakeep doc:** `kgvfoz0xyow2g1csp9c9wl7b`
 
@@ -189,7 +223,9 @@ A "Ultimate AI Agent & Linux for Android (Termux)" setup that bypasses root/Shiz
 
 ---
 
-## 18. Kao Pad Sapparod — Smażony Ryż Z Ananasem, Krewetkamymi i Nerkowcem
+## 18. Kao Pad Sapparod — Smażony Ryż Z Ananasem, Krewetkamymi i Nerkowcem — by cookpad.com
+
+![cookpad.com](https://img-global.cpcdn.com/recipes/fcef785e89de4142/1200x630cq80/photo.jpg)
 - **Source:** https://cookpad.com/pl/przepisy/16024276
 - **Karakeep doc:** `kayp6ioi22eylcp6ejigzx4z`
 
@@ -199,7 +235,9 @@ Thai fried rice with pineapple, shrimp and cashews — "very popular Thai dish w
 
 ---
 
-## 19. GitHub user creates open-source Nvidia GeForce Now client alternative
+## 19. GitHub user creates open-source Nvidia GeForce Now client alternative — by tomshardware.com
+
+![tomshardware.com](https://cdn.mos.cms.futurecdn.net/KhTsPDzs9nGmtpJvb5xffH-1920-80.png)
 - **Source:** https://www.tomshardware.com/video-games/cloud-gaming/github-user-creates-open-source-nvidia-geforce-now-client-alternative-removes-tracking-telemetry-and-afk-limitations
 - **Karakeep doc:** `uv95g5cz2hd83w32c` — wait, need check: `uv95g5czfoz2r5hm8d93w32c`
 
@@ -209,7 +247,9 @@ Thai fried rice with pineapple, shrimp and cashews — "very popular Thai dish w
 
 ---
 
-## 20. TapePunk — Cyberpunk 2077 VHS mod
+## 20. TapePunk — Cyberpunk 2077 VHS mod — by eurogamer.pl
+
+![eurogamer.pl](https://assetsio.gnwcdn.com/cyberpunk-content-vhs.jpg?width=1200&amp;height=630&amp;fit=crop&amp;enable=upscale&amp;auto=webp)
 - **Source:** https://www.eurogamer.pl/to-nie-nagranie-z-kasety-tylko-cyberpunk-2077-nostalgiczny-mod-wyglada-jeszcze-lepiej-w-nowej-wersji
 - **Karakeep doc:** `sf2qswmfeegcu5gjdj8jdnno`
 
@@ -219,7 +259,9 @@ The **TapePunk** mod turns Cyberpunk 2077 into a grainy VHS tape recording — r
 
 ---
 
-## 21. GBA RPG Re-Releases Fully Remastered — Sigma Star Saga DX
+## 21. GBA RPG Re-Releases Fully Remastered — Sigma Star Saga DX — by vice.com
+
+![vice.com](https://www.vice.com/wp-content/uploads/sites/2/2026/04/game-boy-advance.jpg?w=2000)
 - **Source:** https://www.vice.com/en/article/game-boy-advance-rpg-re-releases-next-week-fully-remastered-on-modern-consoles/
 - **Karakeep doc:** `vdu9ftedfgunxfw8zxc08675`
 
@@ -229,7 +271,9 @@ The **TapePunk** mod turns Cyberpunk 2077 into a grainy VHS tape recording — r
 
 ---
 
-## 22. Linus Torvalds tells AI haters to fork off
+## 22. Linus Torvalds tells AI haters to fork off — by theregister.com
+
+![theregister.com](https://image.theregister.com/260119.jpg?imageId=260119&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683)
 - **Source:** https://www.theregister.com/ai-and-ml/2026/07/15/linus-torvalds-tells-ai-haters-to-fork-off/5271894
 - **Karakeep doc:** `bgbvrdajgtu2932hytn6p4qa`
 
@@ -239,7 +283,9 @@ In a Linux kernel mailing-list thread on negative sentiment toward AI, Torvalds 
 
 ---
 
-## 23. Czy baterie rozwiążą największy problem OZE?
+## 23. Czy baterie rozwiążą największy problem OZE? — by pl.euronews.com
+
+![pl.euronews.com](https://pl.euronews.com/favicon.ico)
 - **Source:** https://pl.euronews.com/europa/2026/07/15/czy-magazyny-energii-uratuja-europejska-transformacje
 - **Karakeep doc:** `ckvrd0zxshxxu03xnk4cexbr`
 
@@ -249,7 +295,9 @@ A June 26 EU Energy Council deal signed by the Commission, ministers from 22 mem
 
 ---
 
-## 24. Pieczone bataty z ciecierzycą, szpinakiem i fetą
+## 24. Pieczone bataty z ciecierzycą, szpinakiem i fetą — by kwestiasmaku.com
+
+![kwestiasmaku.com](https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/pieczone_bataty_z_ciecierzyca_szpinakiem_feta_00.jpg)
 - **Source:** https://www.kwestiasmaku.com/przepis/pieczone-bataty-z-ciecierzyca-szpinakiem-i-feta
 - **Karakeep doc:** `xs9gep3fv8mrieychaf8ezii`
 
@@ -259,7 +307,9 @@ Baked sweet potatoes with chickpea, spinach and feta — a vegetarian, gluten-fr
 
 ---
 
-## 25. I Rebuilt My LinkedIn Carousel System — It Looks Designer-Made
+## 25. I Rebuilt My LinkedIn Carousel System — It Looks Designer-Made — by aimaker.substack.com
+
+![aimaker.substack.com](https://substackcdn.com/image/fetch/$s_!KBJW!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c5d398c-ea1e-43a2-beee-d83a1b0b26c7_2752x1536.jpeg)
 - **Source:** https://aimaker.substack.com/p/linkedin-carousel-paper-design-mcp
 - **Karakeep doc:** `sv7ie7tckqrxubrlr2heajj7`
 
@@ -269,7 +319,9 @@ The author rebuilt their LinkedIn carousel workflow around **Paper Desktop**, a 
 
 ---
 
-## 26. Wegańskie ciasto drożdżowe z kruszką
+## 26. Wegańskie ciasto drożdżowe z kruszką — by jadlonomia.com
+
+![jadlonomia.com](https://jadlonomia.com/wp-content/uploads/2018/06/IMG_7676_duze-1444x443.jpg)
 - **Source:** https://jadlonomia.com/przepisy/weganski-placek-drozdzowy-z-kruszonka/
 - **Karakeep doc:** `eivvuvr2j7o4zzoqaklgdhcf`
 

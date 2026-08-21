@@ -9,7 +9,9 @@ Ten bookmarks, all articles, no video. The hoard splits cleanly: half is **AI in
 
 ---
 
-## 1. OpenAI Charges by the Minute, So Make the Minutes Shorter
+## 1. OpenAI Charges by the Minute, So Make the Minutes Shorter — by george.mand.is
+
+![george.mand.is](https://georgemandis.s3-us-west-1.amazonaws.com/preview.png)
 - **Source:** https://george.mand.is/2025/06/openai-charges-by-the-minute-so-make-the-minutes-shorter/
 - **Karakeep doc:** `acv69j82w64gmayzmlhs2fqm`
 
@@ -23,7 +25,9 @@ The real meat is the pricing. OpenAI bills `gpt-4o-transcribe` on audio *input t
 
 ---
 
-## 2. Needle — foundation model for tiny devices (14MB)
+## 2. Needle — foundation model for tiny devices (14MB) — by github.com
+
+![github.com](https://opengraph.githubassets.com/24d2378d3958b13c612cf37a7600b97c816843bf54876d128bffc37b2a231f60/cactus-compute/needle)
 - **Source:** https://github.com/cactus-compute/needle
 - **Karakeep doc:** `jd1lfdr98yy3e98ps2s0th2j`
 
@@ -37,7 +41,9 @@ The design is genuinely unusual: a byte-level grammar **compiled from your JSON 
 
 ---
 
-## 3. Ideogram 4 open-sourced
+## 3. Ideogram 4 open-sourced — by github.com
+
+![github.com](https://opengraph.githubassets.com/cc85174416d6a979556ad66265a3c8877d48a427384933b84e104181f3e9ab9f/ideogram-oss/ideogram4)
 - **Source:** https://github.com/ideogram-oss/ideogram4/tree/main/src/ideogram4
 - **Karakeep doc:** `gssclkoq7sxnndtqdlb7llat`
 
@@ -49,7 +55,9 @@ Ideogram 4's open-sourced Python inference source laid out as a directory listin
 
 ---
 
-## 4. AI Mania Is Eviscerating Global Decisionmaking
+## 4. AI Mania Is Eviscerating Global Decisionmaking — by hermit-tech.com
+
+![hermit-tech.com](/images/assets/share-img-a07c0f99bf68eb4deba4a5bc2e3b9d36.png?vsn=d)
 - **Source:** https://hermit-tech.com/blog/ai-mania-is-eviscerating-global-decisionmaking
 - **Karakeep doc:** `jyntmyrvmdflbmzgn85199sz`
 
@@ -69,7 +77,9 @@ He closes with survival tactics: one-on-one conversations instead of group setti
 
 ---
 
-## 5. Opengist — self-hosted pastebin powered by Git
+## 5. Opengist — self-hosted pastebin powered by Git — by opengist.io
+
+![opengist.io](https://opengist.io/opengist-demo.png)
 - **Source:** https://opengist.io/
 - **Karakeep doc:** `ew8g7sjuwo4ri04r0lapg8li`
 
@@ -81,7 +91,9 @@ Self-hosted pastebin where **every snippet is a Git repo**. Public/unlisted/priv
 
 ---
 
-## 6. Understanding is the new bottleneck
+## 6. Understanding is the new bottleneck — by geoffreylitt.com
+
+![geoffreylitt.com](https://geoffreylitt.com/favicon.ico)
 - **Source:** https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck
 - **Karakeep doc:** `t1q1kx2qxvpd3m9z9cfkxnru`
 
@@ -100,7 +112,9 @@ The through-line: Alan Kay's 50-year-old vision that computers should be a mediu
 
 ---
 
-## 7. Harper — privacy-first offline grammar checker
+## 7. Harper — privacy-first offline grammar checker — by writewithharper.com
+
+![writewithharper.com](https://writewithharper.com/social_image.png)
 - **Source:** https://writewithharper.com/docs/about
 - **Karakeep doc:** `s2axul1cov8kkjwz13brmue5`
 
@@ -112,7 +126,9 @@ The anti-Grammarly grammar checker — free, open-source (Apache-2.0), and **ful
 
 ---
 
-## 8. OpenChamber — agentic development environment
+## 8. OpenChamber — agentic development environment — by openchamber.dev
+
+![openchamber.dev](https://openchamber.dev/og-image.png)
 - **Source:** https://openchamber.dev/
 - **Karakeep doc:** `srb0o92m84sd3nl55qtbfnfq`
 
@@ -124,7 +140,9 @@ An open-source, desktop-first "agentic development environment" that wraps the *
 
 ---
 
-## 9. Measuring AI code assistants and agents
+## 9. Measuring AI code assistants and agents — by getdx.com
+
+![getdx.com](https://getdx.com/favicon.ico)
 - **Source:** https://getdx.com/research/measuring-ai-code-assistants-and-agents/
 - **Karakeep doc:** `tovcld6nahm292kjh0o8x8v2`
 
@@ -138,7 +156,9 @@ The non-obvious parts: **measure agents as extensions of the team**, not indepen
 
 ---
 
-## 10. Just a moment... (How to kill a process on a port)
+## 10. Just a moment... (How to kill a process on a port) — by medium.com
+
+![medium.com](https://medium.com/favicon.ico)
 - **Source:** https://medium.com/@vishalvoid/how-to-kill-a-process-running-on-a-port-mac-windows-linux-4c5256e38c6d
 - **Karakeep doc:** `pefrserg0weczjgfouv89is7`
 

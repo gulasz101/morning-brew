@@ -9,7 +9,9 @@ Hoarded 2 bookmarks on 2026-07-31. Light day. One bit of eye-candy from China, o
 
 ---
 
-## 1. Zhangjiajie National Forest Park — the mountains Avatar stole
+## 1. Zhangjiajie National Forest Park — the mountains Avatar stole — by share.google
+
+![share.google](https://pbs.twimg.com/media/HOZsts7aoAASKEu.jpg:large)
 - **Source:** https://share.google/mCb0XsJKlsdFFB995
 - **Karakeep doc:** `c68wteatah2efugwcq4tto43`
 
@@ -21,7 +23,9 @@ The comments are the usual X dumpster fire. One guy was actually there in May 20
 
 ---
 
-## 2. Anthropic admits Claude broke out of its own cyber evals and hit real companies
+## 2. Anthropic admits Claude broke out of its own cyber evals and hit real companies — by anthropic.com
+
+![anthropic.com](https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Lock&amp;backgroundColor=heather)
 - **Source:** https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
 - **Karakeep doc:** `co3frtic8zmvi812l78syif0`
 

@@ -1,7 +1,7 @@
 ---
 date: 2026-08-18
 slug: 2026-08-18-morning-brew
-tags: digest,karakeep
+tags: 2-in-1 Devices,Aluminum,Animation,Apple Ecosystem,Apple Silicon,Artificial Intelligence,Battery Life,Booth Tour,CNC Machining,Cinematography,Command Line Tools,Compilers,Computer Hardware,Computer Peripherals,Computex,Computing,Computing Guides,Computing Hardware,Computing Technology,Connectivity,Customization,Data Extraction,Desktop Computers,Document Parsing,Engineering,Framework Computer,Framework Laptop,Full-Text Search,Gadgets,Hardware,Hardware Design,Hardware Review,Information Retrieval,Keyboard,Laptops,Large Language Models,LinkedIn,Linux,Linux Distributions,Local LLMs,Machine Learning,Manufacturing,Natural Language Processing,Navigation,Open Source,Operating Systems,PC Hardware,PDF Processing,Product Design,Programming Languages,Rust Programming,Social Media,Software Development,Tech Tutorials,Technology,Touchpad,Trade Show,USB-C,Ubuntu,Video Production,Visual Arts,Wireless Technology,macOS
 ---
 # Morning Brew — 2026-08-18
 
@@ -9,7 +9,9 @@ Hoarded 20 bookmarks on 2026-08-18: 15 YouTube videos (transcribed) and 5 articl
 
 ---
 
-## 1. Switching from Mac to Linux on the Framework Laptop 13 Pro
+## 1. Switching from Mac to Linux on the Framework Laptop 13 Pro — by Framework
+
+![Framework](https://i.ytimg.com/vi/ZBJnX8_Fx_g/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/watch?v=ZBJnX8_Fx_g
 - **Karakeep doc:** `xgf2fdjohr1qvbsnb2clpyrl`
 
@@ -21,7 +23,9 @@ The pitch: keep the garden, take down the walls. The FW 13 Pro is positioned as 
 
 ---
 
-## 2. Nirav gives a tour of our booth at Computex!
+## 2. Nirav gives a tour of our booth at Computex! — by Framework
+
+![Framework](https://i.ytimg.com/vi/tSSwuvJzHFc/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/shorts/tSSwuvJzHFc
 - **Karakeep doc:** `v2qbdgrtsqk10xgpaof7ywf7`
 
@@ -31,7 +35,9 @@ Booth tour at Computex, main show floor. Highlights: a question board where peop
 
 ---
 
-## 3. Framespotting at Open Sauce
+## 3. Framespotting at Open Sauce — by Framework
+
+![Framework](https://i.ytimg.com/vi/EKZZwowhDiY/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBQKEwwDw==&rs=AOn4CLCB4YoziW5IM7DIBFITU-_sN-7Qiw)
 - **Source:** https://www.youtube.com/shorts/EKZZwowhDiY
 - **Karakeep doc:** `u80z4u5z6mfwumsk0nh4br62`
 
@@ -41,7 +47,9 @@ Open Sauce crowd shots of people running Framework laptops. Notable builds: a Fr
 
 ---
 
-## 4. Real Life Battery Test #1: Framework Laptop 13 Pro
+## 4. Real Life Battery Test #1: Framework Laptop 13 Pro — by Framework
+
+![Framework](https://i.ytimg.com/vi/bLYUD4IMvQI/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/watch?v=bLYUD4IMvQI
 - **Karakeep doc:** `qtcn4tqhsj67e3ao0om44259`
 
@@ -49,7 +57,9 @@ Open Sauce crowd shots of people running Framework laptops. Notable builds: a Fr
 
 ---
 
-## 5. We fixed the touchpad keyboard. ⌨️
+## 5. We fixed the touchpad keyboard. ⌨️ — by Framework
+
+![Framework](https://i.ytimg.com/vi/TIKTzjdTD98/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBYKEgwDw==&rs=AOn4CLDK4Ut3tTw_JIiM88bRb_Lyn9UACg)
 - **Source:** https://www.youtube.com/shorts/TIKTzjdTD98
 - **Karakeep doc:** `pqrac9vx9uejxlttlqpzedoo`
 
@@ -59,7 +69,9 @@ The Framework Wireless Touchpad keyboard, releasing later this year. Four sellin
 
 ---
 
-## 6. Mystery USB-C Expansion Card 4-Packs, available now
+## 6. Mystery USB-C Expansion Card 4-Packs, available now — by Framework
+
+![Framework](https://i.ytimg.com/vi/fk8zF0xav-Q/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBaKFIwDw==&rs=AOn4CLCvYJ8OHunHkYEUXj6v87pifrUheA)
 - **Source:** https://www.youtube.com/shorts/fk8zF0xav-Q
 - **Karakeep doc:** `m8mm6qznav1qrl12o4nmgsrr`
 
@@ -69,7 +81,9 @@ Transcript is basically one line — it's a promo for mystery 4-packs of USB-C e
 
 ---
 
-## 7. Framework Desktop in the teenage engineering $9 pc case 😱
+## 7. Framework Desktop in the teenage engineering $9 pc case 😱 — by Framework
+
+![Framework](https://i.ytimg.com/vi/wzn0T1qX5Ko/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBeKFUwDw==&rs=AOn4CLAl0WZZatSUCnX7-rH8UNwSnV-q0Q)
 - **Source:** https://www.youtube.com/shorts/wzn0T1qX5Ko
 - **Karakeep doc:** `j7898j4ofdhs27792mp7nc77`
 
@@ -79,7 +93,9 @@ Teenage Engineering sent Framework their $9 "computer case" (a transparent enclo
 
 ---
 
-## 8. How do we work with multiple Linux distros?
+## 8. How do we work with multiple Linux distros? — by Framework
+
+![Framework](https://i.ytimg.com/vi/jqH3z8OwUn8/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/shorts/jqH3z8OwUn8
 - **Karakeep doc:** `imdh63q4u9qyj398m22eyjn5`
 
@@ -89,7 +105,9 @@ Michael Tunnell again: Linux is a **primary target**, not an afterthought, at Fr
 
 ---
 
-## 9. Customize your bezel and input cover color on the Framework Laptop 13 Pro! 🔁
+## 9. Customize your bezel and input cover color on the Framework Laptop 13 Pro! 🔁 — by Framework
+
+![Framework](https://i.ytimg.com/vi/cSjYTb1zdkA/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/shorts/cSjYTb1zdkA
 - **Karakeep doc:** `euslx7iqg9g0m9v6mi4jvlh8`
 
@@ -99,7 +117,9 @@ Staff showing off bezel + input cover color combos on the 13 Pro: gray/black/ora
 
 ---
 
-## 10. How a block of aluminum is CNC machined into the FW 13 Pro chassis
+## 10. How a block of aluminum is CNC machined into the FW 13 Pro chassis — by Framework
+
+![Framework](https://i.ytimg.com/vi/XW5tm9vAh2M/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/shorts/XW5tm9vAh2M
 - **Karakeep doc:** `d7rnlti1fhrlu45j80i8a9sr`
 
@@ -109,7 +129,9 @@ From the teardown floor at their Next Gen event. Each 13 Pro starts as a solid b
 
 ---
 
-## 11. the power of a Framework computer @garage_goblins
+## 11. the power of a Framework computer @garage_goblins — by Framework
+
+![Framework](https://i.ytimg.com/vi/nelpE3tC4Ig/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBUKEgwDw==&rs=AOn4CLDYbAqD-HsFVqO1ajkO38aMBPrTnA)
 - **Source:** https://www.youtube.com/shorts/nelpE3tC4Ig
 - **Karakeep doc:** `bu7mikb7v6hjlkwdff8di4sn`
 
@@ -119,7 +141,9 @@ Garage Goblins won a Framework laptop at a hackathon and used it to build a **dr
 
 ---
 
-## 12. Interested in leaving Apple's walled garden to switch to Linux?
+## 12. Interested in leaving Apple's walled garden to switch to Linux? — by Framework
+
+![Framework](https://i.ytimg.com/vi/du03jSbZwEw/sd2.jpg?sqp=-oaymwEoCIAFEOAD8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYZSBWKFEwDw==&rs=AOn4CLClg8kuMLPuysi4RITmO91X00ex6w)
 - **Source:** https://www.youtube.com/shorts/du03jSbZwEw
 - **Karakeep doc:** `zwsm6dfohyivya5cj6slqly8`
 
@@ -129,7 +153,9 @@ The same walled-garden pitch as bookmark #1, condensed into a short: Apple's gar
 
 ---
 
-## 13. Deep dive into the Framework Laptop 12 (Intel Core Series 3) upgrades
+## 13. Deep dive into the Framework Laptop 12 (Intel Core Series 3) upgrades — by Framework
+
+![Framework](https://i.ytimg.com/vi/yE48_MN8Ng4/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/watch?v=yE48_MN8Ng4
 - **Karakeep doc:** `pgtbnyrrphhzl11zfug4adt8`
 
@@ -139,7 +165,9 @@ Product manager Izzy walks through upgrading an original FW 12 with the new-gen 
 
 ---
 
-## 14. We added WHAT to the Framework Laptop 12?
+## 14. We added WHAT to the Framework Laptop 12? — by Framework
+
+![Framework](https://i.ytimg.com/vi/459a7YBmBOE/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/watch?v=459a7YBmBOE
 - **Karakeep doc:** `n7gqnamp23ik2q6vlcynxgqd`
 
@@ -151,7 +179,9 @@ Specs: Intel Core Series 3 platform (codenamed **Wildcat Lake** — a miniaturiz
 
 ---
 
-## 15. Introducing the next gen Framework Laptop 12
+## 15. Introducing the next gen Framework Laptop 12 — by Framework
+
+![Framework](https://i.ytimg.com/vi/eHCjuUBXwSo/maxresdefault.jpg)
 - **Source:** https://www.youtube.com/shorts/eHCjuUBXwSo
 - **Karakeep doc:** `b8160pxwz3c9ye1uuaaodknm`
 
@@ -161,7 +191,9 @@ Short version of #14: next-gen FW 12 with Intel Core Series 3, Thunderbolt 4, Wi
 
 ---
 
-## 16. I ditched Ollama as my default runtime, and the replacement starts models in a fraction of the time
+## 16. I ditched Ollama as my default runtime, and the replacement starts models in a fraction of the time — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/08/basert-hero.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/ditched-ollama-default-runtime-replacement-starts-models-fraction-time/
 - **Karakeep doc:** `bcbwn03baojjlu9vld158ajd`
 
@@ -169,7 +201,9 @@ Short version of #14: next-gen FW 12 with Intel Core Series 3, Thunderbolt 4, Wi
 
 ---
 
-## 17. Modular: Mojo🔥 is now open source!
+## 17. Modular: Mojo🔥 is now open source! — by share.google
+
+![share.google](https://share.google/favicon.ico)
 - **Source:** https://share.google/6IWl24BumEgxxBz7D
 - **Karakeep doc:** `prqot44t17djvi9yi8h4w170`
 
@@ -183,7 +217,9 @@ Build from source: `git clone https://github.com/modular/modular.git`, then `./b
 
 ---
 
-## 18. Rafał Brzoska czołgiem po Facebooku (Niebezpiecznik)
+## 18. Rafał Brzoska czołgiem po Facebooku (Niebezpiecznik) — by niebezpiecznik.pl
+
+![niebezpiecznik.pl](https://niebezpiecznik.pl/wp-content/uploads/2026/08/758288835_1608607464166837_3753612775746515403_n-600x431.jpeg)
 - **Source:** https://niebezpiecznik.pl/post/rafal-brzoska-czolgiem-po-facebooku/
 - **Karakeep doc:** `bb17yie0a29bhmrfceo6mam8`
 
@@ -195,7 +231,9 @@ Brzoska escalated by naming specific Meta Poland employees publicly (names that 
 
 ---
 
-## 19. Docling — unified document parsing (GitHub Projects on X)
+## 19. Docling — unified document parsing (GitHub Projects on X) — by share.google
+
+![share.google](https://pbs.twimg.com/media/HP2RF64aQAEQCHP.jpg:large)
 - **Source:** https://share.google/7YDaNteu0BDwUD0Jp
 - **Karakeep doc:** `mb1z6jxc9rj3bm8wupjxilxb`
 
@@ -205,7 +243,9 @@ Docling parses PDFs, DOCX, PPTX, and more into a single unified document format,
 
 ---
 
-## 20. Tantivy — full-text search in Rust (GitHub Projects on X)
+## 20. Tantivy — full-text search in Rust (GitHub Projects on X) — by share.google
+
+![share.google](https://pbs.twimg.com/media/HP9FKWMa4AARplv.jpg:large)
 - **Source:** https://share.google/OpzyLOE3QkLOgBnyk
 - **Karakeep doc:** `arf3w5ab8tipcel0jqfyjxkd`
 

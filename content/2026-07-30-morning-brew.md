@@ -9,7 +9,9 @@ One bookmark this day, and it's a practical one: **Booklore** — the self-hoste
 
 ---
 
-## 1. This self-hosted app fixed my messy ebook collection overnight
+## 1. This self-hosted app fixed my messy ebook collection overnight — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/10/booklore-self-hosted.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/this-self-hosted-app-fixed-my-messy-ebook-collection-overnight/
 - **Karakeep doc:** `axwzss4zcp51ffqhn1bdqnui`
 

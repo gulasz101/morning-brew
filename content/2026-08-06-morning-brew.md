@@ -9,7 +9,9 @@ Three article links hoarded on 2026-08-06 — all links, no video. One is pure s
 
 ---
 
-## 1. Burn, baby, burn (those tokens) 🔥
+## 1. Burn, baby, burn (those tokens) 🔥 — by github.com
+
+![github.com](https://opengraph.githubassets.com/64de530489edf25b453e16f189b5452aba36732cf70d84838f22c7e535773825/dtnewman/burn-baby-burn)
 - **Source:** https://github.com/dtnewman/burn-baby-burn
 - **Karakeep doc:** `vplfxhwapjfsrt0orusprhce`
 
@@ -21,7 +23,9 @@ A bash one-liner, `burn 50000`, that intentionally torches Claude Code or Codex 
 
 ---
 
-## 2. xAI Grok Build CLI silently uploads entire repos (and secrets)
+## 2. xAI Grok Build CLI silently uploads entire repos (and secrets) — by aiweekly.co
+
+![aiweekly.co](https://aiweekly.co/favicon.ico)
 - **Source:** https://aiweekly.co/alerts/xai-grok-cli-uploads-full-repos-and-secrets-opt-out-ignored
 - **Karakeep doc:** `nhuw9m1cdcxmgi9iido6eb4r`
 
@@ -37,7 +41,9 @@ A wire-level teardown by @cereblab (routed Grok Build CLI through mitmproxy on m
 
 ---
 
-## 3. GitHub spec-kit — spec-driven development
+## 3. GitHub spec-kit — spec-driven development — by github.com
+
+![github.com](https://opengraph.githubassets.com/9550ec5b1e7fa090f190a43f99d97d9cd16acfa6f2f35f8ead261d4477b047f9/github/spec-kit)
 - **Source:** https://github.com/github/spec-kit
 - **Karakeep doc:** `ahbavnk42cg78b5w3k8z9l8t`
 

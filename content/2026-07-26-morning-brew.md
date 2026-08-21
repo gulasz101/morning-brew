@@ -8,7 +8,9 @@ Four bookmarks on 2026-07-26: a self-hosted file-processing swiss army knife, a 
 
 ---
 
-## 1. SnapOtter — a self-hosted file-processing swiss army knife
+## 1. SnapOtter — a self-hosted file-processing swiss army knife — by snapotter.com
+
+![snapotter.com](https://snapotter.com/og-image.png)
 
 SnapOtter is a self-hosted, open-source (AGPL-3.0) platform for processing image, video, audio, PDF, and documents entirely on your own infrastructure — the pitch being "private file processing for data that can't leave your network." Air-gap capable, compliance-friendly, and deployable via Docker, Kubernetes, or bare metal on ARM and x86. It bundles 200+ tools across 5 modalities (image, video, audio, PDF, files) — resize, crop, compress, OCR, transcribe, strip metadata, convert formats, blur faces/PII, AI colorization, video→GIF, PDF merge/split/protect, you name it. It also runs 19 local AI tools and exposes a full REST API with OpenAPI docs plus pipeline automation and batch processing. Multi-user with role-based access, OIDC/SSO login, 21 languages, and a live demo. Free forever in the open-source edition; the Enterprise tier adds SAML SSO, SCIM, multi-tenancy, per-tool permissions, S3 storage, webhooks + audit export, and a commercial license (no AGPL). Positioning is the self-hosted answer to cloud image editors — useful when files can't leave your network.
 
@@ -17,7 +19,9 @@ SnapOtter is a self-hosted, open-source (AGPL-3.0) platform for processing image
 
 ---
 
-## 2. Microsoft open-sources MLVC — a neural video codec that actually deploys
+## 2. Microsoft open-sources MLVC — a neural video codec that actually deploys — by github.com
+
+![github.com](https://opengraph.githubassets.com/9dc98c72545406b2791c521e67d61f53ba3d0f75343ff7f52f359362bbc08d90/microsoft/mlvc)
 
 Microsoft open-sourced its ML (MLVC) video codec under MIT license on its Linux/Open Source blog (24 July 2026), putting code + trained weights + training scripts + NPU conversion tooling on GitHub (`microsoft/mlvc`). This isn't a lab demo — it's the productized descendant of the DCVC research line Microsoft has published since 2021, already rolling out in **Microsoft Teams** for peer-to-peer calls with telemetry, A/B testing, and fallback to conventional codecs.
 
@@ -30,7 +34,9 @@ Reality check: there's no bitstream standard (the trained weights ARE the format
 
 ---
 
-## 3. "Naturalny Ozempic" — a clickbait name for some genuinely interesting black elderberry data
+## 3. "Naturalny Ozempic" — a clickbait name for some genuinely interesting black elderberry data — by well.pl
+
+![well.pl](https://pliki.well.pl/i/09/04/81/090481_r2_940.jpg)
 
 The Well.pl article (recovered via the syndicated path — the original saved URL 404s) is classic diet-marketing bait: elderberry juice = "natural Ozempic." The actual study is from **Washington State University**, published in *Nutrients*, and it's small — **18 overweight participants, one week**, drinking ~350ml of black elderberry juice or a placebo-matched drink on a standardized diet. Results: a shift in gut microbiome toward beneficial bacteria, ~**24% lower post-carb blood glucose** and **9% lower insulin**, plus the body appearing to burn more fat as energy after both carb meals and exercise. The authors attribute it to high **anthocyanin** content — you'd need ~4 cups of blackberries to match ~180ml of juice.
 
@@ -41,7 +47,7 @@ The honest parts: it's a tiny cohort and a single week, more research is needed,
 
 ---
 
-## 4. Ola | Dom • Ogród • UGC — "giga pancake" from the oven
+## 4. Ola | Dom • Ogród • UGC — "giga pancake" from the oven — by instagram.com
 
 🎬 **Video.** The audio transcript is useless — the mic caught a cheery "sweet summer day" jingle, not the recipe. The actual content lives in the caption, and it's a one-gimmick lifehack: don't babysit a pan one pancake at a time, bake a giant monster pancake in the oven. Real trick: crank the oven to 220°C with the baking sheet inside to heat up; meanwhile mix 300ml milk, 4 eggs, a pinch of salt, 160g flour, plus a little sugar/vanilla; pull the hot sheet out, oil it, pour the batter straight onto the hot metal so the bottom sets immediately; bake 10–15 min at 220°C, keeping an eye on it. Pitch: everyone gets a warm pancake at once, no stove babysitting, "better than pan pancakes." The hot-sheet bit is the genuinely clever part — skip it and you get a floppy sad oven crepe. Worth it if you're feeding a crowd; overkill for a solo breakfast. A cute weekend weekday hack.
 

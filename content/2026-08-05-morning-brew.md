@@ -9,7 +9,9 @@ One bookmark hoarded on 2026-08-05: Cloudflare explaining how it forces its engi
 
 ---
 
-## 1. How Cloudflare enforces engineering standards using AI
+## 1. How Cloudflare enforces engineering standards using AI — by blog.cloudflare.com
+
+![blog.cloudflare.com](https://blog.cloudflare.com/_emdash/api/media/file/01KZ4XJH47HRXG05D2XKDDHY4P.png)
 - **Source:** https://blog.cloudflare.com/engineering-standards-enforcement/
 - **Publisher:** The Cloudflare Blog
 - **Karakeep doc:** `ok9p86w6olqqjuk6mdwybgkn`

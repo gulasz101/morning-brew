@@ -9,7 +9,9 @@ Hoarded 1 bookmark on 2026-08-03 — one article, no video. A single link on the
 
 ---
 
-## 1. Run Stable Diffusion on Your Mac — No Cloud, No Limits, No Cost
+## 1. Run Stable Diffusion on Your Mac — No Cloud, No Limits, No Cost — by thinkdifferent.blog
+
+![thinkdifferent.blog](https://images.unsplash.com/photo-1597687168547-2640e6a1b6ee?w=1536&amp;h=1024&amp;fit=crop&amp;q=80)
 - **Source:** https://www.thinkdifferent.blog/blog/run-stable-diffusion-on-your-mac-no-cloud-no-limits-no-cost/
 - **Karakeep doc:** `lvtui85wkz4ecblhb2v4enin`
 

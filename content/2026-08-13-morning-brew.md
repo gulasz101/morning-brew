@@ -9,7 +9,9 @@ Hoarded 2 bookmarks on 2026-08-13: both articles. Theme of the day: **AI tooling
 
 ---
 
-## 1. agency-agents — a complete AI agency at your fingertips
+## 1. agency-agents — a complete AI agency at your fingertips — by github.com
+
+![github.com](https://opengraph.githubassets.com/e445031faa255fb3c5a57b16d590ea096e160df98363c21fd7b8c4b57b962d6f/msitarzewski/agency-agents)
 - **Source:** https://github.com/msitarzewski/agency-agents
 - **Karakeep doc:** `ybnzhz49gn7bqw2lkuiknssb`
 
@@ -23,7 +25,9 @@ The roster is organized into divisions covering practically everything: engineer
 
 ---
 
-## 2. Audacity AI Plugins (OpenVINO)
+## 2. Audacity AI Plugins (OpenVINO) — by audacityteam.org
+
+![audacityteam.org](/apple-touch-icon.png)
 - **Source:** https://www.audacityteam.org/download/openvino/
 - **Karakeep doc:** `uwpt4q2bhuquumc9sg395gnj`
 

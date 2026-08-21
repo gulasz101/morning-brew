@@ -9,7 +9,9 @@ One bookmark on 2026-07-25: a lone, caffeine-addled dev "vibe coded" a free open
 
 ---
 
-## 🎬 Video — I Built an Open-Source Palantir Clone | WorldWideView Devlog
+## 🎬 Video — I Built an Open-Source Palantir Clone | WorldWideView Devlog — by Silver
+
+![Silver](https://i.ytimg.com/vi/p1iu62t8Ay4/maxresdefault.jpg)
 - **Source:** https://youtu.be/p1iu62t8Ay4
 - **Karakeep doc:** `dcehfymku0crtzaa2ggg3wqu`
 

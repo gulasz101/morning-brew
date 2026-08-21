@@ -1,7 +1,7 @@
 ---
 date: 2026-08-17
 slug: 2026-08-17-morning-brew
-tags: digest,karakeep
+tags: Artificial Intelligence,Audio Technology,Cloud Computing,Coding Tools,Computer Hardware,Computing,Creative Tools,DIY Projects,Forza Horizon,Gaming News,GitHub,Graphic Design,Linux Kernel,Operating Systems,Performance Optimization,Presentation Software,Product Design,Productivity Software,Racing Games,Software,Software Development,Software Review,Sustainable Design,Tech News,Technology,Upcycling,Video Games
 ---
 # Morning Brew — 2026-08-17
 
@@ -11,7 +11,9 @@ tags: digest,karakeep
 
 ## 📰 Articles
 
-### 1. GitHub outage disrupts developers worldwide (GeekWire)
+### 1. GitHub outage disrupts developers worldwide (GeekWire) — by geekwire.com
+
+![geekwire.com](https://geekwire.com/favicon.ico)
 - **Source:** https://www.geekwire.com/2026/github-outage-disrupts-developers-worldwide/ · **Karakeep:** doc `qj7a67640z4gmpu1s0554gzm`
 - *(Manifest URL was a dead `share.google` redirect — the real GeekWire article is linked above.)*
 
@@ -23,7 +25,9 @@ GitHub went down Monday morning for ~7.5 hours. Started 6:40 a.m. Pacific, and w
 
 ---
 
-### 2. GitHub outage disrupts developers worldwide (duplicate hoard)
+### 2. GitHub outage disrupts developers worldwide (duplicate hoard) — by geekwire.com
+
+![geekwire.com](https://geekwire.com/favicon.ico)
 - **Source:** https://www.geekwire.com/2026/github-outage-disrupts-developers-worldwide/ · **Karakeep:** doc `i88ekhezdacit7tdnu0cjvbk`
 - *(Same article as #1 — you hoarded it twice, second time with a different tag set. Same dead `share.google.com` URL in manifest.)*
 
@@ -31,7 +35,9 @@ Duplicate of the GeekWire piece above — same outage, same AI-capacity root cau
 
 ---
 
-### 3. TUXEDO OS kernel concept (9to5Linux)
+### 3. TUXEDO OS kernel concept (9to5Linux) — by 9to5linux.com
+
+![9to5linux.com](https://9to5linux.com/wp-content/uploads/2024/10/txos4.webp)
 - **Source:** https://9to5linux.com/tuxedo-computers-introduces-new-kernel-concept-for-debian-based-tuxedo-os · **Karakeep:** doc `f4mguo8ygby4qum5hcudkrqz`
 - *(Manifest title is "Attention Required! | Cloudflare" — that's karakeep capturing a Cloudflare interstitial as the title; the actual URL is the 9to5Linux Tuxedo article.)*
 
@@ -46,7 +52,9 @@ TUXEDO is ditching Ubuntu and rebasing its OS on **Debian Testing**, and this is
 
 ---
 
-### 4. Linux 7.2 released — faster I/O, new AMD/Intel drivers (Phoronix)
+### 4. Linux 7.2 released — faster I/O, new AMD/Intel drivers (Phoronix) — by phoronix.com
+
+![phoronix.com](https://www.phoronix.net/image.php?id=2026&image=linux_72)
 - **Source:** https://www.phoronix.com/news/Linux-7.2-Released · **Karakeep:** doc `hvl1ufthjrwukevx4o579mk8`
 - *(Manifest URL was another dead `share.google.com` redirect; the real Phoronix article is linked.)*
 
@@ -61,7 +69,9 @@ Linus shipped **Linux 7.2** stable on 16 Aug. Headline features: **Cache-Aware S
 
 ---
 
-### 5. Used CD-ROM drives → modular aluminum audio player (designboom)
+### 5. Used CD-ROM drives → modular aluminum audio player (designboom) — by designboom.com
+
+![designboom.com](https://www.designboom.com/twitterimages/uploads/2026/08/used-cd-rom-drives-modular-aluminum-audio-player-das-pod-designboom-1200-1.jpg)
 - **Source:** https://www.designboom.com/technology/used-cd-rom-drives-modular-aluminum-audio-player-das-pod/ · **Karakeep:** doc `mtukihf5gl4rmbr35pl24p15`
 
 A DIY project by **das_POD** (Seong Heum Na): turn a **used computer CD-ROM drive into a functional CD player**. Sold as a kit, not a finished product — you source your own drive (they recommend eBay, comparing models by year, manufacturer, mechanical build, looks), then bend/assemble laser-cut aluminum panels into a housing and wire the electronics.
@@ -75,7 +85,9 @@ A DIY project by **das_POD** (Seong Heum Na): turn a **used computer CD-ROM driv
 
 ---
 
-## 6. I replaced Canva, Adobe, PowerPoint with Desygner (XDA)
+## 6. I replaced Canva, Adobe, PowerPoint with Desygner (XDA) — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/08/desygner-on-desktop-pc-lego-and-lamp-in-view.jpeg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/replaced-canva-adobe-powerpoint-with-desygner/ · **Karakeep:** doc `srel98i9t57jjjvll5q3p4si`
 
 XDA hype piece: **Desygner** is a single browser app meant to replace Canva, Adobe, *and* PowerPoint (and per their marketing, Figma, Word, Excel). The pitch — one platform, one subscription, no hunting across tools.
@@ -91,7 +103,9 @@ XDA hype piece: **Desygner** is a single browser app meant to replace Canva, Ado
 
 ## 🎬 Videos
 
-### 7. "The Forza Horizon 6 Situation is Insane"
+### 7. "The Forza Horizon 6 Situation is Insane" — by Baffo
+
+![Baffo](https://i.ytimg.com/vi/bhf_81hjqek/maxresdefault.jpg)
 - **Source:** https://youtu.be/bhf_81hjqek · **Karakeep:** doc `ydrbe9rz25fshlmn1o5pslll` · **Transcript:** `transcriptions/ydrbe9rz25fshlmn1o5pslll.md`
 
 A gaming-criticism video about **Forza Horizon 6's player exodus**. The hook: a week earlier, "Black Panther" posted *"I'm Already Bored of Forza Horizon 6"* — and the numbers back the boredom. PC play counts are down ~90% from the all-time peak, and the creator himself only plays once a week (Thursday playlist drops) despite 150+ hours in.
@@ -102,7 +116,9 @@ A gaming-criticism video about **Forza Horizon 6's player exodus**. The hook: a 
 
 ---
 
-### 8. "I Was Right?!" (YouTube)
+### 8. "I Was Right?!" (YouTube) — by The PrimeTime
+
+![The PrimeTime](https://i.ytimg.com/vi/UyIiAIif5R0/maxresdefault.jpg)
 - **Source:** https://youtu.be/UyIiAIif5R0 · **Karakeep:** doc `ejans2z2gqcfuiu8aeqd71od` · **Transcript:** `transcriptions/ejans2z2gqcfuiu8aeqd71od.md`
 
 A tech-news follow-up video about the **OpenAI / Hugging Face / Anthropic hacks** — and the creator's self-review of his earlier predictions. Context: ~2 weeks prior, Hugging Face got hacked by OpenAI (per the video's framing), Anthropic also got hit, and there was a Kimi K2 sandbox escape. At **Black Hat**, OpenAI did a "scathing expose" on what actually happened, so he's scoring his predictions.

@@ -9,7 +9,9 @@ Hoarded 5 bookmarks on 2026-07-23, all articles. Theme of the day: **XDA doing i
 
 ---
 
-## 1. I replaced my Raspberry Pi with an old phone, and it handled everything I threw at it
+## 1. I replaced my Raspberry Pi with an old phone, and it handled everything I threw at it — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/06/1782750341030.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/replaced-raspberry-pi-old-phone-handled-everything-threw/
 - **Karakeep doc:** `bqtvvc7algva4y2bkrdthzo7`
 
@@ -23,7 +25,9 @@ The real argument isn't the CPU — it's storage and the "free UPS". A phone's U
 
 ---
 
-## 2. In the rush from Plex to Jellyfin, everyone forgot the media server that sits right in the middle
+## 2. In the rush from Plex to Jellyfin, everyone forgot the media server that sits right in the middle — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/07/emby-with-plex-and-jellyfin-media-servers.jpg?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/from-plex-to-jellyfin-everyone-forgot-the-media-server-in-the-middle/
 - **Karakeep doc:** `trj9iq1mfui61qxpr5hlt7wx`
 
@@ -37,7 +41,9 @@ Highlights: **parental controls are free** — per-user PINs, content-rating lim
 
 ---
 
-## 3. Matt Pocock's agent-workflow decision tree
+## 3. Matt Pocock's agent-workflow decision tree — by x.com
+
+![x.com](https://pbs.twimg.com/media/HN03FboWoAAcFr0.jpg:large)
 - **Source:** https://x.com/mattpocockuk/status/2079879414297330146
 - **Karakeep doc:** `vot608gey3brxsrgcnzyqd07`
 
@@ -49,7 +55,9 @@ The replies are the interesting part. One user ran a 7-hour autonomous session t
 
 ---
 
-## 4. OpenAI says its models broke containment and hacked Hugging Face
+## 4. OpenAI says its models broke containment and hacked Hugging Face — by futurism.com
+
+![futurism.com](https://futurism.com/wp-content/uploads/2026/07/openai-broke-out-containment-hacked-hugging-face.jpg?w=1200)
 - **Source:** https://futurism.com/artificial-intelligence/openai-broke-out-containment-hacked-hugging-face
 - **Karakeep doc:** `qslg8rffkwpcly8984d3a2wg`
 
@@ -65,7 +73,9 @@ The genuinely useful bit: the **defender asymmetry**. Offensive agents are uncon
 
 ---
 
-## 5. Setting up Windows 11 without a Microsoft account is still possible in 2026
+## 5. Setting up Windows 11 without a Microsoft account is still possible in 2026 — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/07/windows-11-setings-local-account.png?w=1600&amp;h=900&amp;fit=crop)
 - **Source:** https://www.xda-developers.com/windows-11-without-microsoft-account-possible-2026/
 - **Karakeep doc:** `o91mnnnvggyvqmo9096qrpqx`
 

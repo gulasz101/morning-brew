@@ -8,7 +8,7 @@ Twenty-six bookmarks on 2026-07-27, and this one is a firehose: agent memory pro
 
 ---
 
-## 1. Learn Coding by playing games (Threads)
+## 1. Learn Coding by playing games (Threads) — by threads.com
 
 A viral-style Threads list post pointing at game-based coding resources: **k8sgames.com** for Kubernetes, **devops.games** for DevOps, **overthewire.org** for Linux, **ohmygit.org** for Git, and **codecombat.com** for Python. Nothing more than a link roundup — the value is the curated set if you learn by playing. Slightly gamified way to sharpen infra/ops skills without grinding tutorials.
 
@@ -17,7 +17,9 @@ A viral-style Threads list post pointing at game-based coding resources: **k8sga
 
 ---
 
-## 2. Hermes Agent Memory Providers: All 7 Options Compared
+## 2. Hermes Agent Memory Providers: All 7 Options Compared — by vectorize.io
+
+![vectorize.io](https://vectorize.io/articles/hermes-agent-memory-providers-compared/featured.png)
 
 Vectorize.io's field guide to the seven external memory providers Hermes ships — all layered on top of the always-on built-in memory (MEMORY.md / USER.md). **Hindsight** (94.6% on LongMemEval): stores structured facts + a periodic "reflect" synthesis pass, local PostgreSQL daemon, best recall. **Holographic**: pure-SQLite HRR superposed vectors, sub-ms recall, trust scoring that decays contradictory memories, zero deps — but no LLM extraction or knowledge graph. **OpenViking** (ByteDance): filesystem-as-context tree with L0/L1/L2 tiered loading, claims 80–90% token savings. **Mem0**: fastest setup, server-side LLM extraction, session vs user dual scope, freemium cloud, 67.6% on LongMemEval-S. **Honcho**: dialectic user modeling (models how you think), AGPL v3 — self-hosting a networked app obligates you. **ByteRover**: human-readable knowledge tree in `.brv/context-tree/`, pre-compression extraction hook. **RetainDB**: hybrid vector + BM25 + rerank, paid-only, no self-host. Rule of thumb: start Mem0, want recall accuracy → Hindsight, zero-dep air-gap → Holographic, token cost at scale → OpenViking.
 
@@ -26,7 +28,9 @@ Vectorize.io's field guide to the seven external memory providers Hermes ships �
 
 ---
 
-## 3. George Mandis • Engineering leader, writer and creative technologist
+## 3. George Mandis • Engineering leader, writer and creative technologist — by george.mand.is
+
+![george.mand.is](https://georgemandis.s3-us-west-1.amazonaws.com/preview.png)
 
 George Mandis's post introducing **tezcatl**, a ~2MB Puppeteer alternative for scraping JS-rendered pages on macOS. Built on WebKit's `WKWebView` (already on your Mac), it returns an accurate rendered-DOM snapshot — no headless Chromium, no dependencies, no build steps. Uses Zig calling `objc_msgSend` directly, constructs an ObjC block struct to satisfy `evaluateJavaScript:completionHandler:`, and pumps `CFRunLoop` itself because a CLI has no app event loop. Pipes with jq/curl, `--eval` for arbitrary JS, `--wait` for JS settling. Not a Puppeteer replacement for crawls at scale (use Playwright for that), but perfect when you need a handful of JS pages rendered from the terminal. Homebrew: `brew install georgemandis/tap/tezcatl`.
 
@@ -35,7 +39,9 @@ George Mandis's post introducing **tezcatl**, a ~2MB Puppeteer alternative for s
 
 ---
 
-## 4. Transcript: 'How to Use Claude Code Like the People Who Built It'
+## 4. Transcript: 'How to Use Claude Code Like the People Who Built It' — by every.to
+
+![every.to](https://d24ovhgu8s7341.cloudfront.net/uploads/publication/logo/97/ai_and_i_cover_1.png)
 
 Every's full transcript of the *AI & I* podcast episode with Anthropic's Cat Wu and Boris Cherny, the creators of Claude Code. Key beats: it wasn't an intentional architecture decision — it evolved from the Clide prototype and the realization that once given tools, the model *wants* to use bash rather than bespoke file wrappers. Anthropic now dogfoods ("antfoods") internally, with 70–80% of technical staff using it daily and a feedback post every ~5 minutes. Boris on tool philosophy: they unship tools to keep context lean — the LS tool was dropped once the bash permission system could enforce file access. Covers planning feature development, the sub-agent playbook, turning past code into leverage, and making it accessible to non-technical users.
 
@@ -44,7 +50,9 @@ Every's full transcript of the *AI & I* podcast episode with Anthropic's Cat Wu 
 
 ---
 
-## 5. firecrawl SELF_HOST.md
+## 5. firecrawl SELF_HOST.md — by github.com
+
+![github.com](https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b)
 
 The in-repo self-hosting guide for Firecrawl — pick the guide by job (decide/run first scrape, check Compose vars, adapt a K8s deployment, change product code, or connect an MCP/CLI client). Keep the first run simple: pin an exact release tag, `USE_DB_AUTHENTICATION=false` (auth comes after you provision the schema), keep NuQ PostgreSQL as the queue unless you're prepared to run FoundationDB, bundled Playwright + fetch fallback, no model provider until a feature needs it, and the queue admin UI off unless you have a strong `BULL_AUTH_KEY`. Notes the root Compose runs API + workers + Redis + RabbitMQ, publishes only the API on 3002. Before prod: auth design, TLS, network policy (default API is unauthenticated), persistence/backups (root Compose defines no volumes), and secure dependency ports.
 
@@ -53,7 +61,9 @@ The in-repo self-hosting guide for Firecrawl — pick the guide by job (decide/r
 
 ---
 
-## 6. GitHub copyparty — a one-file portable file server
+## 6. GitHub copyparty — a one-file portable file server — by github.com
+
+![github.com](https://repository-images.githubusercontent.com/188700274/42754d5b-fa34-45dd-9030-6ff0c16036be)
 
 copyparty turns almost any device into a file server with resumable uploads/downloads from *any* browser, needing only Python 2 or 3 (all deps optional). Protocols: HTTP(s), WebDAV, SFTP, FTP(s), TFTP, SMB/CIFS. Android app + iOS shortcuts. Features: accelerated resumable uploads with dedup, media indexer, thumbnails, grid view, zip/tar folder downloads, drag-and-drop upload with "race the beam" (download while uploading), unpost to undo accidental uploads, self-destruct file lifetimes, per-folder/per-user permissions. Just run `copyparty-sfx.py`. ~46k stars, MIT. Built in Norway.
 
@@ -62,7 +72,7 @@ copyparty turns almost any device into a file server with resumable uploads/down
 
 ---
 
-## 7. Crawl4AI blog — release notes & insights
+## 7. Crawl4AI blog — release notes & insights — by docs.crawl4ai.com
 
 The Crawl4AI v0.9.x docs blog. Featured: "When to Stop Crawling" (adaptive crawling — three-layer intelligence over coverage, consistency, saturation) and "The LLM Context Protocol" (memory + reasoning + examples for code assistants). Release highlights: **v0.8.5** — anti-bot detection with 3-tier proxy escalation, Shadow DOM flattening, deep-crawl cancellation, RCE + Redis CVE fixes; **v0.8.0** — crash recovery, prefetch mode (5-10x faster URL discovery), security hardening; **v0.7.8** — stability. Good reference for where the open-source crawler stack is headed.
 
@@ -71,7 +81,9 @@ The Crawl4AI v0.9.x docs blog. Featured: "When to Stop Crawling" (adaptive crawl
 
 ---
 
-## 8. apfel — the AI already on your Mac
+## 8. apfel — the AI already on your Mac — by apfel.franzai.com
+
+![apfel.franzai.com](https://apfel.franzai.com/og.png)
 
 apfel gives you CLI access to the **3B-parameter LLM that ships with macOS Tahoe** (Apple Intelligence's on-device model), via `brew install apfel` — zero model download, no API keys, no token costs, fully on-device. A Swift binary wrapping Apple's FoundationModels framework, exposing three surfaces: a UNIX tool (`--code`, JSON output, exit codes), an OpenAI-compatible server on localhost:11434 (streaming, tool calling, CORS, response formats), and an interactive chat with five context-trimming strategies for the 4096-token window. Native MCP support (`--mcp` to attach tool servers, local or remote). Includes demo scripts (`cmd`, `oneliner`, `explain`, `gitsum`, etc.) for shell scripting. Needs Apple Silicon + Tahoe + Apple Intelligence enabled. Honest limits: 4k context, weak at math/complex code, refuses rather than hallucinate. 6.3k+ stars.
 
@@ -80,7 +92,9 @@ apfel gives you CLI access to the **3B-parameter LLM that ships with macOS Tahoe
 
 ---
 
-## 9. Resolving Vector Dimension Mismatches in AI Workflows
+## 9. Resolving Vector Dimension Mismatches in AI Workflows — by dev.to
+
+![dev.to](https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fq7g5pio3tuw2lyuipl26.png)
 
 A dev.to walkthrough of the classic agent-workflow footgun: your embedding model and your vector DB disagree on dimensionality. The specific case: **nomic-embed-text** produces 768-dim embeddings but the Pinecone index expects 1536, throwing `Vector dimension 768 does not match the dimension of the index 1536`. Fix is alignment at both ends — either change the embedding model's output or reconfigure the index. Plain, short, useful as a debug checklist when building n8n-style RAG pipelines.
 
@@ -89,7 +103,7 @@ A dev.to walkthrough of the classic agent-workflow footgun: your embedding model
 
 ---
 
-## 10. Trainwreck: Woodstock '99 — IMDb
+## 10. Trainwreck: Woodstock '99 — IMDb — by imdb.com
 
 IMDb entry for **Trainwreck: Woodstock '99**, the 2022 Netflix three-part docuseries that investigates how the 1999 music festival — meant to echo Woodstock's peace-and-music promise — devolved into days of rage, riots, and real harm. Netflix charts No. 8 at launch (20.3M hours viewed); first entry in the Trainwreck franchise, revived 2025. With Ananda Lewis, Colin Speir, David Blaustein, Heather Eason Liposky. A post-mortem of why a "revival" went so horribly wrong.
 
@@ -98,7 +112,7 @@ IMDb entry for **Trainwreck: Woodstock '99**, the 2022 Netflix three-part docuse
 
 ---
 
-## 11. Reddit — How I finally got KJ Prompt Builder working
+## 11. Reddit — How I finally got KJ Prompt Builder working — by reddit.com
 
 r/StableDiffusion tutorial by `robomar_ai_art`: the trick that finally made **KJ Prompt Builder** (ComfyUI) behave was to use an **LLM to generate the JSON prompt** in the exact structure the node expects, then paste. The workflow: describe the image to an LLM → it emits JSON → copy → paste button in the node fills everything automatically. The author was stuck until he realized the model must keep the exact structure (style block, bboxes, etc.). Kijai (node author) confirmed the two big boxes are general vs background description, and bboxes get created from pasted JSON. Clears up a genuinely confusing node, and works with Ideogram 4.
 
@@ -107,7 +121,7 @@ r/StableDiffusion tutorial by `robomar_ai_art`: the trick that finally made **KJ
 
 ---
 
-## 12. Reddit answer — KJ Prompt Builder + Ideogram 4
+## 12. Reddit answer — KJ Prompt Builder + Ideogram 4 — by reddit.com
 
 A Reddit-Answers SERP answer on getting KJ Prompt Builder to work with Ideogram 4 Stable Diffusion prompts (blocked for direct scraping — page serves only consent chrome). Same trick as the r/StableDiffusion thread: let an LLM produce the JSON prompt that matches the builder's structure, then paste. Useful if you've been fighting manual bbox entry.
 
@@ -116,7 +130,7 @@ A Reddit-Answers SERP answer on getting KJ Prompt Builder to work with Ideogram 
 
 ---
 
-## 13. Reddit — I think I'm finally feeling Ideogram 4
+## 13. Reddit — I think I'm finally feeling Ideogram 4 — by reddit.com
 
 r/StableDiffusion's EGGOGHOST sharing a working Ideogram 4 experience using a CivitAI **Ideogram Fast and Quality (IFAQ)** workflow and a little help from Claude. Non-cherry-picked images showing photoreal outputs that pass for real photos (unlike typical "plastic" SD faces). Workflow runs fine on 6GB VRAM using GGUF models (`leejet/ideogram-4-GGUF`) — move TE to CPU-RAM if you OOM. Community threads the bbox struggle, referencing the KJ Prompt Builder LLM trick.
 
@@ -125,7 +139,9 @@ r/StableDiffusion's EGGOGHOST sharing a working Ideogram 4 experience using a Ci
 
 ---
 
-## 14. JSON Prompts for Ideogram 4 in ComfyUI — a practical guide
+## 14. JSON Prompts for Ideogram 4 in ComfyUI — a practical guide — by games.mediapixel.kr
+
+![games.mediapixel.kr](https://games.mediapixel.kr/api/media/post-covers/5df7581b-38c3-4774-82bb-9320f285956a.webp)
 
 MediaPixel Games' hands-on guide to controlled generation with Ideogram 4 in ComfyUI using the **Ideogram 4 Prompt Builder KJ** node. Instead of keyword soup, you write structured JSON with `high_level_description`, `style_description` (aesthetics, lighting, medium, art_style, color_palette), and `compositional_deconstruction` (background + elements with per-asset `desc`). Key habits: describe visible evidence, not negative prompts — "exactly three modular sci-fi cargo crate variants" beats "no bad geometry"; use the node's visual editor to place bounding boxes (order `[top,left,bottom,right]`) and copy the values rather than hand-writing them; bboxes guide layout but the element text still carries the subject. Great for game asset sheets, text-heavy designs, and compositing. Full examples on their GitHub.
 
@@ -134,7 +150,9 @@ MediaPixel Games' hands-on guide to controlled generation with Ideogram 4 in Com
 
 ---
 
-## 15. What Is Odysseus AI? PewDiePie's self-hosted AI workspace
+## 15. What Is Odysseus AI? PewDiePie's self-hosted AI workspace — by odysseusai.dev
+
+![odysseusai.dev](https://odysseusai.dev/api/og)
 
 Odysseus AI is a free, open-source (initially MIT, later **AGPL-3.0**) self-hosted AI workspace created by Felix Kjellberg (PewDiePie), released May 31, 2026 — tens of thousands of GitHub stars within days. Local-first, privacy-first, vibe-coded (explicitly built with AI assistance). It's an all-in-one ChatGPT-style workspace: chat (Ollama/vLLM/llama.cpp/OpenRouter), agents with bash+FS+web (opencode), multi-step deep research, a Cookbook that scans your hardware for model fit, blind model Compare (from his "AI Council"), ChromaDB memory, email/calendar (IMAP, CalDAV), MCP tools, and a PWA for any device on your LAN. Run it via Docker Compose; small models work on CPU, ~8GB VRAM handles 7B, 24GB+ for large. 12 months of "learn to code on YouTube" paid off — but it's honest jank (he says "I hate everything in this project").
 
@@ -143,7 +161,7 @@ Odysseus AI is a free, open-source (initially MIT, later **AGPL-3.0**) self-host
 
 ---
 
-## 16. LocalAI — Audio to Text (transcription backends)
+## 16. LocalAI — Audio to Text (transcription backends) — by localai.io
 
 LocalAI's transcription endpoint (`/v1/audio/transcriptions`) supports a fleet of backends: **whisper.cpp** (default), **moonshine**, **faster-whisper**, **parakeet-cpp** (C++/ggml port of NVIDIA NeMo Parakeet, quantized GGUF, word-level timestamps, cache-aware streaming via `realtime_eou`), **llama-cpp** (routes any multimodal-audio GGUF like Qwen3-ASR), **voxtral**, and **audio.cpp** (multi-family GGML engine covering diarization, VAD, TTS, source separation). Input accepts all ffmpeg formats. **parakeet-cpp** with `timestamp_granularities[]=word` gives per-word timing, and `segment_gap_threshold` splits on silence. Dynamic batching (`batch_max_size`) coalesces concurrent requests for GPU throughput. Also exposes speaker diarization at `/v1/audio/diarization`. The docs page, not a piece — useful when you want an alternative to / a flexible replacement for Parakeet transcription in your homelab.
 
@@ -152,7 +170,9 @@ LocalAI's transcription endpoint (`/v1/audio/transcriptions`) supports a fleet o
 
 ---
 
-## 17. Agent Memory Systems in 2026 — what actually matters
+## 17. Agent Memory Systems in 2026 — what actually matters — by blog.bymar.co
+
+![blog.bymar.co](https://blog.bymar.co/images/posts/agent-memory-systems-2026/hero-v2.png)
 
 byMar's field guide to the messy "agent memory" market. Argues the label hides six very different failure modes (raw recall, profile memory, reflective memory, coding-agent memory, context OSes, enterprise context APIs). A good memory layer does 6 things: ingest selectively, preserve update semantics, retrieve with multiple signals (not just similarity), compress without destroying meaning, stay observable, and fit the real workload. Five design camps map to tools: **MemPalace** (store raw, retrieve later — verbatim recall), **Mem0** (extracted profile + entity linking + hybrid retrieval), **Hindsight** (reflective/learning), **OpenViking** (context OS), **ByteRover** (versioned context tree for coding agents). Weakly-documented: Holographic and RetainerDB called out as thin. Final take: no one memory winner — it's a stack of specialists by workload, and the hard problem is deciding what to remember, how to update it, and how to keep retrieval from silently lying.
 
@@ -161,7 +181,9 @@ byMar's field guide to the messy "agent memory" market. Argues the label hides s
 
 ---
 
-## 18. Mailand Komoda #203 — Palisander 90×40×75 cm
+## 18. Mailand Komoda #203 — Palisander 90×40×75 cm — by bochnia.mebleniemieckie.pl
+
+![bochnia.mebleniemieckie.pl](https://bochnia.mebleniemieckie.pl/public/images/produkty/duze/8064-150767.jpg)
 
 A Polish outlet furniture listing (Outlet Meble Bochnia / Meble Niemieckie BGM) for a **MAILAND** palisander-lacquered wooden chest of drawers, 90×40×75 cm. Standard "German furniture outlet" product page — dimensions, wood type, and the usual outlet navigation. Only worth the bookmark if you're specifically furniture-hunting.
 
@@ -170,7 +192,9 @@ A Polish outlet furniture listing (Outlet Meble Bochnia / Meble Niemieckie BGM) 
 
 ---
 
-## 19. What Is Bonsai 27B? The 1-bit AI model that runs on your phone
+## 19. What Is Bonsai 27B? The 1-bit AI model that runs on your phone — by mindstudio.ai
+
+![mindstudio.ai](https://i.mscdn.ai/70cbb1ad-08d7-4fdc-ab31-e343780966a6/generated-images/6bc66c71-ee5e-420e-9dad-7465b286ac85.png?fm=auto&amp;w=1200&amp;h=630&amp;fit=crop)
 
 MindStudio's explainer on **Bonsai 27B**, a 27-billion-parameter LLM using **BitNet 1-bit quantization** (ternary weights −1/0/1, ~1.58 bits/weight) that compresses to ~**4GB** — small enough for a high-end smartphone, laptop, or consumer hardware, no cloud. That's ~10× size reduction vs fp16. The key architectural insight: it's trained *with* the 1-bit constraint baked in from the start, not post-hoc quantized, and multiply becomes add/subtract. Sweet spot: QA, summarization, writing, light code gen, conversational, on-device privacy workflows. Falls short on long/multi-step reasoning and long context. Runs via llama.cpp, Ollama, LM Studio — no GPU required (Neural Engine/GPU speeds it). Realistic: slow on phones (low single-digit tps), but it opens edge/on-device use cases.
 
@@ -179,7 +203,9 @@ MindStudio's explainer on **Bonsai 27B**, a 27-billion-parameter LLM using **Bit
 
 ---
 
-## 20. Bzzagent — sample products from your favorite brands
+## 20. Bzzagent — sample products from your favorite brands — by bzzagent.com
+
+![bzzagent.com](https://bzzagent.com/wp-content/uploads/2025/03/bzzagent-hero-phone-optimized.png)
 
 A BzzAgent-style influencer/sampling marketplace landing page: brands (L'Oréal etc.) send you free product samples in exchange for genuine reviews and word-of-mouth. 3-step funnel: tell them your interests → get invited to try products → share your experience. It's the classic "free samples for honest reviews" business model, not a scam. Only meaningful if you want freebies to review or understand the UGC sampling economy.
 
@@ -188,7 +214,7 @@ A BzzAgent-style influencer/sampling marketplace landing page: brands (L'Oréal 
 
 ---
 
-## 21. Nostr — Notes and Other Stuff Transmitted by Relays
+## 21. Nostr — Notes and Other Stuff Transmitted by Relays — by nostr.org
 
 nostr.org's official explainer of the open, decentralized social protocol. Nostr is a simple clients-and-relays architecture: each user holds a key; every "note" is a cryptographically-signed event published to one or more **relays** (servers). Clients are smart user-agents that pick relays; relays can't alter notes (that breaks the signature) but can choose what to store and for how long. Ownerless protocol, owner-owned relays — you can run your own relay with your own rules. Not Bitcoin-dependent (though Bitcoiners started it); "zaps" are an optional tipping standard. Under construction, but used for microblogging, longform, video, groups (NIP-29), and coordination protocols for decentralized code collab / file hosting / torrents / streaming.
 
@@ -197,7 +223,9 @@ nostr.org's official explainer of the open, decentralized social protocol. Nostr
 
 ---
 
-## 22. Home servers rebuilt: the OS setup I wish I'd started with (XDA)
+## 22. Home servers rebuilt: the OS setup I wish I'd started with (XDA) — by xda-developers.com
+
+![xda-developers.com](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/07/home-lab-dell-vostro-fujitsu-esprimo-pcs.jpg?w=1600&amp;h=900&amp;fit=crop)
 
 Rich Edmonds (XDA) argues **Proxmox** should be the default OS for home servers and NAS — you no longer pick one role per machine. His setup: TrueNAS for storage + Proxmox to bind it together with self-hosted Docker apps. Now a 3-node cluster (two i5-7400 desktops + a Minisforum U850), each unprivileged LXCs, power-friendly — ~$37/mo total. Stops treating storage and compute as separate, snapshots make recovery trivial, web UI beats bare SSH for management on a touchscreen. Worth reading if you're planning a rebuild and wondering whether Proxmox is worth it.
 
@@ -206,7 +234,9 @@ Rich Edmonds (XDA) argues **Proxmox** should be the default OS for home servers 
 
 ---
 
-## 23. 🎬 $100,000 in Studio Gear. Linux killed it.
+## 23. 🎬 $100,000 in Studio Gear. Linux killed it. — by SpectreSoundStudios
+
+![SpectreSoundStudios](https://i.ytimg.com/vi/OqqPP7SwGcU/maxresdefault.jpg)
 
 - **Source:** https://youtu.be/OqqPP7SwGcU
 - **Karakeep doc:** `bpb9mb6p0czs4ulfxtumyzpd`
@@ -215,7 +245,9 @@ Glenn Fricker tears down the dual-boot dream. Creative Devices shipped him an "E
 
 ---
 
-## 24. 🎬 This Indie Racing Game Has a Lot of Potential
+## 24. 🎬 This Indie Racing Game Has a Lot of Potential — by DoVe_7
+
+![DoVe_7](https://i.ytimg.com/vi/ZkVaHFhyhCA/maxresdefault.jpg)
 
 - **Source:** https://youtu.be/ZkVaHFhyhCA
 - **Karakeep doc:** `xkju4hujt0h7v5jdfmoxg5ge`
@@ -226,7 +258,9 @@ Car Japan's first look at Asuka Redline, a heavily Tokyo Xtreme Racer: Drift-spi
 
 ---
 
-## 25. 🎬 this doesn't suck?
+## 25. 🎬 this doesn't suck? — by Eric Morrison
+
+![Eric Morrison](https://i.ytimg.com/vi/m6J619oDG6E/maxresdefault.jpg)
 
 - **Source:** https://www.youtube.com/watch?v=m6J619oDG6E
 - **Karakeep doc:** `zlh4l0fryxh9qu9k229w0rhi`
@@ -235,7 +269,9 @@ The creator opens defending against the "AI hater" label with a genuinely great 
 
 ---
 
-## 26. 🎬 It just got much, much worse.
+## 26. 🎬 It just got much, much worse. — by Danny Sapko
+
+![Danny Sapko](https://i.ytimg.com/vi/WSQvAnJb54M/maxresdefault.jpg)
 
 - **Source:** https://youtu.be/WSQvAnJb54M
 - **Karakeep doc:** `kgxrropac59esqhibztcw1kb`

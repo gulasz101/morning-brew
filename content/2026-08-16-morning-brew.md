@@ -1,7 +1,7 @@
 ---
 date: 2026-08-16
 slug: 2026-08-16-morning-brew
-tags: digest,karakeep
+tags: Artificial Intelligence,Claude AI,Cloud Computing,Large Language Models,Machine Learning,Software Development
 ---
 # Morning Brew — 2026-08-16
 
@@ -9,7 +9,9 @@ Two YouTube videos hoarded on 2026-08-16: one on Anthropic's new EU-forced code/
 
 ---
 
-## 1. Claude watermarks your code now
+## 1. Claude watermarks your code now — by Theo - t3․gg
+
+![Theo - t3․gg](https://i.ytimg.com/vi/Be-NqsW-wuk/maxresdefault.jpg)
 
 - **Source:** https://youtu.be/Be-NqsW-wuk?si=KxYqcsemLl6p1nJg
 - **Publisher:** YouTube · **Karakeep doc:** `hr88qqyyqyegbynkk4nxogwt`
@@ -25,7 +27,9 @@ Two YouTube videos hoarded on 2026-08-16: one on Anthropic's new EU-forced code/
 
 ---
 
-## 2. You Don't need to use Cloud AI! Switchyard and Nemotron 3.5 Lightning
+## 2. You Don't need to use Cloud AI! Switchyard and Nemotron 3.5 Lightning — by Level1Techs
+
+![Level1Techs](https://i.ytimg.com/vi/-IGB6Avxwgo/maxresdefault.jpg)
 
 - **Source:** https://youtu.be/-IGB6Avxwgo?si=8yaZKMuMhahJL8eg
 - **Publisher:** YouTube · **Karakeep doc:** `lpuysyg8ak9y6b93q08yd6he`
