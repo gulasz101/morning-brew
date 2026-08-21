@@ -30,7 +30,29 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install marmite 🫙
-        run: curl -sS https://marmite.blog/install.sh | sh
+        # marmite.blog can 504 transiently (caught live 2026-08-21); retry with backoff
+        # then fall back to the GitHub release binary before giving up.
+        run: |
+          for i in 1 2 3 4 5; do
+            if curl -fsS --retry 3 --retry-delay 2 https://marmite.blog/install.sh | sh; then
+              echo "Marmite installed via marmite.blog"
+              exit 0
+            fi
+            echo "marmite.blog attempt $i failed, retrying..."
+            sleep 5
+          done
+          echo "marmite.blog failed after retries — falling back to GitHub release"
+          curl -fsSL https://api.github.com/repos/rochacbruno/marmite/releases/latest \
+            | grep -oE '"browser_download_url": *"[^"]*(x86_64-unknown-linux-gnu|x86_64-unknown-linux-musl)[^"]*"' \
+            | head -1 | grep -oE 'https://[^"]+' | xargs curl -fL -o /tmp/marmite.tar.gz
+          tar xzf /tmp/marmite.tar.gz -C /tmp
+          BIN=$(find /tmp -maxdepth 2 -type f -name 'marmite' 2>/dev/null | head -1)
+          if [ -n "$BIN" ]; then
+            sudo mv "$BIN" /usr/local/bin/marmite
+          else
+            echo "marmite binary not found in archive" && exit 1
+          fi
+          marmite --version
 
       - name: Build site 🏗️
         run: marmite . site --debug
