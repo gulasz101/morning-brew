@@ -28,6 +28,14 @@ PlanetScale just shipped Neki, and it's a big deal if you've been waiting for ac
 
 Brandon Lee's weekly project roundup lands with seven concrete ideas, and most of them are actually good. First up is Changerawr, a self-hosted changelog management tool he's using as an operational journal for the homelab — it syncs git commits, but only from GitHub, which bugged him (hopefully GitLab's on the roadmap). The headline item is TrueNAS's official Proxmox storage plugin, which is genuinely big: TrueNAS now maintains native orchestration so the plugin auto-provisions zvols, extents, targets, and LUN mappings instead of you hand-cranking iSCSI. It supports iSCSI and NVMe over TCP, plus OpenZFS snapshots, disk resizing, thin provisioning, compression, and multipathing. Third is the Komodo MCP Server, which lets you drive your Komodo instance (which he already loves for GitOps) with natural language — he suggests starting with information-gathering before letting it actually do things. Fourth is ANAS, a GitHub project that turns a Proxmox node into a NAS with the management integrated straight into the native Proxmox web UI, including ARAID pools over iSCSI, SMB shares, and PBS backup integration. Fifth is Proxmox ARM64, the officially-supported ARM build meant for Ampere-class enterprise hardware but which he got running on a Raspberry Pi 5 with NVMe boot and the onboard NIC. Sixth is break-glass accounts — local, special-purpose logins so you aren't locked out of everything when Authentik goes down. Seventh is negative resource affinity rules so your redundant VMs don't accidentally end up on the same host. The break-glass one is the most underrated idea here; nobody thinks about it until it's 2am and the IdP is dead.
 
+**Projects:**
+
+- **[Changerawr](https://github.com/Supernova3339/changerawr)** — Self-hosted changelog management tool that syncs git commits (GitHub only)
+- **[TrueNAS Proxmox Plugin](https://github.com/truenas/truenas-proxmox-plugin)** — Official TrueNAS storage plugin for Proxmox VE (iSCSI or NVMe/TCP, ZFS snapshots)
+- **[Komodo](https://github.com/moghtech/komodo)** — Self-hosted build/deploy platform for GitOps on your own servers
+- **[ANAS](https://github.com/ANAS-Project/ANAS)** — Turns a Proxmox node into a NAS inside the native Proxmox web UI (AR RAID over iSCSI, SMB, PBS backup)
+- **[Proxmox ARM64](https://www.proxmox.com/en/about/company-details/press-releases/proxmox-virtual-environment-launches-official-arm64-support)** — Officially supported Proxmox VE ARM64 build (Ampere-class hardware, runs on RPi 5)
+
 ## 3. Steam Deck 2 Confirmed Alongside New Steam Frame VR — by geeky-gadgets.com
 
 ![geeky-gadgets.com](https://www.geeky-gadgets.com/favicon.ico)
@@ -55,6 +63,15 @@ The bookmark had no title (the URL 404'd, but the real slug is findable), and th
 
 Dhruv Bhutani's argument is simple and it's the one most NAS owners eventually land on: Synology's hardware is great, its first-party apps are dated and slow-moving, and the open-source competition runs circles around them. He still runs a DS925+ (Ryzen V1500B, 4GB ECC, four HDD bays plus two NVMe) as the storage backbone, but the app layer is now entirely Docker. Photos go to Immich, which he calls out for GPS tagging, import workflows, shared libraries, and a mobile backup that's flat-out more reliable than Synology Photos — which hasn't gotten a real feature update in ages. Music is Navidrome, because Synology's music server was so bad he ditched it early; Navidrome indexes fast, serves via browser, and plays nice with a pile of streaming clients. Video is a Plex-plus-Jellyfin split: Plex for sharing with friends and remote streaming, Jellyfin for local remux playback at home. The real kicker isn't feature lists, it's portability — when he someday jumps from Synology to UGreen or a DIY box, Immich and Navidrome move with him, while a proprietary Synology app doesn't. He also flags the support risk: Synology already killed its video streaming app outright, leaving only a DLNA server in 2026, and you never know the release cadence or lifespan of first-party software. Grimmory handles books and Paperless handles documents. The verdict: keep Synology for what it's good at (storage), and let third-party apps own everything above it.
 
+**Projects:**
+
+- **[Immich](https://github.com/immich-app/immich)** — Self-hosted photo and video library with mobile backup, timeline, and shared albums
+- **[Navidrome](https://github.com/navidrome/navidrome)** — Lightweight self-hosted music server and streamer (Subsonic/OpenSubsonic API)
+- **[Plex](https://www.plex.tv/)** — Closed-source commercial media server (not open source; docs at plex.tv)
+- **[Jellyfin](https://github.com/jellyfin/jellyfin)** — Free software media server for movies, shows, music, and live TV
+- **[Grimmory](https://github.com/grimmory-tools/grimmory)** — Self-hosted library server for books/ebooks (the Synology-books replacement)
+- **[Paperless](https://github.com/paperless-ngx/paperless-ngx)** — Scan, index, and archive documents with OCR
+
 ## 6. 6 Docker containers helped me reduce dependency on Google eco-system — by XDA
 
 ![XDA](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/docker-containers-to-reduce-google-dependency.jpg?w=1600&h=900&fit=crop)
@@ -64,6 +81,15 @@ Dhruv Bhutani's argument is simple and it's the one most NAS owners eventually l
 
 Yash Patel's piece is less "ditch Google forever" and more "six self-hosted apps that quietly replace the pieces you actually use." He's clear upfront that he's not leaving Google overnight, just shrinking the surface area one container at a time. Immich replaces Google Photos with a timeline, search, and auto-backup mobile app he says feels surprisingly close to the real thing. Nextcloud replaces Google Drive — the desktop sync client is what sells it, giving him a familiar local folder that syncs in the background, plus web access and granular sharing. Radicale replaces Google Calendar via CalDAV; it's deliberately lightweight and doesn't try to clone every feature, which he frames as a feature. Grist replaces Google Sheets for structured tracking, and its appeal is that it connects related tables like a lightweight database while still looking like a spreadsheet. Vaultwarden replaces Google Password Manager, working with any Bitwarden-compatible client (browser extensions, mobile apps), with the honest trade-off that he now owns backups, updates, and security. The most interesting pick is Reitti, a self-hosted Google Timeline alternative — location history is sensitive enough that he'd rather keep years of movement data on his own box than tied to a Google account. The through-line is Docker's incremental nature: try one service at a time without nuking your whole workflow. For a homelabber already running Docker, this is a tidy, practical checklist, not a manifesto.
 
+**Projects:**
+
+- **[Immich](https://github.com/immich-app/immich)** — Self-hosted photo and video library with mobile backup, timeline, and shared albums
+- **[Nextcloud](https://github.com/nextcloud/server)** — Self-hosted file sync, share, and collaboration platform
+- **[Radicale](https://github.com/Kozea/Radicale)** — Small CalDAV/CardDAV server for calendars and contacts
+- **[Grist](https://github.com/gristlabs/grist-core)** — Spreadsheet-database hybrid for structured data and relational tables
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** — Unofficial lightweight Bitwarden-compatible password server (Rust)
+- **[Reitti](https://github.com/dedicatedcode/reitti)** — Self-hosted location history / Google Timeline alternative
+
 ## 7. This free and open-source app runs any Windows app on Linux with ease — by XDA
 
 ![XDA](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/02/winboat-on-linux-4.png?w=1600&h=900&fit=crop)
@@ -72,6 +98,13 @@ Yash Patel's piece is less "ditch Google forever" and more "six self-hosted apps
 **Karakeep doc:** `wcyneo70e3yn0160leqmzeaa`
 
 Pranav Bhardwaj found WinBoat, a free, open-source tool that runs a full Windows environment inside Docker, and it's a middle path between Wine (hit-or-miss compatibility) and a full VM (resource-hungry). The model: Windows runs as a VM inside a container, and a WinBoat Guest Server fetches data from it, accessed over FreeRDP or a browser. Setup on his Ubuntu 24 box was surprisingly painless — prerequisites are 4GB free RAM (he tested 2–3GB and says it went "horribly"), 2 CPU threads, 32GB storage, Docker, Docker Compose v2, FreeRDP, and the iptables modules loaded. He grabbed the .deb from GitHub, launched via terminal, created the instance through a GUI that let him allot RAM/CPU/disk (or pick a custom ISO), and had Windows ready in 30–40 minutes with no registry tweaks or driver hell. The appeal is isolation (apps run in a container, Linux stays untouched), persistence (save and resume like VM snapshots), and the ability to side-load third-party apps. But the caveats are real: Docker Desktop isn't supported, so it's terminal-only; you can't allocate more than half your system RAM, which means you need over 8GB total; and it's not built for GPU-heavy gaming. The comments section already lit up with the obvious objections — "is it legal without a Windows licence?", and one user pointing out Bottles handles every app they've tried with far less overhead. Fair. WinBoat is for Linux users who need a clean, reliable Windows app sandbox for testing or that one stubborn proprietary tool, not for people chasing game performance.
+
+**Projects:**
+
+- **[WinBoat](https://github.com/winboat-org/winboat)** — Run Windows apps on Linux in a Docker-managed VM with seamless windows
+- **[Wine](https://gitlab.winehq.org/wine/wine)** — Windows API compatibility layer for Unix (source repo on WineHQ GitLab)
+- **[Bottles](https://github.com/bottlesdevs/Bottles)** — Manage Windows apps/prefixes on Linux with Wine (Flatpak-friendly)
+- **[FreeRDP](https://github.com/FreeRDP/FreeRDP)** — Free implementation of the Remote Desktop Protocol
 
 ### RSS — YouTube
 
@@ -356,6 +389,19 @@ The list is twelve tools deep. Krita leads, obviously — it's the one everyone'
 
 The real meat is the tablet rant buried in the intro. Wacom worked fine; everything else historically didn't, until the DIGImend project showed up and made generic Huion/XP-Pen/Waltop tablets behave on Linux. The comments are the usual time capsule: some guy from seven years ago moaning about non-Wacom drivers, someone else pointing out that by 2022 DIGImend actually fixed it. The subtext is the same as every LinuxLinks painting post — the software is fine, the hardware drivers used to be a mess, and now they're mostly not. Nothing groundbreaking, but if you're staring at a blank Krita canvas wondering what else exists, this is your spreadsheet. 🎨
 
+**Projects:**
+
+- **[Krita](https://github.com/KDE/krita)** — Professional free raster painting and animation studio
+- **[MyPaint](https://github.com/mypaint/mypaint)** — Fast painting program with dynamic tablet-friendly brushes
+- **[GIMP](https://github.com/GNOME/gimp)** — GNU Image Manipulation Program — raster image editor
+- **[Drawpile](https://github.com/drawpile/Drawpile)** — Collaborative drawing/painting over the network
+- **[Tux Paint](https://tuxpaint.org/)** — Drawing program for young children
+- **[Milton](https://github.com/serge-rgb/milton)** — Infinite-canvas painting program with a minimal UI
+- **[InfiniPaint](https://github.com/ErrorAtLine0/infinipaint)** — Infinite-canvas JavaScript/CSS hybrid drawing tool
+- **[BlockPaint](https://docs.rs/crate/blockpaint/)** — Paint program that draws pixel graphics in the terminal with the mouse (Rust crate)
+- **[Alchemy](http://al.chemy.org/)** — Experimental non-orthodox drawing tool (open-ended sketchpad)
+- **[DIGImend](https://github.com/DIGImend/digimend-kernel-drivers)** — Kernel drivers for non-Wacom graphics tablets (Huion/XP-Pen)
+
 ## 26. Slob Dictionary - flexible GTK dictionary application - LinuxLinks — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2020/03/dictionary-tools.jpg)
@@ -382,6 +428,16 @@ LinuxLinks acknowledging the elephant in the room: Thunderbird is great and ever
 The list is six clients, and it's a museum of GTK/Qt minimalism. Sylpheed and Claws Mail are the old guard, both GTK+ based and both basically frozen in time — the comment section even calls this out, with one reader noting Sylpheed's last commits are 3+ years old and the author replying, poetically, "Beauty survives." Geary is the GNOME-native pick, written in Vala, the language everyone forgot exists. Astroid is the lightweight-fast MUA, Trojitá is the Qt IMAP client, and Aerion is the "inspired by Geary" option that's basically Geary with the serial numbers filed off.
 
 The honest subtext of this list is that "lightweight email client" on Linux mostly means "old email client," because the modern feature-laden ones all ballooned into Thunderbird clones. Sylpheed is reliable as a rock but development is effectively dormant; Claws Mail is fast but the UI is a 2005 time capsule. If you're on genuinely weak hardware and need IMAP to not set your CPU on fire, the answer is still Sylpheed or Claws — just don't expect any new features ever. The whole genre is a reminder that email clients, like email itself, peaked a while ago and nobody's particularly bothered about it. 📧
+
+**Projects:**
+
+- **[Sylpheed](https://sylpheed.sraoss.jp/en/)** — Lightweight GTK+ email client (development dormant, 3+ years since last commit)
+- **[Claws Mail](https://www.claws-mail.org/)** — GTK+ email client, fast, extensible via plugins
+- **[Geary](https://github.com/GNOME/geary)** — GNOME-native email client written in Vala (GitHub is a read-only mirror)
+- **[Astroid](https://github.com/astroidmail/astroid)** — Fast lightweight notmuch-based MUA with a GTK UI
+- **[TrojiTa](https://github.com/jktjkt/trojita)** — Fast Qt IMAP email client
+- **[Aerion](https://github.com/hkdb/aerion)** — Lightweight Qt/QML email client inspired by Geary
+- **[Thunderbird](https://www.thunderbird.net/)** — Full-featured open-source mail client (the one lightweight clients are measured against)
 
 ## 28. Cuckoo3 - automated malware analysis sandbox - LinuxLinks — by LinuxLinks
 
@@ -483,6 +539,12 @@ Aegis Authenticator is Android-only and the security-nerd favorite — tokens si
 
 The real takeaway: the only thing these can't do is the vendor-locked Microsoft push. For everything else, they're strict upgrades — auditable, exportable, and not phoning home to Redmond. Worth a look if "trust us" isn't a feature you're shopping for. 🔐
 
+**Projects:**
+
+- **[Aegis](https://github.com/beemdevelopment/Aegis)** — Android 2FA/TOTP vault with encrypted backups (GPLv3)
+- **[2FAS](https://github.com/twofas/2fas-android)** — Cross-platform 2FA app with phone-approval browser extension
+- **[Ente Auth](https://github.com/ente/ente)** — End-to-end encrypted auth (TOTP) + photos, cross-platform
+
 ## 35. 8 Best Free and Open Source General Purpose Linter Tools — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2025/01/013-coding.png)
@@ -495,6 +557,17 @@ LinuxLinks defines a linter as a static analyzer that reads code without running
 Super-linter is GitHub's kitchen-sink "collection of linters and code analyzers" — one action, every language. Prettier is the opinionated code formatter everyone fights about in PRs. semgrep does static analysis across many languages via structural patterns rather than regex. ast-grep leans the same direction but frames it as "structural search, lint and rewriting." MegaLinter is Super-linter's cousin, billed as analyzing "consistency of your code" across your whole repo. commitlint is the niche pick — it lints your git commit messages against conventional-commit rules, which is either delightfully pedantic or insufferable depending on your team. tidyall is Perl-flavored "all-in-one code tidier and validator." Violations Lib rounds it out by parsing report files from other static-analysis tools into something a CI pipeline can consume.
 
 It's a grab bag, not a ranking — no verdict chart telling you which one wins. The useful signal is breadth: if you want one tool that covers everything, Super-linter or MegaLinter. If you want semantic, not textual, matching, semgrep or ast-grep. The rest are situational. Nothing here replaces knowing your language's *actual* linter (rustc/clippy, eslint, pylint), which the piece quietly doesn't emphasize. 🧹
+
+**Projects:**
+
+- **[Super-linter](https://github.com/super-linter/super-linter)** — GitHub Action bundling dozens of linters for every language
+- **[Prettier](https://github.com/prettier/prettier)** — Opinionated multi-language code formatter
+- **[semgrep](https://github.com/semgrep/semgrep)** — Structural (AST-based) static analysis and linting across languages
+- **[ast-grep](https://github.com/ast-grep/ast-grep)** — Structural search, lint, and rewrite via AST patterns (Rust)
+- **[MegaLinter](https://github.com/oxsecurity/megalinter)** — Mega-linter: 100+ linters with report aggregation for CI
+- **[commitlint](https://github.com/conventional-changelog/commitlint)** — Lints commit messages against conventional-commit rules
+- **[tidyall](https://github.com/houseabsolute/perl-code-tidyall)** — Perl all-in-one code tidier/validator runner
+- **[Violations Lib](https://github.com/tomasbjerre/violations-lib)** — Parses static-analysis reports into a common model for CI
 
 ## 36. XCA — graphical certificate and key management — by LinuxLinks
 
