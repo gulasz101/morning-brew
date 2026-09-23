@@ -491,7 +491,7 @@ The list splits into editors and front-ends, bibliography machinery, engines and
 - **[KLatexFormula](https://klatexformula.sourceforge.io/)** — Useful utility for creating images from LaTeX equations
 - **[Hieroglyphic](https://github.com/FineFindus/Hieroglyphic)** — Find LaTeX symbols
 - **[Hand TeX](https://github.com/VoxelCubes/Hand-TeX)** — Handwritten LaTeX symbol classifier
-- **Pybliographer** — _no verified public repo found_
+- **[Pybliographer](https://gitlab.gnome.org/Archive/pybliographer)** — BibTeX bibliography manager for GNOME, now archived (read-only; last commit 2023)
 
 ## 30. “Linux Supported” Is One of the Most Misleading Claims in PC Hardware — by LinuxLinks
 
