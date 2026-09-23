@@ -46,6 +46,13 @@ VLC rounds it out as the odd entry. It looks like the most Windows-ass video pla
 
 He closes by naming mpv, WireGuard and Nextcloud as further examples, all with Android clients for their Linux-native counterparts.
 
+**Projects:**
+
+- **[Termux](https://github.com/termux/termux-app)** — Linux terminal emulator for Android, no root required
+- **[AnLinux](https://github.com/EXALAB/AnLinux-App)** — Runs full Linux distributions on Android via Termux
+- **[KDE Connect](https://github.com/KDE/kdeconnect-android)** — Bridges phone and PC: files, notifications, remote input
+- **[VLC](https://github.com/videolan/vlc)** — Media player born on Linux, now on every platform
+
 ## 3. 🎬 I Built a Tiny PC From a Broken Phone! — by GameRig
 
 ![GameRig](https://i.ytimg.com/vi/OY8MFEFYpLs/maxresdefault.jpg)
@@ -476,6 +483,21 @@ One notable change: the roundup used to recommend Digital Clock 5 and has droppe
 
 Every entry gets its own portal page with a screenshot of the tool in action, a full description, and an in-depth analysis of its features alongside links to relevant resources. The picks skew sensible rather than flashy, and some are X11-era tools that still work fine as long as you do not need Wayland. If the desktop clock is the only thing you stare at all day, there is a better one in here.
 
+**Projects:**
+
+- **[KClock](https://invent.kde.org/utilities/kclock)** — Convergent clock application for KDE Plasma
+- **[GNOME Clocks](https://wiki.gnome.org/Apps/Clocks)** — Stopwatch, timer, alarms, and multiple clocks
+- **[QTalarm](https://github.com/CountMurphy/QTalarm)** — Qt based alarm clock
+- **[catclock](https://github.com/BarkyTheDog/catclock)** — Xclock with an enhanced cat mode
+- **[svg-clock](https://elpa.gnu.org/packages/svg-clock.html)** — Analog clock using Scalable Vector Graphics
+- **[retro](https://github.com/sonnyp/Retro)** — Customizable clock widget
+- **[multiClock](https://github.com/LukeZBaker/multiClock)** — Track the time around the world
+- **[Alarm Clock](https://github.com/alarm-clock-applet/alarm-clock)** — Fully-featured alarm clock for your GNOME panel or equivalent
+- **[xdaliclock](https://www.jwz.org/xdaliclock/)** — Advanced xclock substitute
+- **[dclock](https://www.jwz.org/xdaliclock/)** — Displays the time in digital format only
+- **[Lumalarm](https://github.com/shinigami1231111/lumalarm)** — Smart alarm clock that wakes your computer from sleep
+- **[Hyprclock](https://github.com/cvusmo/hyprclock)** — Customisable clock application for the Hyprland window manager
+
 ## 30. 30 Best Free and Open Source Linux Graphical Task Managers — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2019/04/notepad-pen-with-words-from-todo-list-multicolored-background.jpg)
@@ -490,6 +512,39 @@ The list spans a fair range of philosophies. Super Productivity does todo plus t
 The format is the usual LinuxLinks one: a table linking to a dedicated review per app, plus their ratings chart giving a visual verdict across the field. Worth knowing that the page notes it was just updated to match a recent announcement about how the site structures these features, so some entries may have shifted between roundups.
 
 For Wojtek the useful part is the self-hosted cluster. Vikunja and Super Productivity are the two that can actually run on the homelab box and sync across machines, which beats a pile of local Markdown checklists the moment you want the same list on a laptop, a phone and a desktop. The rest are mostly single-machine apps you'll install, use for a week and forget, but that's still cheaper than another SaaS subscription.
+
+**Projects:**
+
+- **[Makagiga](https://makagiga.sourceforge.io/)** — To-do manager, RSS reader, notepad, widgets, image viewer
+- **[Vikunja](https://github.com/go-vikunja/vikunja)** — To-do app to organize your life
+- **[TreeSheets](https://github.com/aardappel/treesheets)** — Free form data organizer
+- **[Planify](https://github.com/alainm23/planify)** — Keep track of all your tasks, projects, and goals
+- **[Lotti](https://github.com/matthiasn/lotti)** — AI-powered context manager
+- **[Zanshin](https://zanshin.kde.org/)** — KDE software to manage your day to day actions
+- **[sleek](https://github.com/ransome1/sleek/)** — Todo manager based on the todo.txt syntax
+- **[GTG](https://github.com/getting-things-gnome/gtg)** — Personal tasks and TODO list items organizer
+- **[Kanri](https://github.com/kanriapp/kanri)** — Modern offline Kanban board
+- **[OpenTodoList](https://opentodolist.rpdev.net/)** — Simple todo and task management
+- **[Mindwtr](https://github.com/dongdongbh/Mindwtr)** — Getting Things Done (GTD) productivity system
+- **[Endeavour](https://wiki.gnome.org/Apps/Todo)** — Personal task manager for GNOME
+- **[Errands](https://github.com/mrvladus/Errands)** — Manage your tasks
+- **[WHPH](https://github.com/ahmet-cetinkaya/whph)** — Productivity app
+- **[cfait](https://github.com/trougnouf/cfait)** — Take control of your TODO list
+- **[Progressive](https://github.com/h8moss/progressive)** — Keep track of your tasks
+- **[Tasks](https://github.com/cosmic-utils/tasks)** — Simple COSMIC task manager with reminders, search and organised lists
+- **[Finitodo](https://gitlab.com/finitodo/finitodo)** — Graphical task/todo list manager
+- **[Diurnals](https://github.com/SSS-Says-Snek/diurnals)** — Get daily Todoist notifications
+- **[Nottodbox](https://github.com/mukonqi/nottodbox)** — Organize notes, to-dos and diaries
+- **[KomoDo](https://invent.kde.org/utilities/komodo)** — Todo manager
+- **[Autasker](https://github.com/vadimerenkov/Autasker)** — Flexible offline task manager with scheduling, habits and daily planning
+- **[Reminduck](https://github.com/elly-code/reminduck)** — Simple reminder app
+- **[TowDow](https://gitlab.com/towdow/towdow-flutter)** — Tasks and process management
+- **[Progress](https://github.com/smolBlackCat/progress-tracker)** — Simple Kanban board manager
+- **[FromScratch](https://fromscratch.rocks/)** — Auto-saving scratchpad built with Electron
+- **[Done](https://github.com/edfloreshz/done)** — To-do lists reimagined
+- **[Super Productivity](https://github.com/johannesjo/super-productivity)** — Cross-platform to-do list and time-tracking app
+- **[Task Coach](https://github.com/taskcoach/taskcoach)** — Task manager with effort tracking and budget views
+- **[Aion-Task](https://gitlab.gnome.org/powimod/aion-task)** — GNOME task manager focused on task and time tracking
 
 ## 31. Aegis Authenticator – secure 2FA app for Android — by LinuxLinks
 
@@ -538,6 +593,12 @@ Scapegoat (github.com/scapegoat-scala/scapegoat) is an Apache-2.0 compiler plugi
 WartRemover (github.com/wartremover/wartremover), also Apache-2.0, takes the constrained-subset approach: small checks called warts, each banning one language feature or pattern, enableable per project or as groups. It rejects explicit null, unsafe partial APIs like getting a value straight out of an empty Option, inferred Nothing, unsafe casts, and can fail the compilation outright so the rules are enforced instead of advisory. Custom warts go through the compiler tree API.
 
 Same shape as the other LinuxLinks lists: if you're on Scala and want checks that actually gate a merge, WartRemover or Scapegoat do the blocking, Scalafix does the rewriting.
+
+**Projects:**
+
+- **[Scalafix](https://github.com/scalacenter/scalafix)** — Refactoring and static analysis tool for improving code quality
+- **[Scapegoat](https://github.com/scapegoat-scala/scapegoat)** — Static analysis tool that detects bugs and questionable code
+- **[WartRemover](https://github.com/wartremover/wartremover)** — Flexible tool for enforcing safer coding practices
 
 ## 34. 2FAS Auth – private two-factor authenticator for Android — by LinuxLinks
 
@@ -623,6 +684,22 @@ GIMP is the headline pick and the only serious full-fat option on the page. Pint
 
 The oddities are the fun ones. JS Paint recreates classic MS Paint with modern browser features. Textual Paint puts MS Paint in your terminal. dibuja and Drawing are deliberately basic Paintbrush/MS-Paint clones for when you just need to crop something. There's a ratings chart covering the whole set, and each entry links to a full review. Practical read: GIMP if you want a real Photoshop replacement, KolourPaint or Pinta for quick edits, Textual Paint purely for the absurdity. Most are small single-developer projects, so don't count on release cadence.
 
+**Projects:**
+
+- **[GIMP](https://www.gimp.org/)** — GNU Image Manipulation Program
+- **[JS Paint](https://github.com/1j01/jspaint)** — Classic MS Paint recreation with modern browser-based features
+- **[Pinta](https://www.pinta-project.com/)** — Mimics the usability of Paint.Net
+- **[Photoflare](https://photoflare.io/)** — Cross-platform image editor
+- **[LazPaint](https://bgrabitmap.github.io/lazpaint/)** — Image editor with layers and transparency
+- **[dibuja](https://launchpad.net/dibuja)** — Simple to use paint program like Paintbrush for Mac or classic MS Paint
+- **[Drawing](https://maoschanz.github.io/drawing/)** — Basic raster image editor similar to Microsoft Paint
+- **[Textual Paint](https://github.com/1j01/textual-paint)** — MS Paint in your terminal
+- **[Pixelitor](https://github.com/lbalazscs/Pixelitor)** — Feature-rich editing with layers, filters and effects
+- **[paint.software](https://github.com/Univers4craft/paint.software)** — Accessible Paint.NET-style raster editing application
+- **[Brushshe](https://github.com/limafresh/Brushshe)** — Simple and user-friendly raster graphics editor
+- **[KolourPaint](http://www.kolourpaint.org/)** — Easy-to-use paint program by KDE
+- **[CinePaint](http://cinepaint.org/)** — Tools for painting, manipulation and image processing
+
 ## 40. transcrypt – transparent encryption for Git repositories — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2021/03/encrypted-files.jpg)
@@ -651,6 +728,22 @@ LinuxLinks rounds up 13 free and open source web-based file sharing tools, delib
 PairDrop leads the table. Browser-to-browser transfers with no setup and no signup, and it is the direct descendant of Snapdrop, which still appears in this list on its own. Send is the community fork of the Firefox Send that Mozilla killed, keeping the expiry-and-download-limit model without Mozilla's servers. zipline bills itself as a next generation ShareX-compatible upload server. For self-hosting, PsiTransfer and ProjectSend cover the plain variants, Chibisafe adds albums, tagging and shareable links, SafeBucket does on-premises transfers with SSO and access controls, Gokapi handles automatic expiry and encryption, Pingvin Share X offers passwords, expiry and reverse shares, and FolderHost squeezes a whole self-hosted cloud into a single binary. GopherDrop specialises in one-time secrets, and FileSender targets very large files with expiry and download limits.
 
 The page was updated recently with Chibisafe, SafeBucket, Gokapi and Pingvin Share X added. For a homelab, the self-hosted half of this list matters more than the browser toys, though PairDrop is the fastest thing here for moving files between two machines on the same network.
+
+**Projects:**
+
+- **[PairDrop](https://github.com/schlagmichdoch/PairDrop)** — Transfer files with no setup and no signup
+- **[zipline](https://github.com/diced/zipline)** — Next generation ShareX / File upload server
+- **[Send](https://github.com/timvisee/send)** — Simple private file sharing. Fork of the discontinued Firefox Send
+- **[Snapdrop](https://github.com/SnapDrop/snapdrop)** — Local file sharing in your browser
+- **[PsiTransfer](https://github.com/psi-4ward/psitransfer)** — Self-hosted file sharing solution
+- **[ProjectSend](https://github.com/projectsend/projectsend)** — Self-hosted file sharing software
+- **[Chibisafe](https://github.com/chibisafe/chibisafe)** — Feature-rich uploader with albums, tagging and shareable links
+- **[SafeBucket](https://github.com/safebucket/safebucket)** — On-premises sharing with direct transfers, SSO and access controls
+- **[Gokapi](https://github.com/Forceu/Gokapi)** — Lightweight sharing with automatic expiry and encryption
+- **[Pingvin Share X](https://github.com/smp46/pingvin-share-x)** — Link-based sharing with passwords, expiry and reverse shares
+- **[GopherDrop](https://github.com/george-petrakis/GopherDrop)** — Secure One-Time Secret Sharing
+- **[FolderHost](https://github.com/MertJSX/folderhost)** — Self-hosted cloud platform in a single binary
+- **[FileSender](https://github.com/filesender/filesender)** — Transfers very large files with expiry and download limits
 
 ## 42. Linux 95 – lightweight distribution recreating the Windows 95 experience — by LinuxLinks
 

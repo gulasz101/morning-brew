@@ -462,6 +462,37 @@ The list splits into editors and front-ends, bibliography machinery, engines and
 
 ---
 
+**Projects:**
+
+- **[LyX](https://www.lyx.org/)** — The power and flexibility of TeX/LaTeX with an intuitive graphical interface
+- **[KBibTeX](https://apps.kde.org/en-gb/kbibtex/)** — Reference management software primarily for BibTeX
+- **[TeXstudio](https://github.com/texstudio-org/texstudio)** — Fully featured open source LaTeX editor
+- **[VimTeX](https://github.com/lervag/vimtex)** — Vim and Neovim filetype and syntax plugin
+- **[TeXmacs](https://www.texmacs.org/tmweb/home/welcome.en.html)** — WYSIWYG mathematical text editor using TeX fonts
+- **[JabRef](https://www.jabref.org/)** — Graphical frontend to manage BibTeX databases
+- **[Biber](https://github.com/plk/biber)** — BibTeX replacement for users of BibLaTeX
+- **[TeXmaker](https://www.xm1math.net/texmaker/)** — Integrates many different tools
+- **[Tectonic](https://github.com/tectonic-typesetting/tectonic)** — Modernised, self-contained TeX and LaTeX engine
+- **[TeXworks](https://www.tug.org/texworks/)** — Simple front-end modeled on TeXShop
+- **[Atom-LaTeX](https://github.com/ashthespy/Atom-LaTeX)** — Typesetting with GitHub's Atom text editor
+- **[SiSU](https://git.sisudoc.org/projects/)** — Documents - structuring, publishing in multiple formats and search
+- **[Kile](https://kile.sourceforge.io/)** — KDE Integrated LaTeX Environment
+- **[BibLaTex](https://ctan.org/pkg/biblatex)** — Programmable bibliographies and citations
+- **[Enter TeX](https://flathub.org/apps/org.gnome.EnterTeX)** — Integrated LaTeX Environment for the GNOME desktop
+- **[AUCTeX](https://www.gnu.org/software/auctex/)** — Environment for editing LaTeX, ConTeXt, docTeX, Texinfo, and TeX files
+- **[TexMaths](http://roland65.free.fr/texmaths/)** — LaTeX equation editor for LibreOffice
+- **[Setzer](https://www.cvfosammmm.org/setzer/)** — Full-featured LaTeX editor
+- **[Gummi](https://github.com/alexandervdm/gummi)** — Simple LaTeX editor
+- **[TexLab](https://github.com/latex-lsp/texlab)** — Cross-platform implementation of the Language Server Protocol for LaTeX
+- **[LaTeXDraw](https://github.com/latexdraw/latexdraw)** — Graphical drawing editor for LaTeX
+- **[latexindent.pl](https://github.com/cmhughes/latexindent.pl)** — Highly configurable formatter for LaTeX source code
+- **[tex-fmt](https://github.com/WGUNDERWOOD/tex-fmt)** — Fast formatter for LaTeX source files
+- **[Latexmk](https://www.cantab.net/users/johncollins/latexmk/index.html)** — Automates the process of compiling LaTeX documents
+- **[KLatexFormula](https://klatexformula.sourceforge.io/)** — Useful utility for creating images from LaTeX equations
+- **[Hieroglyphic](https://github.com/FineFindus/Hieroglyphic)** — Find LaTeX symbols
+- **[Hand TeX](https://github.com/VoxelCubes/Hand-TeX)** — Handwritten LaTeX symbol classifier
+- **Pybliographer** — _no verified public repo found_
+
 ## 30. “Linux Supported” Is One of the Most Misleading Claims in PC Hardware — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2024/07/linux-3503.jpg)
@@ -547,6 +578,14 @@ Who it's for: anyone whose 2FA lives on a Google account by default and who want
 - **[Ente Auth](https://github.com/ente/ente)** — End-to-end encrypted cross-platform TOTP/2FA app from the Ente team.
 - **[FreeOTP+](https://github.com/helloworld1/FreeOTPPlus)** — Feature-rich Android authenticator — HOTP/TOTP, biometrics, categories, offline icons.
 - **[FreeOTP](https://github.com/freeotp/freeotp-android)** — Red Hat's open-source Android authenticator supporting HOTP and TOTP.
+
+**Projects:**
+
+- **[Aegis Authenticator](https://github.com/beemdevelopment/Aegis)** — A secure two-factor authentication app for Android supporting both HOTP and TOTP. Authentication secrets are kept in an encrypted vault which can be protected with a password or biometrics. Aegis offe
+- **[2FAS Auth](https://github.com/twofas/2fas-android)** — A free and open source authenticator available for Android and iOS. It supports TOTP and HOTP, works offline and does not require a 2FAS account. Authentication data is stored locally, with backup and
+- **[Ente Auth](https://github.com/ente/ente)** — A cross-platform authenticator with end-to-end encrypted backups and synchronisation. It is available for Android and iOS as well as Linux, macOS, Windows and the web. The application can also operate
+- **[FreeOTP+](https://github.com/helloworld1/FreeOTPPlus)** — A two-factor authentication app for Android. It is based on FreeOTP but adds a range of additional functionality and interface improvements. It supports both HOTP and TOTP together with backup and res
+- **[FreeOTP](https://github.com/freeotp/freeotp-android)** — An authenticator supporting HOTP and TOTP one-time passwords. It provides a straightforward way of generating authentication codes without tying them to a proprietary online service. The project is ac
 
 ## 35. Equilipy – multicomponent multiphase equilibrium software — by LinuxLinks
 
@@ -660,6 +699,21 @@ Worth knowing: mat2 and Metadata Cleaner are the two to reach for when the goal 
 - **[Metadata Cleaner](https://gitlab.com/metadatacleaner/metadatacleaner)** — GNOME desktop utility to inspect and remove hidden metadata from images, documents and archives.
 - **[Kleaner](https://github.com/najepaliya/kleaner)** — Graphical image metadata cleaner for removing EXIF, IPTC, XMP and comments from batches.
 - **[Metamorphosis](https://github.com/DeimosHall/Metamorphosis)** — Desktop utility for inspecting and changing embedded metadata across media and document files.
+
+**Projects:**
+
+- **[Photini](https://github.com/jim-easterbrook/Photini)** — Easy to use digital photograph metadata editor
+- **[ExifTool](https://exiftool.org/)** — CLI application and library for reading and writing meta information
+- **[Exiv2](https://exiv2.org/)** — C++ library and a command line utility to manage image metadata
+- **[digiKam](https://www.digikam.org/)** — Provides tools for viewing and editing metadata
+- **[jExifToolGUI](https://hvdwolf.github.io/jExifToolGUI/)** — Graphical frontend to ExifTool
+- **[Jhead](https://github.com/Matthias-Wandel/jhead)** — Exif Jpeg header manipulation tool
+- **[Scramble](https://github.com/tobagin/scramble)** — Privacy-focused image metadata removal tool
+- **[Phatch](http://photobatch.wikidot.com/)** — Simple to use cross-platform GUI photo batch processor
+- **[mat2](https://github.com/jvoisin/mat2)** — Remove metadata from files to improve privacy
+- **[Metadata Cleaner](https://gitlab.com/metadatacleaner/metadatacleaner)** — Inspect and remove metadata from files
+- **[Kleaner](https://github.com/najepaliya/kleaner)** — Clean metadata from images with a simple graphical interface
+- **[Metamorphosis](https://github.com/DeimosHall/Metamorphosis)** — Inspect and change embedded metadata
 
 ## 41. OSS Review Toolkit – automate open source compliance — by LinuxLinks
 

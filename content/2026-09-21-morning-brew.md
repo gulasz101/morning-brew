@@ -18,6 +18,14 @@ Fifty links from Monday. Eight videos, forty-two articles. The RSS firehose dump
 
 A first-person piece about cutting recurring bills by self-hosting five Docker containers instead. BentoPDF replaces Acrobat for the author, who only used a fraction of Adobe's features and wanted to stop paying for the rest. n8n replaces Zapier for simple automations, letting the author wire up APIs, webhooks, and scheduled workflows on their own server instead of paying per task. Nextcloud stands in for cloud storage, giving a self-managed central place for documents and a way to decide how much space to provision rather than upgrading a subscription whenever the quota fills. Immich replaces a photo-storage service, backing up phone photos and browsing them through web and mobile apps that feel closer to Google Photos than a plain folder. Jellyfin covers movies and TV for someone who doesn't watch enough to justify a streaming or media-server subscription, organizing existing media files into a proper library. The framing is modest — the author didn't set out to replace every subscription, just started questioning which ones were worth keeping. The bigger win, they argue, is control over the tools and the data, not just the money saved each month. It is a practical, low-stakes list rather than a manifesto, and it leans on the fact that all five run without a complicated setup.
 
+**Projects:**
+
+- **[BentoPDF](https://github.com/alam00000/bentopdf)** — Self-hosted PDF toolkit (the Acrobat replacement)
+- **[n8n](https://github.com/n8n-io/n8n)** — Workflow automation platform (the Zapier replacement)
+- **[Nextcloud](https://github.com/nextcloud/server)** — Self-hosted cloud storage and collaboration suite
+- **[Immich](https://github.com/immich-app/immich)** — Self-hosted photo and video library with mobile backup
+- **[Jellyfin](https://github.com/jellyfin/jellyfin)** — Free software media server for movies, TV, music, live TV
+
 ## 2. Garuda Linux Begins Nixification By Promoting Its Sybsystem — by It's FOSS
 ![It's FOSS](https://itsfoss.com/content/images/2026/09/garuda-nix-banner.png)
 
@@ -318,6 +326,17 @@ Static site generators prebuild every HTML page before anything gets uploaded, s
 
 **GitHub:** https://github.com/blogc/blogc
 
+**Projects:**
+
+- **[blogc](https://blogc.rgm.io/)** — Blog compiler that's compatible with make
+- **[sblg](https://kristaps.bsd.lv/sblg/)** — Static blog utility merging XML articles and templates in a number of ways
+- **[Housecat](https://github.com/mortie/housecat)** — Static site generator with an intentionally simple interface
+- **[mkws](https://web.archive.org/web/20260729100717/https://mkws.sh/)** — Simple static site generator using sh as a templating language
+- **[Kevlar](https://github.com/Aadv1k/kevlar)** — Batteries-included zero-dependency static site generator
+- **[swege](https://github.com/sakhmatd/swege)** — Uses the Discount library to build a website from a set of Markdown files
+- **[Bonobo](https://github.com/rockhardandrew/bonobo)** — Deliberately lightweight static blog generator
+- **[bloggy](https://github.com/hogsy/bloggy)** — Minimalist static site generator
+
 ## 34. Pharos – static binary analysis framework — by LinuxLinks
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2022/04/vulnerability_03_Converted_Converted_.jpg)
 
@@ -337,6 +356,24 @@ Pharos is a static binary analysis framework from Carnegie Mellon University's S
 Mind mapping takes an unstructured problem and forces a framework onto it, which is precisely why the software you pick has to bend to your style rather than the other way around. This roundup makes the case that a map crams a lot of complex content into a tiny space and pushes you to think both logically and creatively at once, so you stop juggling flat lists and start linking ideas in genuinely different ways. The list of fifteen spans the whole spectrum from heavyweight desktop apps to pure-terminal tools. Freeplane and FreeMind are the classic cross-platform workhorses for creating and analyzing maps, while View Your Mind and Heimer lean on Qt. Drawnix is an all-in-one whiteboard, and Minder sells itself on easy customization. On the text side, markmap and myMarkmap build interactive maps straight from Markdown, h-m-m and tmmpr render maps right in the terminal, and Semantik turns maps into finished documents. For teams there is TeamMapper and WiseMapping as web-based collaborative options, plus Mindolph for personal knowledge management with Gen-AI support. TreeSheets rounds it out as a free-form data organizer.
 
 **GitHub:** https://github.com/freeplane/freeplane
+
+**Projects:**
+
+- **[View Your Mind](https://github.com/insilmaril/vym)** — Excellent tool to generate and manipulate maps
+- **[Freeplane](https://docs.freeplane.org/)** — Create and analyze mind maps
+- **[Drawnix](https://github.com/plait-board/drawnix)** — All-in-one whiteboard for diagrams, mind maps and freehand drawing
+- **[Minder](https://github.com/phase1geo/Minder)** — Easy-to-use, and highly customizable way of organizing thoughts
+- **[markmap](https://github.com/markmap/markmap)** — Build mindmaps with plain text
+- **[h-m-m](https://github.com/nadrad/h-m-m)** — Create mind maps in the terminal
+- **[Semantik](https://waf.io/semantik.html)** — Produce complicated documents very quickly and efficiently
+- **[FreeMind](https://freemind.sourceforge.io/wiki/index.php/Main_Page)** — Visualise ideas, projects, brainstorming, concepts, internet research
+- **[Heimer](https://github.com/juzzlin/Heimer)** — Simple cross-platform mind map and note-taking tool written in Qt
+- **[Mindolph](https://github.com/markmap/markmap)** — Personal knowledge management software with Gen-AI support
+- **[TeamMapper](https://github.com/b310-digital/teammapper)** — Collaborative web app for creating and sharing mind maps
+- **[WiseMapping](https://github.com/wisemapping/wisemapping-open-source/)** — Web-based mind mapping tool
+- **[tmmpr](https://github.com/tanciaku/tmmpr)** — Terminal mind mapper
+- **[myMarkmap](https://github.com/eyssette/myMarkmap)** — Create interactive mind maps directly from Markdown
+- **[TreeSheets](https://github.com/aardappel/treesheets)** — Free-form hierarchical data organizer
 
 ## 36. Kairos – immutable Linux meta-distribution for edge and cloud — by LinuxLinks
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
@@ -404,6 +441,45 @@ BandOpticon is a browser-based amateur radio visualization tool that turns PSKRe
 
 LinuxLinks rounds up thirty-six free and open source GUI time trackers for Linux, all with a ratings chart, and explicitly excludes terminal-only tools (those get their own separate roundup). Time tracking here means recording hours per task so you can bill clients, generate invoices, and measure productivity — the usual use case for accountants, solicitors, and freelancers who charge by the hour. The list runs from todo-plus-timeboxing apps to straight Pomodoro timers and passive trackers. Super Productivity is the todo app with timeboxing, ActivityWatch watches what you do automatically, and Kimai is web-based work-time classification. solidtime adds projects, tasks, and reporting. Tockler tracks time by monitoring your active window title. Then there's the Pomodoro crowd — Pomotroid, Pomodorolm, Focus Timer, Flowkeeper, Samaya, Pomolin, zomodoro, Solanum, and KTeaTime (a timer that is literally for steeping tea). GNOME users get Project Hamster, Time Tracker, Timetrack, and TimeIT. Toggl Desktop is the client for the Toggl service, Time Cop bills itself as privacy-respecting, and there are oddballs like Rachota, Khronos, dotProject, Kapow, and HPR that tracks offline activity. It is a directory piece, not a deep review, so each entry is a pointer to a fuller LinuxLinks page. If you need to know how long you spent staring at a terminal instead, that is another article entirely.
 
+**Projects:**
+
+- **[Super Productivity](https://github.com/super-productivity/super-productivity)** — Todo app with timeboxing & time tracking capabilities
+- **[ActivityWatch](https://github.com/ActivityWatch/activitywatch)** — Automated time tracking application
+- **[Kimai](https://www.kimai.org/en/)** — Web based software that tracks work time, and classifies it
+- **[solidtime](https://github.com/solidtime-io/solidtime)** — Modern time tracking with projects, tasks, and reporting
+- **[Pomotroid](https://github.com/Splode/pomotroid)** — Simple and visually-pleasing Pomodoro timer
+- **[Project Hamster](https://github.com/projecthamster/hamster)** — Time tracking applet for the GNOME desktop environment
+- **[Time Tracker](https://github.com/elvishcraftsman/time-tracker)** — Simple time-tracker program for GNOME
+- **[Time Cop](https://github.com/hamaluik/timecop)** — Billed as a time tracking app that respects your privacy
+- **[Tockler](https://github.com/MayGo/tockler)** — Tracks time by monitoring your active window title
+- **[Task Coach](https://github.com/taskcoach/taskcoach)** — Designed to deal with composite tasks
+- **[dotProject](https://github.com/dotproject/dotProject)** — Web-based, multi-user, multi-language project management application
+- **[KTimetracker](https://apps.kde.org/en-gb/ktimetracker/)** — Todo management and time tracking application
+- **[Kapow](https://gottcode.org/kapow/)** — Punch clock program designed to track time
+- **[Pomodorolm](https://github.com/vjousse/pomodorolm)** — Simple, good looking and configurable pomodoro tracker with tray icon
+- **[Focus Timer](https://github.com/focustimerhq/FocusTimer)** — Pomodoro timer for structured focus and break sessions
+- **[Timetrack](https://flathub.org/apps/org.gnome.Timetrack)** — Simple timetrack app for GNOME
+- **[Flowkeeper](https://flowkeeper.org/)** — Pomodoro Technique desktop timer
+- **[Valot](https://gitlab.com/valot/app/valot)** — Modern time tracking application
+- **[Furtherance](https://github.com/unobserved-io/Furtherance)** — Track your time
+- **[TimeSlotTracker](https://github.com/TimeSlotTracker/timeslottracker-desktop)** — Java based time tracking tool
+- **[Play Timer](https://github.com/efogdev/mpris-timer)** — Native-feeling timers
+- **[Flowtime](https://github.com/Diego-Ivan/Flowtime)** — Spend your time wisely
+- **[Samaya](https://codeberg.org/lockedmutex/samaya)** — Minimalist Pomodoro timer for your desktop
+- **[Baralga](https://baralga.github.io/)** — Simple and lightweight time tracking
+- **[TimeIT](https://hoglet.github.io/TimeIT/)** — Unobtrusive time tracker
+- **[dxtime](https://dxtime.dxsolutions.org/)** — Small program for time tracking using wxWidgets, wxSQLite, and SQLIte3
+- **[Sessions](https://github.com/pojntfx/sessions/)** — Focus with timed work intervals
+- **[Pomolin](https://github.com/lockedmutex/Pomolin)** — Minimalist Pomodoro timer
+- **[zomodoro](https://github.com/zeroproject-dev/zomodoro)** — Simple pomodoro made with Qt
+- **[Toggl Desktop](https://toggl.github.io/toggldesktop/)** — Toggl time tracking client
+- **[Solanum](https://apps.gnome.org/Solanum/)** — Balance working time and break time
+- **[Rachota](https://github.com/Rachota/rachota)** — Designed for personal timetracking of projects
+- **[KTeaTime](https://invent.kde.org/utilities/kteatime)** — Timer for steeping tea
+- **[Khronos](https://github.com/lainsce/khronos)** — Simple tool to let you track the time spent on a task
+- **[HPR](https://github.com/plexescor/HPR)** — Automatically tracks offline computer activity
+- **[Charm](https://github.com/KDAB/Charm)** — Cross-platform software for professionals
+
 ## 43. 18 Best Free and Open Source Linux Web Servers - LinuxLinks — by LinuxLinks
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2020/09/web-design-concept-with-drawings.jpg)
 
@@ -417,6 +493,27 @@ The rest of the 18 reads like a tour of "things you've vaguely heard of." [Caddy
 Then there's the deep cuts: Lwan, H2O, Tengine, Ferron, CivetWeb, Algernon, Yaws, Hiawatha, rwasa, devd, and Cherokee. Some of these are actual production tools, some are experiments someone abandoned in 2016, and LinuxLinks is generous enough to list them all with a straight face. Node.js sneaks in at the end despite the author admitting it's "frequently not categorised as a web server," which is the polite way of saying "we needed to pad the list."
 
 The chart is the usual LinuxLinks flourish — a colorful PNG that ranks everything without ever explaining its methodology beyond vibes. It's a perfectly fine reference if you're picking a web server, and a perfectly useless one if you already run nginx, because you've already made the only decision that matters.
+
+**Projects:**
+
+- **[nginx](https://nginx.org/)** — Very powerful and efficient web server powering the top web sites
+- **[Apache](https://httpd.apache.org/)** — Like nginx, Apache is a hugely popular web server
+- **[Caddy](https://caddyserver.com/)** — Powerful, enterprise-ready web server written in Go
+- **[Lwan](https://lwan.ws/)** — Experimental, scalable, high performance HTTP server
+- **[H2O](https://h2o.examp1e.net/)** — Optimized HTTP/1.x, HTTP/2, HTTP/3 server
+- **[Tengine](https://github.com/alibaba/tengine)** — Distribution of nginx
+- **[lighttpd](https://www.lighttpd.net/)** — Fast, compliant and very flexible low memory footprint web server
+- **[Ferron](https://ferron.sh/)** — Web server optimized for speed, security and efficiency
+- **[CivetWeb](https://github.com/civetweb/civetweb)** — Small embeddable web server library written in C
+- **[Angie](https://en.angie.software/?ra=yes)** — Scalable web server that was forked from nginx
+- **[Algernon](https://github.com/xyproto/algernon)** — Small self-contained pure-Go web server
+- **[Node.js](https://nodejs.org/en)** — Server-side JavaScript environment for network applications
+- **[Yaws](https://github.com/erlyaws/yaws)** — High-performance web server written in Erlang
+- **[Hiawatha](https://hiawatha.leisink.net/)** — Web server that focuses on security
+- **[OpenLiteSpeed](https://github.com/litespeedtech/openlitespeed)** — Lightweight HTTP server
+- **[rwasa](https://2ton.com.au/rwasa/)** — Full-featured high performance web server
+- **[devd](https://github.com/cortesi/devd)** — Local web server for developers
+- **[Cherokee](https://cherokee-project.com/)** — Fast, flexible and embeddable web server
 
 ## 44. OBLinux - Desktop distribution with Arch and Debian editions - LinuxLinks — by LinuxLinks
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
