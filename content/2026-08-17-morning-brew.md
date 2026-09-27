@@ -1,7 +1,7 @@
 ---
 date: 2026-08-17
 slug: 2026-08-17-morning-brew
-tags: Artificial Intelligence,Audio Technology,Cloud Computing,Coding Tools,Computer Hardware,Computing,Creative Tools,DIY Projects,Forza Horizon,Gaming News,GitHub,Graphic Design,Linux Kernel,Operating Systems,Performance Optimization,Presentation Software,Product Design,Productivity Software,Racing Games,Software,Software Development,Software Review,Sustainable Design,Tech News,Technology,Upcycling,Video Games
+tags: Artificial Intelligence, Audio Technology, Cloud Computing, Coding Tools, Computer Hardware, Computing, DIY Projects, GitHub, Graphic Design, Linux Kernel, Operating Systems, Performance Optimization, Product Design, Productivity Software
 ---
 # Morning Brew — 2026-08-17
 

@@ -1,7 +1,7 @@
 ---
 date: 2026-09-07
 slug: 2026-09-07-morning-brew
-tags: 3D graphics,3D painting,9to5Linux roundup,Apple,Apps,Arch Linux,CLI,Distro,Documents,Fedora,GTK+,GUI,Graphics,Internet,JavaScript,LaTeX,Linux roundup,Multimedia,News,OpenVPN,Perl,Pixelmator Pro,Productivity,Python,Qt,Reviews,Roundup,Rust,Shelly,Shelly-ALPM,System Software,TUI,Utilities,VFX,VPN,Web Apps,Weekly Roundup,alternatives,audio player,container,digital art,distribution,distro,email,file managers,font managers,fonts,free,game development,gapless playback,graphics,image editor,java,mailing list managers,mailing lists,material authoring,media player,mind map,mind-mapping,music player,open source,package manager,pdf,photo editing,procedural textures,server,system administration,terminal,texture authoring,texture painting,tui,video player,virtual private network,visualizer,weekly roundup
+tags: 3D graphics, 9to5Linux roundup, Apple, Apps, Arch Linux, CLI, Distro, Documents, Fedora, GTK+, GUI, Graphics, Internet, JavaScript
 ---
 
 # Morning Brew — 2026-09-07

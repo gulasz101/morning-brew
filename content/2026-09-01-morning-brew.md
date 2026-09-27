@@ -1,7 +1,7 @@
 ---
 date: 2026-09-01
 slug: 2026-09-01-morning-brew
-tags: ARM,Amlogic,Apps,Arch Linux,Audacity,C,C++,CLI,Cosmic,DICOM,Distro,Distros,GUI,Graphics,ImageMagick,Internet,JSON,KDE,Kodi,Linux 7.2,Linux distribution,Linux kernel 7.2,Multimedia,News,Programming,Python,QR code,Qt,Roundup,Rust,Scientific,Type 2 hypervisor,TypeScript,Utilities,Web Apps,artificial intelligence,audio editing,audio editor,barcode,big data,bookmark manager,color picker,data science,deep learning,distribution,editors,free,hypervisor,machine learning,media center,medical imaging,music,natural language processing,neural networks,nlp,open source,parsing,photo management,semantic role labelling,speech recognition,speech tool,text to speech,toolkit,virtualization,wayland
+tags: ARM, Apps, Arch Linux, Audacity, C, C++, CLI, Cosmic, Distro, Distros, GUI, Graphics, Internet, JSON
 ---
 
 # Morning Brew — 2026-09-01

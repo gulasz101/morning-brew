@@ -1,7 +1,7 @@
 ---
 date: 2026-08-29
 slug: 2026-08-29-morning-brew
-tags: 3D Modeling,3D graphics,AI Agents,AI Engineering,AI Orchestration,Agent Orchestration,Agentic Engineering,Artificial Intelligence,Bare Metal,Blender,C++,Calendar and Tasks,Claude,Cloud Computing,Coding Strategy,Containerization,Cryptography,DevOps,Docker,GNOME,GTK+,GUI,Game Development,GitOps,GnuPG,Graphics,Graphics Design,Helm Chart,Inference Engine,JavaScript,Kubernetes,Large Language Models,Link Page,Linux Software,Machine Learning,Mixture of Experts,Model Fusion,Model Stacking,Monitoring,Multi-Agent Systems,Next.js,Node.js,Observability,Open Source AI,Open Source Software,OpenPGP,PBR,PIM,Personal Information Manager,Planning,Productivity,Productivity Software,Programming,Python,Scalability,Security,Self-Hosted,Software Development,Software Engineering,Software Testing,Texture Painting,Tokenomics,Web Development,add-on,encryption,machine learning,monitoring,test automation,texture painting
+tags: 3D Modeling, 3D graphics, AI Agents, Agentic Engineering, Artificial Intelligence, Blender, C++, Claude, Cloud Computing, Containerization, Cryptography, DevOps, Docker, GNOME
 ---
 
 # Morning Brew — 2026-08-29

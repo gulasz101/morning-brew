@@ -2,7 +2,7 @@
 title: Morning Brew — 2026-08-25
 date: 2026-08-25
 slug: 2026-08-25-morning-brew
-tags: AI Agents, API Integration, Apple, Apple Silicon, Arch Linux, Artificial Intelligence, Banking, Blockchain, Career Advice, Career Change, Command Line Interface, Command Line Tools, Commodore 64, Computer Hardware, Computer Vision, Computing, Credit Cards, Cryptocurrency, Cyberpunk 2077, Cybersecurity, Deep Learning, DevOps, Developer Tools, Docker, File Downloads, Frameworks and Libraries, Gaming Hardware, Generative AI, Google Drive, Hardware Engineering, Hyprland, Image Generation, Job Search, Kubernetes, Large Language Models, Leadership, Linux, Mac Mini, Mac Studio, Machine Learning, Malware Analysis, Management, Money Management, Multi-Agent Systems, OAuth Tokens, Open Source, Open Source Software, Operating Systems, Personal Finance, Private Cloud Compute, Productivity Tools, Programming Languages, Python, Retro Computing, Reverse Engineering, Reverse Proxy, Rust Programming Language, SSL Certificates, Self-Hosting, Semiconductors, Software Configuration, Software Development, Software Engineering, Software Security, Systems Thinking, Technology Careers, Technology Interviews, Terminal Navigation, Video Generation, Web Servers, Web3
+tags: AI Agents, API Integration, Apple, Apple Silicon, Arch Linux, Artificial Intelligence, Career Advice, Command Line Interface, Command Line Tools, Computer Hardware, Computer Vision, Computing, Cryptocurrency, Cybersecurity
 ---
 
 # Morning Brew — 2026-08-25

@@ -1,7 +1,7 @@
 ---
 date: 2026-08-07
 slug: 2026-08-07-morning-brew
-tags: digest,karakeep,linux
+tags: digest, karakeep
 ---
 # Morning Brew — 2026-08-07
 

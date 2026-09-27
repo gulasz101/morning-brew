@@ -1,7 +1,7 @@
 ---
 date: 2026-08-19
 slug: 2026-08-19-morning-brew
-tags: AI Agents,Artificial Intelligence,Audio Engineering,Backend Development,Cloud Computing,Dashboard Tools,DevOps,Email API,IoT Devices,Kubernetes,Machine Learning,Monitoring,Multi-Agent Systems,Music Production,Music Technology,Network Mapping,OSINT,Open Source,Open Source Software,Self-Hosted,Signal Intelligence,Software Engineering,Stem Separation,Wireless Technology
+tags: AI Agents, Artificial Intelligence, Backend Development, Cloud Computing, DevOps, Kubernetes, Machine Learning, Monitoring, Multi-Agent Systems, Music Production, Music Technology, OSINT, Open Source, Open Source Software
 ---
 
 # Morning Brew — 2026-08-19

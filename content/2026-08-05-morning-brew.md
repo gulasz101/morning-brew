@@ -1,7 +1,7 @@
 ---
 date: 2026-08-05
 slug: 2026-08-05-morning-brew
-tags: digest,karakeep,ai,code-review
+tags: digest, karakeep, ai
 ---
 # Morning Brew — 2026-08-05
 

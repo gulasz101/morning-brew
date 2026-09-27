@@ -1,7 +1,7 @@
 ---
 date: 2026-07-25
 slug: 2026-07-25-morning-brew
-tags: digest,karakeep,open-source,osint,ai
+tags: digest, karakeep, open-source, ai
 ---
 # Morning Brew — 2026-07-25
 

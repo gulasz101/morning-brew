@@ -1,7 +1,7 @@
 ---
 date: 2026-09-03
 slug: 2026-09-03-morning-brew
-tags: karakeep,digest,LinuxLinks,Open-source Projects,YouTube,Linux,open source,CLI,GUI,Roundup,networking,astronomy,speech recognition,bookmark manager,VPN,distro,screen capture,font manager,test automation,audio editing,Rust,Python,C,C++,Go,PHP,Debian,Arch Linux,Wayland,Hyprland,Phosh,Niri,OpenRC,TUI,productivity,calibration,mailing list manager,self-hosted,privacy,hardware,software,free,text,automation,frameworks,testing,distribution,mobile,smartphone,multimedia,utilities,Internet,Web Apps,ARM,graphics,books,tutorials,programming,history,Apps,Audacity,News,audio editor,Proprietary Software,Software Alternatives,free software
+tags: karakeep, digest, YouTube, Linux, open source, CLI, GUI, Roundup, networking, astronomy, speech recognition, bookmark manager, VPN, distro
 ---
 
 # Morning Brew — 2026-09-03

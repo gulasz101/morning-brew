@@ -1,7 +1,7 @@
 ---
 date: 2026-08-23
 slug: 2026-08-23-morning-brew
-tags: Artificial Intelligence, Cloud Computing, DevOps, AWS, Local Development, Software Development, Racing Games, Video Games, Retro Gaming, MS-DOS, AI Agents, Machine Learning, Open Source Software, Database Technology, Version Control, Scalability, Object Storage, Real Estate, Travel, Interior Design, Home Improvement, Architecture, Kubernetes, Linux, SRE, Troubleshooting, Operating Systems, Technology, Laptops, Hardware Assembly, Computer Vision, Open Source, Character Animation, Web Development, Data Collection, Survey System, Deep Learning, PyTorch, Object Detection, C++ Programming, JSON Parsing, Software Libraries, Data Serialization, Concurrency, Parallel Computing, Memory Management, Developer Community, Project Showcase, Software Engineering, Data Visualization, .NET Development, Charting Library, Cross-Platform Development, Python Programming, User Interface, Qt Framework, Node Graph, Cybersecurity, Penetration Testing, Command And Control, Red Teaming, Frontend Development, Progressive Web Apps, Vite, Service Workers, Large Language Models, Multimodal AI, AI Models
+tags: Artificial Intelligence, Cloud Computing, DevOps, AWS, Software Development, Racing Games, Video Games, Retro Gaming, AI Agents, Machine Learning, Open Source Software, Version Control, Scalability, Object Storage
 ---
 
 # Morning Brew — 2026-08-23

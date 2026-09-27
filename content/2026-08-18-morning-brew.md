@@ -1,7 +1,7 @@
 ---
 date: 2026-08-18
 slug: 2026-08-18-morning-brew
-tags: 2-in-1 Devices,Aluminum,Animation,Apple Ecosystem,Apple Silicon,Artificial Intelligence,Battery Life,Booth Tour,CNC Machining,Cinematography,Command Line Tools,Compilers,Computer Hardware,Computer Peripherals,Computex,Computing,Computing Guides,Computing Hardware,Computing Technology,Connectivity,Customization,Data Extraction,Desktop Computers,Document Parsing,Engineering,Framework Computer,Framework Laptop,Full-Text Search,Gadgets,Hardware,Hardware Design,Hardware Review,Information Retrieval,Keyboard,Laptops,Large Language Models,LinkedIn,Linux,Linux Distributions,Local LLMs,Machine Learning,Manufacturing,Natural Language Processing,Navigation,Open Source,Operating Systems,PC Hardware,PDF Processing,Product Design,Programming Languages,Rust Programming,Social Media,Software Development,Tech Tutorials,Technology,Touchpad,Trade Show,USB-C,Ubuntu,Video Production,Visual Arts,Wireless Technology,macOS
+tags: Animation, Apple Silicon, Artificial Intelligence, Battery Life, Command Line Tools, Compilers, Computer Hardware, Computer Peripherals, Computing, Computing Hardware, Computing Technology, Customization, Engineering, Full-Text Search
 ---
 # Morning Brew — 2026-08-18
 

@@ -1,7 +1,7 @@
 ---
 date: 2026-09-06
 slug: 2026-09-06-morning-brew
-tags: ARM,Apache HTTP Server,Atom,C,CAPTCHA,CLI,Caddy,DNSSEC,Discord,Distro,Documents,Domain Name Service,FTP,GTK+,GUI,Go,Graphics,HPC,IIS,ISO,Internet,Internet Information Services,JavaScript,LaTeX,Lua,Microsoft,Multimedia,Nginx,Other,Perl,Productivity,RSS,Reviews,Roundup,Rust,System Software,Tauri,TypeScript,Utilities,VoIP,Web Apps,artisanry,benchmark,btrfs,calibration,chat,client modification,communication,containers,crafting,distribution,feed reader,flash,free,handicrafting,handicraftsmanship,instant messaging,mind map,mind-mapping,monitors,network security,noise,open source,open source alternatives,openSUSE,performance monitoring,plugins,privacy,proof of work,security,self-hosted,server,servers,service discovery,themes,web,web servers
+tags: ARM, Atom, C, CAPTCHA, CLI, DNSSEC, Discord, Distro, Documents, Domain Name Service, FTP, GTK+, GUI, Go
 ---
 
 # Morning Brew — 2026-09-06

@@ -1,7 +1,7 @@
 ---
 date: 2026-09-04
 slug: 2026-09-04-morning-brew
-tags: Application Delivery Controller,Apps,BorgBackup,C,CLI,Calamares,DNSSEC,Debian,Distro,Distros,Documents,Domain Name Service,FTP,GTK+,GUI,Graphics,Grml,High Availability,Hyprland,Internet,JSON,JavaScript,LibreOffice,Linux distribution,Lua,Multimedia,News,OCR,Other,PHP,Programming,Python,Qt,Reverse Proxy,Roundup,Rust,Scientific,System Software,TUI,Ubuntu,Utilities,Web Apps,Xfce,astronomy,backup,chemical engineering,chemistry,distribution,font editors,fonts,free,java,load balancer,mailing list manager,networking,office suite,open source,scientific,screen capture,surveillance,system administration,system administrator,systemd,tui,web development,web server,webcam
+tags: Apps, C, CLI, Calamares, DNSSEC, Debian, Distro, Distros, Documents, Domain Name Service, FTP, GTK+, GUI, Graphics
 ---
 
 # Morning Brew — 2026-09-04

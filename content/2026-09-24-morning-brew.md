@@ -1,7 +1,7 @@
 ---
 date: 2026-09-24
 slug: 2026-09-24-morning-brew
-tags: Web Applications,Open Source Software,Robotics,Data Visualization,Robot Operating System,Databases,Programming,Cloud Computing,AWS,Go Programming,Terminal User Interface,JSON,Log Analysis,Code Formatting,Web Development,HTML Linter,Template Engines,Data Integrity,Command Line Tools,Cryptography,Data Hashing,Cybersecurity,Software Development,Technology,Bug Bounty,Responsible Disclosure,Workflow Optimization,Note Taking,Productivity Software,Knowledge Management,Homelab,Internet Of Things,Server Monitoring,Smart Home,Virtual Pet,Education,Desktop Environment,Operating Systems,Linux Distribution,Children,Machine Learning,Artificial Intelligence,Elon Musk,Technology News,Software Updates,Project Management,Agile Methodology,Team Communication,Status Update,Web Security,Internet Technology,Developer Tools,Open Source,Code Review,Chemistry,Linux Software,Periodic Table,Productivity Tools,AI Agents,Google Gemini,Generative AI,Data Analytics,Polars,Data Science,Linux,Hybrid Architecture,CPU Scheduling,Mini PC,Hardware Performance,Cloudflare
+tags: Web Applications, Open Source Software, Robotics, Data Visualization, Robot Operating System, Databases, Programming, Cloud Computing, AWS, Go Programming, Terminal User Interface, JSON, Log Analysis, Code Formatting
 ---
 
 # Morning Brew — 2026-09-24

@@ -1,7 +1,7 @@
 ---
 date: 2026-09-02
 slug: 2026-09-02-morning-brew
-tags: Apps,Arch,CLI,Desktop,Distro,Documents,GNOME,GNOME Shell,GNOME extensions,GTK+,GUI,Gaming,Go,Graphics,Internet,JavaScript,Kernel,Lightweight,Linux 7.1,Linux kernel,Linux kernel 7.1,Mozilla Thunderbird,Multimedia,News,PHP,Productivity,Python,QR code,Reviews,Roundup,Rust,Scientific,Steam,Steam Client,TUI,Thunderbird,TypeScript,Utilities,Web Apps,barcode,bookmark manager,chmod,collecting,collection manager,color palette,console,desktop customization,desktop environment,distribution,email client,end of life,file permissions,forecasting,free,libadwaita,media players,meteogram,open source,open source software,photo management,photo manager,productivity tools,project management,software,speech recognition,system administration,terminal,tiling window manager,tui,video players,wayland,weather,web browser,window management
+tags: Apps, Arch, CLI, Desktop, Distro, Documents, GNOME, GTK+, GUI, Gaming, Go, Graphics, Internet, JavaScript
 ---
 
 # Morning Brew — 2026-09-02

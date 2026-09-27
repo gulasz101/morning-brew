@@ -1,7 +1,7 @@
 ---
 date: 2026-07-24
 slug: 2026-07-24-morning-brew
-tags: digest,karakeep,self-hosting,recipes,vegan,gaming,ai,android
+tags: digest, karakeep, self-hosting, ai
 ---
 # Morning Brew — 2026-07-24
 

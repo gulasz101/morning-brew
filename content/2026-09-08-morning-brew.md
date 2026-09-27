@@ -1,7 +1,7 @@
 ---
 date: 2026-09-08
 slug: 2026-09-08-morning-brew
-tags: Apps,Arch,Beelink,C,C++,CAPTCHA,CLI,Debian,Desktops,Distro,Distros,EQi Core 3 304,Earth Observation,Education,Environmental Science,GNOME,GStreamer,GUI,Gentoo,Git,Go,Google,Graphics,Hardware,Haskell,IRC,Intel,Intel Core 3 304,Internet,KDE,KDE Plasma,Linux distribution,Llama 3.2,MPD,Mini PC,MocaccinoOS,Multimedia,NPU,News,Ocean Science,Oceanography,OpenVINO,Productivity,Python,Qt 4,Remote Sensing,Reviews,Roundup,Rust,Satellite Imagery,Scientific,Security,TUI,Ubuntu,Utilities,Web Apps,artificial intelligence,audio,bash,calculator,circuit simulator,clock,desktop environment,distribution,distro,free,geospatial,image compression,mathematics,multimedia framework,music player,noise,noise generator,open source,podcast,privacy,productivity,ratatui,reCAPTCHA,scanner,security,self-hosted,systemd,tui,typing,web,web security,wireless
+tags: Apps, Arch, C, C++, CAPTCHA, CLI, Debian, Desktops, Distro, Distros, Education, GNOME, GUI, Git
 ---
 
 # Morning Brew — 2026-09-08

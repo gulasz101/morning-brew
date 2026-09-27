@@ -1,7 +1,7 @@
 ---
 date: 2026-09-05
 slug: 2026-09-05-morning-brew
-tags: C,C++,CAPTCHA,DNSSEC,Distro,Documents,Domain Name Service,GNOME,GUI,Gantt,Go,Graphics,ISO,Internet,JavaScript,KDE Plasma,Multimedia,Office,Pastebin,Programming,QML,Roundup,SMART objectives,Scientific,Software,System Software,TypeScript,Utilities,Void,Web Apps,Xfce,bookmark manager,capture,climate,data analysis,distribution,distro,earth science,encryption,flash,free,graphics,image compression,image editor,java,meteorology,network security,noise,open source,photo editing,privacy,projects,proof of work,raster graphics,runit,screen,security,self-hosted,service discovery,visualization,weather,web
+tags: C, C++, CAPTCHA, DNSSEC, Distro, Documents, Domain Name Service, GNOME, GUI, Go, Graphics, ISO, Internet, JavaScript
 ---
 
 # Morning Brew — 2026-09-05

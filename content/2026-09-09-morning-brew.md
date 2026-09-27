@@ -1,7 +1,7 @@
 ---
 date: 2026-09-09
 slug: 2026-09-09-morning-brew
-tags: CLI,Git,Python,Security,scanner,security,wireless,MPD,MPD client,Multimedia,Roundup,Web Apps,free,open source,Education,Rust,TUI,terminal,tui,typing,Database,Documents,database,databases,Productivity,clock,stopwatch,timer,ARM,Distro,Fedora,GNOME,KDE Plasma,distribution,wayland,C++,EDA,FPGA,GUI,IP-XACT,Scientific,system-on-chip,Go,DNS,DNS resolver,DNSSEC,Internet,System Software,networking,privacy,recursive DNS,self-hosting,Reviews,backup,data protection,deduplication,disaster recovery,encryption,restic,QML,Qt,alarm clock,Drivers,News,Nvidia,graphics driver,video driver,Apps,KDE,KDE Frameworks,software suite,OpenSSL,SSL,3D graphics,ArmorPaint,Blender,Graphics,Material Maker,PBR,Substance 3D Designer,adobe,material authoring,procedural textures,texture creation,Cosmic,productivity,task managers,Honeypot,network security,timezone,world clock
+tags: CLI, Git, Python, Security, scanner, security, wireless, MPD, Multimedia, Roundup, Web Apps, free, open source, Education
 ---
 
 # Morning Brew — 2026-09-09

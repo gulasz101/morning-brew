@@ -1,7 +1,7 @@
 ---
 date: 2026-08-04
 slug: 2026-08-04-morning-brew
-tags: digest,karakeep,management,artificial-intelligence,technology
+tags: digest, karakeep, artificial-intelligence
 ---
 # Morning Brew — 2026-08-04
 

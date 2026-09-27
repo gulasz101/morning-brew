@@ -1,7 +1,7 @@
 ---
 date: 2026-09-10
 slug: 2026-09-10-morning-brew
-tags: CLI,Honeypot,Python,Security,network security,security,Go,Internet,file transfer,networking,Multimedia,Roundup,artificial intelligence,free,machine learning,open source,speech algorithms,Android,GUI,Jetpack Compose,Productivity,kotlin,productivity,task managers,Graphics,graphics,photo,photo management,Scientific,plotting,science,scientific plotting,RSS,React,Rust,Web Apps,podcast,self-hosted,web,Arch,Distro,KDE Plasma,desktop,distribution,wayland,C++,Slint,time tracking,Apps,KDE,KDE Gear,News,software suite,Calamares,Calamares installer,graphical installer,Utilities,configuration,shell,zsh,GNOME,GTK+,Pomodoro,Vala,Desktops,KDE Plasma 6.8,desktop environment,IAM,Microsoft,Microsoft Entra ID,Office,SSO,access control,authentication,identity and access management,identity federation,identity management,network authentication,COSMIC,Tauri,TypeScript,encryption,file sharing,peer-to-peer,Distros,Linux distribution,Ubuntu,Ubuntu 24.04 LTS,Debian,LXQt,Xfce,CPU scheduling,CachyOS,E-cores,FFmpeg,Hardware,Intel Core Ultra 7 356H,LP E-cores,Linux scheduler,MINISFORUM M2,Mini PC,OpenSSL,P-cores,Panther Lake,Reviews,hybrid processors,perf,stress-ng,turbostat,TUI,news,tui,JavaScript,GIMP,image editing,image editor
+tags: CLI, Honeypot, Python, Security, network security, security, Go, Internet, networking, Multimedia, Roundup, artificial intelligence, free, machine learning
 ---
 
 # Morning Brew — 2026-09-10

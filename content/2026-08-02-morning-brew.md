@@ -1,7 +1,7 @@
 ---
 date: 2026-08-02
 slug: 2026-08-02-morning-brew
-tags: digest,karakeep,Photography,Film Simulation,Developer Tools,AI Agents
+tags: digest, karakeep, Photography, Developer Tools, AI Agents
 ---
 # Morning Brew — 2026-08-02
 

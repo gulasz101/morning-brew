@@ -1,7 +1,7 @@
 ---
 date: 2026-08-26
 slug: 2026-08-26-morning-brew
-tags: AI Agents, AI Models, API Proxy, American Perspective, Artificial Intelligence, Autonomous Driving, Bot Verification, CLI Tools, Chinese Language, Cloudflare, Command Line Interface, Computer Hardware, Computing, Custom Silicon, DNS Server, Design Systems, Developer Tools, Development Philosophy, European Union, Frontend Development, Gamification, Generative AI, GitHub Copilot, Hardware, Hardware Optimization, Innovation, Internet Technology, Large Language Models, Learning Resources, Linux, Linux Distributions, Local AI, Machine Learning, Mobile Technology, Networking, Open Source, Open Source Software, Operating Systems, PC Building, Performance Analysis, Presentations, Privacy And Security, Problem Solving, Programming, Proof Of Concept, Proxy Tools, Self-Hosting, Semiconductors, Shell Scripting, Software Development, Software Engineering, Software Infrastructure, Tech Industry, Technology, Text To Video, UI/UX Design, User Experience, V2Ray, Video Downloader, Video Generation, Web Development, Web Security, Website Security, YouTube
+tags: AI Agents, AI Models, Artificial Intelligence, Cloudflare, Command Line Interface, Computer Hardware, Computing, Design Systems, Developer Tools, Frontend Development, Generative AI, GitHub Copilot, Hardware, Hardware Optimization
 ---
 
 # Morning Brew — 2026-08-26

@@ -1,7 +1,7 @@
 ---
 date: 2026-07-23
 slug: 2026-07-23-morning-brew
-tags: digest,karakeep,self-hosting,ai,cybersecurity,windows
+tags: digest, karakeep, self-hosting, ai
 ---
 # Morning Brew — 2026-07-23
 
