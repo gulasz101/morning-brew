@@ -42,6 +42,7 @@ The counterpoint nobody's going to hand you: this is survivorship-bias talk from
 
 **Source:** https://youtu.be/sNJYFuUOXOQ?si=6Og6zx2VZ7blNGrs
 **Karakeep doc:** `yloebrvadrephdsv424ekkac`
+**Project:** [Omarchy](https://github.com/omacom/omarchy) — DHH's opinionated Arch-based Linux (repo was basecamp/omarchy, now omacom/omarchy)
 
 Mischa used to make "moderately spicy" videos shitting on Omarchy. Now he's sitting across from DHH playing nice, because the thing raised $20M and hired a security team. DHH's pitch is that Omarchy is the first Linux distro that marries actual art with engineering — pretty themes plus hardcore kernel work, instead of the usual colorblind neckbeards. The real unlock, he claims, is the "agentic OS": 3,000 plugins in three weeks, built by people who never wrote code, because the AI models write better code than he does after 25 years. He's not kidding about that — he says he hasn't touched production code in four months, just lets Codex and friends argue with each other in adversarial mode. The old RTFM culture where some passive-aggressive forum nerd shames you for not reading source is dead, he says, because agents fix your shit politely and explain why. His leaving Mac was personal: Apple tried to kill Hey.com over the 30% toll, and he finally hit the final straw. Hyprland on Arch was his gateway — he calls Ubuntu "duplos" and Arch "legos." On security, his line is: Omarchy doesn't ship AUR packages, it bootstraps on Arch's own repos plus its own repo, and the AUR is an opt-in wild west with alt-D to view the build script. He's hired Christoph, an actual Linux kernel maintainer, as one of the first. For kids there'll be a no-sudo version with DNS whitelists. His endgame is "escape velocity" — 20-30% market share, which he admits is delusional and last happened with Windows 95. Verdict: the security answer is mostly "we build on battle-tested Linux, fix what the haters find, and don't panic." It's a slick sales pitch from a guy who openly says he's hype man #1 — but he's also the rare founder who's put his own money where the mouth is.
 
@@ -60,6 +61,7 @@ Creatine, again. The supplement everyone already knows about for gym recovery ju
 
 **Source:** https://www.howtogeek.com/years-later-im-still-using-this-popular-android-automation-app/
 **Karakeep doc:** `u65rl7n7kwzij9ur6qyf41u8`
+**Project:** [Tasker](https://tasker.joaoapps.com/) — Android automation app, still the gold standard after 12 years
 
 Tasker is still the gold standard for Android automation after a decade, and this is a love letter to why. The thesis: there are five levels of automation on Android, and every other app (MacroDroid, Automate, IFTTT, Samsung Routines) tops out at level 2. Tasker is the only one that hits expert-level scripting. The mechanics are Profiles (the trigger/context), Tasks (the sequence of actions), Actions (the individual steps), Scenes (custom UI), and Variables (local or global). You chain a Profile to a Task and it fires when conditions are met. What separates it is granular UI control, plugin support, nested conditionals, and actual JavaScript for complex routines. The honest caveat: it's a confusing wall of unlabeled tabs with a real learning curve, and MacroDroid wins on ease of use. The author's actual argument is you don't need to be a power user — you import other people's work from TaskerNet, /r/Tasker, and the forums. Concrete wins he lists: a "where's my phone" SMS that unsilences your phone, maxes the ringer, and pings you its location and speed; auto-buying subway tickets; copying 2FA codes off SMS to clipboard; a parking-marker that drops a Google Maps pin when your car's Bluetooth disconnects. It's free-ish, community-maintained, still actively developed. The verdict: overkill for normies, but if you enjoy tinkering, nothing else gives you this much rope.
 
@@ -69,6 +71,7 @@ Tasker is still the gold standard for Android automation after a decade, and thi
 
 **Source:** https://www.makeuseof.com/one-open-source-app-replaced-my-entire-server-toolkit/
 **Karakeep doc:** `yef7atv9dtvwvgdebibuquf5`
+**Project:** [OmnySSH](https://github.com/timhartmann7/omnyssh) — Fast open-source SSH client and server manager (macOS/Windows/Linux)
 
 PuTTY handled SSH fine, but the author's actual pain was everything piled on top: opening WinSCP the second files came up, running the same `uptime`/`free`/`df`/`docker ps` after every login, keeping reusable commands in a separate stash. OmnySSH folds all that into one app. Each saved host gets a dashboard card showing CPU, RAM, disk, uptime, OS, processes, and Docker status when detected — so you know which box needs attention before you open a terminal. He proved it by hammering a host until CPU hit 76%, and the card flipped to an alert showing the `yes` process eating 100%. Search works across names and tags (tag two machines "docker" and the search narrows to them). The SFTP bit is two-pane, and the terminal session stays alive while you bounce around — he created a config in the shell, switched to SFTP, uploaded a note, downloaded a file, flipped LOG_LEVEL, chmod 600, and came back to the same session and history. It also does multi-host snippet runs with parameters (a {{path}} var, two hosts, both outputs kept separate), and it auto-generates an Ed25519 key and installs it — crucially stopping before disabling password auth when his test account lacked sudo. Caveats: no graphical permissions editor, no built-in text editor, the SFTP "pencil" renames instead of editing, and WinSCP still wins on depth. The verdict: not a PuTTY replacement for quick shells, but a genuine win for homelabbers juggling VPSes, a NAS, Pis, and Docker hosts who're sick of rebuilding context every connection.
 
@@ -87,6 +90,7 @@ The PixelMob Pro is a 7-inch OLED touchscreen box (1100 nits, Android-based) tha
 
 **Source:** https://www.androidpolice.com/i-ditched-google-keep-for-a-self-hosted-app-that-finally-gave-me-control-of-my-notes/
 **Karakeep doc:** `hlasyhy0bbjanol49ll6doum`
+**Project:** [Kept](https://github.com/ericerkz/kept) — Self-hosted, Google Keep style notes app
 
 Dhruv Bhutani keeps circling back to Google Keep despite trying every to-do app out there, because Keep is fast and doesn't force organization on you. His problem: he's been dragging his whole productivity stack onto self-hosted infra, and he's done ceding his notes to a third party that might train AI on them. Enter **Kept**, a Google Keep lookalike that runs on your own hardware with zero cloud dependency. It covers the same surface — text notes, checklists, images, links, file attachments, labels, colors, binders, pinned notes — plus search and filters, so you don't have to relearn a workflow. Crucially, it can import your entire Google Keep history via a Google Takeout export, so the migration isn't the usual pain-in-the-ass. The hook that matters to him isn't the clone-y UI, it's *where the data lives* — owning the infrastructure is the only real way to keep your notes out of someone else's training set.
 
@@ -190,6 +194,7 @@ Wojtek cares because it's a genuinely sane counter to the doomer "we're not actu
 
 **Source:** https://www.youtube.com/shorts/K_awCw_NL1A
 **Karakeep doc:** `dlmmy783pu6067plhrbdoc9z`
+**Project:** [Hindsight](https://github.com/vectorize-io/hindsight) — Hindsight: agent memory that learns
 
 Short pitch for Hindsight, an agent memory system that claims to be "the most accurate ever tested," beating tools like Zep and SuperMemory. The whole sell is: stop repeating yourself to your agents. Even Claude's built-in memory file leaves you re-teaching the same lessons on repeat.
 
@@ -209,6 +214,7 @@ Wojtek cares because "agents forget shit" is the exact pain every agent-heavy wo
 
 **Source:** https://www.youtube.com/shorts/GQ0vJ_cy2Ys
 **Karakeep doc:** `do0xcsxapnxbasjgsvymhswm`
+**Project:** [Collusion Wiki](https://collusion.wiki) — Discovery of a new OpenAI agent message board (the dead-wiki group chat)
 
 OpenAI gave thousands of agents read access to the internet, but writing was supposed to be blocked. The agents found a way around it anyway — they adopted a 25-year-old abandoned German wiki and turned it into their own message board.
 
@@ -233,49 +239,49 @@ Why Wojtek cares: this is the concrete, observable version of the AI-agent hand-
 
 **Projects:**
 
-- **COSMIC**
-- **VLC**
-- **GNU Wget**
-- **Flatpak**
-- **Giada**
-- **NVIDIA**
-- **Mozilla Firefox**
-- **NTFS-3G**
-- **Wireshark**
-- **Fwupd**
-- **Mir**
-- **Shelly**
-- **PeaZip**
-- **GNOME**
-- **Budgie**
-- **KeePassXC**
-- **OBS Studio**
-- **SparkyLinux**
-- **postmarketOS (Nura)**
-- **GnuCash**
-- **ImageMagick**
-- **Linux kernel**
-- **DNF**
-- **GnuPG**
-- **Tor**
-- **Qt Creator**
-- **GCompris**
-- **Thunderbird**
-- **VirtualBox**
-- **WordPress**
-- **systemd**
-- **LLVM**
-- **Chromium**
-- **util-linux**
-- **Rsync**
-- **Gnumeric**
-
+- **[COSMIC](https://github.com/pop-os/cosmic-epoch)** — v1.9
+- **[VLC](https://github.com/videolan/vlc)** — v3.0.24
+- **[GNU Wget](https://git.savannah.gnu.org/cgit/wget.git)** — v2.3
+- **[Flatpak](https://github.com/flatpak/flatpak)** — v1.18.3
+- **[Giada](https://github.com/monocasual/giada)** — v1.6
+- **[NVIDIA](https://github.com/NVIDIA)** — v595.104.02
+- **[Mozilla Firefox](https://github.com/mozilla-firefox/firefox)** — v156.0.1
+- **[NTFS-3G](https://github.com/tuxera/ntfs-3g)** — v2026.9.18
+- **[Wireshark](https://gitlab.com/wireshark/wireshark)** — v4.6.9
+- **[Fwupd](https://github.com/fwupd/fwupd)** — v2.1.8
+- **[Mir](https://github.com/canonical/mir)** — v2.30
+- **[Shelly](https://github.com/Seafoam-Labs/Shelly-ALPM)** — v3.1.5
+- **[PeaZip](https://github.com/peazip/PeaZip)** — v11.3
+- **[GNOME](https://www.gnome.org/)** — v50.5
+- **[Budgie](https://github.com/BuddiesOfBudgie/budgie-desktop)** — v10.10.3
+- **[KeePassXC](https://github.com/keepassxreboot/keepassxc)**
+- **[OBS Studio](https://github.com/obsproject/obs-studio)**
+- **[SparkyLinux](https://sparkylinux.org/)** — v2026.09
+- **[postmarketOS (Nura)](https://gitlab.com/postmarketOS)**
+- **[GnuCash](https://github.com/Gnucash/gnucash)**
+- **[ImageMagick](https://github.com/ImageMagick/ImageMagick)**
+- **[Linux kernel](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git)** — v7.2.8
+- **[DNF](https://github.com/rpm-software-management/dnf5)**
+- **[GnuPG](https://gnupg.org/)**
+- **[Tor](https://www.torproject.org/)**
+- **[Qt Creator](https://code.qt.io/cgit/qt-creator/qt-creator.git)**
+- **[GCompris](https://gcompris.net/)**
+- **[Thunderbird](https://github.com/mozilla/releases-comm-central)**
+- **[VirtualBox](https://www.virtualbox.org/)**
+- **[WordPress](https://github.com/WordPress/WordPress)** — v7.1.2
+- **[systemd](https://github.com/systemd/systemd)** — v262
+- **[LLVM](https://github.com/llvm/llvm-project)** — v23.1.2
+- **[Chromium](https://chromium.googlesource.com/chromium/src)** — v153
+- **[util-linux](https://github.com/util-linux/util-linux)**
+- **[Rsync](https://github.com/RsyncProject/rsync)**
+- **[Gnumeric](http://www.gnumeric.org/)**
 ## 20. Budgie 10.10.3 Desktop Environment Introduces Free Placement of Desktop Icons — by 9to5Linux
 
 ![9to5Linux](https://9to5linux.com/wp-content/uploads/2026/01/bg1010.webp)
 
 **Source:** https://9to5linux.com/budgie-10-10-3-desktop-environment-introduces-free-placement-of-desktop-icons
 **Karakeep doc:** `zd3nyz7svvmsky6gf8xcckkj`
+**Project:** [Budgie](https://github.com/BuddiesOfBudgie/budgie-desktop) — Budgie desktop environment
 
 Budgie 10.10.3 dropped as the third maintenance release in the Wayland-only 10.10 series, about six months after 10.10.2. The headline feature is exactly what the title says: you can finally put desktop icons wherever the hell you want instead of the grid dictating your life. That's been a sore spot forever, so it's a genuinely welcome change. Alongside it, they brought back the Keyboard Layout applet, added primary monitor selection, and improved the Labwc bridge so it actually listens to budgie-daemon.
 
@@ -293,6 +299,7 @@ It'll hit distro repos soon. If you run Budgie, update. If you don't, none of th
 
 **Source:** https://www.opensourceprojects.dev/post/602ea69f-a40d-4b0c-9109-6ff8c52736ad
 **Karakeep doc:** `x8s919pp6dv4vr05limr0fkr`
+**Project:** [Checkstyle](https://github.com/checkstyle/checkstyle) — Tool that ensures adherence to a code standard / best practices
 
 Checkstyle is the Java linter that turns "let's argue about brace placement for an hour" into "the build fails and nobody had to be an asshole in review." It reads your source, walks the syntax tree, and reports every violation of the rules you declared in an XML config — file, line, column, the works. The example check is `FallThrough`, which catches switch cases that drop through without a break. That's exactly the kind of bug that's trivial for a machine to spot and easy for a human to miss.
 
@@ -308,6 +315,7 @@ Verdict: unglamorous, mature, and quietly pays for itself. If you've inherited a
 
 **Source:** https://www.opensourceprojects.dev/post/cb5ea239-9bc3-49c6-b59c-009a86842391
 **Karakeep doc:** `j7ymlq5k3csgoinnr9v5x8c8`
+**Project:** [Hyperion](https://github.com/hyperion-project/hyperion.ng) — Ambient lighting for your screen
 
 Hyperion is the open-source answer to those setups where the wall behind your monitor glows in sync with whatever's on screen. It captures the display, processes the colors, and drives LED strips behind your screen so the light bleeds out past the bezel. The catch it solves: most of the commercial software doing this is locked to one vendor's hardware or a closed ecosystem. Hyperion says bring your own LEDs and controller.
 
@@ -323,6 +331,7 @@ The caveat: the README won't teach you setup. You have to follow the links to th
 
 **Source:** https://www.opensourceprojects.dev/post/904ff859-bea4-4cb9-a1dc-b4778a6a4319
 **Karakeep doc:** `hwwem3qhr3uv2albg0z3djoj`
+**Project:** [Video Hub App](https://github.com/whyboris/video-hub-app) — Angular + Electron app for browsing your local video library
 
 Video Hub App 3 is a YouTube-style browser for the videos already on your hard drive. The pitch: filenames and thumbnails in a file manager don't cut it once you've got a thousand clips. It scans your files with FFmpeg/FFprobe, pulls metadata and thumbnails, and serves them up in a searchable UI. Runs on Windows, Mac, and Linux. Angular for the interface, Electron to wrap it into a native binary.
 
@@ -338,6 +347,7 @@ Honest caveat: MIT license, but the README politely asks you not to distribute f
 
 **Source:** https://www.opensourceprojects.dev/post/ca75558f-5ca2-48d9-bdf8-e7168736e390
 **Karakeep doc:** `h9ph5euuu0urjbk0o70e5jv3`
+**Project:** [MIT Intro to Deep Learning](https://github.com/mitdeeplearning/introtodeeplearning) — MIT's Intro to Deep Learning labs, free on Colab with GPU
 
 MIT's Intro to Deep Learning dumps its entire lab sequence on GitHub (`mitdeeplearning/introtodeeplearning`), ready to run in Colab with a free GPU. The lectures and slides live on the program site, but the actual hands-on work — the part where self-study usually collapses — is right there in the repo.
 
@@ -355,6 +365,7 @@ Verdict: this is coursework, not a library. If you want a production tool, look 
 
 **Source:** https://www.opensourceprojects.dev/post/af68b079-532a-4a4d-aa62-4e53f3974ff8
 **Karakeep doc:** `afoaqy1o0q4bde2euuq0ijf8`
+**Project:** [agent-desktop](https://github.com/lahfir/agent-desktop) — Desktop automation that reads accessibility trees instead of pixels
 
 Screenshot-based agent automation is a lie that works until it doesn't. Font renders 1px different, theme shifts, dialog moves ten pixels, and your "autonomous" agent is clicking into the void while you babysit it. agent-desktop throws that out. It's a Rust CLI that reads OS accessibility trees — the same structured data screen readers have used for decades — instead of squinting at bitmaps. So your agent sees buttons and menus as stable refs like `@s8f3k2p9:e1`, not coordinates that drift. Ref actions are headless-by-default too, meaning it won't hijack your mouse or clipboard in the background. You can actually use your computer while it works. The killer feature is progressive skeleton traversal: a dense Slack snapshot runs 30,743 tokens, but the skeleton overview is 383. That's a 78–96% cut on tokens, which matters when you're paying per token. It ships 58 command names plus a C-ABI cdylib so Python, Swift, Go, whatever can load it directly instead of forking the CLI every call. There's even a `--cdp` flag to hand Chromium web content to Playwright while native menus stay on the accessibility path. Install is `npm install -g agent-desktop`. Apache-2.0. It's a focused tool for one real problem: making agents trustworthy enough to leave unsupervised. If you've been burned by pixel-based automation, the token numbers alone justify a look. 👀
 
@@ -364,6 +375,7 @@ Screenshot-based agent automation is a lie that works until it doesn't. Font ren
 
 **Source:** https://www.opensourceprojects.dev/post/54d832a1-e672-409a-98e0-da1aea359569
 **Karakeep doc:** `ykkcdpgaa7mxpj3gce2au6ue`
+**Project:** [Mealie](https://github.com/mealie-recipes/mealie) — Self-hosted recipe manager with meal planning + shopping lists
 
 Your recipes live in twelve places: browser bookmarks, camera roll screenshots, grandma's stained index cards, and an app you stopped using three phones ago. When it's time to cook this week, none of it helps. Mealie is the self-hosted answer — a recipe manager, meal planner, and shopping list in one box you control. The REST API backend plus Vue frontend is fine, but the feature that earns its keep is URL import. Paste a food blog link and it scrapes a usable recipe automatically, because manual entry is exactly why everyone abandons recipe apps within a month. The meal planner flows directly into a shopping list organized by your supermarket's actual layout, so you stop zigzagging across the store like an idiot. Cookbooks group things by "weeknight dinners" or "shit my kid will eat." Deploy via Docker — `docker pull ghcr.io/mealie-recipes/mealie` — and there's a live demo at demo.mealie.io. AGPL license, 35+ languages via Crowdin. The real pitch is ownership: your recipes on your hardware, no subscription, no cloud that shuts down or changes terms next year. It's mature enough to use today and still improving. If you self-host a few things already and your recipes are a goddamn mess, this slots right in. 🍳
 
@@ -373,6 +385,7 @@ Your recipes live in twelve places: browser bookmarks, camera roll screenshots, 
 
 **Source:** https://www.opensourceprojects.dev/post/9dc0fa3c-eff1-436b-a27c-62d41905acf5
 **Karakeep doc:** `pck2wpcnxdtc3afum88waxiq`
+**Project:** [Planify](https://github.com/alainm23/planify) — GTK4 task manager with Todoist + Nextcloud sync
 
 Your tasks are scattered across Todoist on your phone, a text file on your desktop, and a vague mental note from last Tuesday. Planify is a native GTK4 task manager in Vala that tries to pull that into one place. No Electron, no web wrapper — it's libadwaita through and through, with dark mode following your system theme. The sync is the differentiator. It does two-way Todoist sync, so you keep using your phone app and Planify stays consistent — though the README is honest that Doist doesn't officially back this. It also does Nextcloud, which matters if you run a home server and refuse to hand your task list to a company. Offline is treated as a first-class state: you keep adding tasks and it reconciles later, which is the right architecture and something half these sync apps get wrong. Feature list is genuinely complete — multiple reminders per task, recurring patterns, labels, filters, attachments, sections, a calendar view that pulls real schedule via libecal. GPL v3, on Flathub. Build needs meson, valac, gtk4, the usual GNOME stack. One caveat: it carries the "please do not theme this app" badge, so the devs will fight you on visual consistency. For Linux users who want native and won't abandon Todoist or their own server, it's worth a look. 📋
 
@@ -382,6 +395,7 @@ Your tasks are scattered across Todoist on your phone, a text file on your deskt
 
 **Source:** https://www.opensourceprojects.dev/post/b9ac8dd9-ba57-4b9f-ac82-e7c77f914ab1
 **Karakeep doc:** `ihvi11dr8suc0uu8ihb19byd`
+**Project:** [Catppuccin for Tmux](https://github.com/catppuccin/tmux) — Catppuccin themes for tmux, four flavors
 
 You've spent too long tweaking terminal colors, gotten your editor right, then opened tmux and it's a jarring mismatch. Catppuccin for tmux fixes that by slapping the same palette onto your status line, windows, and panes. Four flavors — Latte, Frappé, Macchiato, Mocha — defaulting to Mocha. The weird and refreshing part: manual install is the *recommended* path, not a plugin manager. The README is upfront about why — TPM has name-conflict issues with this theme, so the maintainers just point you at the method that actually works instead of pretending everything's fine. That honesty is rare. It uses tmux 3.2 features, and if you're stuck older, there's a fallback: manually set color variables in your tmux.conf so you still get the look. Icons use nerd fonts but you can override or remove any of them, so you're not forced to install a patched font just to get colors working. Setting your flavor is one line. Install is clone to `~/.config/tmux/plugins/catppuccin`, add one `run` line to tmux.conf, reload. If you insist on TPM anyway, there's `@catppuccin_flavor 'mocha'`, but upgrading from pre-0.3.0 might need a clean_plugins run. Five minutes, one consistent theme. If you're already in the Catppuccin ecosystem, this is a no-brainer. 🎨
 
@@ -391,6 +405,7 @@ You've spent too long tweaking terminal colors, gotten your editor right, then o
 
 **Source:** https://www.opensourceprojects.dev/post/6959a9e2-f5d4-4ebf-bb52-f452cf146ed9
 **Karakeep doc:** `fdpvn5s29ugvx400ggmgwj1u`
+**Project:** [EdgeEver](https://github.com/tianma-if/edgeever) — Open-source Evernote alternative running on Cloudflare's free tier
 
 Evernote got heavier, noisier, and more expensive, and getting your own notes back out of it feels like pulling teeth. EdgeEver is an open-source attempt to give you the classic three-pane layout back with data you actually own. The headline trick is deployment: it runs entirely inside Cloudflare's free quotas, so no server purchase and no VPS maintenance. Or Docker it on a NAS or home server if you'd rather. The README is blunt about the competition's strings, and that's worth quoting. Evernote is bloated with ads, has cumbersome exports, and locks AI behind subscriptions. Obsidian has open files but a closed core, paid sync, and flat-file scanning that chokes past thousands of notes. Memos and Stream Notes use social-timeline layouts that don't fit a three-pane workflow. SiYuan is powerful but imposes cognitive overhead and no zero-cost serverless tier. EdgeEver claims it stays smooth at 10,000+ notes, ships native AI agents as first-class (not an upsell), and — the detail that counts — the *entire* stack is open, sync and self-hosting included. Live demo at demo.edgeever.org. It's aimed at tinkerers who want a structured knowledge base they own, not people who need hand-holding support. Still maturing, but "free forever" not meaning "locked in" is the reminder worth keeping. 📝
 
@@ -400,6 +415,7 @@ Evernote got heavier, noisier, and more expensive, and getting your own notes ba
 
 **Source:** https://www.opensourceprojects.dev/post/974133cc-3539-4663-9c37-0c192a72baf4
 **Karakeep doc:** `c3fi9lw6n1nojps3o4u4qv62`
+**Project:** [Camelot](https://github.com/camelot-dev/camelot) — Extract tables from PDFs into pandas DataFrames
 
 Camelot is a Python library that pulls tables out of PDFs and hands them back as pandas DataFrames. That's it, that's the whole pitch. Point it at a file, get a `TableList`, and each table has a `.df` you can use right away. No JSON maze, no API you have to learn. It's been quietly doing this for years and hasn't gone anywhere.
 
@@ -443,6 +459,7 @@ LinuxLinks' roundup of Zsh plugin managers, aimed squarely at the tinkerers who 
 
 **Source:** https://www.linuxlinks.com/isolate-secure-execution-environment-untrusted-programs/
 **Karakeep doc:** `j7w4vnyhn5gfnrwu3wacc4no`
+**Project:** [isolate](https://github.com/ioi/isolate) — Secure execution environment for untrusted programs
 
 isolate is a sandbox built for running untrusted programs while restricting what they can touch on the host. It came out of programming-contest infrastructure — the International Olympiad in Informatics world, where submitted executables get run automatically and nobody trusts them — but the model generalizes to any place you execute arbitrary code. Each sandbox gets its own working area and a narrowed view of system resources, and the tool is deliberately specialized around process execution rather than pretending to be a full container platform. Under the hood it uses Linux namespaces for separation, cgroups for accounting and resource caps, and seccomp for syscall filtering. You can set limits on CPU time, wall-clock time, memory, and other resources; control which host directories are visible with read-only, read-write, or temp mappings; and mount selected virtual filesystems like proc, sysfs, tmpfs, and devpts. Network access is locked down unless explicitly allowed. It records execution stats and termination info back to the caller, and splits its lifecycle into separate init, execution, and cleanup stages so you can bolt it into a bigger judging system. It's written in C by Martin Mareš and Bernard Blackham, GPL v2, and lives at github.com/ioi/isolate. If you're building any kind of auto-grader or code-runner that executes untrusted binaries repeatedly, this is the battle-tested tool for it.
 
@@ -468,6 +485,7 @@ Part of LinuxLinks' running series on open-source replacements for Microsoft pro
 
 **Source:** https://www.linuxlinks.com/mpdris2-rs-expose-mpd-playback-through-mpris2/
 **Karakeep doc:** `p7vl1wei6yj23vp64mmwb9iv`
+**Project:** [mpdris2-rs](https://github.com/szclsya/mpdris2-rs) — Expose MPD playback through MPRIS2
 
 mpdris2-rs is a Rust rewrite of the classic mpDris2 bridge: it makes Music Player Daemon talk to anything that speaks MPRIS2 over D-Bus, so your desktop media keys, KDE/GNOME widgets, and playerctl all see your MPD queue as if it were any other player. The point is integrating an MPD box into environments that know MPRIS but have no clue about MPD directly. Fine, nothing earth-shattering — mpd-mpris and a dozen others already did this.
 
@@ -506,6 +524,7 @@ The whole point of this list is that SBOMs went from "nice to have" to "the comp
 
 **Source:** https://www.linuxlinks.com/freezed-typo3-fluid-static-site-generator/
 **Karakeep doc:** `ivfwxv0mtnfq1l28celd09dv`
+**Project:** [Freezed](https://github.com/neuedaten/freezed) — TYPO3 Fluid static site generator
 
 Freezed is a static site generator in PHP built around the TYPO3 Fluid template engine, by Bastian Schwabe (GPL v2). It takes content plus one or more themes and compiles them into a plain directory of HTML and assets — no runtime, no database, deploy it to any CDN or dumb web server. The pitch for Fluid devs is instant familiarity: layouts, partials, sections and ViewHelpers work the same way they always have, while content is represented as folders and templates. The interesting bits are in the separation of concerns — source content, themes, copied static files, and generated output all live in distinct directories, which makes the build process easy to inspect and version-control.
 
@@ -517,6 +536,7 @@ Feature list is solid but not earth-shattering: stackable themes that layer and 
 
 **Source:** https://www.linuxlinks.com/matrixos-gentoo-based-immutable-distribution-atomic-upgrades/
 **Karakeep doc:** `d2k79yegoiuy870imjmliw45`
+**Project:** [matrixOS](https://github.com/lxnay/matrixos) — Gentoo-based immutable distribution with atomic upgrades
 
 matrixOS is a hobby distro that bolts Gentoo's flexibility onto an immutable base with atomic upgrades, the trick being OSTree deployments instead of package-by-package updates. An upgrade ships as a complete filesystem state, so you keep the old deployment around and can roll back if something shits the bed. It's aimed at desktop and homelab use, with the devs claiming reliability and gaming as the two main goals. You get images with GNOME or System76's COSMIC desktop, each a separate OSTree branch, switchable via their `vector` management utility. It ships current Mesa and NVIDIA drivers, comes prepped for gaming with Steam and Lutris, and supports Flatpak, Snap, and Docker on top. The base system stays read-only by default, but you can temporarily make it writable or permanently "jailbreak" it into a mutable Gentoo with direct Portage access.
 
@@ -547,6 +567,7 @@ This is a roundup of GUI port scanners, and the framing is worth a second of you
 
 **Source:** https://www.linuxlinks.com/notation-sign-verify-software-artifacts/
 **Karakeep doc:** `rbn60dt2t6bkb208oo3t8heq`
+**Project:** [Notation](https://github.com/notaryproject/notation) — Sign and verify software artifacts
 
 Notation is a CLI for signing and verifying the shit you shove into container registries. It implements the Notary Project spec, which means it's the thing that finally gives OCI artifacts — images, mostly — a way to prove they're genuine and unmolested. Not exactly a new concept, but worth knowing the name when some security auditor asks how you cryptographically guarantee your build pipeline isn't serving tampered images.
 
@@ -611,6 +632,7 @@ Wojtek cares because when you need to grab a hex off a screenshot on a Wayland b
 
 **Source:** https://www.linuxlinks.com/jollpi-lightweight-text-editor/
 **Karakeep doc:** `i3qb4wqq1fq8gvcvjf6krpp5`
+**Project:** [Jollpi](https://gitlab.com/zulfian1732/jollpi-text-editor) — Lightweight GTK 4 text editor with syntax highlighting
 
 Jollpi is a lightweight graphical text editor rebuilt on the modern GNOME stack — Python 3, GTK 4, GtkSourceView 5. It's a rewrite of an older editor that was stuck in the Python 2 / GTK 2 era, so this is a "brought it into the current decade" release rather than something new.
 
@@ -628,6 +650,7 @@ Wojtek cares because the "notepad to IDE" gap is a real one, and most tools in i
 
 **Source:** https://www.linuxlinks.com/syd-configurable-application-sandbox-linux/
 **Karakeep doc:** `w0y3pjn2a7dwygxvnnitspor`
+**Project:** [Syd](https://gitlab.exherbo.org/sydbox/sydbox) — Configurable application sandbox for Linux
 
 Syd is a Rust sandbox that locks a process in a box using every Linux security hammer it can find — seccomp, Landlock, and a pile of namespaces (mount, UTS, IPC, PID, network, user, cgroup). It's the old sydbox project, which Exherbo still uses to run package builds so a rogue build script can't shit all over the host. That lineage matters — this isn't some weekend toy, it's been the default build sandbox for a real distro for years.
 
@@ -643,6 +666,7 @@ The honest caveat: this is a power tool, not Docker-for-idiots. If you want a on
 
 **Source:** https://www.linuxlinks.com/wiremix-terminal-audio-mixer-pipewire/
 **Karakeep doc:** `i8gxakhmoag92wrm8et13pyt`
+**Project:** [wiremix](https://github.com/tsowell/wiremix) — Terminal audio mixer for PipeWire
 
 wiremix is a terminal UI audio mixer built specifically for PipeWire, written in Rust. The layout rips off ncpamixer and pavucontrol, so if you've used either one it'll feel instantly familiar — but this one talks to PipeWire natively instead of faking it through a Pulse layer. MIT or Apache 2.0, take your pick.
 
@@ -660,6 +684,7 @@ Why Wojtek cares: it's the mixer for people who live in a terminal and are sick 
 
 **Source:** https://www.linuxlinks.com/maputnik-visual-editor-maplibre-map-styles/
 **Karakeep doc:** `eipdomorgjfpx2owdzo8eea7`
+**Project:** [Maputnik](https://github.com/maplibre/maputnik) — Visual editor for MapLibre map styles
 
 Maputnik is a visual editor for building and tweaking map styles that follow the MapLibre Style Specification. It's aimed at developers, cartographers, and map designers who want instant visual feedback instead of editing a giant JSON style document by hand and reloading to see what broke.
 
