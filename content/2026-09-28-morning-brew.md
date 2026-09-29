@@ -55,6 +55,16 @@ Liliputing's roundup covers a few small-hardware stories worth a skim. The big o
 
 Five tools, no fluff. First, Ghostty, the terminal emulator from Mitchell Hashimoto — hundreds of color themes you can live-preview with `ghostty +list-themes`, bundled Nerd Fonts so the icon glyphs in the other tools just work, and a version 1.3.0 feature that pings you when a long-running command finally finishes. Second, Starship, a shell prompt built from TOML-configured modules for Git branch, exit status, and command timing, with community presets like Pastel Powerline if you can't be arsed to hand-roll a config. Third and fourth are the color pair: eza as a modern `ls` with file icons and Git status, and bat as a `cat` with syntax highlighting and line numbers — alias both and you stop dreading a terminal dump. Fifth, the navigation combo: zoxide learns the folders you actually visit so `z src` jumps into a deep path, and fzf adds Ctrl+R history search, Ctrl+T path insertion, and Alt+C directory jumping, with `zi` pulling up a fuzzy menu of every matching folder. There's a bonus sixth — Atuin, which stores your entire command history in a local SQLite database with context like cwd and exit status, plus optional encrypted sync you can self-host. None of this is revolutionary; it's the standard Rust-tooling stack. The value is that the terminal stops feeling like a chore once the ergonomics stop fighting you. If you live in a shell, install all five in an afternoon and never look back.
 
+**Projects:**
+
+- **[Ghostty](https://github.com/ghostty-org/ghostty)** — fast, feature-rich terminal emulator
+- **[Starship](https://github.com/starship/starship)** — cross-shell prompt built from TOML modules
+- **[eza](https://github.com/eza-community/eza)** — modern `ls` replacement with icons and Git status
+- **[bat](https://github.com/sharkdp/bat)** — `cat` with syntax highlighting and line numbers
+- **[zoxide](https://github.com/ajeetdsouza/zoxide)** — smarter `cd` that learns your folders
+- **[fzf](https://github.com/junegunn/fzf)** — fuzzy finder for history, paths, and directories
+- **[Atuin](https://github.com/atuinsh/atuin)** — shell history in a searchable local SQLite DB
+
 ## 6. I built a website with Claude Code and Stitch 2.0, and now I understand why developers are switching — by XDA
 
 ![XDA](https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/09/google-stitch-open-laptop-1.jpg?w=1600&h=900&fit=crop)
