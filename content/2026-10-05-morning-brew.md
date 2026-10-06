@@ -407,7 +407,7 @@ But Theo won't let it slide. He reproduces real bugs still present: threads that
 
 **Why Wojtek cares:** The measurement-first agent loop is directly transferable, but the caching-without-invalidation failures are a warning about letting agents chase millisecond wins while quietly breaking data freshness.
 
-## 26. I think I have a problem
+## 26. I think I have a problem — by Theo - t3.gg
 
 ![Theo - t3.gg](https://i.ytimg.com/vi/kt_2wFglK3c/maxresdefault.jpg)
 
