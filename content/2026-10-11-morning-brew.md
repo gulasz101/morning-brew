@@ -477,6 +477,21 @@ Caveats: no versions, no maintenance status, no comparison against the commercia
 
 Verdict: still the fastest way to find a text-first UML renderer for a Linux box; skip it if you want current release data.
 
+**Projects:**
+
+- **[Eclipse Papyrus](https://eclipse.dev/papyrus/)** — Eclipse Papyrus is an extensible UML modeling environment with desktop and web tooling, profiles, SysML support, and model execution.
+- **[PlantUML](https://plantuml.com/)** — PlantUML generates UML and many other diagrams from concise text, with broad editor integration, native Linux builds, and flexible output.
+- **[Mermaid](https://github.com/mermaid-js/mermaid)** — Mermaid is a JavaScript-based diagramming and charting tool that lets you create and maintain visualisations using Markdown-inspired syntax.
+- **[Umple](https://cruise.umple.org/umple/)** — Umple combines textual UML modeling with programming, code generation, class and state models, instance diagrams, and IDE integration.
+- **[Modelio](https://www.modelio.org)** — Modelio is a comprehensive UML and BPMN modeling environment with ArchiMate support, model exploration, diagramming, and extensibility.
+- **[Umbrello](https://github.com/KDE/umbrello)** — GUI for diagramming Unified Modelling Language (UML).
+- **[UMLet](https://www.umlet.com/)** — UMLet is a lightweight UML diagramming tool for fast sketching, with text-based element editing, desktop, web and editor integrations.
+- **[JetUML](https://github.com/prmr/JetUML)** — JetUML is a focused desktop application for quickly creating UML diagrams with automatic layout, semantic checks and image export.
+- **[Violet](http://alexdp.free.fr/violetumleditor/page.php)** — Violet is a Java UML editor — quick class/object/sequence/state diagrams, auto-layout, undo history, export to image formats. Free, no account.
+- **[Dia](https://gitlab.gnome.org/GNOME/dia)** — Dia is the long-running GNOME diagram editor: UML, network, flowchart and database shapes, XML file format, Python plug-ins, export to PNG/SVG/PDF.
+- **[crystal-facet-uml](https://github.com/awarnke/crystal-facet-uml)** — Crystal-facet-uml is a desktop UML and SysML modeling application designed to document system and software architecture.
+- **[OpenPonk](https://github.com/OpenPonk/openponk)** — OpenPonk is a Pharo-based metamodeling platform and modeling workbench supporting UML, BPMN, Petri nets, ER diagrams and other notations.
+
 ## 31. ASGI WebDAV - asynchronous WebDAV server implementation - LinuxLinks — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2022/12/book-symbol-yellow-background-3d-rendering.jpg)
@@ -510,6 +525,22 @@ PixelPen is a pixel art editor and animation tool built on the Godot Engine, and
 
 This is LinuxLinks' roundup of console screencasting tools — plain-text terminal recorders as opposed to the usual GUI video grabbers, and the framing is that these are for tutorial, bug-report and skills-evaluation work where you want to show commands and their output at the same time. The argument for plain text is sound: it uses a fraction of the bandwidth of video and stays searchable and copy-pasteable, unlike a pixel recording of a terminal. The list of 13 is a decent spread across playback formats and use cases. Terminalizer generates animated GIFs of your terminal; VHS writes terminal GIFs as code, which makes them reproducible and good for integration testing and demos; ttyd shares a terminal over the web. asciinema is the well-known "record and share terminal sessions" standard, with agg as its GIF generator sidekick. t-rec makes animated GIFs for the web, ffscreencast is a fool-proof ffmpeg shell wrapper, IPBT is a high-tech terminal player, rec records sessions and turns them into reusable workflows, TermSVG records and exports animated SVGs, and termrec is a small toolkit for recording and replaying tty sessions. screencast records an X11 desktop, and script is the granddaddy of the whole category. Only free and open source qualifies, and the article notes it was updated per the site's recent announcement, so the entries are current. The one weakness: it's a directory, not a bake-off — no head-to-head benchmarks of output size or smoothness, so picking still comes down to whether you want GIF, SVG, asciinema cast or a shareable web terminal. Verdict: bookmark asciinema, VHS and agg, ignore the rest until you actually need something exotic. 🖥️
 
+**Projects:**
+
+- **[Terminalizer](https://github.com/faressoft/terminalizer)** — Terminalizer records terminal sessions, replays them and renders configurable animated GIFs with themes, frames and watermarks.
+- **[VHS](https://github.com/charmbracelet/vhs)** — VHS turns scripted terminal actions into repeatable GIF, MP4 and WebM demos, making CLI documentation and testing easy to automate.
+- **[ttyd](https://github.com/tsl0922/ttyd)** — Ttyd exposes terminal programs through a browser with authentication, TLS, file transfer, Sixel graphics and flexible server controls.
+- **[asciinema](https://asciinema.org)** — Asciinema records, replays and live streams terminal sessions using lightweight asciicast files with rich playback controls.
+- **[t-rec](https://github.com/sassman/t-rec-rs)** — T-rec captures terminal sessions and other windows as compact animated GIFs or MP4 videos with configurable recording controls.
+- **[agg](https://github.com/asciinema/agg)** — Agg converts asciinema terminal recordings into high-quality animated GIFs with themes, font controls and flexible frame selection.
+- **[ffscreencast](https://github.com/cytopia/ffscreencast)** — Ffscreencast simplifies FFmpeg screen recording with automatic device discovery, audio capture, webcam overlay and command generation.
+- **[IPBT](https://www.chiark.greenend.org.uk/~sgtatham/ipbt/)** — IPBT is a curses-based ttyrec player offering precise rewind, random frame access, text search and flexible playback controls.
+- **[rec](https://github.com/zeybek/rec)** — Rec is a command-line utility that records terminal sessions and turns them into reusable workflows. Free and open source software.
+- **[TermSVG](https://github.com/MrMarble/termsvg)** — TermSVG records terminal sessions, replays asciicast files, and exports recordings as animated SVG, GIF or WebM with themes and playback controls.
+- **[termrec](http://angband.pl/termrec.html)** — Termrec provides tools to record, replay, inspect, convert and join terminal sessions, with asciicast and compressed format support.
+- **[screencast](https://github.com/dbermond/screencast)** — Screencast records X11 desktops with FFmpeg, offering region selection, live streaming, hardware encoding, audio and webcam overlays.
+- **[script](https://www.kernel.org/pub/linux/utils/util-linux/)** — Script records complete terminal sessions with optional timing, input and output logs for later playback with util-linux tools.
+
 ## 34. Gosling.js - declarative genomic data visualisation - LinuxLinks — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2019/07/3d-render-illustration-dna-structure-blue-background.jpg)
@@ -538,6 +569,24 @@ Curium is a QR code generator, customizer and scanner whose entire selling point
 **Karakeep doc:** `jcz4gxy0wrxav5v5ngp6szie`
 
 LinuxLinks' rundown of 15 open source RAW-processing tools, and the framing is standard photography 101 delivered with a straight face: RAW files are digital negatives, they're not directly usable but carry higher colour depth and dynamic range, they're big, and shooting RAW keeps you from locking into whatever garbage JPEG engine the camera firmware shipped. Fair enough — the real value here is the breadth of the list. Darktable is the marquee name, a virtual lighttable and darkroom; digiKam is the pro-grade photo manager; RawTherapee is the long-standing RAW processor, and ART is its more opinionated fork. LightZone brings professional-level darkroom tooling, ansel is a Darktable fork, and then there's a cluster of newer GPU-accelerated entries: RapidRAW (non-destructive, GPU-accelerated), RAWmakase (Vulkan-accelerated, non-destructive), vkdt (a workflow toolbox spanning stills and video), Filmulator with library management, and FerrumPix for organising, developing and layered editing. DNGLab is the utility for DNG conversion, GTKRawGallery is a workflow-oriented retoucher, rawbit handles RAW pre-processing and import, and fotocx covers big-collection editing and management. Every project gets its own portal page with a screenshot and deeper analysis, and the list was refreshed under the site's recent update announcement. The caveat is baked into the format: it's a directory, not a shootout — no image-quality or speed comparisons, and several of these are forks of forks, so the field is narrower than 15 suggests. Verdict: if you're leaving Lightroom, start at Darktable and RawTherapee; the GPU newcomers are the ones worth watching. 📷
+
+**Projects:**
+
+- **[Darktable](https://www.darktable.org/)** — Darktable is a photography workflow application and raw developer with non-destructive editing, colour management and tethering.
+- **[digiKam](https://github.com/KDE/digikam)** — Advanced KDE photo management suite with tagging, RAW support and batch processing
+- **[RawTherapee](https://rawtherapee.com/)** — RawTherapee is a powerful raw photo processor with precise demosaicing, colour, detail, local editing and batch processing tools.
+- **[LightZone](https://github.com/ktgw0316/LightZone)** — LightZone is a non-destructive digital darkroom for RAW photography with tool stacks, styles, batch processing and zone-based editing.
+- **[ART](https://github.com/artraweditor/ART)** — ART is a powerful RAW image processor with local editing, advanced colour management, masking, metadata handling and flexible workflows.
+- **[ansel](https://github.com/aurelienpierreeng/ansel)** — Ansel is a photography workflow and RAW development application focused on precise colour work, tonal control and efficient editing.
+- **[RapidRAW](https://github.com/CyberTimon/RapidRAW)** — RapidRAW is a GPU-accelerated RAW photo editor with non-destructive editing, masking, retouching, culling, tethering and batch tools.
+- **[Filmulator](https://github.com/CarVac/filmulator-gui)** — Filmulator is a RAW photo editor and library manager using a film-development-inspired processing model with simple controls.
+- **[RAWmakase](https://github.com/pch/rawmakase)** — RAWmakase is a fast non-destructive RAW photo developer with GPU previews, Lightroom catalogue import, masking and command-line tools.
+- **[vkdt](https://github.com/hanatos/vkdt)** — Vkdt is a Vulkan-based RAW photography workflow with a flexible node graph, GPU processing, colour management and video capabilities.
+- **[fotocx](https://www.kornelix.net/fotocx/fotocx.html)** — Fotocx is a Linux program for editing photos or other images and managing a large collection. Free and open source software.
+- **[DNGLab](https://github.com/dnglab/dnglab)** — DNGLab is a command-line camera RAW utility for DNG conversion, metadata inspection, extraction, RAW processing and DNG creation.
+- **[GTKRawGallery](https://sourceforge.net/projects/gtkrawgallery/)** — GTKRawGallery is a GTK RAW photo workflow tool — thumbnail browser, batch processing, non-destructive editor. SourceForge 403s a browser UA but serves curl fine.
+- **[rawbit](https://github.com/cartercanedy/rawbit)** — Rawbit processes raw image files by converting them to the DNG format in parallel, while offering the ability to manipulate metadata.
+- **[FerrumPix](https://github.com/Bitpainter75/FerrumPix)** — FerrumPix is a desktop photo manager and image editor for Linux and Windows. This is free and open source software.
 
 ## 37. LinuxLinks Is Changing – A Fresh Look and Updated Content - LinuxLinks — by LinuxLinks
 
@@ -587,6 +636,14 @@ Rootkits win by lying to the tools you trust, and Decloaker's whole premise is t
 
 Java and static site generators are a strange marriage, but LinuxLinks' five-strong roundup makes the case anyway. The preamble runs the standard static-vs-dynamic argument: prebuilt HTML is served with no database in the loop, the software stack you must patch and secure shrinks, there's no CMS perpetually rotting through upgrade cycles, per-visitor database queries disappear so server load drops hard, you can preview the whole thing locally without touching prod, your content lives in exportable files rather than a locked database, and the whole site versions cleanly under Git. Fair points all — and the honest admission that they themselves run a dynamic site with a page cache, so this is aspiration, not doctrine. Then the shortlist, all freely licensed: JBake, a long-standing static site and blog generator aimed at developers and designers; Znai, which leans toward functional, maintainable user documentation; Roq, pitched as a modern take with Quarkus at its core; CoWeM, a generator aimed specifically at course websites; and Igapyonv3, a lightweight turnkey blog generator. Notice what's missing: no version numbers, stars or last-release dates — just one-line summaries and portal links, each pointing at its own LinuxLinks page. The whole piece is stamped as refreshed under the site's recent "we're updating our roundups" announcement, which is doing a lot of work given how little here has visibly changed. Verdict: a decent starting map if your build is already JVM-shaped, but the ranking is undefended and Roq is the only entry that reads like it's alive — check last-commit dates before you commit your docs to any of them.
 
+**Projects:**
+
+- **[JBake](https://github.com/jbake-org/jbake)** — JBake is a Java static site generator for blogs and documentation, with Markdown, AsciiDoc, templates, feeds and local preview.
+- **[Znai](https://github.com/testingisdocumenting/znai)** — Znai generates documentation websites from Markdown, combining code snippets, API references, diagrams, instant search and live preview.
+- **[Roq](https://github.com/quarkiverse/quarkus-roq)** — Roq is a Quarkus-based static site generator with Markdown, AsciiDoc, Qute templates, live preview and extensible publishing features.
+- **[CoWeM](https://github.com/sjzeil/CoWeM)** — CoWeM generates course websites, lecture notes and slides from Markdown, with conditional content, LaTeX maths and SCORM exports.
+- **[Igapyonv3](https://github.com/igapyon/igapyonv3)** — Igapyonv3 generates static diaries and blogs from Markdown, with FreeMarker templates, keyword indexes and command-line tools.
+
 ## 42. oasdiff - OpenAPI validation and breaking change detection - LinuxLinks — by LinuxLinks
 
 ![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2025/01/026-coding.png)
@@ -635,6 +692,15 @@ A formatter for the one file every academic toolchain quietly depends on and nob
 **Karakeep doc:** `ixyclukqi36f6x6q6xc2rot6`
 
 LinuxLinks refreshed its grab-bag of content control software — web filtering, parental controls and screen-time limiters — and the framing is worth a paragraph on its own. It opens by admitting filtering software is the same technology oppressive regimes use to censor the web, then pivots to the two uses it actually endorses: keeping kids away from porn, and stopping the internet from eating your entire evening. Fair. The list itself is six tools, split roughly into network filters and desktop-nanny utilities. On the network side: E2guardian (proxy, transparent or ICAP server modes), Privoxy (the old privacy-enhancing proxy), and Gatesentry (filtering via DNS and proxy rules). On the desktop side: Timekpr-nExT for capping daily computer and application time, GNOME's Parental Controls for supervised accounts and screen time, and Pardus Parental Control for per-user application, website and login-time restrictions. Each entry links out to its own full review, with the usual LinuxLinks ratings chart summarising the verdict. The article was updated to match the site's recent announcement, so the ratings are current rather than inherited from an old pass. What's missing is as telling as what's there: nothing on Pi-hole-style DNS blocklists, nothing on enterprise web gateways, and the desktop tools are GNOME/KDE-centric — fine for a family desktop, useless on a headless box. Worth a skim if you're locking down a family machine or your own DNS.
+
+**Projects:**
+
+- **[E2guardian](https://github.com/e2guardian/e2guardian)** — E2guardian is a flexible web content filter supporting proxy, transparent and ICAP modes, SSL inspection and multiple filter groups.
+- **[Privoxy](https://www.privoxy.org/)** — Privoxy is a privacy-enhancing non-caching web proxy with ad blocking, HTTPS inspection, header manipulation and flexible filtering.
+- **[Gatesentry](https://github.com/fifthsegment/Gatesentry)** — GateSentry is a network content filter combining DNS blocking, per-device policies, safe search, proxy filtering and HTTPS inspection.
+- **[Timekpr-nExT](https://github.com/polesapart/timekpr-next)** — Timekpr-nExT is a Linux screen-time manager for setting daily, weekly and monthly limits, schedules and application restrictions.
+- **[Parental Controls](https://github.com/biglinux/big-parental-controls)** — BigLinux Parental Controls is a GTK4 suite for supervised accounts, app restrictions, web filtering and screen-time limits.
+- **[Pardus Parental Control](https://github.com/pardus/pardus-parental-control)** — Pardus Parental Control is a GTK4 parental control tool for restricting applications, websites and session time on Linux.
 
 ## 47. Anthares OS - Debian-based desktop Linux distribution - LinuxLinks — by LinuxLinks
 

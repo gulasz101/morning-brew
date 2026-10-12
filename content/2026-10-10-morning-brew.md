@@ -185,7 +185,7 @@ Caveats worth knowing: `--privileged` plus a read-only root mount means you're t
 
 Your sensor fleet is dumping a few hundred thousand points a second into a general-purpose database, and it's starting to sound like a dying fridge. IoTDB is Apache's answer: a time-series database built for industrial IoT, doing collection, storage, and analysis in one thing. The storage layer is TsFile, a columnar format made specifically for timestamps, which is where the compression claims come from — adjacent column values look alike, so they shrink. Java 17 to 25 and Maven 3.6+, runs on Windows, macOS, Linux.
 
-The actual differentiator isn't the storage, it's the plumbing. The README advertises "seamless integration" with Hadoop and Spark plus Grafana, so if your analytics already live in Spark you (allegedly) don't have to hand-roll connectors. It also claims millions of low-power device connections, edge-to-cloud sync with a one-click installer on both ends, fuzzy search over messy device hierarchies, SQL-ish queries and JDBC. It's a real Apache project — 6,408 stars, Apache-2.0, commits landing this week.
+The plumbing is the differentiator, not the storage. The README advertises "seamless integration" with Hadoop and Spark plus Grafana, so if your analytics already live in Spark you (allegedly) don't have to hand-roll connectors. It also claims millions of low-power device connections, edge-to-cloud sync with a one-click installer on both ends, fuzzy search over messy device hierarchies, SQL-ish queries and JDBC. It's a real Apache project — 6,408 stars, Apache-2.0, commits landing this week.
 
 Caveats: "seamless" is a README word, and InfluxDB, TimescaleDB and QuestDB all have Spark paths too, so the moat is thinner than the pitch. Java+Maven is a chunky deployment for a homelab. But if you're already in a Spark/Hadoop shop and drowning in telemetry, this slots in where Prometheus never will. 📉
 
@@ -229,7 +229,7 @@ Every assistant spawned its own plugin ecosystem with its own naming, its own di
 
 It's explicitly a discovery layer, not an installer — each entry links out and you follow that project's own setup. Alongside the human README it ships machine-readable exports, `plugins.json` and `.agents/plugins/marketplace.json`, plus a searchable HOL Plugin Registry. New contributors get a five-step path: pick clients, build, run `pipx run plugin-scanner lint .` and `verify .`, optionally add the scanner GitHub Action, ship. Scanner CI is optional, but keeping it earns the full trust score while skipping it costs 10%.
 
-Caveats: it's run by hashgraph-online (HOL), which has a commercial registry interest, so "the catalog stays safer for everyone" is also marketing; 533 stars is small; awesome-lists rot and nobody vets every entry. Verdict: a useful map of a fragmented landscape, worth bookmarking, not gospel. 🗺️
+Caveats: it's run by hashgraph-online (HOL), which has a commercial registry interest, so "the catalog stays safer for everyone" is also marketing; 533 stars is small; awesome-lists rot and nobody vets every entry. Verdict: a useful map of a fragmented tool scene, worth bookmarking, not gospel. 🗺️
 
 ### LinuxLinks (RSS)
 
@@ -265,6 +265,32 @@ The selection spans the whole DNS lifecycle rather than just resolvers. On the z
 The piece is a curated index, not a deep review — each entry links to its own LinuxLinks writeup, and there's a ratings chart image rather than hard benchmarks. So treat it as a menu: the value is the breadth (code-as-infrastructure, Kubernetes, DNSSEC auditing, load testing, telemetry all in one place), the cost is you'll still have to dig into individual entries to pick winners.
 
 For Wojtek: a genuinely useful bookmark if you run any self-hosted DNS or manage zones across providers — DNSControl plus dnspyre plus DNSViz probably covers 80% of real-world pain. Just don't expect the roundup to tell you which one to choose. 🌐
+
+**Projects:**
+
+- **[DNSControl](https://github.com/DNSControl/dnscontrol)** — DNSControl manages DNS as code with a JavaScript-compatible DSL, provider plugins, previews, Git workflows and automated deployment.
+- **[q](https://github.com/natesales/q)** — Q is a feature-rich command-line DNS client supporting traditional and encrypted DNS, mDNS, flexible output and resolver diagnostics.
+- **[octoDNS](https://github.com/octodns/octodns)** — OctoDNS manages DNS as code across multiple providers with declarative configuration, planning, validation and a plugin architecture.
+- **[nsupdate.info](https://github.com/nsupdate-info/nsupdate.info)** — Nsupdate.info is the name of software used to implement a free dynamic DNS service. Free and open source software.
+- **[ExternalDNS](https://github.com/kubernetes-sigs/external-dns)** — ExternalDNS synchronizes Kubernetes resources with external DNS providers, automating record creation, updates and cleanup.
+- **[DNSViz](https://github.com/dnsviz/dnsviz)** — DNSViz analyses DNS and DNSSEC behaviour, captures query data, assesses problems, and generates textual or graphical reports.
+- **[dnsglobe](https://github.com/514-labs/dnsglobe)** — Dnsglobe is a terminal DNS propagation checker with global resolvers, ECS testing, map and globe views, watch mode and cache diagnostics.
+- **[DNSDiag](https://github.com/farrokhi/dnsdiag)** — DNSDiag provides command-line tools for DNS latency measurement, route tracing, resolver comparison, DNSSEC checks and security auditing.
+- **[DomainMOD](https://github.com/domainmod/domainmod)** — DomainMOD centralises domain portfolios, registrar data, costs, expiry tracking and related internet assets in a self-hosted web app.
+- **[Poweradmin](https://github.com/poweradmin/poweradmin)** — Poweradmin is a friendly web-based DNS administration tool for PowerDNS server. This is free and open source software.
+- **[dnsperf](https://www.dns-oarc.net/tools/dnsperf)** — Dnsperf measures DNS server throughput and latency with repeatable workloads, while resperf tests resolving-service capacity under load.
+- **[ctrld](https://github.com/Control-D-Inc/ctrld)** — Ctrld is a highly configurable DNS forwarding proxy. All DNS protocols are supported. This is free and open source software.
+- **[Atomia DNS](https://github.com/atomia/atomiadns/)** — Atomia DNS is a multi tenant system for handling large amounts of DNS data through programmatic interfaces.
+- **[SPFtoolbox](https://github.com/charlesabarnes/SPFtoolbox)** — SPFtoolbox is a self-hosted web utility for DNS, mail and domain diagnostics including record lookups, DMARC, WHOIS and blacklist checks.
+- **[Flamethrower](https://github.com/DNS-OARC/flamethrower)** — Flamethrower is a fast DNS testing utility for benchmarking and stress testing servers over UDP, TCP, DoT and DoH on Linux.
+- **[DNS-collector](https://github.com/dmachard/DNS-collector)** — DNS-collector captures, filters, enriches and routes DNS telemetry to monitoring, analytics and security platforms on Linux.
+- **[Designate](https://opendev.org/openstack/designate)** — OpenStack Designate is DNS-as-a-Service — a REST API and multi-tenant control plane over PowerDNS, BIND and other backends.
+- **[Zonemaster-CLI](https://github.com/zonemaster/zonemaster-cli)** — Zonemaster-CLI runs comprehensive DNS configuration tests from the command line with graded findings and structured output.
+- **[dnsi](https://github.com/NLnetLabs/dnsi)** — Dnsi is a command line tool to investigate various aspects of the Domain Name System (DNS). Free and open source software.
+- **[Digger](https://github.com/tobagin/digger)** — Digger is a GTK DNS lookup and diagnostics application with DNSSEC checks, encrypted DNS, propagation tests and exportable results.
+- **[dnst](https://github.com/NLnetLabs/dnst)** — Dnst is a Rust DNS administration toolbox for zone operators, providing DNSSEC, NOTIFY and dynamic update utilities with ldns emulation.
+- **[dnspyre](https://github.com/Tantalor93/dnspyre)** — Dnspyre is a command-line DNS benchmark tool built to stress test and measure the performance of DNS servers.
+- **[dns-lexicon](https://github.com/dns-lexicon/dns-lexicon)** — Dns-lexicon provides a consistent CLI and Python API for creating, updating and deleting records across many DNS providers.
 
 ## 18. D-GENIES - interactive dot plots for genome comparisons - LinuxLinks — by LinuxLinks
 
