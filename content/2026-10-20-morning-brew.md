@@ -10,7 +10,7 @@ Twenty-nine things on Monday, seven of them videos, and the day belongs to Cloud
 
 On the release treadmill: KDE Plasma 6.8.1 fixes an unescaped-HTML tooltip hole along with the usual crash list, Firefox 158.0.1 blocks compromised eMudhra intermediate certificates, and qBittorrent 5.3 adds share limits, IP-range bans and an infohash filter — the last one matters if your WebUI is exposed, which it probably should not be.
 
-Videos cover vibe-coded WoW mods, Google vs OpenAI vs Anthropic according to Fireship, NetworkChuck getting OSINT'd, an ESP32 firmware written by Gemini, and Less Bitter on twenty-year devs who cannot find work.
+Videos cover Google vs OpenAI vs Anthropic according to Fireship, NetworkChuck getting OSINT'd for two hours by Ryan Montgomery, an ESP32 firmware written by Gemini 4 Argon, Alex Ziskind on local AI and the cloud sharing compute, Brodie Robertson on Fortnite's anti-cheat coming to Linux, and Less Bitter reading a comment section full of unemployed twenty-year devs. The exception is The PrimeTime's 2h44m WoW-mod stream, which did not get transcribed: Docker — and with it the usual Parakeet transcriber — has vanished from this machine, and a whisper.cpp fallback could not chew through three hours of Esfand in time. That one ships as a stub.
 
 Bottom is the furniture, and there is a lot of it: 14 document management systems, 9 web-based email clients, 14 self-hosted news aggregators and 12 Emacs configuration frameworks, with live links to all 49 named projects.
 
@@ -23,7 +23,15 @@ Bottom is the furniture, and there is a lot of it: 14 document management system
 **Source:** https://www.youtube.com/watch?v=zKLuih_9yIk
 **Karakeep doc:** `cq31gb3p7p6uo19cuwqtga74`
 
-> ⏳ Transcription still running when this edition was assembled. The pipeline's transcriber (Parakeet in Docker) is unavailable on this machine today, so the audio is going through a local Whisper pass instead — slower, and the summary lands in the next update of this post.
+Mike's channel is now mostly ESP32 boards wired to coding agents, and this is the best one yet, mostly because the board is real. Espressif sent him the ESP Mosaico before launch: a magnetic palm-sized computer with Wi-Fi 6, Bluetooth, 16MB of memory, a 480x480 touchscreen, speaker, mic, vibration motor, gyro, a battery, and click-on modules for RGB LEDs, a PIR motion sensor, a light sensor, an IR blaster and a camera. Magnets on the edges let stacked boards sense each other. No manuals in the box. Instead there's a GitHub kit with instructions written for AI agents plus a simulator, so an app runs on your Mac first and the agent can screenshot the device to check its own work.
+
+His ask: pull three numbers from his AI trading site, one card per "bee" (Boozy, Busy, Breezy), LEDs green when a bee is up and red when it's down, and wake the screen when he walks past the motion sensor. He handed Gemini 4 Argon the board API reference, a working network module, a starter project, and one hard rule: don't invent anything, use only what's listed. It wrote the layout, the LED logic and the motion handling. When it hit the output limit halfway through the main file, he typed "keep going" and it kept going. Two megabytes of firmware, compiled clean, zero lines typed by hand.
+
+The honest part is where it nearly died. Getting the board into flash mode took four failed attempts. The fix came from asking the agent to read the docs: power off completely, battery included, until the screen goes black, hold BOOT next to the USB-C, tap power once, and it lands in recovery mode. Then the agent flashed "Vibe mode 0.1.4" over USB, took Wi-Fi credentials, and the bees went live on a five-second refresh. All of them red. His trading bot is doing badly, and now there's a glowing red box in his studio that says so out loud. 📉
+
+It runs off the battery after unplugging, dims after a minute without motion, and wakes when he walks past. That's the actual story: a dashboard escaped the browser tab and became furniture.
+
+Caveats, and there are a few. He was handed the hardware by the vendor on launch day and says no money changed hands, which is still a pre-launch sample review and lands on Product Hunt in the same breath. The "no manuals" pitch is marketing, since the GitHub repo is precisely a manual, just written for a model instead of a person. And the model didn't solve the hard problem, the bootloader dance is where the hour went, and he only found it by asking the agent to read documentation he already had. Worth watching if you own a PIR sensor and an agent and have no idea what to build.
 
 ## 2. Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation — by Hazy Research
 
@@ -44,7 +52,7 @@ Hazy Research's Next-Concept Modeling bins token-by-token decoding and generates
 **Source:** https://www.youtube.com/watch?v=dBCLS8myarc
 **Karakeep doc:** `uc1kk4ff7a61kpayp0kxl53i`
 
-> ⏳ Transcription still running when this edition was assembled. The pipeline's transcriber (Parakeet in Docker) is unavailable on this machine today, so the audio is going through a local Whisper pass instead — slower, and the summary lands in the next update of this post.
+> ⏳ Not transcribed. This stream runs 2h44m and the fallback Whisper pass on this machine could not get through it in the time the digest had. Docker, and with it the usual Parakeet transcriber, is gone from this box today, so the audio went through whisper.cpp instead. A straight two-hour-plus livestream loses to the shorter clips.
 
 ## 4. It Begins... Local AI and the Cloud Start Sharing — by Alex Ziskind
 
@@ -95,23 +103,41 @@ Hands-on starts with the omni-model flex, a generated promo video, and the resul
 
 Verdict: cheaper and faster are real, and the leaderboard position is real on several axes. Top coding model is still not Google's, and a launch that punishes your own paying subscribers is a choice.
 
-## 7. How Expert Hacker finds predators (Ryan Montgomery) — by NetworkChuck
+## 7. 0day Hacks NetworkChuck (OSINT) — by NetworkChuck
 
-![NetworkChuck](https://i.ytimg.com/vi/5wZUwZWxMLQ/maxresdefault.jpg)
+![NetworkChuck](https://i.ytimg.com/vi_webp/5wZUZWxMLQ/maxresdefault.webp)
 
 **Source:** https://www.youtube.com/watch?v=5wZUwZWxMLQ
 **Karakeep doc:** `q6b48seslc9htraap1nhy4ai`
 
-> ⏳ Transcription still running when this edition was assembled. The pipeline's transcriber (Parakeet in Docker) is unavailable on this machine today, so the audio is going through a local Whisper pass instead — slower, and the summary lands in the next update of this post.
+Two hours of Ryan Montgomery at DEF CON, and the hacking is the least interesting part. He runs pentester.com and is CTO of the Sentinel Foundation, and this is his life story wrapped around a live demo of how fast a decoy account pulls predators out of a hotel lobby. Origin first: nine years old, his grandpa's work desktop, an AOL trial floppy, then phone phreaking and IRC rooms where a nerdcore rapper called YT Cracker taught him AOL punters and scrollers for free. He owned three rehab clinics, lost months to an undiagnosed illness, sold them for nearly nothing, then found real bugs in the ZenCharts medical records platform and defaced its support subdomain with a photo of his own face. That company was facing a $30 million lawsuit, got bought for eight figures anyway, and the new owners cut him in. 🤑
+
+The child safety turn came from a text. A friend's wife sent him a forum screenshot of a child in a bathtub with grown men commenting underneath. He went in planning to DDoS the site, found a nulled XenForo theme with a backdoor in it, and walked out with the database, a shell, and four backups from the same crew. The owner was Nathan Larson, a Virginia politician who got arrested six months later for kidnapping and raping a 12-year-old in Denver. 7,000 other users were on that forum. He reported it to everyone, no reporter would publish, no agency called back, so he started decoying with an MMA fighter and filming confrontations at Walmart.
+
+Then the demo. Fake profile, thirteen, New Jersey, a decoy photo of a young-looking face, on a hookup app with anonymous mode and no verification past clicking an age. A guy 78 feet away messaged within seconds. Another, 2.5 miles out, sent a nude and said yes to "you okay with under". Montgomery claims he has never once failed to find a man willing to meet what he believes is a little boy, in any country he's tried it.
+
+The part worth stealing is the legal scaffolding. Work through an NGO, get a case number from the FBI or HSI first, and let them do "parallel reconstruction" of your steps so the evidence survives court. Vigilante footage can poison your own prior cases under fruit of the poisonous tree, and simply having CSAM on your drive is a federal crime regardless of intent. Uploading it to Google Photos turns possession into distribution. He's blunt that kids should not be anywhere near this work.
+
+Tools shown: OSINT Pilot (law enforcement only, 40 tools, real-time), pentester.com at $19/month against 475+ data brokers, PimEyes, TinEye, holehe, WhatsMyName, Sherlock, plain reverse caller ID. He ran Chuck's name and one phone number and got the SSN, every past address, his dad, his wife's name. Also the 764 network, a satanist group flagged as a terrorist org in the US that grooms kids in mental health forums into filming self-harm. He travels with three armed minders now because of them.
+
+Caveats: 118 minutes, three ad breaks, and the back half is a pitch for his own product. The hotel demo is anecdote, not a study, though the Australian survey he cites (1 in 5 men admitting they've thought about a child sexually, 1 in 10 acting on it) is at least a real citation. Watch it anyway. The 764 segment is worth the whole runtime.
 
 ## 8. 20-year devs can't find work anymore — by Less Bitter
 
-![Less Bitter](https://i.ytimg.com/vi/oAn38UNeRqw/maxresdefault.jpg)
+![Less Bitter](https://i.ytimg.com/vi_webp/oAn38UNeRqw/maxresdefault.webp)
 
 **Source:** https://www.youtube.com/watch?v=oAn38UNeRqw
 **Karakeep doc:** `tpjbfhjnpagb0sgmnfwj1yfx`
 
-> ⏳ Transcription still running when this edition was assembled. The pipeline's transcriber (Parakeet in Docker) is unavailable on this machine today, so the audio is going through a local Whisper pass instead — slower, and the summary lands in the next update of this post.
+Less Bitter reads the comment section under a Telegraph piece about middle-aged male suicide rates hitting record highs, and calls it commiseration. It is not therapy. It's 13 minutes of men between 36 and 49 describing, in their own words, what getting replaced feels like, and it's the most honest thing I've watched on this topic all year.
+
+The voices pile up fast. A 36-year-old who spent a year telling himself AI is just a calculator and now says it doesn't matter what you call it, only what it does. A 40-year-old who wakes two or three times a night from anxiety dreams. A 20-year veteran made redundant in August who can't get a callback, and whose side business writing dev books is dead. A 44-year-old unemployed since July, riding a train across the country, who stood on a bridge a bit too long last week. A 49-year-old with 10+ years at a FAANG and two CTO stints, two years out, nothing converting. His line lands hardest: from Claude's launches in January and February to October, the world changed.
+
+The host's own contribution is the best bit and it isn't about AI. He takes apart the "you could do anything" illusion. With a partner and kids, your option space isn't N plus a million, it's N plus one. Small daily moves that compound, not a TED talk. Five years of that genuinely changes your circumstances, one weekend does not. He drags in Durkheim's anomie from Suicide, the board-game-swept-off-the-table feeling, and the image of a life as a castle built on sand.
+
+Then it goes somewhere weird. He works out that 700K views on a video gets him roughly $4K MRR, which doesn't replace a salary, and pivots straight into an ad for enjoy.dev, his own "super agent" that rides your existing ChatGPT, Claude and Gemini subscriptions. The propaganda posters are a lot: "Employ the machines." In a video about men being deleted by AI, selling them an AI tool is a choice. 😬
+
+What's missing: no data beyond one Telegraph article, no counter-evidence, no acknowledgement that the 49-year-old ex-CTO and the 44-year-old living in his car are in completely different situations with different options. It's a vibes piece with a product at the end, and the product pitch undercuts the empathy right when it was working. Still worth 13 minutes if you're in the demographic. The N+1 framing alone earns it.
 
 ### 9to5Linux (RSS)
 
