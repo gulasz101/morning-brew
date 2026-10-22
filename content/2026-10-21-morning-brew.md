@@ -141,7 +141,7 @@ Nahla Davies makes a decent argument for a boring thing: pasting a JWT, a hex-wr
 - **[Mermaid](https://mermaid.js.org/)** — Diagramming and charting tool — generates diagrams from text.
 - **[BPMN](https://github.com/bpmn-io/bpmn-js)** — A BPMN 2.0 rendering toolkit and web modeler.
 - **[Excalidraw](https://github.com/excalidraw/excalidraw)** — Virtual whiteboard for sketching hand-drawn like diagrams.
-- **[diagrams.net](https://github.com/DaveRuijter/diagrams.net)** — DaveRuijter/diagrams.net.
+- **[diagrams.net](https://github.com/jgraph/drawio)** — draw.io is a JavaScript, client-side editor for general diagramming.
 
 ### RSS — YouTube
 
@@ -487,7 +487,7 @@ Keep it open on a boring Saturday: two or three entries will be new to you, and 
 - **[Foliate](https://github.com/johnfactotum/foliate)** — Read e-books in style.
 - **[Element](https://github.com/element-hq/element-web)** — A glossy Matrix collaboration client for the web.
 - **[GParted](https://github.com/GNOME/gparted)** — Read-only mirror of https://gitlab.gnome.org/GNOME/gparted.
-- **[FileZilla](https://github.com/basvodde/filezilla)** — Clone from https://svn.filezilla-project.org/svn/FileZilla3/trunk.
+- **[FileZilla](https://filezilla-project.org/)** — The free FTP solution: FTP, FTPS and SFTP client.
 - **[Spectacle](https://apps.kde.org/spectacle/)** — KDE's screen capture utility for Linux.
 - **PDF Arranger** — _no verified public repo found_
 - **Surge XT** — _no verified public repo found_
@@ -517,7 +517,7 @@ Keep it open on a boring Saturday: two or three entries will be new to you, and 
 - **QDirStat** — _no verified public repo found_
 - **[RawTherapee](https://github.com/RawTherapee/RawTherapee)** — A powerful cross-platform raw photo processing program.
 - **[PSPP](https://www.gnu.org/software/pspp/)** — GNU PSPP — free replacement for IBM SPSS, for sampling and statistical analysis.
-- **[Shortwave](https://github.com/maunalinux/shortwave)** — Find and listen to internet radio stations.
+- **[Shortwave](https://gitlab.gnome.org/World/Shortwave)** — Find and listen to internet radio stations.
 - **Déjà Dup** — _no verified public repo found_
 - **[Rosegarden](https://github.com/tedfelix/rosegarden-official)** — MIDI Sequencer for Linux.
 - **[Scilab](https://github.com/scilab/scilab)** — Read only copy of https://gitlab.com/scilab/scilab.
@@ -528,17 +528,17 @@ Keep it open on a boring Saturday: two or three entries will be new to you, and 
 - **[VSCodium](https://github.com/VSCodium/vscodium)** — binary releases of VS Code without MS branding/telemetry/licensing.
 - **[KiCad](https://www.kicad.org/)** — A Cross Platform and Open Source PCB Design Suite.
 - **[PeaZip](https://github.com/peazip/PeaZip)** — PeaZip (9to5Linux roundup 2026-09-27).
-- **[ProjectLibre](https://github.com/smartqubit/projectlibre)** — The Open Source replacement of Microsoft Project.
+- **[ProjectLibre](https://www.projectlibre.com/)** — The Open Source replacement of Microsoft Project.
 - **[GNU Octave](https://github.com/gnu-octave/octave)** — GNU Octave Mirror (https://www.octave.org/hg/octave). Report bugs and submit pull requests (patches) at https://bugs.octave.org.
 - **[Arduino IDE](https://github.com/arduino/Arduino)** — Arduino IDE 1.x.
 - **[Zeal](https://github.com/zealdocs/zeal)** — Offline documentation browser. Your personal reference library, searchable in an instant.
-- **[Nextcloud Desktop](https://github.com/nextcloud/server)** — Self-hosted file sync, share, and collaboration platform.
+- **[Nextcloud Desktop](https://github.com/nextcloud/desktop)** — Desktop sync client for Nextcloud.
 - **[RustDesk](https://github.com/rustdesk/rustdesk)** — An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 - **Synfig Studio** — _no verified public repo found_
 - **[Telegram Desktop](https://github.com/telegramdesktop/tdesktop)** — Telegram Desktop messaging app.
 - **[FocusWriter](https://github.com/gottcode/focuswriter)** — Simple fullscreen word processor.
 - **[TeXstudio](https://github.com/texstudio-org/texstudio)** — Full-featured cross-platform LaTeX editor with built-in PDF viewer and reference browser.
-- **[Timeshift](https://github.com/teejee2008/timeshift)** — System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backu...
+- **[Timeshift](https://github.com/linuxmint/timeshift)** — System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backu...
 - **[QGIS](https://github.com/qgis/QGIS)** — QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS).
 - **[dupeGuru](https://github.com/arsenetar/dupeguru)** — Find duplicate files.
 - **[KDE Connect](https://github.com/KDE/kdeconnect-kde)** — Multi-platform app that allows your devices to communicate.
@@ -552,7 +552,7 @@ Keep it open on a boring Saturday: two or three entries will be new to you, and 
 - **[Mandelbulber](https://github.com/buddhi1980/mandelbulber2)** — Official repository for Mandelbulber v2.
 - **[gretl](https://gretl.sourceforge.net/)** — GNU gretl — econometrics and time-series analysis package.
 - **[3D Slicer](https://www.slicer.org/)** — 3D Slicer image computing platform for medical visualization and image computing.
-- **[Remmina](https://github.com/FreeRDP/Remmina)** — Mirror of https://gitlab.com/Remmina/Remmina The GTK+ Remmina Remote Desktop Client.
+- **[Remmina](https://gitlab.com/Remmina/Remmina)** — The GTK+ Remmina Remote Desktop Client.
 - **[NewsFlash](https://gitlab.com/news-flash/news_flash_gtk)** — Modern GTK RSS feed reader for Linux.
 - **[DVDStyler](https://www.dvdstyler.org/)** — DVDStyler - Free DVD Authoring Application.
 - **DBeaver Community** — _no verified public repo found_
@@ -640,7 +640,7 @@ LinuxLinks put together 16 free and open source fractal tools for Linux, again l
 
 **Projects:**
 
-- **Mandelbulber v2** — _no verified public repo found_
+- **[Mandelbulber v2](https://github.com/buddhi1980/mandelbulber2)** — Official repository for Mandelbulber v2.
 - **[JWildfire](https://github.com/thargor6/JWildfire)** — JWildfire - powerful and flexible fractal flame editor - LinuxLinks.
 - **[Gnofract 4D](https://github.com/fract4d/gnofract4d)** — Gnofract 4D - create and explore fractal images - LinuxLinks.
 - **[XaoS](https://xaos-project.github.io/)** — XaoS - real-time interactive fractal zoomer - LinuxLinks.
