@@ -1,1 +1,6 @@
 *.bak-*
+.venv/
+__pycache__/
+*.pyc
+site/
+

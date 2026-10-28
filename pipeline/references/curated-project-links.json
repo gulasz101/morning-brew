@@ -1,0 +1,1281 @@
+{
+ "2fas": {
+  "repo": "twofas/2fas-android",
+  "what": "Cross-platform 2FA app with phone-approval browser extension"
+ },
+ "2fasauth": {
+  "repo": "twofas/2fas-android",
+  "what": "Private two-factor authenticator with TOTP/HOTP and a browser extension"
+ },
+ "_comment": "Hand-verified name -> repo/docs map for projects that recur in Wojtek's hoard. Keys are normalized (lowercase, alnum only). 'repo' = owner/name (GitHub API/HTML metadata fetched live); 'docs' = official homepage for closed-source or non-GitHub projects; 'note' = resolution caveat. EVERY entry here was probed over live HTTPS (200 + matching <title>) on 2026-09-20 — do not add an entry without probing it. Add to this file whenever a resolver miss is found: it is the cheapest fix and never goes stale (metadata is fetched live).",
+ "_verified": "2026-09-21T22:45 CEST — validator: scripts/validate_project_links.py (45 roundup names, all probed 200)",
+ "_verified_2026_09_28": "2026-09-28 — 2026-09-27 backfill: 36/36 9to5Linux roundup names + 26 project-about items resolved by hand, every URL probed live (200 + real title) with browser UA and -L. See references/verified-project-links.md for the full table.",
+ "actualbudget": {
+  "repo": "actualbudget/actual",
+  "what": "Local-first personal budgeting app and server"
+ },
+ "adguardhome": {
+  "repo": "AdguardTeam/AdGuardHome",
+  "what": "Network-wide DNS ad/tracker blocker"
+ },
+ "aegis": {
+  "repo": "beemdevelopment/Aegis",
+  "what": "Android 2FA/TOTP vault with encrypted backups (GPLv3)"
+ },
+ "aegisauthenticator": {
+  "repo": "beemdevelopment/Aegis",
+  "what": "Secure open-source Android 2FA app with encrypted vaults and backups (GPLv3)"
+ },
+ "aerion": {
+  "repo": "hkdb/aerion",
+  "what": "Lightweight Qt/QML email client inspired by Geary"
+ },
+ "agentdesktop": {
+  "repo": "lahfir/agent-desktop",
+  "what": "Desktop automation that reads accessibility trees instead of pixels"
+ },
+ "agevault": {
+  "repo": "ndavd/agevault",
+  "what": "Directory-level encryption vault built on age (Go)"
+ },
+ "alchemy": {
+  "docs": "http://al.chemy.org/",
+  "what": "Experimental non-orthodox drawing tool (open-ended sketchpad)"
+ },
+ "anas": {
+  "repo": "ANAS-Project/ANAS",
+  "what": "Turns a Proxmox node into a NAS inside the native Proxmox web UI (AR RAID over iSCSI, SMB, PBS backup)"
+ },
+ "ansible": {
+  "repo": "ansible/ansible",
+  "what": "Agentless IT automation and configuration management"
+ },
+ "astgrep": {
+  "repo": "ast-grep/ast-grep",
+  "what": "Structural search, lint, and rewrite via AST patterns (Rust)"
+ },
+ "astroid": {
+  "repo": "astroidmail/astroid",
+  "what": "Fast lightweight notmuch-based MUA with a GTK UI"
+ },
+ "atomlatex": {
+  "repo": "ashthespy/Atom-LaTeX"
+ },
+ "auctex": {
+  "repo": "emacsmirror/auctex"
+ },
+ "authentik": {
+  "repo": "goauthentik/authentik",
+  "what": "Self-hosted identity provider (SSO, OAuth2/OIDC, LDAP) — the IdP in break-glass scenarios"
+ },
+ "autoeditor": {
+  "docs": "https://auto-editor.com/",
+  "what": "Automatically edit video and audio by analyzing where sections are silent or still and cut them out"
+ },
+ "avidemux": {
+  "docs": "http://fixounet.free.fr/avidemux/",
+  "what": "Designed for simple cutting, filtering and encoding tasks"
+ },
+ "axiom": {
+  "repo": "daly/axiom",
+  "what": "Axiom is a free, open source computer algebra system - daly/axiom"
+ },
+ "bandopticongeo": {
+  "note": "BandOpticon Geo; via linuxlinks internal page 2026-10-02",
+  "repo": "G1OJS/BandOpticon"
+ },
+ "biber": {
+  "repo": "plk/biber"
+ },
+ "biblatex": {
+  "repo": "plk/biblatex",
+  "what": "Modern bibliography package for LaTeX — the successor to classic BibTeX"
+ },
+ "blender": {
+  "docs": "https://www.blender.org/",
+  "what": "The Freedom to Create"
+ },
+ "blockpaint": {
+  "docs": "https://docs.rs/crate/blockpaint/",
+  "note": "crate author's GitHub account is gone (404) and lib.rs is bot-walled (403); docs.rs is the reachable canonical page",
+  "what": "Paint program that draws pixel graphics in the terminal with the mouse (Rust crate)"
+ },
+ "bottles": {
+  "repo": "bottlesdevs/Bottles",
+  "what": "Manage Windows apps/prefixes on Linux with Wine (Flatpak-friendly)"
+ },
+ "brlcad": {
+  "docs": "https://brlcad.org/",
+  "what": "Constructive Solid Geometry (CSG) solid modeling system"
+ },
+ "budgie": {
+  "repo": "BuddiesOfBudgie/budgie-desktop",
+  "what": "Budgie (9to5Linux roundup 2026-09-27)"
+ },
+ "build123d": {
+  "repo": "gumyr/build123d",
+  "what": "A python CAD programming library. Contribute to gumyr/build123d development by creating an account on GitHub"
+ },
+ "buildbot": {
+  "docs": "https://buildbot.net/",
+  "what": "Python-based continuous integration and build automation framework"
+ },
+ "cadabra": {
+  "docs": "https://cadabra.science/",
+  "what": "Cadabra is a symbolic computer algebra system designed to solve problems in classical and quantum field theory"
+ },
+ "cadquery": {
+  "docs": "https://cadquery.readthedocs.io/en/latest/",
+  "what": "Python parametric CAD scripting framework"
+ },
+ "cadsketcher": {
+  "repo": "hlorus/CAD_Sketcher",
+  "what": "Constraint-based geometry sketcher for blender. Contribute to hlorus/CAD_Sketcher development by creating an account on GitHub"
+ },
+ "camelot": {
+  "repo": "camelot-dev/camelot",
+  "what": "Extract tables from PDFs into pandas DataFrames"
+ },
+ "catppuccinfortmux": {
+  "repo": "catppuccin/tmux",
+  "what": "Catppuccin themes for tmux, four flavors"
+ },
+ "cavif": {
+  "repo": "kornelski/cavif-rs",
+  "what": "PNG/JPEG → AVIF converter (CLI), AVIF encoder front-end"
+ },
+ "cdk": {
+  "repo": "cdk/cdk",
+  "what": "Chemistry Development Kit — cheminformatics/bioinformatics library"
+ },
+ "cgsuite": {
+  "repo": "aaron-siegel/cgsuite",
+  "what": "A computer algebra system for research in combinatorial game theory - aaron-siegel/cgsuite"
+ },
+ "changerawr": {
+  "repo": "Supernova3339/changerawr",
+  "what": "Self-hosted changelog management tool that syncs git commits (GitHub only)"
+ },
+ "checkstyle": {
+  "repo": "checkstyle/checkstyle",
+  "what": "Tool that ensures adherence to a code standard / best practices"
+ },
+ "chili3d": {
+  "repo": "xiangechen/chili3d",
+  "what": "A 3D CAD running entirely in the browser. Contribute to xiangechen/chili3d development by creating an account on GitHub"
+ },
+ "chromium": {
+  "repo": "chromium/chromium",
+  "what": "Chromium (9to5Linux roundup 2026-09-27)"
+ },
+ "cinelerra": {
+  "docs": "https://www.cinelerra-gg.org/en",
+  "what": "Free and open source professional video editing software for Linux. 8K support, 400+ codecs, motion tracking, and more"
+ },
+ "clawsmail": {
+  "docs": "https://www.claws-mail.org/",
+  "what": "GTK+ email client, fast, extensible via plugins"
+ },
+ "cocoa": {
+  "docs": "https://sites.google.com/view/cocoa-cocoalib",
+  "what": "CoCoA-5 and CoCoALib, computations in commutative algebra"
+ },
+ "collusionwiki": {
+  "docs": "https://collusion.wiki",
+  "what": "Discovery of a new OpenAI agent message board (the dead-wiki group chat)"
+ },
+ "commitlint": {
+  "repo": "conventional-changelog/commitlint",
+  "what": "Lints commit messages against conventional-commit rules"
+ },
+ "concourse": {
+  "docs": "https://concourse-ci.org/",
+  "what": "Container-based CI/CD system built around pipelines, resources and jobs"
+ },
+ "cosmic": {
+  "repo": "pop-os/cosmic-epoch",
+  "what": "COSMIC (9to5Linux roundup 2026-09-27)"
+ },
+ "cuckoo": {
+  "repo": "cuckoosandbox/cuckoo",
+  "what": "Automated malware analysis sandbox, v3 rewrite in Python 3"
+ },
+ "cuckoo3": {
+  "repo": "cuckoosandbox/cuckoo",
+  "what": "Automated malware analysis sandbox, v3 rewrite in Python 3"
+ },
+ "design": {
+  "repo": "dubstar-04/Design",
+  "what": "2D CAD For GNOME. Contribute to dubstar-04/Design development by creating an account on GitHub"
+ },
+ "digikam": {
+  "docs": "https://www.digikam.org/",
+  "what": "Advanced KDE photo management suite with tagging, RAW support and batch processing"
+ },
+ "digimend": {
+  "repo": "DIGImend/digimend-kernel-drivers",
+  "what": "Kernel drivers for non-Wacom graphics tablets (Huion/XP-Pen)"
+ },
+ "dnf": {
+  "repo": "rpm-software-management/dnf5",
+  "what": "DNF (9to5Linux roundup 2026-09-27)"
+ },
+ "dogtag": {
+  "repo": "dogtagpki/pki",
+  "what": "Enterprise certificate authority and PKI suite (Red Hat)"
+ },
+ "drawpile": {
+  "repo": "drawpile/Drawpile",
+  "what": "Collaborative drawing/painting over the network"
+ },
+ "drift": {
+  "repo": "CutWire-Studios/Drift",
+  "what": "Drift is a free, open-source, beginner-friendly desktop video editor built with Qt 6 and FFmpeg. - CutWire-Studios/Drift"
+ },
+ "dune3d": {
+  "docs": "https://dune3d.org/",
+  "what": "Dune 3D is parametric 3D CAD application"
+ },
+ "dvdstyler": {
+  "docs": "https://www.dvdstyler.org/",
+  "note": "sourceforge 403 bot-wall; official site 200"
+ },
+ "edgeever": {
+  "repo": "tianma-if/edgeever",
+  "what": "Open-source Evernote alternative running on Cloudflare's free tier"
+ },
+ "editly": {
+  "repo": "mifi/editly",
+  "what": "Slick, declarative command line video editing & API - mifi/editly"
+ },
+ "eigenmath": {
+  "repo": "georgeweigt/eigenmath",
+  "what": "Symbolic math app. Contribute to georgeweigt/eigenmath development by creating an account on GitHub"
+ },
+ "electric": {
+  "docs": "https://www.staticfreesoft.com/",
+  "what": "The Electric VLSI Design System"
+ },
+ "enteauth": {
+  "repo": "ente/ente",
+  "what": "End-to-end encrypted cross-platform TOTP/2FA app from the Ente team"
+ },
+ "entertex": {
+  "docs": "https://flathub.org/en/apps/org.gnome.gnome-latex",
+  "what": "TeX/LaTeX text editor, previously known as LaTeXila then GNOME LaTeX (GTK)"
+ },
+ "exiftool": {
+  "repo": "exiftool/exiftool",
+  "what": "Reference library and CLI for reading/writing image, audio and video metadata (Exif, IPTC, XMP)"
+ },
+ "exiv2": {
+  "repo": "exiv2/exiv2"
+ },
+ "ext3": {
+  "docs": "https://docs.kernel.org/filesystems/ext3.html",
+  "note": "kernel FS docs"
+ },
+ "flaca": {
+  "note": "lossless GIF/JPEG/PNG compressor",
+  "repo": "Blobfolio/flaca"
+ },
+ "flatpak": {
+  "repo": "flatpak/flatpak",
+  "what": "Flatpak (9to5Linux roundup 2026-09-27)"
+ },
+ "flowblade": {
+  "repo": "jliljebl/flowblade",
+  "what": "Video Editor for Linux. Contribute to jliljebl/flowblade development by creating an account on GitHub"
+ },
+ "focalors": {
+  "repo": "Inuway/Focalors",
+  "what": "All-in-one offline chess engine, training and learning app"
+ },
+ "footage": {
+  "docs": "https://gitlab.com/adhami3310/Footage"
+ },
+ "forgejo": {
+  "docs": "https://forgejo.org/",
+  "note": "codeberg.org/forgejo/forgejo is bot-walled (403) and no GitHub mirror exists — official site is the safe link",
+  "what": "Community hard-fork of Gitea (self-hosted Git forge); canonical repo is on Codeberg"
+ },
+ "form": {
+  "repo": "form-dev/form",
+  "what": "The FORM project for symbolic manipulation of very big expressions - form-dev/form"
+ },
+ "freecad": {
+  "docs": "https://www.freecad.org/",
+  "what": "FreeCAD, the open source 3D parametric modeler"
+ },
+ "freeotp": {
+  "repo": "freeotp/freeotp-android",
+  "what": "Feature-rich Android authenticator — HOTP/TOTP, biometrics, categories, offline icons"
+ },
+ "freerdp": {
+  "repo": "FreeRDP/FreeRDP",
+  "what": "Free implementation of the Remote Desktop Protocol"
+ },
+ "freezed": {
+  "repo": "neuedaten/freezed",
+  "what": "TYPO3 Fluid static site generator"
+ },
+ "fricas": {
+  "repo": "fricas/fricas",
+  "what": "Official repository of the FriCAS computer algebra system"
+ },
+ "fwupd": {
+  "repo": "fwupd/fwupd",
+  "what": "Fwupd (9to5Linux roundup 2026-09-27)"
+ },
+ "gap": {
+  "docs": "https://www.gap-system.org/",
+  "what": "GAP system for computational discrete algebra, especially computational group theory"
+ },
+ "gcad3d": {
+  "docs": "https://gcad3d.org/",
+  "what": "gCAD3D CADCAM software for Linux and Windows"
+ },
+ "gcompris": {
+  "docs": "https://gcompris.net/",
+  "what": "GCompris (9to5Linux roundup 2026-09-27)"
+ },
+ "geary": {
+  "repo": "GNOME/geary",
+  "what": "GNOME-native email client written in Vala (GitHub is a read-only mirror)"
+ },
+ "gfs2": {
+  "docs": "https://gitlab.com/linux-gfs2/gfs2-utils",
+  "note": "kernel FS; docs.kernel.org gfs2 page 404, gitlab-utils 200"
+ },
+ "giada": {
+  "repo": "monocasual/giada",
+  "what": "Giada (9to5Linux roundup 2026-09-27)"
+ },
+ "gimp": {
+  "docs": "https://www.gimp.org/",
+  "what": "GNU Image Manipulation Program — raster image editor"
+ },
+ "gitea": {
+  "repo": "go-gitea/gitea",
+  "what": "Lightweight self-hosted Git service with issues, PRs, and CI"
+ },
+ "gnome": {
+  "docs": "https://www.gnome.org/",
+  "what": "GNOME (9to5Linux roundup 2026-09-27)"
+ },
+ "gnucash": {
+  "repo": "Gnucash/gnucash",
+  "what": "GnuCash (9to5Linux roundup 2026-09-27)"
+ },
+ "gnumeric": {
+  "docs": "http://www.gnumeric.org/",
+  "what": "Gnumeric (9to5Linux roundup 2026-09-27)"
+ },
+ "gnupg": {
+  "docs": "https://gnupg.org/",
+  "what": "GnuPG (9to5Linux roundup 2026-09-27)"
+ },
+ "gnuwget": {
+  "docs": "https://git.savannah.gnu.org/cgit/wget.git",
+  "what": "GNU Wget (9to5Linux roundup 2026-09-27)"
+ },
+ "gozen": {
+  "docs": "https://codeberg.org/gozen/gozen",
+  "what": "This project moved to https://codeberg.org/gozen/gozen. The minimalistic video editor made with Godot. - VoylinsGamedevJourney/gozen"
+ },
+ "grafana": {
+  "repo": "grafana/grafana",
+  "what": "Dashboards and observability UI for metrics, logs, and traces"
+ },
+ "grimmory": {
+  "repo": "grimmory-tools/grimmory",
+  "what": "Self-hosted library server for books/ebooks (the Synology-books replacement)"
+ },
+ "grist": {
+  "repo": "gristlabs/grist-core",
+  "what": "Spreadsheet-database hybrid for structured data and relational tables"
+ },
+ "gummi": {
+  "repo": "alexandervdm/gummi"
+ },
+ "handtex": {
+  "repo": "VoxelCubes/Hand-TeX"
+ },
+ "headscale": {
+  "repo": "juanfont/headscale",
+  "what": "Self-hosted open-source implementation of the Tailscale control server"
+ },
+ "hieroglyphic": {
+  "repo": "FineFindus/Hieroglyphic"
+ },
+ "hindsight": {
+  "repo": "vectorize-io/hindsight",
+  "what": "Hindsight: agent memory that learns"
+ },
+ "homeassistant": {
+  "repo": "home-assistant/core",
+  "what": "Local home automation hub with 2000+ integrations"
+ },
+ "htmlvalidate": {
+  "docs": "https://gitlab.com/html-validate/html-validate",
+  "note": "HTML-validate lives on GitLab"
+ },
+ "hyperion": {
+  "repo": "hyperion-project/hyperion.ng",
+  "what": "Ambient lighting for your screen"
+ },
+ "imagemagick": {
+  "repo": "ImageMagick/ImageMagick",
+  "what": "ImageMagick (9to5Linux roundup 2026-09-27)"
+ },
+ "immich": {
+  "repo": "immich-app/immich",
+  "what": "Self-hosted photo and video library with mobile backup, timeline, and shared albums"
+ },
+ "infinipaint": {
+  "repo": "ErrorAtLine0/infinipaint",
+  "what": "Infinite-canvas JavaScript/CSS hybrid drawing tool"
+ },
+ "iqmol": {
+  "repo": "nutjunkie/IQmol",
+  "what": "Molecular editor and visualisation package"
+ },
+ "iqmol3": {
+  "repo": "nutjunkie/IQmol3",
+  "what": "Molecular editor and visualisation package, version 3"
+ },
+ "isolate": {
+  "repo": "ioi/isolate",
+  "what": "Secure execution environment for untrusted programs"
+ },
+ "jabref": {
+  "repo": "JabRef/jabref",
+  "what": "Open-source BibTeX/BibLaTeX reference manager (Java)"
+ },
+ "jellyfin": {
+  "repo": "jellyfin/jellyfin",
+  "what": "Free software media server for movies, shows, music, and live TV"
+ },
+ "jenkins": {
+  "docs": "https://www.jenkins.io/",
+  "what": "Self-contained open-source automation server for CI/CD"
+ },
+ "jexiftoolgui": {
+  "repo": "hvdwolf/jExifToolGUI",
+  "what": "Cross-platform Java GUI front-end for ExifTool"
+ },
+ "jffs2": {
+  "docs": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/fs/jffs2",
+  "note": "kernel FS tree; docs jffs2 page 404"
+ },
+ "jhead": {
+  "repo": "Matthias-Wandel/jhead",
+  "what": "Small command-line tool to manipulate the Exif header in JPEG files"
+ },
+ "jollpi": {
+  "repo": "zulfian1732/jollpi-text-editor",
+  "what": "Lightweight GTK 4 text editor with syntax highlighting"
+ },
+ "kbibtex": {
+  "repo": "KDE/kbibtex"
+ },
+ "kdenlive": {
+  "docs": "https://kdenlive.org/en/",
+  "what": "Non-linear video editor for KDE"
+ },
+ "keepassxc": {
+  "repo": "keepassxreboot/keepassxc",
+  "what": "KeePassXC (9to5Linux roundup 2026-09-27)"
+ },
+ "kept": {
+  "repo": "ericerkz/kept",
+  "what": "Self-hosted, Google Keep style notes app"
+ },
+ "kicad": {
+  "docs": "https://www.kicad.org/",
+  "what": "A Cross Platform and Open Source PCB Design Suite"
+ },
+ "kile": {
+  "repo": "KDE/kile",
+  "what": "KDE LaTeX/TeX editor with a project manager and multi-file support"
+ },
+ "klatexformula": {
+  "docs": "https://klatexformula.sourceforge.io/",
+  "what": "Graphical application that generates images from LaTeX equations"
+ },
+ "klayout": {
+  "repo": "KLayout/klayout",
+  "what": "KLayout Main Sources. Contribute to KLayout/klayout development by creating an account on GitHub"
+ },
+ "kleaner": {
+  "repo": "najepaliya/kleaner",
+  "what": "Graphical image metadata cleaner for removing EXIF, IPTC, XMP and comments from batches"
+ },
+ "komodo": {
+  "repo": "moghtech/komodo",
+  "what": "Self-hosted build/deploy platform for GitOps on your own servers"
+ },
+ "komodomcp": {
+  "docs": "https://mcp.so/servers/komodo-mcp-server",
+  "note": "no upstream repo found; directory listing is the public page",
+  "what": "MCP server that drives a Komodo instance in natural language"
+ },
+ "kookbook": {
+  "docs": "https://apps.kde.org/kookbook/",
+  "what": "KDE recipe manager with plain-text, markdown-backed cookbooks"
+ },
+ "krita": {
+  "repo": "KDE/krita",
+  "what": "Professional free raster painting and animation studio"
+ },
+ "kteatime": {
+  "docs": "https://apps.kde.org/kteatime/",
+  "what": "KDE timer for steeping tea and other infusions"
+ },
+ "latexdraw": {
+  "repo": "latexdraw/latexdraw"
+ },
+ "latexindentpl": {
+  "repo": "cmhughes/latexindent.pl"
+ },
+ "latexmk": {
+  "repo": "debian-tex/latexmk"
+ },
+ "lazycut": {
+  "repo": "ozemin/lazycut",
+  "what": "A simple terminal UI for video trimming. Contribute to ozemin/lazycut development by creating an account on GitHub"
+ },
+ "leocad": {
+  "docs": "https://www.leocad.org/",
+  "what": "CAD application for designing virtual models with LEGO&reg; bricks"
+ },
+ "librecad": {
+  "docs": "https://librecad.org/",
+  "what": "CAD in two dimensions"
+ },
+ "linuxkernel": {
+  "docs": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git",
+  "what": "Linux kernel (9to5Linux roundup 2026-09-27)"
+ },
+ "lives": {
+  "repo": "salsaman/LiVES",
+  "what": "LiVES is a feature rich application which combines elements of VJ and video editing software. The current version runs on Linux / BSD. Check_out_the_new_discussion_area https://github.com/salsama"
+ },
+ "llvm": {
+  "repo": "llvm/llvm-project",
+  "what": "LLVM (9to5Linux roundup 2026-09-27)"
+ },
+ "losslesscut": {
+  "repo": "mifi/lossless-cut",
+  "what": "The swiss army knife of lossless video/audio editing - mifi/lossless-cut"
+ },
+ "lyx": {
+  "docs": "https://www.lyx.org/",
+  "what": "What-you-see-is-what-you-mean document processor — a graphical front-end to LaTeX"
+ },
+ "lzip": {
+  "docs": "https://www.nongnu.org/lzip/",
+  "what": "Lossless data compressor with a stronger (slower) LZMA-based algorithm than gzip"
+ },
+ "macaulay2": {
+  "docs": "https://macaulay2.com/",
+  "what": "Macaulay2 home page"
+ },
+ "maputnik": {
+  "repo": "maplibre/maputnik",
+  "what": "Visual editor for MapLibre map styles"
+ },
+ "mat2": {
+  "repo": "jvoisin/mat2"
+ },
+ "mathics": {
+  "docs": "https://mathics.org/",
+  "what": "General-purpose CAS with Mathematica-compatible syntax and functions"
+ },
+ "matrixos": {
+  "repo": "lxnay/matrixos",
+  "what": "Gentoo-based immutable distribution with atomic upgrades"
+ },
+ "maxima": {
+  "docs": "https://maxima.sourceforge.io/",
+  "what": "Computer algebra system written in Lisp, based on DOE-MACSYMA"
+ },
+ "mealie": {
+  "repo": "mealie-recipes/mealie",
+  "what": "Self-hosted recipe manager with meal planning + shopping lists"
+ },
+ "megalinter": {
+  "repo": "oxsecurity/megalinter",
+  "what": "Mega-linter: 100+ linters with report aggregation for CI"
+ },
+ "metadatacleaner": {
+  "docs": "https://gitlab.com/metadatacleaner/metadatacleaner",
+  "what": "GNOME desktop utility to inspect and remove hidden metadata from images, documents and archives"
+ },
+ "metamorphosis": {
+  "repo": "DeimosHall/Metamorphosis",
+  "what": "Desktop utility for inspecting and changing embedded metadata across media and document files"
+ },
+ "milton": {
+  "repo": "serge-rgb/milton",
+  "what": "Infinite-canvas painting program with a minimal UI"
+ },
+ "mir": {
+  "repo": "canonical/mir",
+  "what": "Mir (9to5Linux roundup 2026-09-27)"
+ },
+ "mitintrotodeeplearning": {
+  "repo": "mitdeeplearning/introtodeeplearning",
+  "what": "MIT's Intro to Deep Learning labs, free on Colab with GPU"
+ },
+ "mozillafirefox": {
+  "repo": "mozilla-firefox/firefox",
+  "what": "Mozilla Firefox (9to5Linux roundup 2026-09-27)"
+ },
+ "mpdris2rs": {
+  "repo": "szclsya/mpdris2-rs",
+  "what": "Expose MPD playback through MPRIS2"
+ },
+ "mypaint": {
+  "repo": "mypaint/mypaint",
+  "what": "Fast painting program with dynamic tablet-friendly brushes"
+ },
+ "navidrome": {
+  "repo": "navidrome/navidrome",
+  "what": "Lightweight self-hosted music server and streamer (Subsonic/OpenSubsonic API)"
+ },
+ "nelson": {
+  "docs": "https://nelson-lang.github.io/nelson-website/",
+  "what": "Nelson"
+ },
+ "netbird": {
+  "repo": "netbirdio/netbird",
+  "what": "WireGuard-based overlay network with SSO and access control"
+ },
+ "nextcloud": {
+  "repo": "nextcloud/server",
+  "what": "Self-hosted file sync, share, and collaboration platform"
+ },
+ "notation": {
+  "repo": "notaryproject/notation",
+  "what": "Sign and verify software artifacts"
+ },
+ "ntfs3g": {
+  "repo": "tuxera/ntfs-3g",
+  "what": "NTFS-3G (9to5Linux roundup 2026-09-27)"
+ },
+ "nut": {
+  "docs": "https://nut.sourceforge.net/",
+  "what": "Network UPS Tools — monitor and control UPS hardware"
+ },
+ "nvidia": {
+  "docs": "https://github.com/NVIDIA",
+  "what": "NVIDIA (9to5Linux roundup 2026-09-27)"
+ },
+ "obsstudio": {
+  "repo": "obsproject/obs-studio",
+  "what": "OBS Studio (9to5Linux roundup 2026-09-27)"
+ },
+ "octave": {
+  "docs": "https://octave.org/",
+  "what": "GNU Octave is a programming language for scientific computing"
+ },
+ "ohb": {
+  "note": "OHB = OpenHamClock backend; via linuxlinks internal page 2026-10-02",
+  "repo": "openhamclock/open-hamclock-backend"
+ },
+ "olive": {
+  "repo": "olive-editor/olive",
+  "what": "Free open-source non-linear video editor. Contribute to olive-editor/olive development by creating an account on GitHub"
+ },
+ "omarchy": {
+  "repo": "omacom/omarchy",
+  "what": "DHH's opinionated Arch-based Linux (repo was basecamp/omarchy, now omacom/omarchy)"
+ },
+ "omnyssh": {
+  "repo": "timhartmann7/omnyssh",
+  "what": "Fast open-source SSH client and server manager (macOS/Windows/Linux)"
+ },
+ "opencascade": {
+  "docs": "https://occt3d.com/open-cascade-technology/index.html",
+  "what": "Explore OCCT (Open CASCADE Technology) for 3D modeling, visualization and CAD data exchange. Find documentation, downloads and engineering support"
+ },
+ "opencut": {
+  "repo": "opencut-app/opencut",
+  "what": "The open-source CapCut alternative. Contribute to OpenCut-app/OpenCut development by creating an account on GitHub"
+ },
+ "openscad": {
+  "docs": "https://openscad.org/",
+  "what": "Programmers solid 3D CAD modeller"
+ },
+ "openshot": {
+  "docs": "https://www.openshot.org/",
+  "what": "OpenShot is an award-winning free and open-source video editor for Linux, Mac, and Windows. Create videos with exciting video effects, titles, audio tracks, and animations"
+ },
+ "openwebrxplus": {
+  "note": "OpenWebRX+ (improved fork); via linuxlinks internal page 2026-10-02",
+  "repo": "0xAF/openwebrxplus"
+ },
+ "openxpki": {
+  "repo": "openxpki/openxpki",
+  "what": "Enterprise-grade PKI / certificate management platform"
+ },
+ "opnsense": {
+  "repo": "opnsense/core",
+  "what": "Open-source firewall and routing platform (FreeBSD)"
+ },
+ "oscar": {
+  "repo": "oscar-system/Oscar.jl",
+  "what": "A comprehensive open source computer algebra system for computations in algebra, geometry, and number theory. - oscar-system/Oscar.jl"
+ },
+ "paperless": {
+  "repo": "paperless-ngx/paperless-ngx",
+  "what": "Scan, index, and archive documents with OCR"
+ },
+ "paperlessngx": {
+  "repo": "paperless-ngx/paperless-ngx",
+  "what": "Scan, index, and archive documents with OCR"
+ },
+ "parigp": {
+  "docs": "https://pari.math.u-bordeaux.fr/",
+  "what": "Widely used algebra system designed for fast computations in number theory"
+ },
+ "pass": {
+  "docs": "https://www.passwordstore.org/",
+  "what": "The standard Unix password manager — gpg-encrypted store with git sync"
+ },
+ "peazip": {
+  "repo": "peazip/PeaZip",
+  "what": "PeaZip (9to5Linux roundup 2026-09-27)"
+ },
+ "perlcritic": {
+  "repo": "Perl-Critic/Perl-Critic",
+  "what": "The leading static analyzer for Perl. Configurable, extensible, powerful. - Perl-Critic/Perl-Critic"
+ },
+ "perllsp": {
+  "repo": "tree-sitter-perl/perl-lsp",
+  "what": "perl-lsp — a fast Perl language server in Rust with cross-file type inference, completion, goto-def, and rename. Built on tree-sitter-perl and tower-lsp. - tree-sitter-perl/perl-lsp"
+ },
+ "perltidy": {
+  "repo": "perltidy/perltidy",
+  "what": "Perl::Tidy, a source code formatter for Perl"
+ },
+ "pfsense": {
+  "docs": "https://www.pfsense.org/",
+  "what": "FreeBSD-based firewall/router distribution (CE is open source)"
+ },
+ "phatch": {
+  "repo": "firestrand/phatch",
+  "what": "Photo batch processor — applies a stack of actions to many images at once (Python)"
+ },
+ "photini": {
+  "repo": "jim-easterbrook/Photini",
+  "what": "Easy-to-use digital photo metadata editor (Python, exiv2/GExiv2 backend)"
+ },
+ "pihole": {
+  "repo": "pi-hole/pi-hole",
+  "what": "Network-wide DNS ad blocker for the Raspberry Pi"
+ },
+ "pitivi": {
+  "docs": "https://www.pitivi.org/",
+  "what": "Non-linear audio/video editor using GStreamer"
+ },
+ "planify": {
+  "repo": "alainm23/planify",
+  "what": "GTK4 task manager with Todoist + Nextcloud sync"
+ },
+ "plex": {
+  "docs": "https://www.plex.tv/",
+  "license": "proprietary",
+  "what": "Closed-source commercial media server (not open source; docs at plex.tv)"
+ },
+ "plexamp": {
+  "docs": "https://plexamp.com/",
+  "what": "Plex's music player client (closed source)"
+ },
+ "postmarketosnura": {
+  "docs": "https://gitlab.com/postmarketOS",
+  "what": "postmarketOS (Nura) (9to5Linux roundup 2026-09-27)"
+ },
+ "prettier": {
+  "repo": "prettier/prettier",
+  "what": "Opinionated multi-language code formatter"
+ },
+ "prometheus": {
+  "repo": "prometheus/prometheus",
+  "what": "Metrics collection, time-series database, and alerting toolkit"
+ },
+ "proxmox": {
+  "docs": "https://www.proxmox.com/en/products/proxmox-virtual-environment/overview",
+  "what": "Debian-based virtualization platform (KVM + LXC); free, subscription for repos"
+ },
+ "proxmoxarm64": {
+  "docs": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-virtual-environment-launches-official-arm64-support",
+  "what": "Officially supported Proxmox VE ARM64 build (Ampere-class hardware, runs on RPi 5)"
+ },
+ "pybliographer": {
+  "docs": "https://directory.fsf.org/wiki/Pybliographer",
+  "what": "Python bibliography manager for searching and editing bibliographic databases"
+ },
+ "qcad": {
+  "docs": "https://qcad.org/en/",
+  "what": "QCAD is a free, open source 2D CAD system for Windows, Linux and Mac"
+ },
+ "qtcreator": {
+  "docs": "https://code.qt.io/cgit/qt-creator/qt-creator.git",
+  "what": "Qt Creator (9to5Linux roundup 2026-09-27)"
+ },
+ "radicale": {
+  "repo": "Kozea/Radicale",
+  "what": "Small CalDAV/CardDAV server for calendars and contacts"
+ },
+ "rayfall": {
+  "note": "via linuxlinks internal page 2026-10-02",
+  "repo": "moose25/Rayfall"
+ },
+ "recipes": {
+  "docs": "https://gitlab.gnome.org/GNOME/recipes",
+  "what": "GNOME's recipe manager for browsing, cooking and storing recipes"
+ },
+ "redasm": {
+  "repo": "redasm-dev/redasm",
+  "what": "Cross-platform disassembler with a Qt GUI and plugin architecture"
+ },
+ "reduce": {
+  "docs": "https://reduce-algebra.sourceforge.io/",
+  "what": "General-purpose computer algebra system for symbolic computation"
+ },
+ "reitti": {
+  "repo": "dedicatedcode/reitti",
+  "what": "Self-hosted location history / Google Timeline alternative"
+ },
+ "rizin": {
+  "repo": "rizinorg/rizin",
+  "what": "Reverse-engineering framework and binary analysis toolkit"
+ },
+ "rsync": {
+  "repo": "RsyncProject/rsync",
+  "what": "Rsync (9to5Linux roundup 2026-09-27)"
+ },
+ "sagemath": {
+  "docs": "https://www.sagemath.org/",
+  "what": "SageMath is a free and open-source mathematical software system"
+ },
+ "salome": {
+  "docs": "https://www.salome-platform.org/",
+  "what": "Platform for numerical simulation"
+ },
+ "scancodetoolkit": {
+  "repo": "aboutcode-org/scancode-toolkit",
+  "what": "Deep license/copyright/dependency scanner; emits SPDX + CycloneDX SBOMs"
+ },
+ "scilab": {
+  "docs": "https://www.scilab.org/",
+  "what": "Numerical computational package"
+ },
+ "scramble": {
+  "repo": "tobagin/scramble",
+  "what": "Privacy-focused drag-and-drop tool to inspect and strip image metadata"
+ },
+ "semgrep": {
+  "repo": "semgrep/semgrep",
+  "what": "Structural (AST-based) static analysis and linting across languages"
+ },
+ "setzer": {
+  "repo": "cvfosammmm/Setzer"
+ },
+ "shelly": {
+  "repo": "Seafoam-Labs/Shelly-ALPM",
+  "what": "Shelly (9to5Linux roundup 2026-09-27)"
+ },
+ "shotcut": {
+  "docs": "https://www.shotcut.org/",
+  "what": "Shotcut is a free, open source, cross-platform video editor for Windows, Mac and Linux"
+ },
+ "sigtool": {
+  "repo": "opencoff/sigtool",
+  "what": "Ed25519 file signing, verification and encryption utility (libsodium-based)"
+ },
+ "singular": {
+  "docs": "https://www.singular.uni-kl.de/",
+  "what": "Computer Algebra System for polynomial computations"
+ },
+ "sisu": {
+  "docs": "https://www.sisudoc.org/",
+  "what": "Structured document preparation and publishing system with its own lightweight markup"
+ },
+ "slob": {
+  "repo": "itkach/slob",
+  "what": "Data store / GTK dictionary application for SLOB and Aard2 dictionaries"
+ },
+ "solvespace": {
+  "docs": "https://solvespace.com/",
+  "what": "Parametric 3d CAD tool"
+ },
+ "sparkylinux": {
+  "docs": "https://sparkylinux.org/",
+  "what": "SparkyLinux (9to5Linux roundup 2026-09-27)"
+ },
+ "superlinter": {
+  "repo": "super-linter/super-linter",
+  "what": "GitHub Action bundling dozens of linters for every language"
+ },
+ "suplinter": {
+  "repo": "super-linter/super-linter",
+  "what": "GitHub Action bundling dozens of linters for every language"
+ },
+ "syd": {
+  "docs": "https://gitlab.exherbo.org/sydbox/sydbox",
+  "what": "Configurable application sandbox for Linux"
+ },
+ "sylpheed": {
+  "docs": "https://sylpheed.sraoss.jp/en/",
+  "what": "Lightweight GTK+ email client (development dormant, 3+ years since last commit)"
+ },
+ "symja": {
+  "docs": "https://matheclipse.org",
+  "what": "Computer algebra system and symbolic mathematics library"
+ },
+ "sympy": {
+  "docs": "https://www.sympy.org/en/index.html",
+  "what": "Python library for symbolic mathematics"
+ },
+ "synologyphotos": {
+  "docs": "https://www.synology.com/en-global/dsm/feature/photos",
+  "what": "Synology's first-party photo app (closed source, DSM-only)"
+ },
+ "systemd": {
+  "repo": "systemd/systemd",
+  "what": "systemd (9to5Linux roundup 2026-09-27)"
+ },
+ "tailscale": {
+  "repo": "tailscale/tailscale",
+  "what": "WireGuard-based mesh VPN (client is open source, coordination server is not)"
+ },
+ "tasker": {
+  "docs": "https://tasker.joaoapps.com/",
+  "what": "Android automation app, still the gold standard after 12 years"
+ },
+ "tectonic": {
+  "repo": "tectonic-typesetting/tectonic"
+ },
+ "tekton": {
+  "docs": "https://tekton.dev/",
+  "what": "Vendor-neutral Kubernetes-native framework for building CI/CD systems"
+ },
+ "texfmt": {
+  "repo": "WGUNDERWOOD/tex-fmt"
+ },
+ "texlab": {
+  "repo": "latex-lsp/texlab"
+ },
+ "texmacs": {
+  "repo": "texmacs/texmacs",
+  "what": "Free scientific text editor — structured WYSIWYG editor with LaTeX export"
+ },
+ "texmaker": {
+  "docs": "https://www.xm1math.net/texmaker/",
+  "what": "Cross-platform LaTeX IDE with one-click compile, Unicode support and spell check"
+ },
+ "texmaths": {
+  "docs": "http://roland65.free.fr/texmaths/",
+  "what": "LibreOffice extension that inserts LaTeX equations as SVG or PNG images"
+ },
+ "texstudio": {
+  "repo": "texstudio-org/texstudio",
+  "what": "Full-featured cross-platform LaTeX editor with built-in PDF viewer and reference browser"
+ },
+ "texworks": {
+  "repo": "TeXworks/texworks",
+  "what": "Simple Qt-based TeX front-end with an integrated PDF previewer"
+ },
+ "thunderbird": {
+  "docs": "https://www.thunderbird.net/",
+  "what": "Full-featured open-source mail client (the one lightweight clients are measured against)"
+ },
+ "tidyall": {
+  "docs": "https://metacpan.org/pod/Code::TidyAll",
+  "note": "MetaCPAN answers 402 to probes (bot-wall) -- use the GitHub repo for clicking, MetaCPAN only as the install doc",
+  "repo": "houseabsolute/perl-code-tidyall",
+  "what": "Perl all-in-one code tidier/validator runner"
+ },
+ "tor": {
+  "docs": "https://www.torproject.org/",
+  "what": "Tor (9to5Linux roundup 2026-09-27)"
+ },
+ "trojita": {
+  "repo": "jktjkt/trojita",
+  "what": "Fast Qt IMAP email client"
+ },
+ "truenas": {
+  "docs": "https://www.truenas.com/docs/",
+  "what": "Open-source NAS/ZFS storage OS from iXsystems"
+ },
+ "truenasproxmoxplugin": {
+  "repo": "truenas/truenas-proxmox-plugin",
+  "what": "Official TrueNAS storage plugin for Proxmox VE (iSCSI or NVMe/TCP, ZFS snapshots)"
+ },
+ "tuidict": {
+  "repo": "404Simon/tuidict",
+  "what": "TUI dictionary browser backed by FreeDict language pairs"
+ },
+ "tuxpaint": {
+  "docs": "https://tuxpaint.org/",
+  "note": "github.com/tux4kids/tuxpaint is a 404; tuxpaint.org is the official source",
+  "what": "Drawing program for young children"
+ },
+ "ubifs": {
+  "docs": "https://docs.kernel.org/filesystems/ubifs.html",
+  "note": "kernel FS docs"
+ },
+ "uptimekuma": {
+  "repo": "louislam/uptime-kuma",
+  "what": "Self-hosted uptime and service monitoring with status pages"
+ },
+ "utillinux": {
+  "repo": "util-linux/util-linux",
+  "what": "util-linux (9to5Linux roundup 2026-09-27)"
+ },
+ "vault": {
+  "docs": "https://www.vaultproject.io/",
+  "what": "HashiCorp Vault — secrets management (BUSL-licensed since 2023)"
+ },
+ "vaultwarden": {
+  "repo": "dani-garcia/vaultwarden",
+  "what": "Unofficial lightweight Bitwarden-compatible password server (Rust)"
+ },
+ "vidcutter": {
+  "repo": "ozmartian/vidcutter",
+  "what": "A modern yet simple multi-platform video cutter and joiner. - ozmartian/vidcutter"
+ },
+ "videocut": {
+  "repo": "kanehekili/VideoCut",
+  "what": "MPEG2,MP4,MKV,WEBM Cutter for Linux using MPV and libavcodec or ffmpeg. Cutting is lossless, the target file will not be reencoded - kanehekili/VideoCut"
+ },
+ "videohubapp": {
+  "repo": "whyboris/video-hub-app",
+  "what": "Angular + Electron app for browsing your local video library"
+ },
+ "videotrimmer": {
+  "docs": "https://flathub.org/apps/org.gnome.gitlab.YaLTeR.VideoTrimmer",
+  "what": "Trim videos quickly"
+ },
+ "vimix": {
+  "repo": "brunoherbelin/vimix",
+  "what": "Live Video Mixer. Contribute to brunoherbelin/vimix development by creating an account on GitHub"
+ },
+ "vimtex": {
+  "repo": "lervag/vimtex"
+ },
+ "violationslib": {
+  "repo": "tomasbjerre/violations-lib",
+  "what": "Parses static-analysis reports into a common model for CI"
+ },
+ "virtualbox": {
+  "docs": "https://www.virtualbox.org/",
+  "what": "VirtualBox (9to5Linux roundup 2026-09-27)"
+ },
+ "vlc": {
+  "repo": "videolan/vlc",
+  "what": "VLC (9to5Linux roundup 2026-09-27)"
+ },
+ "vnu": {
+  "note": "Nu Html Checker (v.Nu)",
+  "repo": "validator/validator"
+ },
+ "vocage": {
+  "repo": "proycon/vocage",
+  "what": "Minimalistic terminal spaced-repetition tool for flashcards and vocabulary"
+ },
+ "winboat": {
+  "repo": "winboat-org/winboat",
+  "what": "Run Windows apps on Linux in a Docker-managed VM with seamless windows"
+ },
+ "wine": {
+  "docs": "https://gitlab.winehq.org/wine/wine",
+  "note": "winehq.org is Cloudflare-walled; the GitLab instance is the source of truth",
+  "what": "Windows API compatibility layer for Unix (source repo on WineHQ GitLab)"
+ },
+ "wiremix": {
+  "repo": "tsowell/wiremix",
+  "what": "Terminal audio mixer for PipeWire"
+ },
+ "wireshark": {
+  "docs": "https://www.wireshark.org/",
+  "what": "Network protocol analyzer"
+ },
+ "woodpecker": {
+  "repo": "woodpecker-ci/woodpecker",
+  "what": "Lightweight self-hosted CI/CD engine driven by YAML pipeline config"
+ },
+ "wordpress": {
+  "repo": "WordPress/WordPress",
+  "what": "WordPress (9to5Linux roundup 2026-09-27)"
+ },
+ "wxmaxima": {
+  "docs": "https://wxmaxima-developers.github.io/wxmaxima/",
+  "what": "GUI for the sublime Maxima CAS"
+ },
+ "xca": {
+  "repo": "chris2511/xca",
+  "what": "Graphical X.509 certificate and key management (Qt)"
+ },
+ "xcas": {
+  "docs": "https://xcas.univ-grenoble-alpes.fr/en.html",
+  "what": "Cross-platform mathematical environment"
+ },
+ "xtrackcad": {
+  "repo": "ankon/xtrkcad",
+  "what": "CAD program for designing model railroad layouts (GitHub import of the SourceForge master)"
+ },
+ "zarn": {
+  "repo": "htrgouvea/zarn",
+  "what": "A lightweight static security analysis tool for modern Perl Apps - htrgouvea/zarn"
+ },
+ "theswordproject": {
+  "what": "The SWORD Project provides a C++ framework for Bible translations, commentaries, dictionaries, scripture searches and shared modules.",
+  "docs": "https://www.crosswire.org/sword"
+ },
+ "alkitabbiblestudy": {
+  "what": "Alkitab Bible Study is a graphical Bible study program with parallel translations, advanced scripture searching and reference resources.",
+  "docs": "https://www.kiyut.com"
+ },
+ "bibledesktop": {
+  "what": "Bible Desktop is a Java Bible study application with SWORD modules, parallel reading, passage navigation and advanced scripture searching.",
+  "docs": "https://www.crosswire.org/bibledesktop/"
+ },
+ "bibref": {
+  "repo": "kovzol/bibref",
+  "what": "bibref helps researchers compare Greek New Testament texts with the Septuagint to discover quotations and other textual parallels."
+ },
+ "bollsbible": {
+  "repo": "Bolls-Bible/bain",
+  "what": "Bolls Bible is a free and open source Bible reader with multiple translations, parallel reading, dictionaries, search and offline access."
+ },
+ "bbl": {
+  "repo": "nehemiaharchives/bbl",
+  "what": "bbl is a terminal Bible reader offering multilingual translations, verse comparison, full-text search and offline scripture packs."
+ },
+ "selah": {
+  "repo": "toazd/selah",
+  "what": "Selah is a cross-platform Bible study app offering offline reading, notes, highlighting, Strong&#039;s numbers, cross references and search."
+ },
+ "lex": {
+  "repo": "elcafe7/lex",
+  "what": "Lex provides terminal Bible study with interlinear texts, Strong&#039;s references, topical searches, cross-references and study exports."
+ },
+ "slate": {
+  "repo": "mitchcurtis/slate",
+  "what": "Slate is a Qt-based pixel art editor for game sprites and seamless tilesets, offering editable layers and sprite-sheet animation previews."
+ },
+ "fizzy": {
+  "repo": "fizzyedit/fizzy",
+  "what": "Fizzy is an extensible Zig-based editor featuring a pixel-art plugin, sprite organisation, animation previews and texture-atlas packing."
+ },
+ "pixlpunkt": {
+  "repo": "ChadRoesler/PixlPunkt",
+  "what": "PixlPunkt is a pixel art editor with animation timelines, tile editing, non-destructive layer effects, palettes and plugin support."
+ },
+ "pikopixel": {
+  "what": "PikoPixel offers layered pixel drawing with unlimited undo, custom backgrounds, popup palettes, upscaled export and gamma-correct blending.",
+  "docs": "https://twilightedge.com/mac/pikopixel/"
+ },
+ "lmd": {
+  "what": "Linux Malware Detect scans shared hosting systems for malicious files using hashes, YARA rules, ClamAV integration and real-time monitoring.",
+  "docs": "https://www.rfxn.com/projects/linux-malware-detect/"
+ },
+ "atomdriftscan": {
+  "repo": "atomdrift-project/scan",
+  "what": "Atomdrift Scan detects malware in files, packages and archives using static analysis, rules, hashes and machine learning."
+ },
+ "paranoya": {
+  "repo": "c0m4r/paranoya",
+  "what": "Paranoya is an IOC and YARA scanner that checks files and directories for suspicious and malicious content."
+ },
+ "decloaker": {
+  "repo": "gustavo-iniguez-goya/decloaker",
+  "what": "Decloaker reveals files, processes, sockets and kernel modules hidden by malware and rootkits."
+ },
+ "chkrootkit": {
+  "what": "chkrootkit examines Linux systems for signs of rootkits, hidden processes, altered commands and other indicators of compromise.",
+  "docs": "https://www.chkrootkit.org/"
+ },
+ "alpinelinux": {
+  "what": "the Alpine Linux distribution itself (musl libc, BusyBox, container favourite)",
+  "docs": "https://alpinelinux.org/"
+ },
+ "_verified_2026_10_16": "2026-10-17 — 2026-10-16 brew: 18 project names resolved from the LinuxLinks internal pages (Slate, Fizzy, PixlPunkt, PikoPixel, LMD, Atomdrift Scan, paranoya, decloaker, chkrootkit, 8 Linux Bible tools, Alpine Linux); every URL probed 200.",
+ "element": {
+  "docs": "https://element.io/",
+  "what": "Matrix collaboration client"
+ },
+ "shortwave": {
+  "docs": "https://gitlab.gnome.org/World/Shortwave",
+  "what": "Internet radio player for GNOME"
+ },
+ "filezilla": {
+  "docs": "https://filezilla-project.org/",
+  "what": "Free FTP, FTPS and SFTP client/server"
+ },
+ "projectlibre": {
+  "docs": "https://www.projectlibre.com/",
+  "what": "Open-source project management suite, a Microsoft Project alternative"
+ },
+ "nextclouddesktop": {
+  "repo": "nextcloud/desktop",
+  "what": "Nextcloud desktop sync client"
+ },
+ "timeshift": {
+  "repo": "linuxmint/timeshift",
+  "what": "System restore tool for Linux (rsync/BTRFS snapshots)"
+ },
+ "remmina": {
+  "docs": "https://gitlab.com/Remmina/Remmina",
+  "what": "Remote desktop client for Linux"
+ },
+ "muse": {
+  "repo": "muse-sequencer/muse",
+  "what": "Digital audio workstation for Linux"
+ },
+ "kodi": {
+  "repo": "xbmc/xbmc",
+  "what": "Home theater and media center"
+ },
+ "mandelbulber": {
+  "repo": "buddhi1980/mandelbulber2",
+  "what": "3D fractal renderer"
+ },
+ "mandelbulberv2": {
+  "repo": "buddhi1980/mandelbulber2",
+  "what": "3D fractal renderer (Mandelbulber v2)"
+ },
+ "diagramsnet": {
+  "docs": "https://www.drawio.com/",
+  "what": "diagrams.net / draw.io diagram editor"
+ },
+ "calibre": {
+  "repo": "kovidgoyal/calibre",
+  "what": "E-book manager and converter"
+ },
+ "_verified_2026_10_22": "2026-10-22 — GUL-96: seeded the 12 wrong links from the 10-21 recovery plus calibre, all canonical homes/repos; Element/Shortwave/GIMP/Wireshark now point at publisher homepages, not GitHub mirrors. Each URL/repo live-checked (HTTP 200 or gh api).",
+ "gparted": {
+  "docs": "https://gparted.org/",
+  "what": "Graphical disk partition editor"
+ },
+ "inkscape": {
+  "docs": "https://inkscape.org/",
+  "what": "Professional vector graphics editor"
+ },
+ "libreoffice": {
+  "docs": "https://www.libreoffice.org/",
+  "what": "Free office suite"
+ },
+ "ffmpeg": {
+  "docs": "https://ffmpeg.org/",
+  "what": "Multimedia framework for encoding, decoding and streaming"
+ },
+ "jwildfire": {
+  "repo": "thargor6/JWildfire",
+  "what": "Fractal flame editor"
+ }
+}
