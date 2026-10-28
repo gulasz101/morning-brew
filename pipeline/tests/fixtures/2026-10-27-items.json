@@ -1,0 +1,72 @@
+{
+  "source_post": "content/2026-10-27-morning-brew.md",
+  "note": "Three real items from the 2026-10-27 edition, rewritten into the writer's JSON shape. Facts are taken from that post; they are fixtures, not a fresh digest.",
+  "items": [
+    {
+      "title": "ChatGPT and Claude blocked by Swedish government over problematic security concerns",
+      "publisher": "TechRadar",
+      "url": "https://www.techradar.com/pro/security/chatgpt-and-claude-blocked-by-swedish-government-over-problematic-security-concerns",
+      "id": "outqospf4cqwybsb26rrxbgp",
+      "video": false,
+      "reply": {
+        "in_short": "Sweden's Government Offices cut browser access to ChatGPT and Claude for staff on work machines. Not a national ban, a procurement problem: Copilot stays because it has a data-processing agreement and the others do not.",
+        "key_points": [
+          "Blocked from Monday 26 October 2026, as a workplace rule rather than a law",
+          "Microsoft Copilot survives on an existing agreement, not on model quality",
+          "An internal audit at the Transport Administration found sensitive data pasted into prompts",
+          "The Tax Agency and the National Board of Institutional Care already restrict the same tools",
+          "DeepSeek was restricted earlier; no leak or training incident is alleged"
+        ],
+        "details": "The digitalisation director, Mikael Wettercrantz, says using AI services without a data-protection agreement has consequences for information security, and that is the whole argument. There is no confirmed breach. The audit found two habits: staff pasting sensitive material into prompts, and answers being passed on without a second look. Some staff keep controlled access through a special AI-assistant platform the authorities built themselves, so it is a two-tier arrangement. Verdict: the paper trail decides which tool gets approved, and every cautious organisation will copy this shape.",
+        "ideas": [],
+        "project_links": [1, 2]
+      }
+    },
+    {
+      "title": "MOSS Image with control, references and editing in ComfyUI",
+      "publisher": "Nerdy Rodent",
+      "url": "https://youtu.be/hTCjWfbyCjU",
+      "id": "zw1ob3khs3nh247xflmip9h4",
+      "video": true,
+      "reply": {
+        "in_short": "Moss Image landed in ComfyUI under Apache 2.0, and the tutorial walks through a modular workflow with references, ControlNet and experimental editing. Another free model to run at home, and this one handles text in English and Chinese.",
+        "key_points": [
+          "Apache 2.0 licence, Int8 models under 8 GB each, so it fits most cards",
+          "Normal mode runs CFG 2.5 at 25 steps, turbo drops to CFG 1 at four steps",
+          "Resolution from about 1 MP up to 8 MP with the hi-res LoRA",
+          "Editing is experimental and shifts colours badly in the demo",
+          "Hi-res without the LoRA duplicates subjects, which the video shows plainly"
+        ],
+        "details": "The workflow is the interesting part: text-to-image with an optional prompt enhancer, community LoRAs for upscaling, turbo and ControlNet, reference images, bounding-box placement through KJ Nodes, and image-to-text through the enhancer. The demo goes through a 1024x1024 text-rendering test that beat Ming Image, an 8 MP spaceship captain where the hi-res LoRA fixed subject duplication, and an edit that changed hair colour and expression but dragged the palette with it. Upscaling via light denoise at 0.25 and SeedVR2 at 4x works. Caveats: editing is not ready, turbo is faster but less realistic, and the high resolutions need the LoRA or you get two captains. Initial feedback is that it is a good second model for reference-heavy work, and not worth it if you only generate plain text-to-image.",
+        "ideas": [
+          {"project": "ideogram4-local", "idea": "Test Moss Image at 2 MP against the current worker on the same prompt set, to see whether the text rendering is better before adding a third worker."}
+        ],
+        "project_links": [1]
+      }
+    },
+    {
+      "title": "7 Best Free and Open Source Terminal Emulators",
+      "publisher": "LinuxLinks",
+      "url": "https://www.linuxlinks.com/best-free-open-source-terminal-emulators/",
+      "id": "wp4s76lcbahl846h6vq9y034",
+      "video": false,
+      "roundup": true,
+      "reply": {
+        "in_short": "A LinuxLinks roundup of terminal emulators. Useful as a checklist, thin on the details that would make me switch from what I already run.",
+        "key_points": [
+          "Seven emulators, all free and open source",
+          "Most entries are already packaged in Debian and Fedora",
+          "Only two of the seven have GPU acceleration",
+          "Blurbs repeat the project description, so read the repos before choosing",
+          "No benchmarks and no memory figures anywhere in the list"
+        ],
+        "details": "The list covers the usual names plus a couple I had not looked at in years, and each entry gets a short paragraph on features rather than a test. If I only wanted a terminal for SSH on the arr-box, any of them would do. The split that matters is GPU rendering and configuration language: a few are fast but need a config file written by hand, and the rest are point-and-click. Nothing here is worth replacing a setup that works, but it is a decent starting point for a fresh install.",
+        "ideas": [
+          {"project": "homelab-2nd", "idea": "Pick one GPU-accelerated emulator and test it over SSH to homelab-2nd from the laptop before changing the default anywhere else."}
+        ],
+        "project_links": [],
+        "projects": ["Alacritty", "Kitty", "WezTerm", "Foot", "Terminator", "Tilix", "Konsole"]
+      }
+    }
+  ]
+}

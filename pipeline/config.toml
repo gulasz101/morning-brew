@@ -1,0 +1,35 @@
+# Pipeline configuration for the Morning Brew builder.
+# No secrets here. Every credential comes from the environment.
+
+[writer]
+model = "deepseek-v4.1-flash-ollama"
+base_url = "https://llm.voitech.dev/v1"
+api_key_env = "BREW_LLM_API_KEY"
+parallel = 4
+retries = 1
+
+[karakeep]
+api_key_env = "KARAKEEP_API_KEY"
+server_env = "KARAKEEP_SERVER_ADDR"
+
+[paths]
+vault_root = "~/wojtek.second.brain.obsidian.vault"
+blog_repo = "~/Projects/morning-brew"
+skill_md = "~/.hermes/skills/research/karakeep-hoard-digest/SKILL.md"
+processor = "~/.hermes/scripts/karakeep_digest.py"
+enrich = "~/.hermes/skills/research/karakeep-hoard-digest/scripts/karakeep_enrich.py"
+
+[projects]
+# The only project names the writer may put in "ideas".
+allowed = ["riffradar", "homelab-2nd", "ideogram4-local"]
+
+[limits]
+# The skill used to be one 131k-character prompt. Warn when it grows again.
+skill_md_max_lines = 250
+article_chars = 14000
+transcript_chars = 26000
+# Fail the run when more than this share of items is dropped.
+max_drop_ratio = 0.10
+
+[live]
+base = "https://gulasz101.github.io/morning-brew"
