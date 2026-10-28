@@ -57,6 +57,16 @@ PROJECT_LINK_RULE = {
 }
 
 
+def crash_row(it: dict, exc: BaseException) -> dict:
+    """The report row for an item whose worker died, so the item can never vanish."""
+    return {
+        "id": it.get("id"),
+        "title": (it.get("title") or "")[:90],
+        "status": "dropped",
+        "errors": [f"{type(exc).__name__}: {exc}".strip()],
+    }
+
+
 def log(msg: str) -> None:
     print(f"[{datetime.now(TZ):%H:%M:%S}] {msg}", flush=True)
 
@@ -292,7 +302,7 @@ def main(argv: list[str] | None = None) -> int:
     n_ok = n_retried = 0
     lock = threading.Lock()
 
-    def work(idx: int, it: dict) -> None:
+    def work_inner(idx: int, it: dict) -> None:
         nonlocal n_ok, n_retried
         is_video = bool(it.get("video_id"))
         roundup = linklib.is_roundup_title(it.get("real_title") or it.get("title") or "")
@@ -327,6 +337,19 @@ def main(argv: list[str] | None = None) -> int:
         done[idx] = {"item": data, "meta": it, "links": cands, "roundup": roundup}
         with lock:
             reporter.add_item(row)
+
+    def work(idx: int, it: dict) -> None:
+        """One item. A crash in here becomes a `dropped` row, never a vanished item."""
+        try:
+            work_inner(idx, it)
+        except Exception as exc:  # noqa: BLE001 — an item must never disappear
+            row = crash_row(it, exc)
+            with lock:
+                if idx in done:
+                    return
+                dropped.append(row)
+                reporter.add_item(row)
+            log(f"DROP {row['title']}: {row['errors'][0][:200]}")
 
     workers = max(1, int(cfg["writer"]["parallel"]))
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:

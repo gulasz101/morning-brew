@@ -36,3 +36,22 @@ is missing, and they have no literal fallbacks.
 - `prompts/` — `voice-card.md`, `digest-rules.md`, `projects.md`, `banned.txt`.
 - `gate.py` — the ported deliverable gate with a size guard on the Hermes skill.
 - `report.json` — written into the run dir and updated as items finish.
+
+## The writer model, and the 100 s wall in front of it
+
+`[writer].model` in `config.toml` is the only writer switch; `--model` overrides it for one run.
+Measurements from the 3-day x 3-model replay (GUL-520, all `--dry-run`) are in the GUL-527 and
+GUL-528 threads. Two facts outlive that replay:
+
+- **A reasoning model's empty reply is a drop, not a blank page.** When the model spends its whole
+  `max_tokens` on thinking, the provider answers `finish_reason: "length"` with `content: null`.
+  `lib/model.py` now raises `ModelError` for that (and for any `finish_reason: "length"` reply), and
+  `brew.py` wraps every worker so a crashed item still lands in `report.json` as a `dropped` row.
+  Before that, the item vanished from `items` and `dropped` both, and the gate still said PASS.
+- **The edge cuts a request at 100 s.** Cloudflare in front of `llm.voitech.dev` answers `HTTP 524`
+  at 100 s, long before `Writer`'s own `timeout=240`. The mitigation is the input budget
+  (`limits.article_chars` / `limits.transcript_chars`), not a bigger timeout: raising the timeout
+  cannot move someone else's edge limit. A model that still 524s a normal day is not a writer
+  candidate — that is how `qwen3.8-flash-go` was rejected (13 of 29 items on 2026-10-16, 883 s for
+  the day). A 524 now shows up as a `dropped` row carrying `HTTP 524 from the writer model`, so a
+  slow model is visible in the report instead of silently shrinking the edition.

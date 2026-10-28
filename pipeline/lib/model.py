@@ -95,6 +95,22 @@ class Writer:
         except Exception as exc:  # network, timeout
             raise ModelError(f"writer call failed: {exc}") from exc
         try:
-            return body["choices"][0]["message"]["content"]
+            choice = body["choices"][0]
+            content = choice["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise ModelError(f"unexpected reply shape: {str(body)[:200]}") from exc
+        # A reasoning model that spends the whole budget on thinking answers
+        # finish_reason "length" with content null. That is a failed item, not a blank
+        # reply: return nothing here and the item disappears from report.json.
+        finish = choice.get("finish_reason")
+        if content is None or not str(content).strip():
+            raise ModelError(
+                f"empty reply from the writer model (finish_reason={finish!r}); "
+                "the model spent its max_tokens without answering"
+            )
+        if finish == "length":
+            raise ModelError(
+                f"reply truncated at max_tokens (finish_reason={finish!r}); "
+                f"{len(str(content))} chars came back and it may be invalid JSON"
+            )
+        return content
