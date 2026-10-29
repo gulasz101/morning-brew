@@ -7,6 +7,21 @@ base_url = "https://llm.voitech.dev/v1"
 api_key_env = "BREW_LLM_API_KEY"
 parallel = 4
 retries = 1
+# Cloudflare in front of llm.voitech.dev cuts a request at ~100 s with HTTP 524. Stop
+# 5 s earlier so a slow model is a retryable ModelError, not a hang on the edge.
+timeout_sec = 95
+# The answer ceiling for a model without an entry in [writer.limits.<model>].
+max_tokens = 2000
+
+# Per-model overrides of the answer ceiling and the input window. The defaults come
+# from [limits] (26000 chars of transcript, 14000 of article) and suit a fast model:
+# deepseek-v4.1-flash-ollama answers a 26k-char transcript in ~11 s. A reasoning model
+# needs a shorter window and more answer room. A model with no entry here that cannot
+# answer inside 95 s is not a writer - see README, "The 100 s edge".
+[writer.limits."beam-free-go"]
+max_tokens = 4000
+article_chars = 10000
+transcript_chars = 14000
 
 [karakeep]
 api_key_env = "KARAKEEP_API_KEY"

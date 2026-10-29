@@ -170,7 +170,7 @@ def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[
 
 def write_item(writer: Writer, system: str, prompt: str, cands: list[dict],
                allowed: list[str], is_video: bool, roundup: bool,
-               banned: list[str]) -> tuple[dict | None, list[str], int]:
+               banned: list[str], max_tokens: int = 2000) -> tuple[dict | None, list[str], int]:
     """One writer call, one retry with the errors attached. Returns (item, errors, tries)."""
     errors: list[str] = []
     reply = ""
@@ -180,7 +180,7 @@ def write_item(writer: Writer, system: str, prompt: str, cands: list[dict],
             + "\n\nYour previous answer was rejected. Fix exactly these problems and reply "
               "with the corrected JSON only:\n- " + "\n- ".join(errors)
         )
-        reply = writer.call(system, ask)
+        reply = writer.call(system, ask, max_tokens=max_tokens)
         try:
             data = extract_json(reply)
         except ModelError as exc:
@@ -248,6 +248,56 @@ def parse_roundup_rows(data: object, n: int) -> list[dict]:
     return rows
 
 
+# ------------------------------------------------------------------ budget and safety
+def model_limits(cfg: dict, model: str) -> dict:
+    """The writer budget for this model: input window and answer ceiling.
+
+    `[writer.limits.default]` first, then an optional `[writer.limits."<model>"]`
+    override. The window exists because Cloudflare cuts a call at 100 s: a model that
+    thinks for a minute before it writes cannot also chew a 26k-character transcript
+    (see README, "The 100 s edge").
+    """
+    writer_cfg = cfg.get("writer") or {}
+    limits = writer_cfg.get("limits") or {}
+    out = {
+        "max_tokens": int(writer_cfg.get("max_tokens", 2000)),
+        "article_chars": int(cfg["limits"]["article_chars"]),
+        "transcript_chars": int(cfg["limits"]["transcript_chars"]),
+    }
+    out.update(limits.get("default") or {})
+    out.update(limits.get(model) or {})
+    return {k: int(v) for k, v in out.items()}
+
+
+def clip(text: str, limit: int) -> str:
+    """Head plus tail: the intro and the conclusion of a long transcript both matter."""
+    if limit <= 0 or len(text) <= limit:
+        return text
+    head = int(limit * 0.7)
+    tail = limit - head
+    return f"{text[:head]}\n[... middle of the source omitted ...]\n{text[-tail:]}"
+
+
+def guard_item(it: dict, process, record) -> None:
+    """Run one item's writer pass; any exception becomes a visible dropped row.
+
+    A worker that raised used to kill its thread and take its item with it: the item
+    landed in neither `report.json.items` nor `report.json.dropped`, so the counts, the
+    drop ratio and the intro line all undercounted. Nothing leaves this function
+    unrecorded.
+    """
+    row: dict = {"id": it.get("id"), "title": (it.get("title") or "")[:90]}
+    try:
+        row.update(process())
+    except Exception as exc:  # noqa: BLE001 - one item must never take the run down
+        row.update(status="dropped",
+                   errors=[f"worker crashed: {type(exc).__name__}: {exc}"])
+    try:
+        record(row)
+    except Exception as exc:  # noqa: BLE001 - the report write itself is the last resort
+        log(f"REPORT FAILED for {row.get('id')}: {type(exc).__name__}: {exc}")
+
+
 # ------------------------------------------------------------------ main
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Morning Brew builder")
@@ -302,58 +352,65 @@ def main(argv: list[str] | None = None) -> int:
     projects = read_prompt("projects.md")
     banned = itemlib.load_banned()
     allowed = list(cfg["projects"]["allowed"])
-    writer = Writer(model, cfg["writer"]["base_url"], api_key)
+    limits = model_limits(cfg, model)
+    writer = Writer(model, cfg["writer"]["base_url"], api_key,
+                    timeout=int(cfg["writer"].get("timeout_sec", 0)) or None)
 
-    a_chars = int(cfg["limits"]["article_chars"])
-    t_chars = int(cfg["limits"]["transcript_chars"])
+    a_chars = limits["article_chars"]
+    t_chars = limits["transcript_chars"]
     done: dict[int, dict] = {}
     dropped: list[dict] = []
     n_ok = n_retried = 0
     lock = threading.Lock()
 
-    def work(idx: int, it: dict) -> None:
+    def record(row: dict) -> None:
         nonlocal n_ok, n_retried
-        is_video = bool(it.get("video_id"))
-        roundup = linklib.is_roundup_title(it.get("real_title") or it.get("title") or "")
-        text = linklib.transcript_text(it, vault) if is_video else ""
-        src = "transcript"
-        if not text:
-            text, src = linklib.article_text(it, cfg, kk_key, kk_server)
-        text = text[: t_chars if is_video else a_chars]
-        cands = linklib.candidates(it, text)
-        prompt = build_prompt(day, idx + 1, total, it, text, cands, projects, roundup)
-        row = {"id": it.get("id"), "title": (it.get("title") or "")[:90],
-               "text_source": src, "candidates": len(cands)}
-        try:
-            data, errors, tries = write_item(writer, system, prompt, cands, allowed,
-                                             is_video, roundup, banned)
-        except ModelError as exc:
-            data, errors, tries = None, [str(exc)], 1
-        if data is None:
-            row.update(status="dropped", errors=errors)
-            with lock:
-                dropped.append(row)
-                reporter.add_item(row)
-            log(f"DROP {row['title']}: {'; '.join(errors)[:200]}")
-            return
-        row.update(status="retried" if tries > 1 else "ok", errors=[], tries=tries)
-        if tries > 1:
-            with lock:
-                n_retried += 1
-        else:
-            with lock:
-                n_ok += 1
-        done[idx] = {"item": data, "meta": it, "links": cands, "roundup": roundup}
         with lock:
+            if row.get("status") == "dropped":
+                dropped.append(row)
+            elif int(row.get("tries", 1)) > 1:
+                n_retried += 1
+            else:
+                n_ok += 1
             reporter.add_item(row)
+        if row.get("status") == "dropped":
+            log(f"DROP {row.get('title')}: {'; '.join(row.get('errors') or [])[:200]}")
+
+    def work(idx: int, it: dict) -> None:
+        def process() -> dict:
+            is_video = bool(it.get("video_id"))
+            roundup = linklib.is_roundup_title(it.get("real_title") or it.get("title") or "")
+            text = linklib.transcript_text(it, vault) if is_video else ""
+            src = "transcript"
+            if not text:
+                text, src = linklib.article_text(it, cfg, kk_key, kk_server)
+            text = clip(text, t_chars if is_video else a_chars)
+            cands = linklib.candidates(it, text)
+            prompt = build_prompt(day, idx + 1, total, it, text, cands, projects, roundup)
+            row = {"id": it.get("id"), "title": (it.get("title") or "")[:90],
+                   "text_source": src, "candidates": len(cands)}
+            try:
+                data, errors, tries = write_item(writer, system, prompt, cands, allowed,
+                                                 is_video, roundup, banned,
+                                                 limits["max_tokens"])
+            except ModelError as exc:
+                data, errors, tries = None, [str(exc)], 1
+            if data is None:
+                row.update(status="dropped", errors=errors)
+                return row
+            row.update(status="retried" if tries > 1 else "ok", errors=[], tries=tries)
+            done[idx] = {"item": data, "meta": it, "links": cands, "roundup": roundup}
+            return row
+
+        guard_item(it, process, record)
 
     workers = max(1, int(cfg["writer"]["parallel"]))
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
         futures = [pool.submit(work, i, it) for i, it in enumerate(items)]
         for f in concurrent.futures.as_completed(futures):
             exc = f.exception()
-            if exc:
-                log(f"worker crashed: {exc}")
+            if exc:  # guard_item swallows the item-level ones; this is the last line
+                log(f"worker crashed outside guard_item: {exc}")
 
     if not done:
         log("nothing came back from the writer, stopping")
