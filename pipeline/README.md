@@ -39,6 +39,24 @@ is missing, and they have no literal fallbacks.
 - `gate.py` — the ported deliverable gate with a size guard on the Hermes skill.
 - `report.json` — written into the run dir and updated as items finish.
 
+## The writer
+
+`[writer].model` is `beam-free-go`. The owner picked it blind on 2026-10-29 from three
+models asked to write the same items (GUL-520, set-2), and on the replay days it wrote
+29 / 50 / 46 items in 89 / 126 / 117 s wall time at `parallel = 4`, against 186 / 344 /
+295 s for `deepseek-v4.1-flash-ollama`. It is a **reasoning model**: part of every call
+goes on thinking tokens, so the answer room is not optional — it gets
+`max_tokens = 8000` against the 2000 default in `[writer.limits."beam-free-go"]`, and a
+shorter input window (14000 chars of transcript, 10000 of article) so thinking plus answer
+still fit the time a call is allowed. That 8000 is measured, not guessed: on the
+2026-10-27 replay a 4000-token budget lost 2 of 46 items to `finish_reason=length` with
+3.6k–4k of that budget spent on reasoning, while 8000 wrote all 46 (5 needed the retry) in
+214 s — the same wall time as 6000, with fewer retried calls. The other half of the budget
+is time: `llm.voitech.dev` is behind Cloudflare, which gives the origin 100 s and then
+answers HTTP 524, so the client gives up at 95 s and a call that needs longer lands in that
+item's `dropped` row as a retryable `ModelError`. A long transcript is where that bites,
+not a normal link — see the next section, and do not raise the timeout to make one item fit.
+
 ## The 100 s edge (do not raise the timeout, pick a model that fits)
 
 `llm.voitech.dev` is a LiteLLM proxy published through a dedicated Cloudflare Tunnel.
@@ -70,7 +88,7 @@ So the pipeline does three things:
 2. Per-model budget in `[writer.limits."<model>"]`: `max_tokens`, `article_chars`,
    `transcript_chars`. A model without an entry uses `[writer].max_tokens` and `[limits]`.
    Reasoning models get a shorter window and more answer room (`beam-free-go`:
-   14000/10000/4000).
+   14000/10000/8000).
 3. A model rule: **a writer model must answer one 26k-char item inside 95 s.** Check it
    before switching, with `uv run pipeline/brew.py --date <a long day> --limit 3 --dry-run`.
    `qwen3.8-flash-go` fails that check and is not a writer.
