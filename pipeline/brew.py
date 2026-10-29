@@ -219,13 +219,32 @@ def resolve_roundup(day: str, n: int, it: dict, names: list[str],
             data = json.loads(outp.read_text())
         except json.JSONDecodeError:
             data = {}
-        if isinstance(data, dict):
+        rows = parse_roundup_rows(data, n)
+    return rows
+
+
+def parse_roundup_rows(data: object, n: int) -> list[dict]:
+    """Read the resolver's links.json into render rows: name, url, what.
+
+    The resolver writes {"results": {"<n>": [row, ...]}, "blocks": ..., ...}; older
+    shapes nested the rows under "projects"/"links". Flat rows are accepted too.
+    """
+    if isinstance(data, dict):
+        results = data.get("results")
+        if isinstance(results, dict):
+            data = results.get(str(n)) or []
+        else:
             data = data.get("roundups") or data.get("items") or []
-        for entry in data if isinstance(data, list) else []:
-            for row in entry.get("projects", entry.get("links", [])) if isinstance(entry, dict) else []:
-                if isinstance(row, dict) and row.get("url"):
-                    rows.append({"name": row.get("name") or row.get("project") or "",
-                                 "url": row["url"], "what": row.get("what") or row.get("blurb") or ""})
+    rows: list[dict] = []
+    for entry in data if isinstance(data, list) else []:
+        if not isinstance(entry, dict):
+            continue
+        nested = entry.get("projects") or entry.get("links")
+        for row in nested if isinstance(nested, list) else [entry]:
+            if isinstance(row, dict) and (row.get("url") or row.get("final")):
+                rows.append({"name": row.get("name") or row.get("project") or "",
+                             "url": row.get("url") or row["final"],
+                             "what": row.get("what") or row.get("blurb") or ""})
     return rows
 
 
