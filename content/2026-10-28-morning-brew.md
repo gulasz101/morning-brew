@@ -242,6 +242,23 @@ The comment section is the good bit. Someone asked where xplr is, and the author
 **For my projects:**
 - homelab-2nd: Keep a console file manager like Yazi or lf as a throwaway debug pod for poking around the MinIO exports on OMV over SSH, never as a permanent service, since it has no metrics or backup story of its own.
 
+**Projects:**
+
+- **[nnn](https://github.com/jarun/nnn)** — N³ The unorthodox terminal file manager.
+- **[Midnight Commander](https://midnight-commander.org/)** — Midnight Commander Development Center.
+- **[superfile](https://github.com/yorukot/superfile)** — Pretty fancy and modern terminal file manager.
+- **[Ranger](https://ranger.fm/)** — Ranger &mdash; console file manager with VI key bindings.
+- **[lf](https://godoc.org/github.com/gokcehan/lf)** — Lf command - github.com/gokcehan/lf - Go Packages.
+- **[Yazi](https://github.com/sxyazi/yazi)** — 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
+- **[CliFM](https://github.com/leo-arch/clifm/wiki)** — 💾 The shell-like, command-line terminal file manager - leo-arch/clifm.
+- **[joshuto](https://github.com/kamiyaa/joshuto)** — Ranger-like terminal file manager written in Rust. Contribute to kamiyaa/joshuto development by creating an account on GitHub.
+- **[far2l](https://github.com/elfmz/far2l)** — Linux port of FAR v2. Contribute to elfmz/far2l development by creating an account on GitHub.
+- **[Vifm](https://vifm.info/)** — Vifm v0.14.5 - Vifm.
+- **[elio](https://github.com/elio-fm/elio)** — Snappy, batteries-included terminal file manager. Contribute to elio-fm/elio development by creating an account on GitHub.
+- **[felix](https://kyoheiu.dev/felix/)** — Felix.
+- **[FCD](https://github.com/bugnano/fcd)** — The FCD File Manager (FranCommanDer). Contribute to bugnano/fcd development by creating an account on GitHub.
+- **[Rat Commander](https://github.com/dividebysandwich/rat-commander)** — A spiritual successor to Midnight-Commander with modern features like truecolor support and built-in process- and disk-explorer, disk imager and network monitor - dividebysandwich/rat-commander.
+
 ## 12. QtConsole - Graphical Console for Jupyter Kernels - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/026-coding.png)
 **Project:** [qtconsole](https://github.com/spyder-ide/qtconsole)
@@ -650,6 +667,23 @@ The comments are the honest part. Readers complain about missing memory keys, ca
 
 **For my projects:** Nothing for my projects.
 
+**Projects:**
+
+- **[Qalculate!](https://qalculate.github.io/)** — Qalculate! - the ultimate desktop calculator.
+- **[Genius](https://www.jirka.org/genius.html)** — Genius Mathematics Tool and the GEL Language.
+- **[SpeedCrunch](https://www.speedcrunch.org/)** — SpeedCrunch is a free, open-source scientific calculator for Windows, macOS and Linux, with 50-digit precision, complex numbers and unit conversion.
+- **[KCalc](https://apps.kde.org/en-gb/kcalc/)** — Scientific calculator.
+- **[KAlgebra](https://apps.kde.org/en-gb/kalgebra/)** — Graph Calculator.
+- **[rpCalc](https://rpcalc.bellz.org/)** — RpCalc - News.
+- **[Kalk](https://github.com/xoofx/kalk)** — Kalk is a powerful command line calculator app for developers.
+- **[Nonpareil](https://github.com/brouhaha/nonpareil)** — Microcode-level simulation of HP calculators . Contribute to brouhaha/nonpareil development by creating an account on GitHub.
+- **[Free42](https://codeberg.org/thomasokken/free42)** — Free42 : An HP-42S Calculator Simulator.
+- **[galculator](https://github.com/galculator/galculator)**
+- **[gdcalc](https://gitlab.com/wef/gdcalc)** — Robert Hepple / gdcalc · GitLab.
+- **[JRPN](https://github.com/zathras/jrpn)** — JRPN - A Calculator Simulator Inspired by the HP-16C "Computer Scientist" Calculator and the HP-15C Scientific Calculator - zathras/jrpn.
+- **[x48ng](https://codeberg.org/gwh/x48ng)** — A reboot of the x48 HP 48 emulator.
+- **[Eigen](https://github.com/georgeweigt/eigenmath)** — Symbolic math app. Contribute to georgeweigt/eigenmath development by creating an account on GitHub.
+
 ## 31. EasyABC - graphical editor for ABC music notation - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/02/score-with-musical-notes.jpg)
 **Project:** [EasyABC](https://github.com/jwdj/EasyABC)
@@ -709,6 +743,15 @@ Unfortunately the list itself is a table of links with one line each. Most of it
 I would say it works as a starting point and not worth it as a review. So yeah, that's that.
 
 **For my projects:** Nothing for my projects.
+
+**Projects:**
+
+- **[GnuPG](https://gnupg.org/)** — GnuPG (9to5Linux roundup 2026-09-27)
+- **[OpenPGP](https://www.openpgp.org/)** — Open. Universal. Decentralized.
+- **[Mailvelope](https://www.mailvelope.com/)** — Send and receive end-to-end encrypted emails using your favorite webmail service. A browser add-on for Chrome, Firefox or Edge blends your user interface with the intuitive Mailvelope controls.
+- **[Enigmail](https://www.enigmail.net/)** — Enigmail - A simple interface for OpenPGP email security.
+- **[LibrePGP](https://librepgp.org/)** — LibrePGP.
+- **[Sequoia PGP](https://gitlab.com/sequoia-pgp/sequoia)** — Sequoia-pgp / sequoia · GitLab.
 
 ## 34. A curated list of AI coding tools, from editors to MCP servers, by Open-source Projects
 ![](https://opengraph.githubassets.com/1/ai-for-developers/awesome-ai-coding-tools)
@@ -819,6 +862,8 @@ Nothing for my projects.
 
 ## 39. Warcraft voice lines and banners when your AI coding agent needs attention, by Open-source Projects
 ![](https://opengraph.githubassets.com/1/peonping/peon-ping)
+**Project:** [peon-ping](https://github.com/peonping/peon-ping) — Warcraft III peon voice notifications for Claude Code, Codex, IDEs and any AI coding agent (5,095 stars, MIT)
+
 **Source:** https://www.opensourceprojects.dev/post/peon-ping · **Karakeep:** `jl0e9aoxp3618hszfwo9sml8`
 
 **In short:** peon-ping plays Warcraft, StarCraft and Portal voice lines and throws a bold banner on screen when your coding agent finishes or wants approval. It is a small fix for a real annoyance, and I would say it works.
