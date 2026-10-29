@@ -9,7 +9,7 @@ Usage:
   uv run pipeline/brew.py --date 2026-10-27
   uv run pipeline/brew.py --date 2026-10-27 --dry-run
   uv run pipeline/brew.py --date 2026-10-27 --resume
-  uv run pipeline/brew.py --model deepseek-v4.1-flash-ollama
+  uv run pipeline/brew.py --model deepseek-v4.1-flash-ollama   # override the writer
 
 Every credential comes from the environment (see pipeline/README.md). Nothing in this
 file, the config or the repo holds a key.
