@@ -44,6 +44,7 @@ Morning Brew for 2026-10-29: 35 items written from 36 hoarded bookmarks and feed
 
 ## 3. j3d - 3D mesh and point cloud viewer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/11/015-3d.png)
+**Project:** [j3d](https://github.com/janm31415/j3d)
 **Source:** https://www.linuxlinks.com/j3d-3d-mesh-point-cloud-viewer/ · **Karakeep:** `zn9molgzll3fvv1g9h2nfqid`
 
 **In short:** j3d is a C++ viewer and converter for 3D meshes and point clouds with CPU rendering. I would say it is niche, and nothing here fits my projects.
@@ -399,6 +400,7 @@ So yeah, that's that.
 
 ## 21. SnapPy - Study the Topology and Geometry of 3-Manifolds - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/11/maths-software.jpg)
+**Project:** [SnapPy](https://snappy.computop.org/)
 **Source:** https://www.linuxlinks.com/snappy-study-topology-geometry-manifolds/ · **Karakeep:** `oeycf9slnixoymu5mgykojfn`
 
 **In short:** SnapPy is a free, Python-based tool for studying the topology and geometry of 3-manifolds, with a focus on hyperbolic structures. I would say it is a serious specialist tool, and nothing for my projects.
@@ -486,6 +488,7 @@ So yeah, that's that.
 
 ## 26. MeowPDF - PDF viewer for the Kitty terminal - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/04/PDF-File.png)
+**Project:** [MeowPDF](https://github.com/monoamine11231/MeowPDF)
 **Source:** https://www.linuxlinks.com/meowpdf-pdf-viewer/ · **Karakeep:** `if3no4g838ixboeplddv1mo9`
 
 **In short:** MeowPDF is a Rust terminal PDF viewer for Kitty that uses MuPDF and supports continuous scrolling, Vim keys and mouse input. I would say it is a neat fit for terminal people, but not something I need to install today.
@@ -570,6 +573,7 @@ So yeah, that's that.
 
 ## 30. ACRN - Type 1 hypervisor for embedded and real-time systems - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2017/12/hypervisors.jpg)
+**Project:** [ACRN](https://github.com/projectacrn/acrn-hypervisor)
 **Source:** https://www.linuxlinks.com/acrn-type-1-hypervisor-embedded-real-time-systems/ · **Karakeep:** `veo5lpoyyb3jx3es1r732rbz`
 
 **In short:** ACRN is a Type 1 hypervisor for embedded, industrial and IoT systems on supported Intel hardware. I would say it is interesting, but it does not fit my stack.
@@ -653,6 +657,7 @@ I read it as a useful map of a thin market. sabre/dav is the broad one, Radicale
 
 ## 34. rasterminal - terminal-based 3D model viewer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/11/001-3d.png)
+**Project:** [rasterminal](https://github.com/PavolUlicny/rasterminal)
 **Source:** https://www.linuxlinks.com/rasterminal-terminal-based-3d-model-viewer/ · **Karakeep:** `qn2155570u5mdaznmr00372r`
 
 **In short:** rasterminal is a CPU-only terminal 3D model viewer from Pavol Uličný, with real-time software rasterisation and an SSH-friendly text fallback. I would say it is a neat trick for headless boxes, and I have no use for it.
