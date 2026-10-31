@@ -329,6 +329,7 @@ For my homelab it is a maybe. I already front every public service with its own 
 
 ## 18. hledger-textual - terminal interface for hledger accounting - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/01/financial-business-chart-with-diagrams-stock-numbers-showing-profits-losses.jpg)
+**Project:** [hledger-textual](https://github.com/thesmokinator/hledger-textual)
 **Source:** https://www.linuxlinks.com/hledger-textual-terminal-interface-hledger-accounting/ · **Karakeep:** `jo6gppv5hvy4ypf1fhcgyzl8`
 
 **In short:** hledger-textual is a Python and Textual terminal interface for hledger plain-text accounting by Michele Broggi. I would say it is a useful front end for people already in hledger, and not worth it if you only want a quick budget tracker.
@@ -409,6 +410,7 @@ I would say it is a catalogue rather than a verdict. Nothing here is tested or r
 
 ## 21. ytdl-sub - automate media downloads and metadata generation - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/03/women-holding-youtube-icon.jpg)
+**Project:** [ytdl-sub](https://github.com/jmbannon/ytdl-sub)
 **Source:** https://www.linuxlinks.com/ytdl-sub-automate-media-downloads-metadata-generation/ · **Karakeep:** `dpjklusgivzftifypnj2o2rk`
 
 **In short:** ytdl-sub is a Python CLI that drives yt-dlp for unattended media downloads and metadata generation, and I would say it is useful for media libraries but nothing for my projects.
@@ -714,6 +716,7 @@ The rendered copy is available online and the source is on GitHub. Nothing to in
 
 ## 36. Kolibri - offline-first learning platform - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/04/kids-painting-paper-with-colorful-paints.jpg)
+**Project:** [Kolibri](https://github.com/learningequality/kolibri)
 **Source:** https://www.linuxlinks.com/kolibri-offline-first-learning-platform/ · **Karakeep:** `qs54aisfquz9cwc96ta5us4s`
 
 **In short:** Kolibri is an offline-first learning platform from Learning Equality, MIT licensed, for schools and community centres with limited internet; I would say it is a quite good job for that case, but nothing for my projects.
@@ -735,6 +738,7 @@ I would say it is a quite good job for that specific offline classroom case. For
 
 ## 37. Bao - lightweight static partitioning hypervisor - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2017/12/hypervisors.jpg)
+**Project:** [Bao](https://github.com/bao-project/bao-hypervisor)
 **Source:** https://www.linuxlinks.com/bao-lightweight-static-partitioning-hypervisor/ · **Karakeep:** `hj9eyjcxg8ebwxlbegnqp9x3`
 
 **In short:** Bao is a small Type 1 hypervisor for embedded systems that uses static partitioning of CPU, memory and devices; I would say it is a good fit for real-time embedded boxes and nothing for my projects.
