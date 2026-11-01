@@ -92,6 +92,13 @@ Morning Brew for 2026-10-31: 29 items written from 30 hoarded bookmarks and feed
 
 ## 5. 6 Useful Free and Open Source Code Formatters for Ruby - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/09/Code-Formatter-banner1.png)
+**Projects:**
+- [RuboCop](https://github.com/rubocop/rubocop): A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+- [Standard Ruby](https://github.com/standardrb/standard): Ruby's bikeshed-proof linter and formatter 🚲.
+- [rubyfmt](https://github.com/fables-tales/rubyfmt): Ruby Autoformatter!
+- [Syntax Tree](https://github.com/ruby-syntax-tree/syntax_tree): A Ruby language formatter written in Ruby.
+- [Rufo](https://github.com/ruby-formatter/rufo): The Ruby Formatter.
+- [alofmt](https://github.com/StileEducation/alofmt): An oxidised formatter for corundum of the red variety.
 **Source:** https://www.linuxlinks.com/useful-free-open-source-code-formatters-ruby/ · **Karakeep:** `m46w7ebm3yruenpzoqbki3vi`
 
 **In short:** LinuxLinks lists six free and open source Ruby code formatters, and I would say it is a handy roundup if Ruby is your language, but nothing for my projects.
@@ -459,6 +466,7 @@ It is big, about 338,000 lines of Rust, and two-thirds of commits in the first t
 
 ## 24. termtastic - terminal client for Meshtastic networks - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/11/028-distribution-network.png)
+**Project:** [termtastic](https://github.com/acelot/termtastic)
 **Source:** https://www.linuxlinks.com/termtastic-terminal-client-meshtastic-networks/ · **Karakeep:** `eym65qw7gbygsdof83z1tssd`
 
 **In short:** termtastic is a Rust terminal client for Meshtastic LoRa mesh networks, with local message storage and device configuration. I would say it is a decent TUI for radio tinkerers, but nothing for my projects.
@@ -477,6 +485,7 @@ It is big, about 338,000 lines of Rust, and two-thirds of commits in the first t
 
 ## 25. GT-STACER - Linux system optimiser and monitor - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/03/system-cleaning.jpg)
+**Project:** [GT-STACER](https://github.com/SalehGNUTUX/GT-STACER)
 **Source:** https://www.linuxlinks.com/gt-stacer-linux-system-optimiser-monitor/ · **Karakeep:** `uzj26sf0svxipvrvwjp5re94`
 
 **In short:** GT-STACER is a Qt 6/C++17 desktop Linux optimiser and monitor, forked from Stacer, with dashboards, process and service management, cleaning, firewall, backup and recovery tools. I would say it is a broad desktop toolbox, and not something I have a use for on my homelab.
@@ -515,6 +524,7 @@ Nothing for my projects.
 
 ## 27. ytm - terminal-based YouTube Music player - LinuxLinks, by YouTube
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/03/women-holding-youtube-icon.jpg)
+**Project:** [ytm](https://github.com/MaheshBhushan/yt-music-cli)
 **Source:** https://www.linuxlinks.com/ytm-terminal-based-youtube-music-player/ · **Karakeep:** `y1rs5225n0uhi9wsg3629y2f`
 
 **In short:** ytm is a Python terminal client for YouTube Music with a Textual TUI and CLI controls, built on ytmusicapi, yt-dlp and mpv. I would say it looks useful for keyboard listening, but it is one more wrapper around the same stack.
