@@ -143,6 +143,7 @@ There is no setting to disable it. Setting Claude Code fork subagents to zero st
 
 ## 7. yanklog - private clipboard history manager - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/03/003-clipboard.png)
+**Project:** [yanklog](https://github.com/act1labs/yanklog-linux)
 **Source:** https://www.linuxlinks.com/yanklog-private-clipboard-history-manager/ · **Karakeep:** `elz5sp6jy8xevxxgzsyofrdi`
 
 **In short:** yanklog is a Rust, MIT-licensed Linux clipboard history manager with an encrypted local database, full-text search, privacy filters and Wayland support; I would say it looks solid for a GNOME desktop. Nothing for my projects.
@@ -800,6 +801,7 @@ The maintainers also warn about breaking changes in 3.0.0: automatic function ca
 
 ## 39. Syncspirit – Syncthing-Compatible File Synchronisation with a Native GUI - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/10/Syncspirit-AppImage-integration.png)
+**Project:** [Syncspirit](https://github.com/basiliscos/syncspirit)
 **Source:** https://www.linuxlinks.com/syncspirit-syncthing-compatible-file-synchronisation/ · **Karakeep:** `dd8bh00mm8uuasots0bho4vr`
 
 **In short:** Syncspirit 0.4.7 is an independent Syncthing-compatible file sync tool with a native FLTK desktop GUI and a headless daemon; it is interesting, but I would say it is not worth replacing Syncthing yet.
