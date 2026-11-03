@@ -69,6 +69,7 @@ I would say it is interesting infrastructure plumbing, but not worth chasing for
 
 ## 4. Bootqt - create bootable USB drives from disk images - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/business-finance-concept-rocket-from-paper.jpg)
+**Project:** [Bootqt](https://github.com/giantpinkrobots/bootqt)
 **Source:** https://www.linuxlinks.com/bootqt-create-bootable-usb-drives-disk-images/ · **Karakeep:** `w2aa8n9hh47qctz3mwmd2clz`
 
 **In short:** Bootqt is a small Qt front end for writing ISO, IMG and RAW images to USB, with a few distro downloads and Ventoy built in. I would say it is handy on a desktop, but nothing I need for my projects.
@@ -153,6 +154,7 @@ I would say it is interesting infrastructure plumbing, but not worth chasing for
 
 ## 8. Bootleg Toolbox - verify and manage lossless concert recordings - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/09/Audio-Analyzers.jpg)
+**Project:** [Bootleg Toolbox](https://github.com/bootleg-toolbox-group/bootleg-toolbox)
 **Source:** https://www.linuxlinks.com/bootleg-toolbox-verify-manage-lossless-concert-recordings/ · **Karakeep:** `g333wf0dcqmsezvz63lilmbe`
 
 **In short:** Bootleg Toolbox is a Rust desktop app and CLI for collectors and traders of lossless live concert recordings, with checksums, decode tests, spectral analysis and tagging. I would say it is niche and not worth it for my projects.
@@ -171,6 +173,7 @@ I would say it is interesting infrastructure plumbing, but not worth chasing for
 
 ## 9. Xviewer - simple image viewer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/Photo-Metadata.png)
+**Project:** [Xviewer](https://github.com/linuxmint/xviewer)
 **Source:** https://www.linuxlinks.com/xviewer-simple-image-viewer/ · **Karakeep:** `r6rva8rtuiht4wv1c9ql8ynw`
 
 **In short:** Xviewer is Linux Mint's simple GTK image viewer, with constant-memory zooming and a plugin set. I would say it is not worth it for my projects.
@@ -420,6 +423,7 @@ OpenAI says most of these channels are slow and it is now monitoring for them. I
 
 ## 22. Personal Planner - daily planner with time tracking and reviews - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/04/notepad-pen-with-words-from-todo-list-multicolored-background.jpg)
+**Project:** [Personal Planner](https://github.com/Karthikshabari/PersonalPlanner)
 **Source:** https://www.linuxlinks.com/personal-planner-daily-planner-time-tracking-reviews/ · **Karakeep:** `ta65y8nbd0rp28qowrq44t8j`
 
 **In short:** Personal Planner is a free MIT-licensed daily planner written in Dart, with time tracking, reviews and optional sync through a user-controlled Supabase project. I would say it looks solid for one person on one machine, but it is not a fit for my homelab.
@@ -759,6 +763,7 @@ The reason the bill balloons is that coding agents resend the whole conversation
 
 ## 38. Carve - Find and remove unused Clojure code - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/09/Linter-Tool-Banner2.png)
+**Project:** [Carve](https://github.com/borkdude/carve)
 **Source:** https://www.linuxlinks.com/carve-find-remove-unused-clojure-code/ · **Karakeep:** `sfvl9ov7m3n5vyl0ubx9d7yj`
 
 **In short:** Carve is a free Clojure cleanup tool from Michiel Borkent that finds unused vars and functions, and can remove them with rewrite-cljc. I would say it is useful for old Clojure codebases, but it has no fit for my projects.
