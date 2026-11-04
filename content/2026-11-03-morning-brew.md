@@ -83,6 +83,22 @@ The part I care about is the Linux kernel bug: since 2016, every kernel has mish
 
 ## 5. 16 Useful Free and Open Source 3D Model Viewers - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/11/007-3d.png)
+**Projects:**
+- [ParaView](https://www.paraview.org/): ParaView was developed to analyze extremely large datasets using distributed memory computing resources. It can be run on supercomputers to analyze datasets of petascale size as well as on laptops…
+- [F3D](https://github.com/f3d-app/f3d): Fast and minimalist 3D viewer
+- [MeshLab](https://github.com/cnr-isti-vclab/meshlab): The open source mesh processing system
+- [Online 3D Viewer](https://github.com/kovacsv/Online3DViewer): A solution to visualize and explore 3D models in your browser
+- [Mayo](https://github.com/fougue/mayo): 3D CAD viewer and converter based on Qt + OpenCascade
+- [fstl](https://github.com/fstl-app/fstl): A fast STL file viewer
+- [Castle Model Viewer](https://github.com/castle-engine/castle-model-viewer): Viewer for many 3D and 2D model formats: glTF, X3D, VRML, Collada, 3DS, MD3, Wavefront OBJ, STL, Spine JSON, sprite sheets in Cocos2D and Starling XML formats
+- [Exhibit](https://github.com/Nokse22/Exhibit): 3D model viewer for the GNOME desktop powered by f3d
+- [Tatlin](https://github.com/dkobozev/tatlin): 3D STL and Gcode viewer
+- [voxcii](https://github.com/ashish0kumar/voxcii): Ascii 3d model viewer
+- [dcat](https://github.com/Murat65536/dcat): A 3d model viewer for the terminal
+- [Trophy](https://github.com/taigrr/trophy): Terminal 3D Model Viewer - View 3D model files in your terminal
+- [term3d](https://github.com/3Marz/term3d): Terminal 3D Model Viewer Made In Typescript
+- [j3d](https://github.com/janm31415/j3d): 3d viewer for ply, stl, obj, vox, off, trc, gltf, glb
+- [rasterminal](https://github.com/PavolUlicny/rasterminal): A 3D model viewer for the terminal
 **Source:** https://www.linuxlinks.com/useful-free-open-source-3d-model-viewers/ · **Karakeep:** `ybtyk5qgrqq4chkg26huo6pw`
 
 **In short:** LinuxLinks rounds up 16 free and open source 3D model viewers for Linux, from ParaView and MeshLab to terminal ASCII viewers. I would say it is a handy reference, and the catch is that most viewers do not cover every format.
@@ -118,6 +134,7 @@ The part I care about is the Linux kernel bug: since 2016, every kernel has mish
 
 ## 7. REMnux - Linux distribution for malware analysis - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [REMnux](https://remnux.org/)
 **Source:** https://www.linuxlinks.com/remnux-linux-distribution-malware-analysis/ · **Karakeep:** `vjti7mt8dkm70qqw9epk1zkz`
 
 **In short:** REMnux is an Ubuntu-based Linux distribution by Lenny Zeltser and contributors for malware analysis, reverse engineering and digital forensics. I would say it is a solid ready-made kit for analysts, but nothing for my projects.
@@ -242,6 +259,7 @@ I would say it's a tidy closer rather than anything exciting. Nothing for my pro
 
 ## 14. clj-depend - Clojure namespace dependency analyser - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/09/Linter-Tool-Banner1.png)
+**Project:** [clj-depend](https://github.com/fabiodomingues/clj-depend)
 **Source:** https://www.linuxlinks.com/clj-depend-clojure-namespace-dependency-analyser/ · **Karakeep:** `hnnknakq0rtratr27ajhnf72`
 
 **In short:** clj-depend is a Clojure namespace dependency analyser that checks whether namespaces break rules you define about architectural layers. I would say it sounds useful for a large Clojure codebase, but it has no fit for my current projects.
