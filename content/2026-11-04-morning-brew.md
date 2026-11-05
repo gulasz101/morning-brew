@@ -10,6 +10,7 @@ Morning Brew for 2026-11-04: 32 items written from 32 hoarded bookmarks and feed
 
 ## 1. Rail - terminal email client for Gmail and Microsoft 365 - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/05/email-text-keyboard-button.jpg)
+**Project:** [Rail](https://github.com/vitosans/rail)
 **Source:** https://www.linuxlinks.com/rail-terminal-email-client-gmail-microsoft-365/ · **Karakeep:** `ux4ermpxr45y8k4h2183lzi4`
 
 **In short:** Rail is a Rust terminal email client for Gmail and Microsoft 365 with a local SQLite store and background sync. It looks quite complete for a TUI mail client, but it does not fit my projects.
@@ -121,6 +122,7 @@ The sharper point is the old-driver cleanup. AI is poking at abandoned drivers a
 
 ## 7. October Linux - Arch-based distribution with Hyprland - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [October Linux](https://octoberlinux.org/)
 **Source:** https://www.linuxlinks.com/october-linux-arch-based-distribution-hyprland/ · **Karakeep:** `xueh6taxvlheiy3x52yicp5c`
 
 **In short:** October Linux is an Arch-based rolling distro with Hyprland and a JSON-driven installer; I would say it is a tidy desktop setup, but nothing for my projects.
@@ -138,6 +140,7 @@ The sharper point is the old-driver cleanup. AI is poking at abandoned drivers a
 
 ## 8. 3FS - high-performance distributed file system - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/06/network-overview.jpg)
+**Project:** [3FS](https://github.com/deepseek-ai/3FS)
 **Source:** https://www.linuxlinks.com/3fs-high-performance-distributed-file-system/ · **Karakeep:** `lkzvg0sy49vijnjt2fuyrjws`
 
 **In short:** 3FS is DeepSeek's C++ distributed file system for demanding AI training and inference workloads, built around NVMe storage and RDMA networking. It looks capable, but it is aimed at clusters I do not have, so nothing for my projects.
@@ -554,6 +557,7 @@ I would say it is quite a good fit for someone already using pass with hardware 
 
 ## 29. Apache cTAKES - clinical natural language processing platform - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [Apache cTAKES](https://github.com/apache/ctakes)
 **Source:** https://www.linuxlinks.com/apache-ctakes-clinical-natural-language-processing-platform/ · **Karakeep:** `zw1kyzv2wvjf7br7u5yd1ng3`
 
 **In short:** Apache cTAKES is a Java clinical NLP platform from the Apache Software Foundation for extracting structured concepts from notes, reports and discharge summaries. I would say it is solid research plumbing, but it is not worth it for my setup.
