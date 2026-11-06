@@ -10,6 +10,7 @@ Morning Brew for 2026-11-05: 49 items written from 53 hoarded bookmarks and feed
 
 ## 1. Bare Metal Operator - Kubernetes bare metal provisioning - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/04/server-update.png)
+**Project:** [Bare Metal Operator](https://github.com/metal3-io/baremetal-operator)
 **Source:** https://www.linuxlinks.com/bare-metal-operator-kubernetes-bare-metal-provisioning/ · **Karakeep:** `s8je3qc2yrbmle4628cqg5vy`
 
 **In short:** Bare Metal Operator is a Kubernetes operator from the Metal3 project for provisioning and managing physical servers; I would say it is serious bare-metal automation and not worth it for my three-node k3s cluster.
@@ -63,6 +64,7 @@ Morning Brew for 2026-11-05: 49 items written from 53 hoarded bookmarks and feed
 
 ## 4. EOS - distributed storage system - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/06/network-overview.jpg)
+**Project:** [EOS](https://github.com/cern-eos/eos)
 **Source:** https://www.linuxlinks.com/eos-distributed-storage-system/ · **Karakeep:** `qso8ak8xqchk57kkuvg4dicu`
 
 **In short:** EOS is CERN's distributed storage system for very large scientific datasets, with XRootD, replication and erasure coding, but I do not see a fit for my homelab.
@@ -217,6 +219,7 @@ The harder bits are drivers and secure boot. Out-of-tree DKMS modules, such as s
 
 ## 12. bootvine - live systemd boot and shutdown visualisation - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/business-finance-concept-rocket-from-paper.jpg)
+**Project:** [bootvine](https://codeberg.org/wvhulle/bootvine)
 **Source:** https://www.linuxlinks.com/bootvine-live-systemd-boot-shutdown-visualisation/ · **Karakeep:** `sbd1ozx823lzjdt4lj8yrmnv`
 
 **In short:** bootvine is a Rust TUI that draws a live tree of systemd jobs during boot and shutdown. I would say it is useful for slow boots, but not worth adding to my homelab.
@@ -409,6 +412,7 @@ The harder bits are drivers and secure boot. Out-of-tree DKMS modules, such as s
 
 ## 22. CindraOS - Debian-based live Linux distribution with Xfce - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [CindraOS](https://danielwav1.github.io/CindraOS/)
 **Source:** https://www.linuxlinks.com/cindraos-debian-based-live-linux-distribution/ · **Karakeep:** `iui5zy3n1f0kobvbveedyj54`
 
 **In short:** CindraOS is a Debian 13 live Xfce distro with a red and graphite theme and a cindra maintenance CLI. I would say it is a tidy rescue stick, but nothing for my projects.
@@ -512,6 +516,12 @@ The harder bits are drivers and secure boot. Out-of-tree DKMS modules, such as s
 
 ## 27. 5 Useful Free and Open Source Code Formatters for Clojure - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/013-coding.png)
+**Projects:**
+- [cljfmt](https://github.com/weavejester/cljfmt): A tool for formatting Clojure code
+- [Joker](https://github.com/candid82/joker): Small Clojure interpreter, linter and formatter
+- [zprint](https://github.com/kkinnear/zprint): Executables, uberjar, and library to beautifully format Clojure and Clojurescript source code and s-expressions
+- [cljstyle](https://github.com/greglook/cljstyle): A tool for formatting Clojure code
+- [Standard Clojure Style](https://github.com/oakmac/standard-clojure-style-js): Standard Clojure Style in JavaScript
 **Source:** https://www.linuxlinks.com/useful-free-open-source-code-formatters-clojure/ · **Karakeep:** `f1uftfukvqc7dv2yhpntsb1a`
 
 **In short:** LinuxLinks rounds up five free and open source Clojure code formatters: cljfmt, Joker, zprint, cljstyle and Standard Clojure Style. I would say it is a tidy reference if you write Clojure, but it does not touch anything I run.
@@ -530,6 +540,7 @@ The harder bits are drivers and secure boot. Out-of-tree DKMS modules, such as s
 
 ## 28. BingWallE - collect Bing and Windows Spotlight wallpapers - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/12/wallpaper-setter.jpg)
+**Project:** [BingWallE](https://github.com/gruetze-software/BingWallE)
 **Source:** https://www.linuxlinks.com/bingwalle-collect-bing-windows-spotlight-wallpapers/ · **Karakeep:** `z1w25u3nf62k91fu0rr08w5s`
 
 **In short:** BingWallE is a desktop app for browsing, downloading and organising Bing and Windows Spotlight wallpapers, with a local collection and optional on-device keywording. I would say it is a tidy collector, but nothing for my projects.
@@ -552,6 +563,7 @@ I read about it, I did not try it. For my homelab it has no Kubernetes path, no 
 
 ## 29. Tennis - stylish terminal viewer for CSV, JSON and SQLite data - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/10/JSON-Tools-1.jpg)
+**Project:** [Tennis](https://github.com/gurgeous/tennis)
 **Source:** https://www.linuxlinks.com/tennis-stylish-terminal-viewer-csv-json-sqlite-data/ · **Karakeep:** `t8llwvsb1he4tfg3bzwqve1f`
 
 **In short:** Tennis is a Rust terminal table viewer for CSV, TSV, JSON and SQLite data, with adaptive columns, sorting, filtering and peek summaries. I would say it is quite good for quick inspection, but it is another viewer in a crowded field.
@@ -634,6 +646,18 @@ For my projects, there is nothing concrete here. The names are familiar, especia
 
 ## 33. 12 Useful Code Formatters for Python - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/013-coding.png)
+**Projects:**
+- [Ruff](https://github.com/astral-sh/ruff): An extremely fast Python linter and code formatter, written in Rust
+- [YAPF](https://github.com/google/yapf): A formatter for Python files
+- [Black](https://github.com/psf/black): The uncompromising Python code formatter
+- [isort](https://github.com/pycqa/isort): A Python utility / library to sort imports
+- [autopep8](https://github.com/hhatto/autopep8): A tool that automatically formats Python code to conform to the PEP 8 style guide
+- [Darker](https://github.com/akaihola/darker): Apply black reformatting to Python files only in regions changed since a given commit. For a practical usage example, see the blog post at https://dev.to/akaihola/improving-python-code-incrementall
+- [docformatter](https://github.com/PyCQA/docformatter): Formats docstrings to follow PEP 257
+- [SSort](https://github.com/bwhmather/ssort): Tool for automatically sorting python statements within a module
+- [reorder-python-imports](https://github.com/asottile/reorder-python-imports): Rewrites source to reorder python imports
+- [μsort](https://github.com/facebook/usort): Safe, minimal import sorting for Python projects
+- [eradicate](https://github.com/PyCQA/eradicate): Removes commented-out code from Python files
 **Source:** https://www.linuxlinks.com/useful-code-formatters-python/ · **Karakeep:** `dyy1646igefrl8h6dh9rhgdd`
 
 **In short:** LinuxLinks lists twelve free and open source Python code formatters, from Ruff to eradicate. It is a handy catalogue, but the page gives no versions or test data, so I would treat it as a starting list rather than a recommendation.
