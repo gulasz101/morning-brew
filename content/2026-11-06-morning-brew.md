@@ -10,6 +10,7 @@ Morning Brew for 2026-11-06: 40 items written from 40 hoarded bookmarks and feed
 
 ## 1. Kuvasz - uptime monitoring and status pages - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/02/dashboard-template.jpg)
+**Project:** [Kuvasz](https://github.com/kuvasz-uptime/kuvasz)
 **Source:** https://www.linuxlinks.com/kuvasz-uptime-monitoring-status-pages/ · **Karakeep:** `fuzuz9hp6l5rjg88vy42fcjk`
 
 **In short:** Kuvasz is a self-hosted uptime monitor and status page with a long feature list, but I would say it is not worth it for my homelab until it has a clear Kubernetes path.
@@ -349,6 +350,7 @@ The comment from Lesley Everett is the more useful bit: pick one of the major we
 
 ## 19. EnderOS - portable Arch Linux-based live distribution - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [EnderOS](https://sourceforge.net/projects/enderos/)
 **Source:** https://www.linuxlinks.com/enderos-portable-arch-linux-based-live-distribution/ · **Karakeep:** `fem5keeeym26ba86wwmdf2ei`
 
 **In short:** EnderOS is an active Arch-based live distro for x86_64 that boots from removable media and throws the session away on shutdown. I would say it is useful for a rescue stick. It is not a fit for my homelab or local image work.
@@ -430,6 +432,7 @@ The catch is platform and openness: the desktop app is Mac only, and the project
 
 ## 23. qps - Qt process viewer and manager - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/09/Monitoring-System.png)
+**Project:** [qps](https://github.com/lxqt/qps)
 **Source:** https://www.linuxlinks.com/qps-qt-process-viewer-manager/ · **Karakeep:** `fdznau0lc3asza90uu67epgb`
 
 **In short:** qps is a Qt-based graphical process viewer and manager for Linux and BSD, maintained by the LXQt project. I would say it is a solid desktop utility, but nothing for my projects.
@@ -762,6 +765,7 @@ I read it as a reminder to patch base images and not expose SSH on containers. I
 
 ## 40. Forbidden APIs - detect prohibited Java API usage - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/09/Linter-Tool-Banner2.png)
+**Project:** [Forbidden APIs](https://github.com/policeman-tools/forbidden-apis)
 **Source:** https://www.linuxlinks.com/forbidden-apis-detect-prohibited-java-api-usage/ · **Karakeep:** `dxy2lgn1jqj7jpffk0aidggn`
 
 **In short:** Forbidden APIs is a Java bytecode checker for banned class, method and field references, free under Apache 2.0. I would say it is a sensible build-time guard for Java teams, but nothing for my projects.
