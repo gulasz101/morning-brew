@@ -10,6 +10,7 @@ Morning Brew for 2026-11-07: 24 items written from 24 hoarded bookmarks and feed
 
 ## 1. LMG OS - Debian-based Linux distribution with Xfce - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [LMG OS](https://mineswordteam.github.io/LmgOS/)
 **Source:** https://www.linuxlinks.com/lmg-os-debian-based-linux-distribution/ · **Karakeep:** `az1xoms027hi88kx8da6jkk5`
 
 **In short:** LMG OS is a Debian-based Xfce distro aimed at older machines, with a control panel and staged updates. I would say it is fine for a spare laptop and not worth replacing anything I already run.
@@ -47,6 +48,7 @@ I would say this is a company-scale plumbing story, not a reason to touch Git. T
 
 ## 3. Dokka - API documentation engine for Kotlin - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/10/documentation-generators.jpg)
+**Project:** [Dokka](https://github.com/Kotlin/dokka)
 **Source:** https://www.linuxlinks.com/dokka-api-documentation-engine-kotlin/ · **Karakeep:** `vk77xvqp69ezv3p5s1vz14ba`
 
 **In short:** Dokka is JetBrains' API documentation engine for Kotlin, including mixed Kotlin and Java codebases, and I would say it is a solid tool but not something I need right now.
@@ -229,6 +231,7 @@ The catch is scope. It is for legacy X10 gear, it is a C daemon with a port numb
 
 ## 12. LiME - Linux memory acquisition tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/12/117-security.png)
+**Project:** [LiME](https://github.com/jtsylve/LiME)
 **Source:** https://www.linuxlinks.com/lime-linux-memory-acquisition-tool/ · **Karakeep:** `thklm30p6jgq2n6xsowdfghc`
 
 **In short:** LiME is a loadable kernel module for acquiring volatile memory from Linux and Android systems, written by Joe Sylve and contributors. I would say it is a useful forensics tool, but there is nothing for my projects.
@@ -424,6 +427,35 @@ It is proof of concept, but the concept seems to work, so I would say it is wort
 
 ## 21. 28 Useful Free and Open Source Linux Git Workflow Tools - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/01/Git-Clients.jpg)
+**Projects:**
+- [git-extras](https://github.com/tj/git-extras): GIT utilities -- repo summary, repl, changelog population, author commit percentages and more
+- [forgit](https://github.com/wfxr/forgit): Zzz: A utility tool powered by fzf for using git interactively
+- [wrkflw](https://github.com/bahdotsh/wrkflw): Validate and Run GitHub Actions locally
+- [git-branchless](https://github.com/arxanas/git-branchless): High-velocity, monorepo-scale workflow for Git
+- [git-absorb](https://github.com/tummychow/git-absorb): Git commit --fixup, but automatic
+- [git-toolbelt](https://github.com/nvie/git-toolbelt): A suite of useful Git commands that aid with scripting or every day command line usage
+- [git-open](https://github.com/paulirish/git-open): Type `git open` to open the GitHub page or website for a repository in your browser
+- [git-town](https://github.com/git-town/git-town): Git branches made easy
+- [git-fuzzy](https://github.com/bigH/git-fuzzy): Interactive `git` with the help of `fzf`
+- [git-recent](https://github.com/paulirish/git-recent): See your latest local git branches, formatted real fancy
+- [git-machete](https://github.com/VirtusLab/git-machete): Probably the sharpest git repository organizer & rebase/merge workflow automation tool you've ever seen
+- [git-flow-next](https://github.com/gittower/git-flow-next): A modern reimplementation of git-flow in Go that offers greater flexibility while maintaining backward compatibility with the original git-flow and git-flow-avh
+- [Git Interactive Rebase Tool](https://github.com/MitMaro/git-interactive-rebase-tool): Native cross-platform full feature terminal-based sequence editor for git interactive rebase
+- [git-crecord](https://github.com/andrewshadura/git-crecord): Git subcommand to interactively select changes to commit or stage
+- [git-xargs](https://github.com/gruntwork-io/git-xargs): Git-xargs is a command-line tool (CLI) for making updates across multiple Github repositories with a single command
+- [git-prompt.zsh](https://github.com/woefe/git-prompt.zsh): A fast, customizable, pure-shell, asynchronous Git prompt for Zsh
+- [gh-stack](https://github.com/github/gh-stack): GitHub Stacked PRs
+- [drydock](https://github.com/yetidevworks/drydock): What's uncommitted, unpushed, and unreleased across every repo you own. A live TUI dashboard for a fleet of git repos
+- [git revise](https://github.com/mystor/git-revise): A handy tool for doing efficient in-memory commit rebases & fixups
+- [wtp](https://github.com/satococoa/wtp): 🌳 A powerful Git worktree CLI tool with automated setup, branch tracking, and smart navigation
+- [LazyWorktree](https://github.com/chmouel/lazyworktree): Easy Git worktree management CLI and TUI for the terminal
+- [gwm](https://github.com/kbrdn1/gwm-cli): Git worktree manager for the terminal: CLI + TUI in Rust. Creates the worktree, runs your project setup, links the issue, and shows which AI agent is working where. Single binary, no git CLI needed
+- [git-spice](https://github.com/abhinav/git-spice): Manage stacked Git branches
+- [git-smart](https://github.com/geelen/git-smart): Add some smarts to your git workflow
+- [stax](https://github.com/cesarferreira/stax): The fastest stacked-branch workflow for Git. Interactive TUI, smart PRs, safe undo. Written in Rust
+- [git-fixup](https://github.com/keis/git-fixup): Fighting the copy-paste element of your rebase workflow
+- [git-autofixup](https://github.com/torbiak/git-autofixup): Create fixup commits for topic branches
+- [Branchlet](https://github.com/raghavpillai/branchlet): Branchlet: A simple CLI Git worktree manager
 **Source:** https://www.linuxlinks.com/useful-free-open-source-linux-git-workflow-tools/ · **Karakeep:** `m53sw4b9aweqks0hdg3al6ml`
 
 **In short:** LinuxLinks lists 28 free and open source Linux tools that sit around Git for branches, commits, rebases, worktrees and releases. I would say it is a useful catalogue if you already use Git and want names to try, not a reason to change a working workflow.
