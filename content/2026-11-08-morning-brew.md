@@ -71,6 +71,7 @@ The researcher behind it ran swarms of AI agents throwing about 17,600 weird log
 
 ## 4. MPDCtrlX - cross-platform graphical MPD client - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/11/3Z_music_instruments_ink_sim_09.jpg)
+**Project:** [MPDCtrlX](https://github.com/torum/MPDCtrlX)
 **Source:** https://www.linuxlinks.com/mpdctrlx-cross-platform-graphical-mpd-client/ · **Karakeep:** `m3ily1583boig0rmnscrhxwe`
 
 **In short:** MPDCtrlX is a free MIT-licensed graphical client for Music Player Daemon, built in C# with Avalonia, with Wayland and MPRIS support. I would say it is a nice client for an existing MPD setup, but it does not touch my projects.
@@ -144,6 +145,18 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 
 ## 7. 11 Excellent Free and Open Source Java Natural Language Processing Tools - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Projects:**
+- [CoreNLP](https://github.com/stanfordnlp/CoreNLP): CoreNLP: A Java suite of core NLP tools for tokenization, sentence segmentation, NER, parsing, coreference, sentiment analysis, etc
+- [OpenNLP](https://opennlp.apache.org/): Apache OpenNLP is a machine learning based toolkit for the processing of natural language text
+- [DL4J](https://github.com/deeplearning4j/deeplearning4j): Suite of tools for deploying and training deep learning models using the JVM. Highlights include model import for keras, tensorflow, and onnx/pytorch, a modular and tiny c++ library for running mat
+- [Lucene](https://lucene.apache.org/core/): Apache Lucene™ is a high-performance, full-featured search engine library written entirely in Java. It is a technology suitable for
+- [UIMA](https://uima.apache.org/): Apache UIMA - Apache UIMA
+- [Spark NLP](https://github.com/JohnSnowLabs/spark-nlp): State of the Art Natural Language Processing
+- [Tika](https://github.com/apache/tika): The Apache Tika toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF)
+- [processors](https://github.com/clulab/processors): Natural Language Processors
+- [MALLET](https://github.com/mimno/Mallet): MALLET is a Java-based package for statistical natural language processing, document classification, clustering, topic modeling, information extraction, and other machine learning applications to t
+- [Apache cTAKES](https://github.com/apache/ctakes): Apache cTAKES is a Natural Language Processing (NLP) platform for clinical text
+- [GATE](https://github.com/GateNLP/gate-core): The GATE Embedded core API and GATE Developer application
 **Source:** https://www.linuxlinks.com/excellent-java-natural-language-processing-tools/ · **Karakeep:** `owg88wfrbfoioo8frek30iid`
 
 **In short:** A LinuxLinks roundup of eleven free and open source Java NLP tools, from CoreNLP and OpenNLP to Spark NLP and GATE. It is a useful catalogue if you already live in Java. It is not a decision-making guide.
@@ -161,6 +174,7 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 
 ## 8. SentencePiece - language-independent text tokenizer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [SentencePiece](https://github.com/google/sentencepiece)
 **Source:** https://www.linuxlinks.com/sentencepiece-language-independent-text-tokenizer/ · **Karakeep:** `f2uo3mrvp4bu0uqpyv346eo8`
 
 **In short:** SentencePiece is Google's C++ tokenizer and detokenizer for subword units, trained from raw text. I would say it is a solid NLP building block, but nothing for my projects.
