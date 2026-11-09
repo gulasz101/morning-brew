@@ -29,9 +29,10 @@ So yeah, that's that.
 
 **For my projects:** Nothing for my projects.
 
-## 2. status.sh - generate static service status pages - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2022/02/dashboard-template.jpg)
+## 2. status.sh - generate static service status pages — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2022/02/dashboard-template.jpg)
 **Source:** https://www.linuxlinks.com/status-sh-generate-static-service-status-pages/ · **Karakeep:** `heyg0ebs0cuxom72yp9fwj5n`
+**Project:** [static_status](https://github.com/Cyclenerd/static_status) — the Bash script behind status.sh; GPL-3.0, writes a static HTML/JSON status page
 
 **In short:** status.sh is a Bash script that runs checks and writes a static status page; I would say it is handy for a plain status page, not a full monitoring stack.
 
