@@ -8,8 +8,8 @@ Morning Brew for 2026-11-08: 20 items written from 20 hoarded bookmarks and feed
 
 ### RSS
 
-## 1. Homelabber uses second-gen Optane memory sticks to run a 2.8-trillion-parameter AI model on CPU alone — warns that Optane’s extreme heat can ‘burn out’ nearby memory DRAM, used blower fans to prevent melting RAM, by Tom's Hardware
-![](https://cdn.mos.cms.futurecdn.net/Wpdi2avEo8ZBZMremLVgaU-2496-80.jpg)
+## 1. Homelabber uses second-gen Optane memory sticks to run a 2.8-trillion-parameter AI model on CPU alone — warns that Optane’s extreme heat can ‘burn out’ nearby memory DRAM, used blower fans to prevent melting RAM — by Tom's Hardware
+![Tom's Hardware](https://cdn.mos.cms.futurecdn.net/Wpdi2avEo8ZBZMremLVgaU-2496-80.jpg)
 **Source:** https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabber-uses-second-gen-optane-memory-sticks-to-run-a-2-8-trillion-parameter-ai-model-on-cpu-alone-warns-that-optanes-extreme-heat-can-burn-out-nearby-memory-dram-used-blower-fans-to-prevent-melting-ram · **Karakeep:** `at5haqh0u3wu36k2m98a793f`
 
 **In short:** A homelabber got a 2.8-trillion-parameter model running on CPU alone with second-gen Optane sticks, but the heat warning is the real story. I would say it is an impressive hardware stunt, not a sensible path for my homelab.
@@ -50,8 +50,8 @@ Unfortunately the page points to a software roundup verdict but does not include
 
 **For my projects:** Nothing for my projects.
 
-## 3. Your Alpine Server Could Take Any Long Password #alpinelinux #ssh #cybersecurity, by Better Stack
-![](https://i.ytimg.com/vi/OtgI0puAtQ4/maxresdefault.jpg)
+## 3. Your Alpine Server Could Take Any Long Password #alpinelinux #ssh #cybersecurity — by Better Stack
+![Better Stack](https://i.ytimg.com/vi/OtgI0puAtQ4/maxresdefault.jpg)
 **Source:** https://www.youtube.com/shorts/OtgI0puAtQ4 · **Karakeep:** `t2a167ie1yuosk6h8pekf4mt`
 
 **In short:** Alpine Linux's SSH server had a bug where an overlong password would match a single-star placeholder hash, letting you log in to accounts that should never take a password, including root. I would say it's a narrow bug but a nasty one, patch if you run Alpine.
@@ -70,8 +70,8 @@ The researcher behind it ran swarms of AI agents throwing about 17,600 weird log
 
 **For my projects:** Nothing for my projects.
 
-## 4. MPDCtrlX - cross-platform graphical MPD client - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2024/11/3Z_music_instruments_ink_sim_09.jpg)
+## 4. MPDCtrlX - cross-platform graphical MPD client — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2024/11/3Z_music_instruments_ink_sim_09.jpg)
 **Project:** [MPDCtrlX](https://github.com/torum/MPDCtrlX)
 **Source:** https://www.linuxlinks.com/mpdctrlx-cross-platform-graphical-mpd-client/ · **Karakeep:** `m3ily1583boig0rmnscrhxwe`
 
@@ -91,8 +91,8 @@ It is free and open source under the MIT License, written in C#, and developed b
 
 **For my projects:** Nothing for my projects.
 
-## 5. Mario 64’s “L Is Real” Plaque Solved? #mario64 #retrogaming #programminglogic, by Better Stack
-![](https://i.ytimg.com/vi/QaFd7mhrCIY/maxresdefault.jpg)
+## 5. Mario 64’s “L Is Real” Plaque Solved? #mario64 #retrogaming #programminglogic — by Better Stack
+![Better Stack](https://i.ytimg.com/vi/QaFd7mhrCIY/maxresdefault.jpg)
 **Source:** https://www.youtube.com/shorts/QaFd7mhrCIY · **Karakeep:** `av8xy27acyq00bnuf61aiu1h`
 
 **In short:** A retro gaming YouTuber used a Claude-written brute-force matcher to argue Mario 64's blurry plaque reads 'Eternal Star' over 'we hope so', not 'L Is Real 2401'. I would call it a strong theory, not proof.
@@ -111,8 +111,8 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 
 **For my projects:** Nothing for my projects.
 
-## 6. 14 Best Free and Open Source Log Analyzers - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2017/10/log-analyzers.jpg)
+## 6. 14 Best Free and Open Source Log Analyzers — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2017/10/log-analyzers.jpg)
 **Source:** https://www.linuxlinks.com/loganalyzers/ · **Karakeep:** `qoar7a27lsnt52zas4hpgjab`
 
 **In short:** LinuxLinks rounds up 14 free and open source log analyzers, from Kibana to Matomo SLA. It is a handy catalogue, but the one-line descriptions are thin, so I would treat it as a starting point rather than a recommendation.
@@ -144,8 +144,8 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 - [CLP](https://github.com/y-scope/clp): Compressed Log Processor (CLP) is a free log management tool capable of compressing logs and searching the compressed logs without decompression. - y-scope/clp.
 - [Matomo SLA](https://github.com/matomo-org/matomo-log-analytics): Import any kind of server logs in Matomo for powerful log analytics. Universal log file parsing and reporting. - matomo-org/matomo-log-analytics.
 
-## 7. 11 Excellent Free and Open Source Java Natural Language Processing Tools - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+## 7. 11 Excellent Free and Open Source Java Natural Language Processing Tools — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
 **Projects:**
 - [CoreNLP](https://github.com/stanfordnlp/CoreNLP): CoreNLP: A Java suite of core NLP tools for tokenization, sentence segmentation, NER, parsing, coreference, sentiment analysis, etc
 - [OpenNLP](https://opennlp.apache.org/): Apache OpenNLP is a machine learning based toolkit for the processing of natural language text
@@ -173,8 +173,8 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 
 **For my projects:** Nothing for my projects.
 
-## 8. SentencePiece - language-independent text tokenizer - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+## 8. SentencePiece - language-independent text tokenizer — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
 **Project:** [SentencePiece](https://github.com/google/sentencepiece)
 **Source:** https://www.linuxlinks.com/sentencepiece-language-independent-text-tokenizer/ · **Karakeep:** `f2uo3mrvp4bu0uqpyv346eo8`
 
@@ -191,8 +191,8 @@ I read this as a very strong theory, not proof. Nintendo has never said what the
 
 **For my projects:** Nothing for my projects.
 
-## 9. Run a team of local Claude and Codex agents as chat contacts, by Open-source Projects
-![](https://opengraph.githubassets.com/1/milind-soni/openmausbot)
+## 9. Run a team of local Claude and Codex agents as chat contacts — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/milind-soni/openmausbot)
 **Project:** [openmausbot](https://github.com/milind-soni/openmausbot)
 **Source:** https://www.opensourceprojects.dev/post/openmausbot · **Karakeep:** `zy6e9c49xltb09f5gtt0yk9v`
 
@@ -213,8 +213,8 @@ Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
-## 10. Open-source TypeScript framework for autonomous AI agents, by Open-source Projects
-![](https://opengraph.githubassets.com/1/elizaos/eliza)
+## 10. Open-source TypeScript framework for autonomous AI agents — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/elizaos/eliza)
 **Project:** [github.com](https://github.com/elizaos/eliza.git), also [eliza](https://github.com/elizaOS/eliza)
 **Source:** https://www.opensourceprojects.dev/post/eliza · **Karakeep:** `hbwgf6rcwljxmv5iwum029x7`
 
@@ -234,8 +234,8 @@ The feature list is wide: chat, voice, memory, knowledge, documents, messaging a
 
 **For my projects:** Nothing for my projects.
 
-## 11. An ontology layer that tells agents what your data means, by Open-source Projects
-![](https://opengraph.githubassets.com/1/nvidia/auto-ontology)
+## 11. An ontology layer that tells agents what your data means — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/nvidia/auto-ontology)
 **Project:** [auto-ontology](https://github.com/NVIDIA/auto-ontology)
 **Source:** https://www.opensourceprojects.dev/post/auto-ontology · **Karakeep:** `c2e5ocfud3l94c7hwh5txf99`
 
@@ -257,8 +257,8 @@ I read about it, I did not run it. If you are wiring agents into a warehouse and
 
 **For my projects:** Nothing for my projects.
 
-## 12. A Rust UI framework where agents can render to PNG and inspect the element tree, by Open-source Projects
-![](https://opengraph.githubassets.com/1/anomalyco/rune)
+## 12. A Rust UI framework where agents can render to PNG and inspect the element tree — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/anomalyco/rune)
 **Project:** [github.com](https://github.com/anomalyco/rune)
 **Source:** https://www.opensourceprojects.dev/post/rune · **Karakeep:** `amvtse934hlb7wsemmr454f2`
 
@@ -275,8 +275,8 @@ I read about it, I did not run it. If you are wiring agents into a warehouse and
 
 **For my projects:** Nothing for my projects.
 
-## 13. Context-compression plugin for keeping month-long coding sessions under 100K tok..., by Open-source Projects
-![](https://opengraph.githubassets.com/1/ranxianglei/billion-context)
+## 13. Context-compression plugin for keeping month-long coding sessions under 100K tok... — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/ranxianglei/billion-context)
 **Project:** [github.com](https://github.com/ranxianglei/billion-context)
 **Source:** https://www.opensourceprojects.dev/post/billion-context · **Karakeep:** `zrwclddzonv3kld4wyxssrf2`
 
@@ -293,8 +293,8 @@ I read about it, I did not run it. If you are wiring agents into a warehouse and
 
 **For my projects:** Nothing for my projects.
 
-## 14. Ollama’s JavaScript library, with streaming and cloud model support, by Open-source Projects
-![](https://opengraph.githubassets.com/1/ollama/ollama-js)
+## 14. Ollama’s JavaScript library, with streaming and cloud model support — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/ollama/ollama-js)
 **Project:** [ollama.com](https://ollama.com), also [ollama-js](https://github.com/ollama/ollama-js)
 **Source:** https://www.opensourceprojects.dev/post/ollama-js · **Karakeep:** `x9uoc4ceni09urk6te19scgt`
 
@@ -316,8 +316,8 @@ I would say it is a sensible wrapper, yeah, not a must-have. It does not give ho
 
 **For my projects:** Nothing for my projects.
 
-## 15. Self-hosted lease and rent tracking with Docker and MongoDB, by Open-source Projects
-![](https://opengraph.githubassets.com/1/microrealestate/microrealestate)
+## 15. Self-hosted lease and rent tracking with Docker and MongoDB — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/microrealestate/microrealestate)
 **Project:** [microrealestate](https://github.com/microrealestate/microrealestate)
 **Source:** https://www.opensourceprojects.dev/post/microrealestate · **Karakeep:** `nc6fwl1i9egk1jxvacj00m9v`
 
@@ -339,8 +339,8 @@ I would say it is worth a look if you are still doing rent in a spreadsheet and 
 
 **For my projects:** Nothing for my projects.
 
-## 16. A WhatsApp client in Rust with no browser engine, by Open-source Projects
-![](https://opengraph.githubassets.com/1/crmne/zapfast)
+## 16. A WhatsApp client in Rust with no browser engine — by Open-source Projects
+![Open-source Projects](https://opengraph.githubassets.com/1/crmne/zapfast)
 **Project:** [zapfast](https://github.com/crmne/zapfast)
 **Source:** https://www.opensourceprojects.dev/post/zapfast · **Karakeep:** `bbj3kafo9eyvv2cqrmddyy6l`
 
@@ -357,8 +357,8 @@ I would say it is worth a look if you are still doing rent in a spreadsheet and 
 
 **For my projects:** Nothing for my projects.
 
-## 17. Claude Helped Me Build My First Robot. And It WORKS! #robotics #ai #esp32, by Better Stack
-![](https://i.ytimg.com/vi/PJprxOwebXg/maxresdefault.jpg)
+## 17. Claude Helped Me Build My First Robot. And It WORKS! #robotics #ai #esp32 — by Better Stack
+![Better Stack](https://i.ytimg.com/vi/PJprxOwebXg/maxresdefault.jpg)
 **Source:** https://www.youtube.com/shorts/PJprxOwebXg · **Karakeep:** `p6ons76oapldnysalzav2m5n`
 
 **In short:** A YouTube short about Greg, a high-five robot built from servos, an ESP32 and a cheap 3D printer, with Claude Opus 5.5 designing the parts, firmware and vision. I would say it is a fun demo, not a thing I would build.
@@ -377,8 +377,8 @@ Calibration is the interesting part: tape on the palm, 268 poses, a control page
 
 **For my projects:** Nothing for my projects.
 
-## 18. KDE Just Fixed USB Copying On Linux, by Brodie Robertson
-![](https://i.ytimg.com/vi/DEf10RWc_F0/maxresdefault.jpg)
+## 18. KDE Just Fixed USB Copying On Linux — by Brodie Robertson
+![Brodie Robertson](https://i.ytimg.com/vi/DEf10RWc_F0/maxresdefault.jpg)
 **Source:** https://www.youtube.com/watch?v=DEf10RWc_F0 · **Karakeep:** `jfd5pyb7guk38u321anvp1uf`
 
 **In short:** KDE has finally fixed the 15-year-old bug where copying to a USB stick or network share reports done before the data is actually written. I would say it's a solid fix, but it only lands in KDE and some copies end up a bit slower.
@@ -399,8 +399,8 @@ Yeah, it is still a bit wonky in places: a cheap stick can stall for 4 to 7 seco
 
 **For my projects:** Nothing for my projects.
 
-## 19. dwarf2json - generate symbol files for memory forensics - LinuxLinks, by LinuxLinks
-![](https://www.linuxlinks.com/wp-content/uploads/2025/12/117-security.png)
+## 19. dwarf2json - generate symbol files for memory forensics — by LinuxLinks
+![LinuxLinks](https://www.linuxlinks.com/wp-content/uploads/2025/12/117-security.png)
 **Project:** [dwarf2json](https://github.com/volatilityfoundation/dwarf2json)
 **Source:** https://www.linuxlinks.com/dwarf2json-generate-symbol-files-memory-forensics/ · **Karakeep:** `ojkww1r0gshs8pujlrmecvob`
 
@@ -418,8 +418,8 @@ Yeah, it is still a bit wonky in places: a cheap stick can stall for 4 to 7 seco
 
 **For my projects:** Nothing for my projects.
 
-## 20. The Creator Of Ghostty Just Released a New Terminal (Rex), by Better Stack
-![](https://i.ytimg.com/vi/MfaQhOIA9FA/maxresdefault.jpg)
+## 20. The Creator Of Ghostty Just Released a New Terminal (Rex) — by Better Stack
+![Better Stack](https://i.ytimg.com/vi/MfaQhOIA9FA/maxresdefault.jpg)
 **Source:** https://www.youtube.com/shorts/MfaQhOIA9FA · **Karakeep:** `osnq4b7fg4jrg4esm2wjiiy4`
 
 **In short:** Rex is a new terminal from the Ghostty creator that keeps a remote Claude session alive after you close the laptop. I would say the idea is quite good, but the short gives no version or licence, so it is hard to judge beyond the demo.
