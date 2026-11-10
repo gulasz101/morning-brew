@@ -287,6 +287,7 @@ OpenAI's advice is just to keep Linux updated, because an unpatched low-privileg
 
 ## 16. MassOS - independent Linux distribution with Xfce - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [MassOS](https://massos.org)
 **Source:** https://www.linuxlinks.com/massos-independent-linux-distribution/ · **Karakeep:** `dlwu9lmi5myzi4qedugnlaql`
 
 **In short:** MassOS is an independent Xfce desktop distro with its own build system and upgrade tool; I would say it is neat to read about, but not something I would trust on a machine I care about.
@@ -341,6 +342,7 @@ For my setup, nvidia-smi is enough for now. I do not have NVIDIA nodes in homela
 
 ## 18. OpenLF2 - reimplementation of Little Fighter 2 - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/07/arcade-games.jpg)
+**Project:** [OpenLF2](https://github.com/OpenLF2/OpenLF2)
 **Source:** https://www.linuxlinks.com/openlf2-reimplementation-little-fighter-2/ · **Karakeep:** `ewd0gw9oje6yln3l47964ag3`
 
 **In short:** OpenLF2 rewrites Little Fighter 2 in Lua and C++, and it needs the original installer for its assets. I would say it is a tidy preservation project, but nothing for my projects.
