@@ -10,20 +10,22 @@ Morning Brew for 2026-11-10: 2 items written from 2 hoarded bookmarks and feeds,
 
 ## 1. OceanBase - distributed relational database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
-**Project:** [oceanbase](https://github.com/oceanbase/oceanbase)
 **Source:** https://www.linuxlinks.com/oceanbase-distributed-relational-database/ · **Karakeep:** `vqdtx7s351ktjcc3ho36kr04`
 
-**In short:** OceanBase is an open source distributed relational database from Ant Group, MySQL-compatible and Apache 2.0 licensed. I would say it is serious on paper, but too much for my small homelab.
+**In short:** OceanBase is Ant Group's open source distributed relational database with MySQL compatibility and HTAP in one engine. Apache 2.0, written in C++. I would say it is overkill for a small homelab, and there is nothing for my projects.
 
 **Key points:**
-- Distributed relational database with SQL support and MySQL compatibility.
-- Shared-nothing architecture with horizontal scalability and Paxos-based replication.
-- HTAP support for OLTP and OLAP in one database.
-- Distributed transactions, automatic partition management and multi-tenancy are listed features.
-- Developed by Ant Group and contributors, licensed Apache 2.0, written in C++.
-- The listed website points to the GitHub repository, candidate link 1.
+- Originally developed by Ant Group and contributors, Apache License 2.0
+- Shared-nothing distributed architecture with Paxos-based replication
+- MySQL-compatible SQL, handles OLTP and OLAP in a single engine (HTAP)
+- Horizontal scalability, distributed transactions, multi-tenancy, automatic partitioning
+- Written in C++, source at github.com/oceanbase/oceanbase
 
-**Details:** OceanBase is a distributed relational database from Ant Group, built as shared-nothing and MySQL-compatible, with Paxos replication, horizontal scaling, distributed transactions, automatic partition management and multi-tenancy. It targets HTAP, so operational and analytical workloads in one engine. The licence is Apache 2.0 and the code is C++. For my homelab, there is no Kubernetes path, backup story or metrics mentioned here, so it is not going in without a fight. Nothing for my projects. I would call it a serious database, but too much for three workers and one durable storage box.
+**Details:** OceanBase is a distributed relational database from Ant Group, Apache 2.0, written in C++. It spreads data across nodes with a shared-nothing layout and Paxos replication, and it runs MySQL-compatible SQL for both transactional and analytical workloads in one engine.
+
+The feature list is long: horizontal scaling, distributed transactions, automatic partitioning, multi-tenancy, HTAP. That is a lot of machinery for one database, and it is aimed at high-volume OLTP with analytics on top, which is more than a three-node k3s cluster needs.
+
+For my setup it does not fit. I run Postgres on CloudNativePG with backups to MinIO, and OceanBase brings a MySQL dialect and a distributed footprint I do not need. Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
@@ -31,18 +33,19 @@ Morning Brew for 2026-11-10: 2 items written from 2 hoarded bookmarks and feeds,
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/10/Harddiskimage.jpg)
 **Source:** https://www.linuxlinks.com/harddiskutilities/ · **Karakeep:** `iekigkzriummnu9u2xrlym84`
 
-**In short:** LinuxLinks rounds up thirteen free and open source disk utilities for Linux, covering SMART health checks, tuning, secure erase and benchmarking. I would say it is a handy reference, not a must-read.
+**In short:** LinuxLinks rounded up 13 free and open source hard disk tools, from SMART health monitoring to tuning, benchmarking and secure wiping. I would say it is a useful shopping list, not a replacement for backups.
 
 **Key points:**
-- Thirteen utilities are listed: NVMe-CLI, Smartmontools, scrutiny, openSeaChest, GSmartControl, hdparm, sg3_utils, sdparm, QDiskInfo, nwipe, smartctl_exporter, GNOME Disks and Bonnie++.
-- The article stresses that SMART monitoring is not a substitute for regular backups.
-- Coverage spans NVMe, SATA, SAS and USB storage, plus SCSI commands and disk tuning.
-- smartctl_exporter exposes SMART drive metrics to Prometheus; GNOME Disks and GSmartControl provide graphical views.
-- nwipe is included for secure disk erasing; Bonnie++ is for drive and file system performance testing.
+- 13 free and open source tools for SMART health, performance tuning, SCSI and NVMe commands, wiping and benchmarking.
+- SMART tools include smartmontools, scrutiny, GSmartControl, QDiskInfo and smartctl_exporter.
+- hdparm tunes hard disk parameters and Bonnie++ tests hard drive and file system performance.
+- openSeaChest covers SATA, SAS, NVMe and USB storage; nwipe is the secure disk eraser.
+- The article states SMART is not an alternative to making regular backups.
 
-**Details:** This is a LinuxLinks roundup by Steve Emms, dated 10 November 2026, listing free and open source tools for checking disk health and tweaking performance. It opens with the usual warning that backups matter and SMART is only a monitoring aid, which I think is the right framing. The list mixes low-level CLI tools such as hdparm, sg3_utils and sdparm with GUIs like GSmartControl, QDiskInfo and GNOME Disks, plus scrutiny for smartd and smartctl_exporter for Prometheus. There is also nwipe for secure erasure and Bonnie++ for benchmarking. I would say it is useful as a catalogue when a disk starts behaving oddly, but most entries are point tools rather than a complete storage workflow. Nothing for my projects.
+**Details:** It is a roundup rather than a deep review, and the useful split is health monitoring versus tuning versus wiping. SMART tools dominate, with smartmontools as the obvious base and scrutiny or GSmartControl as friendlier faces. smartctl_exporter is the one that matters to me because it turns SMART into Prometheus metrics. hdparm and Bonnie++ are for tuning and benchmarking, while nwipe is for wiping disks before disposal. I would not treat any of this as a backup plan, and the article says that plainly. For my homelab, the only piece with a real hook is smartctl_exporter, and even then it needs a sane way to run against the OMV box or inside k3s. The rest are standard sysadmin tools I would read about first and use only when a disk actually needs attention.
 
-**For my projects:** Nothing for my projects.
+**For my projects:**
+- homelab-2nd: Use smartctl_exporter to expose SMART metrics from the OMV box, if it can be deployed cleanly in k3s or on OMV.
 
 **Projects:**
 - [NVMe-CLI](https://github.com/linux-nvme/nvme-cli): NVMe management command line interface. Contribute to linux-nvme/nvme-cli development by creating an account on GitHub.
