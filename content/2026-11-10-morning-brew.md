@@ -112,6 +112,7 @@ Morning Brew for 2026-11-10: 53 items written from 56 hoarded bookmarks and feed
 
 ## 6. Wild OS - Debian-based Linux distribution - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [Wild OS](https://wildos.io/)
 **Source:** https://www.linuxlinks.com/wild-os-debian-based-linux-distribution/ · **Karakeep:** `mk5habz2c6gft8e28221uztf`
 
 **In short:** Wild OS is a Debian 13 distro with KDE Plasma 6 and a Windows-like desktop, plus Kicksecure hardening; the Windows 11 Pro VM mode sounds useful but needs your own licence, so it is not a free ride.
@@ -215,6 +216,7 @@ I would say it is a substantial release, but it is still a desktop 3D package. N
 
 ## 11. SimpleNvimEditor - minimalist graphical interface for Neovim - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/08/text-editor-tools.jpg)
+**Project:** [SimpleNvimEditor](https://github.com/kgfly/SimpleNvimEditor)
 **Source:** https://www.linuxlinks.com/simplenvimeditor-minimalist-graphical-interface-neovim/ · **Karakeep:** `i8nleffl155ge5v5gg2a38ux`
 
 **In short:** SimpleNvimEditor is a minimalist native GUI for a separately installed Neovim, written in Go under the MIT licence; I would say it is neat if you already use Neovim, and not worth it as a standalone editor.
@@ -233,6 +235,7 @@ I would say it is a substantial release, but it is still a desktop 3D package. N
 
 ## 12. FlameWM - lightweight window manager and desktop shell - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/11/desktop-environment.png)
+**Project:** [FlameWM](https://github.com/ArkFlame/FlameWM)
 **Source:** https://www.linuxlinks.com/flamewm-lightweight-window-manager-desktop-shell/ · **Karakeep:** `uvauwyfo11j8nv23r6juqeec`
 
 **In short:** FlameWM is a Rust desktop shell and window manager from ArkFlame Studios, with X11 as the default session and a Wayland compositor alongside it. I would say it is a full desktop, but I have no use for it on my cluster.
@@ -404,6 +407,7 @@ Nothing for my projects. So yeah, that's that.
 
 ## 21. MQLens - graphical MongoDB database client - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [MQLens](https://github.com/mqlens/mqlens-mongodb)
 **Source:** https://www.linuxlinks.com/mqlens-graphical-mongodb-database-client/ · **Karakeep:** `h1bkj3hxvty9778f006cd5hq`
 
 **In short:** MQLens is a free, open source desktop client for MongoDB, with browsing, editing, explain plans and an optional AI assistant. I would say it looks quite complete for a Mongo GUI, but nothing for my projects.
