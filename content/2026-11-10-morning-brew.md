@@ -10,23 +10,20 @@ Morning Brew for 2026-11-10: 2 items written from 2 hoarded bookmarks and feeds,
 
 ## 1. OceanBase - distributed relational database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [oceanbase](https://github.com/oceanbase/oceanbase)
 **Source:** https://www.linuxlinks.com/oceanbase-distributed-relational-database/ · **Karakeep:** `vqdtx7s351ktjcc3ho36kr04`
 
-**In short:** OceanBase is Ant Group's distributed relational database with MySQL compatibility and HTAP support. I would say it is impressive, but too much for my cluster.
+**In short:** OceanBase is an open source distributed relational database from Ant Group, MySQL-compatible and Apache 2.0 licensed. I would say it is serious on paper, but too much for my small homelab.
 
 **Key points:**
 - Distributed relational database with SQL support and MySQL compatibility.
 - Shared-nothing architecture with horizontal scalability and Paxos-based replication.
-- Hybrid transactional and analytical processing in one database.
-- Multi-tenancy, distributed transactions and automatic partition management.
-- Apache License 2.0; written in C++; developer is Ant Group and contributors.
-- The listing gives no version number.
+- HTAP support for OLTP and OLAP in one database.
+- Distributed transactions, automatic partition management and multi-tenancy are listed features.
+- Developed by Ant Group and contributors, licensed Apache 2.0, written in C++.
+- The listed website points to the GitHub repository, candidate link 1.
 
-**Details:** OceanBase spreads data and processing across multiple servers, combines OLTP and OLAP workloads in one engine, and keeps strong consistency while nodes fail. It also offers MySQL-compatible SQL interfaces, which should make migration easier for existing applications.
-
-I would say the missing pieces matter more for me. The page does not give a Kubernetes path, backup story or metrics, and my k3s has three workers, which that's small for a distributed database. Nothing for my projects.
-
-So yeah, that's that.
+**Details:** OceanBase is a distributed relational database from Ant Group, built as shared-nothing and MySQL-compatible, with Paxos replication, horizontal scaling, distributed transactions, automatic partition management and multi-tenancy. It targets HTAP, so operational and analytical workloads in one engine. The licence is Apache 2.0 and the code is C++. For my homelab, there is no Kubernetes path, backup story or metrics mentioned here, so it is not going in without a fight. Nothing for my projects. I would call it a serious database, but too much for three workers and one durable storage box.
 
 **For my projects:** Nothing for my projects.
 
@@ -34,19 +31,18 @@ So yeah, that's that.
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/10/Harddiskimage.jpg)
 **Source:** https://www.linuxlinks.com/harddiskutilities/ · **Karakeep:** `iekigkzriummnu9u2xrlym84`
 
-**In short:** A LinuxLinks roundup of 13 free and open source hard disk tools covering SMART health, tuning, wiping and performance testing. Useful as a checklist, but most of it is familiar Linux kit.
+**In short:** LinuxLinks rounds up thirteen free and open source disk utilities for Linux, covering SMART health checks, tuning, secure erase and benchmarking. I would say it is a handy reference, not a must-read.
 
 **Key points:**
-- 13 tools listed, all free and open source, in an article by Steve Emms dated 10 November 2026.
-- SMART monitoring tools include Smartmontools, scrutiny, GSmartControl and QDiskInfo.
-- Tuning and device control tools include hdparm, sg3_utils, sdparm, openSeaChest and NVMe-CLI.
-- Also covers nwipe, smartctl_exporter, GNOME Disks and Bonnie++.
-- The article warns that SMART is not a replacement for regular backups.
+- Thirteen utilities are listed: NVMe-CLI, Smartmontools, scrutiny, openSeaChest, GSmartControl, hdparm, sg3_utils, sdparm, QDiskInfo, nwipe, smartctl_exporter, GNOME Disks and Bonnie++.
+- The article stresses that SMART monitoring is not a substitute for regular backups.
+- Coverage spans NVMe, SATA, SAS and USB storage, plus SCSI commands and disk tuning.
+- smartctl_exporter exposes SMART drive metrics to Prometheus; GNOME Disks and GSmartControl provide graphical views.
+- nwipe is included for secure disk erasing; Bonnie++ is for drive and file system performance testing.
 
-**Details:** The list splits into a few clear jobs. For health checks there is Smartmontools, scrutiny, GSmartControl and QDiskInfo. For tuning and low-level device work there is hdparm, sg3_utils, sdparm, openSeaChest and NVMe-CLI. nwipe handles secure erasing, smartctl_exporter exposes SMART metrics to Prometheus, GNOME Disks covers partitions and basic management, and Bonnie++ is there for performance testing. The useful warning is up front: SMART is not an alternative to backups, and disks fail without much warning. I would say the roundup is handy if you want names to look up later, but it does not tell you which one to pick for a given setup. For my homelab, smartctl_exporter is the one with a real path in, because it feeds metrics into Prometheus. The rest are either desktop tools or command line utilities I would only reach for during maintenance.
+**Details:** This is a LinuxLinks roundup by Steve Emms, dated 10 November 2026, listing free and open source tools for checking disk health and tweaking performance. It opens with the usual warning that backups matter and SMART is only a monitoring aid, which I think is the right framing. The list mixes low-level CLI tools such as hdparm, sg3_utils and sdparm with GUIs like GSmartControl, QDiskInfo and GNOME Disks, plus scrutiny for smartd and smartctl_exporter for Prometheus. There is also nwipe for secure erasure and Bonnie++ for benchmarking. I would say it is useful as a catalogue when a disk starts behaving oddly, but most entries are point tools rather than a complete storage workflow. Nothing for my projects.
 
-**For my projects:**
-- homelab-2nd: Run smartctl_exporter as a DaemonSet so SMART metrics from each node land in Prometheus with the rest of the cluster monitoring.
+**For my projects:** Nothing for my projects.
 
 **Projects:**
 - [NVMe-CLI](https://github.com/linux-nvme/nvme-cli): NVMe management command line interface. Contribute to linux-nvme/nvme-cli development by creating an account on GitHub.
