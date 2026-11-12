@@ -369,6 +369,7 @@ Thankfully Dropbox kept old versions, so the files came back. The short also poi
 
 ## 19. VoidStation - Void Linux-based distribution for home entertainment - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [VoidStation](https://voidstation.de/en/)
 **Source:** https://www.linuxlinks.com/voidstation-void-linux-based-distribution-home-entertainment/ · **Karakeep:** `f0rtse5rfhnpad2fv07qy0vb`
 
 **In short:** VoidStation is a Void Linux-based distro that turns a PC into a sofa-friendly home entertainment and gaming box. I would say it is a neat niche project, but it is not a fit for my stuff.
@@ -416,6 +417,7 @@ Thankfully Dropbox kept old versions, so the files came back. The short also poi
 
 ## 21. UDPipe - trainable natural language processing pipeline - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [UDPipe](https://github.com/ufal/udpipe)
 **Source:** https://www.linuxlinks.com/udpipe-trainable-natural-language-processing-pipeline/ · **Karakeep:** `niuos9iytf8lzelh9v6zgzui`
 
 **In short:** UDPipe is a trainable C++ NLP pipeline for tokenisation, tagging, lemmatisation and dependency parsing, from Charles University's Institute of Formal and Applied Linguistics. I would say it is a solid research tool, but nothing for my projects.
@@ -484,6 +486,7 @@ Thankfully Dropbox kept old versions, so the files came back. The short also poi
 
 ## 24. Nitrite - embedded document database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [Nitrite](https://github.com/nitrite/nitrite-java)
 **Source:** https://www.linuxlinks.com/nitrite-embedded-document-database/ · **Karakeep:** `fc827ebt5apqsycm3smr0qii`
 
 **In short:** Nitrite is an embedded Java NoSQL database for documents and application objects, with MVStore or RocksDB storage, transactions and schema migration. I would say it is useful for small local apps, but nothing for my projects.
@@ -645,6 +648,7 @@ I would say legacy-scan is the useful bit, because it gives you a quick audit be
 
 ## 32. l8w8jwt GUI - graphical JSON Web Token utility - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2023/08/people-holding-cloud-network-security-symbols.jpg)
+**Project:** [l8w8jwt GUI](https://codeberg.org/GlitchedPolygons/l8w8jwtgui)
 **Source:** https://www.linuxlinks.com/l8w8jwt-gui-graphical-json-web-token-utility/ · **Karakeep:** `uu807ji92yv2eky8kmmy4ats`
 
 **In short:** l8w8jwt GUI is a desktop tool for creating, signing, decoding and verifying JSON Web Tokens, published on Codeberg by Glitched Polygons. I would say it looks useful for token debugging, but it is nothing for my projects.
@@ -744,6 +748,7 @@ Nothing for my projects. My homelab work is about storage, backups and repeatabl
 
 ## 37. MongoBench - desktop MongoDB administration client - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/08/031-cloud-data.png)
+**Project:** [MongoBench](https://github.com/ByteExceptionM/MongoBench)
 **Source:** https://www.linuxlinks.com/mongobench-desktop-mongodb-administration-client/ · **Karakeep:** `ghlivo9mrra7cemtwtkxxgpn`
 
 **In short:** MongoBench is a free MIT TypeScript desktop client for MongoDB with multiple connections, query tabs, BSON-safe edits and monitoring. I would say it looks like a quite good job for desktop Mongo work, but there is nothing for my projects.
