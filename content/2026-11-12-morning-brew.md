@@ -28,6 +28,7 @@ Morning Brew for 2026-11-12: 46 items written from 46 hoarded bookmarks and feed
 
 ## 2. Witness - software supply chain attestation framework - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/09/Data_security_02.jpg)
+**Project:** [Witness](https://github.com/in-toto/witness)
 **Source:** https://www.linuxlinks.com/witness-software-supply-chain-attestation-framework/ · **Karakeep:** `sjv04zkc6qzsvl684g4gm3ds`
 
 **In short:** Witness is a Go framework from the in-toto community for generating and verifying signed software supply-chain attestations. I would say it is serious and well-featured, but not worth the machinery for my homelab without a compliance requirement.
@@ -121,6 +122,7 @@ I would say it is capable, and it does a quite good job on paper, but it is too 
 
 ## 7. 3proxy - lightweight multi-protocol proxy server - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2017/09/website-hosting-concept-with-circuits.jpg)
+**Project:** [3proxy](https://github.com/3proxy/3proxy)
 **Source:** https://www.linuxlinks.com/3proxy-lightweight-multi-protocol-proxy-server/ · **Karakeep:** `shg18z7zzsh7jsyohu6a95hk`
 
 **In short:** 3proxy is a small C proxy server from Vladimir Dubrovin that bundles HTTP, SOCKS, FTP, POP3 and SMTP proxying into one binary. I would say it is quite good for a tiny gateway, but it is not worth fighting into my homelab.
@@ -377,6 +379,7 @@ There are smaller fixes too: correct alphabetical sorting for Kurdish, working c
 
 ## 20. Compiz Reloaded - OpenGL compositing window manager for X11 - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/07/Compositing-Window-Managers.png)
+**Project:** [Compiz Reloaded](https://launchpad.net/compiz)
 **Source:** https://www.linuxlinks.com/compiz-reloaded-opengl-compositing-window-manager-x11/ · **Karakeep:** `stjsh8sebdiqu3os673ir7cr`
 
 **In short:** Compiz Reloaded is an OpenGL compositing window manager for X11 with the old cube and wobbly windows effects, and the main catch is that it is X11 only. I would say it is a nostalgia project now, not worth it for a modern desktop.
@@ -795,6 +798,7 @@ I would say the validation, patching and verification loop is the real draw, and
 
 ## 42. Haystack - graphical editor for openQA needles - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/06/170y-utilities.jpg)
+**Project:** [Haystack](https://gitlab.gnome.org/jwharm/Haystack)
 **Source:** https://www.linuxlinks.com/haystack-graphical-editor-openqa-needles/ · **Karakeep:** `tl1mk8cnj3u40p2ybeu7gyjq`
 
 **In short:** Haystack is a GTK desktop editor for openQA needle screenshots, and I would say it is a niche tool with nothing for my projects.
@@ -812,6 +816,7 @@ I would say the validation, patching and verification loop is the real draw, and
 
 ## 43. LiteDB - embedded BSON database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [LiteDB](https://github.com/litedb-org/LiteDB)
 **Source:** https://www.linuxlinks.com/litedb-embedded-bson-database/ · **Karakeep:** `lcgb5n1v9fge5ccwjxzl5qml`
 
 **In short:** LiteDB is an embedded BSON document database for .NET that stores everything in one file. I would say it is neat for local desktop tools, but not worth it for my homelab.
