@@ -46,7 +46,7 @@ SCHEMA = """{
   "in_short": "1-2 sentences: what it is and my verdict",
   "key_points": ["3-6 bullets, hard facts: numbers, versions, prices, licence, who is behind it"],
   "details": "1-3 short paragraphs, 80-200 words (videos up to 300)",
-  "ideas": [{"project": "riffradar|homelab-2nd|ideogram4-local", "idea": "one concrete idea"}],
+  "ideas": [{"project": "%(projects)s", "idea": "one concrete idea"}],
   "project_links": [1, 4]
 }"""
 
@@ -136,7 +136,7 @@ def merge_items(manifest: dict, enriched: dict) -> list[dict]:
 
 # ------------------------------------------------------------------ writer
 def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[dict],
-                 projects: str, roundup: bool) -> str:
+                 projects: str, roundup: bool, allowed: list[str]) -> str:
     label = it.get("channel") or it.get("publisher") or "unknown"
     bits = [
         f"DAY: {day}",
@@ -158,7 +158,7 @@ def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[
         text or "(no text could be fetched: write what the title and the candidate links support, and say plainly that the body was not available)",
         "",
         "Reply with JSON only, exactly this shape:",
-        SCHEMA,
+        SCHEMA % {"projects": "|".join(allowed)},
     ]
     if roundup:
         bits.append(
@@ -386,7 +386,8 @@ def main(argv: list[str] | None = None) -> int:
                 text, src = linklib.article_text(it, cfg, kk_key, kk_server)
             text = clip(text, t_chars if is_video else a_chars)
             cands = linklib.candidates(it, text)
-            prompt = build_prompt(day, idx + 1, total, it, text, cands, projects, roundup)
+            prompt = build_prompt(day, idx + 1, total, it, text, cands, projects, roundup,
+                                  allowed)
             row = {"id": it.get("id"), "title": (it.get("title") or "")[:90],
                    "text_source": src, "candidates": len(cands)}
             try:

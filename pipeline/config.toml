@@ -39,8 +39,11 @@ processor = "~/.hermes/scripts/karakeep_digest.py"
 enrich = "~/.hermes/skills/research/karakeep-hoard-digest/scripts/karakeep_enrich.py"
 
 [projects]
-# The only project names the writer may put in "ideas".
-allowed = ["riffradar", "homelab-2nd", "ideogram4-local"]
+# The only project names the writer may put in "ideas". Every name here must have a
+# paragraph in prompts/projects.md: the validator rejects a project it does not know, and
+# a project with no paragraph gives the writer nothing to match against.
+allowed = ["riffradar", "homelab-2nd", "ideogram4-local", "code-factory", "agent-fleet",
+           "morning-brew"]
 
 [limits]
 # The skill used to be one 131k-character prompt. Warn when it grows again.
