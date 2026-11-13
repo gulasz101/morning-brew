@@ -103,6 +103,12 @@ LOG_PATH = Path("/tmp/kkd_processor.log")
 # limit. Chunking bounds the graph: 300 s is well inside the proven-safe range.
 CHUNK_SECONDS = 300
 
+# A chunk whose mean volume sits below this is silence, not a failed decode:
+# livestreams start with minutes of dead air (GUL-1468: one 5.8 h stream opens
+# with ~10 min of silence). Transcribing it burns GPU for nothing, so skip it
+# and say so in `empty_reason` instead of retrying until the audio "works".
+SILENCE_DB = -60.0
+
 
 def log(msg):
     line = f"[{time.strftime('%H:%M:%S')}] {msg}"
@@ -276,6 +282,19 @@ def split_wav(wav, chunk_seconds=CHUNK_SECONDS):
     return parts or [wav]
 
 
+def wav_mean_volume(wav):
+    """mean_volume in dB from ffmpeg's volumedetect, or None when unmeasurable."""
+    r = sh(["ffmpeg", "-hide_banner", "-i", wav, "-af", "volumedetect",
+            "-f", "null", "-"])
+    for line in (r.stderr or "").splitlines():
+        if "mean_volume:" in line:
+            try:
+                return float(line.split("mean_volume:")[1].split("dB")[0])
+            except ValueError:
+                return None
+    return None
+
+
 def _native_transcribe(wav, out_base):
     """One native parakeet-cli pass -> (text, stderr_tail).
 
@@ -327,8 +346,15 @@ def transcribe(wav, out_json):
         parts = split_wav(wav_abs)
         out_base = os.path.splitext(out_abs)[0]
         chunks = []
+        silent = 0
+        failed = []
         for n, part in enumerate(parts):
             base = f"{out_base}.part{n:02d}" if len(parts) > 1 else out_base
+            vol = wav_mean_volume(part)
+            if vol is not None and vol < SILENCE_DB:
+                silent += 1
+                log(f"    chunk {n + 1}/{len(parts)} silent ({vol:.0f} dB), skipped")
+                continue
             ctext, ctail = _native_transcribe(part, base)
             if not ctext and ctail:
                 log(f"    chunk {n + 1}/{len(parts)} empty, retrying: {ctail[:90]}")
@@ -336,9 +362,15 @@ def transcribe(wav, out_json):
             if ctext:
                 chunks.append(ctext)
             else:
+                failed.append(n + 1)
                 reason = f"chunk {n + 1}/{len(parts)} empty: {ctail}"[:400]
                 log(f"    chunk {n + 1}/{len(parts)} FAILED: {ctail[:120]}")
         text = "\n\n".join(chunks)
+        if not text and not failed:
+            reason = (f"silent audio: all {len(parts)} chunk(s) below {SILENCE_DB:.0f} dB "
+                      "mean volume, no speech to transcribe")
+        elif silent and not failed:
+            log(f"    {silent}/{len(parts)} chunk(s) silent, skipped")
     else:
         raise RuntimeError(
             "no transcriber: docker not found and "

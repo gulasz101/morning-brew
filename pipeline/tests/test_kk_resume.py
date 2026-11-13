@@ -128,3 +128,45 @@ def test_split_wav_chunks_long_audio(tmp_path, monkeypatch):
         str(tmp_path / "long.part00.wav"),
         str(tmp_path / "long.part01.wav"),
     ]
+
+
+def native_mode(monkeypatch, tmp_path, volumes, texts):
+    """Force the native branch: no docker, parts = one per entry in [volumes]."""
+    model = tmp_path / "model.bin"
+    model.write_bytes(b"x")
+    monkeypatch.setattr(kk, "NATIVE_MODEL", model)
+    monkeypatch.setattr(kk.shutil, "which", lambda name: None if name == "docker" else "/usr/bin/" + name)
+    monkeypatch.setattr(kk, "split_wav", lambda w: [f"{w}.part{i:02d}" for i in range(len(volumes))])
+    calls = {"transcribe": 0}
+
+    def fake_volumes(part):
+        return volumes[int(part.split(".part")[1])]
+
+    def fake_native(part, base):
+        calls["transcribe"] += 1
+        return texts[int(part.split(".part")[1])], "parakeet_print_timings: compute = 3.20 ms"
+
+    monkeypatch.setattr(kk, "wav_mean_volume", fake_volumes)
+    monkeypatch.setattr(kk, "_native_transcribe", fake_native)
+    return calls
+
+
+def test_silent_chunk_is_skipped_not_retried(tmp_path, monkeypatch):
+    """Dead air at the start of a livestream must not burn two GPU passes."""
+    calls = native_mode(monkeypatch, tmp_path, volumes=[-91.0, -24.0], texts=["", "spoken words"])
+
+    text, reason = kk.transcribe(str(tmp_path / "a.wav"), str(tmp_path / "a.json"))
+
+    assert text == "spoken words"
+    assert reason == ""
+    assert calls["transcribe"] == 1, "only the audible chunk may reach parakeet-cli"
+
+
+def test_all_silent_says_why_instead_of_failing(tmp_path, monkeypatch):
+    native_mode(monkeypatch, tmp_path, volumes=[-91.0, -90.0], texts=["", ""])
+
+    text, reason = kk.transcribe(str(tmp_path / "b.wav"), str(tmp_path / "b.json"))
+
+    assert text == ""
+    assert "silent audio" in reason
+    assert "dB" in reason
