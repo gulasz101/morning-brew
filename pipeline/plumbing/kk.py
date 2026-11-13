@@ -34,10 +34,13 @@ DATA LAYER (rewritten 2026-09-27 — this was silently losing ~50% of every day)
     flag is what makes archive-based brew-thinning work at all (verified: 1823 ->
     1822 unique, canary excluded; a day's brew drops by construction).
 
-RESUME (added 2026-09-27):
-    Re-running is INCREMENTAL: an existing non-empty transcript file for a bookmark
-    id is reused, never re-transcribed. The manifest is ALWAYS written — including
-    when a video fails — so a killed run never strands the day without an index.
+RESUME (added 2026-09-27, fixed 2026-11-13):
+    Re-running is INCREMENTAL: an existing transcript file with a real body under
+    `## Raw transcript` is reused, never re-transcribed. A file whose body is
+    EMPTY is a previous miss and gets retried — checking the file size was not
+    enough, because a failed run still writes the header (GUL-1468). The manifest
+    is ALWAYS written — including when a video fails — so a killed run never
+    strands the day without an index.
 
     This exists because a heavy day used to run the processor in the foreground,
     blow the 600s tool timeout (exit 124), then re-transcribe EVERY video from
@@ -88,6 +91,23 @@ YOUTUBE_HOSTS = ("youtube.com", "youtu.be")
 PAGE_LIMIT = 100
 
 LOG_PATH = Path("/tmp/kkd_processor.log")
+
+# whisper.cpp 1.9.5 parakeet-cli builds ONE encoder graph for the whole file and
+# allocates it in Metal buffers. Past roughly 9 minutes of audio on the Air's M1
+# that allocation fails hard:
+#   ggml_metal_synchronize: error: command buffer 0 failed with status 5
+#   error: Insufficient Memory (00000008:***)
+# and the CLI writes no .txt at all (GUL-1468: 17 videos in 9 days, e.g. the
+# 570 s 4BnLL7tUGmI). Measured on that file: <=528 s transcribes, >=540 s dies;
+# a 773 s file happens to fit, so it is allocation-size luck, not a duration
+# limit. Chunking bounds the graph: 300 s is well inside the proven-safe range.
+CHUNK_SECONDS = 300
+
+# A chunk whose mean volume sits below this is silence, not a failed decode:
+# livestreams start with minutes of dead air (GUL-1468: one 5.8 h stream opens
+# with ~10 min of silence). Transcribing it burns GPU for nothing, so skip it
+# and say so in `empty_reason` instead of retrying until the audio "works".
+SILENCE_DB = -60.0
 
 
 def log(msg):
@@ -233,17 +253,82 @@ def download_audio(url, out_base):
     return wav
 
 
+def wav_duration(path):
+    """Seconds of audio, 0.0 when ffprobe cannot say."""
+    r = sh(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+            "-of", "default=nw=1:nk=1", str(path)])
+    try:
+        return float((r.stdout or "").strip())
+    except ValueError:
+        return 0.0
+
+
+def split_wav(wav, chunk_seconds=CHUNK_SECONDS):
+    """Cut a WAV into <= chunk_seconds mono 16 kHz parts; [wav] when it is short."""
+    dur = wav_duration(wav)
+    if dur <= chunk_seconds:
+        return [wav]
+    base = os.path.splitext(wav)[0]
+    parts, start, i = [], 0.0, 0
+    while start < dur - 0.5:
+        p = f"{base}.part{i:02d}.wav"
+        r = sh(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.3f}",
+                "-t", str(chunk_seconds), "-i", wav, "-ar", "16000", "-ac", "1", p])
+        if r.returncode != 0 or not os.path.exists(p):
+            raise RuntimeError(f"ffmpeg chunk split failed at {start:.0f}s of {dur:.0f}s")
+        parts.append(p)
+        start += chunk_seconds
+        i += 1
+    return parts or [wav]
+
+
+def wav_mean_volume(wav):
+    """mean_volume in dB from ffmpeg's volumedetect, or None when unmeasurable."""
+    r = sh(["ffmpeg", "-hide_banner", "-i", wav, "-af", "volumedetect",
+            "-f", "null", "-"])
+    for line in (r.stderr or "").splitlines():
+        if "mean_volume:" in line:
+            try:
+                return float(line.split("mean_volume:")[1].split("dB")[0])
+            except ValueError:
+                return None
+    return None
+
+
+def _native_transcribe(wav, out_base):
+    """One native parakeet-cli pass -> (text, stderr_tail).
+
+    Deliberately NO -np: with it ggml logging is switched off and the only trace
+    of a failure is the generic "failed to process audio file" line. The Metal
+    allocation error that kills long files (GUL-1468) IS such a log line, so
+    suppressing it costs us the diagnosis.
+    """
+    txt = out_base + ".txt"
+    if os.path.exists(txt):
+        os.unlink(txt)
+    r = sh([NATIVE_PARAKEET, "-m", str(NATIVE_MODEL), "-f", wav,
+            "-otxt", "-of", out_base])
+    text = Path(txt).read_text(errors="replace").strip() if os.path.exists(txt) else ""
+    tail = " | ".join((r.stderr or "").strip().splitlines()[-3:])[:300]
+    return text, tail
+
+
 def transcribe(wav, out_json):
-    """Parakeet transcription -> <out_json> + return text.
+    """Parakeet transcription -> <out_json> + (text, empty_reason).
 
     Docker image (mudler) when Docker exists; otherwise the native Homebrew
     parakeet-cli (whisper.cpp) with its own converted model. The Air has no
     Docker since H2-327, and native parakeet-cli cannot read mudler's .gguf.
+
+    Native runs are CHUNKED (CHUNK_SECONDS): one whole-file encoder graph does
+    not fit in Metal buffers for longer audio, and parakeet-cli then exits 0
+    with no .txt at all. Every chunk gets one retry, and a chunk that stays
+    empty contributes to the returned reason instead of vanishing.
     """
     wav_abs = os.path.abspath(wav)
     out_abs = os.path.abspath(out_json)
     tmp = os.path.dirname(wav_abs)
-    native_txt = None
+    text, reason = "", ""
     if shutil.which("docker"):
         r = sh([
             "docker", "run", "--rm",
@@ -255,20 +340,37 @@ def transcribe(wav, out_json):
             "--output-json", f"/work/{os.path.basename(out_abs)}",
         ])
         text = r.stdout.strip()
+        if not text:
+            reason = (r.stderr or "").strip()[-300:]
     elif shutil.which(NATIVE_PARAKEET) and NATIVE_MODEL.exists():
-        native_txt = os.path.splitext(out_abs)[0] + ".txt"
-        r = sh([
-            NATIVE_PARAKEET,
-            "-m", str(NATIVE_MODEL),
-            "-f", wav_abs,
-            "-otxt", "-of", os.path.splitext(out_abs)[0],
-            "-np",
-        ])
-        if r.returncode != 0:
-            raise RuntimeError(
-                f"parakeet-cli failed ({r.returncode}): {r.stderr[-300:]}"
-            )
-        text = r.stdout.strip()
+        parts = split_wav(wav_abs)
+        out_base = os.path.splitext(out_abs)[0]
+        chunks = []
+        silent = 0
+        failed = []
+        for n, part in enumerate(parts):
+            base = f"{out_base}.part{n:02d}" if len(parts) > 1 else out_base
+            vol = wav_mean_volume(part)
+            if vol is not None and vol < SILENCE_DB:
+                silent += 1
+                log(f"    chunk {n + 1}/{len(parts)} silent ({vol:.0f} dB), skipped")
+                continue
+            ctext, ctail = _native_transcribe(part, base)
+            if not ctext and ctail:
+                log(f"    chunk {n + 1}/{len(parts)} empty, retrying: {ctail[:90]}")
+                ctext, ctail = _native_transcribe(part, base)
+            if ctext:
+                chunks.append(ctext)
+            else:
+                failed.append(n + 1)
+                reason = f"chunk {n + 1}/{len(parts)} empty: {ctail}"[:400]
+                log(f"    chunk {n + 1}/{len(parts)} FAILED: {ctail[:120]}")
+        text = "\n\n".join(chunks)
+        if not text and not failed:
+            reason = (f"silent audio: all {len(parts)} chunk(s) below {SILENCE_DB:.0f} dB "
+                      "mean volume, no speech to transcribe")
+        elif silent and not failed:
+            log(f"    {silent}/{len(parts)} chunk(s) silent, skipped")
     else:
         raise RuntimeError(
             "no transcriber: docker not found and "
@@ -280,15 +382,31 @@ def transcribe(wav, out_json):
             text = d.get("text", "")
         except Exception:
             text = ""
-        if not text and native_txt and os.path.exists(native_txt):
-            text = Path(native_txt).read_text().strip()
     if not os.path.exists(out_abs):
         with open(out_abs, "w") as fh:
-            json.dump({"text": text}, fh)
-    return text
+            json.dump({"text": text, **({"empty_reason": reason} if reason else {})}, fh)
+    return text, reason
 
 
 # ---------------------------------------------------------------- work
+
+RAW_MARKER = "## Raw transcript"
+
+
+def transcript_body(txf):
+    """Text under '## Raw transcript'; '' when the file is missing or has no body.
+
+    The resume gate must look at the BODY, never the file size: a failed run still
+    writes the header, so `st_size > 0` made every empty miss permanent — the
+    docstring promised self-healing that could not happen (GUL-1468).
+    """
+    try:
+        txt = Path(txf).read_text(errors="replace")
+    except OSError:
+        return ""
+    _, _, body = txt.partition(RAW_MARKER)
+    return body.strip()
+
 
 def build_entry(b, target, txdir):
     """Bookmark -> manifest entry. Returns (entry, resumed_flag)."""
@@ -315,8 +433,9 @@ def build_entry(b, target, txdir):
     slug = slug_for(bid)
     txf = txdir / f"{slug}.md"
 
-    # --- RESUME: an existing non-empty transcript is reused, never redone ---
-    if txf.exists() and txf.stat().st_size > 0:
+    # --- RESUME: an existing transcript WITH a body is reused, never redone.
+    # An empty body is a previous miss and gets retried (GUL-1468).
+    if txf.exists() and transcript_body(txf):
         entry["transcript"] = str(txf)
         entry["resumed"] = True
         return entry, True
@@ -325,13 +444,14 @@ def build_entry(b, target, txdir):
     try:
         wav = download_audio(url, out_base)
         out_json = f"/tmp/kk_{slug}.json"
-        text = transcribe(wav, out_json)
+        text, reason = transcribe(wav, out_json)
         txf.write_text(
             f"# {title}\n\n- Source: {url}\n- Karakeep doc: `{bid}`\n- Transcribed: {target} (Parakeet)\n\n---\n\n## Raw transcript\n\n{text}\n"
         )
         entry["transcript"] = str(txf)
         if not text.strip():
             entry["empty_transcript"] = True
+            entry["empty_reason"] = reason or "transcriber returned no text and no stderr"
     except Exception as e:
         entry["error"] = str(e)
         # keep the item visible + useful in the digest even though audio failed
