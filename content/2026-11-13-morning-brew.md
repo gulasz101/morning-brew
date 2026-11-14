@@ -12,16 +12,17 @@ Morning Brew for 2026-11-13: 7 items written from 7 hoarded bookmarks and feeds,
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/05/email-text-keyboard-button.jpg)
 **Source:** https://www.linuxlinks.com/tidemail-keyboard-first-terminal-email-client/ · **Karakeep:** `b6gdrgkhwd3d6gt3rlxhr9nb`
 
-**In short:** TideMail is a Go terminal email client with IMAP/SMTP, a local SQLite cache and a three-pane UI; I would say it looks handy for terminal mail, but it has nothing for my projects.
+**In short:** TideMail is a Go, MIT-licensed terminal email client with IMAP, SMTP and a local SQLite cache, and the feature list is long for a TUI. I would say it looks quite good for terminal mail, but the optional AI bits and experimental plugins make it sound a bit busy.
 
 **Key points:**
-- Three-pane TUI: accounts and folders on the left, message list above, selected message below.
-- IMAP and SMTP with a local SQLite cache for retrieval and search.
-- Optional AI summaries, proofreading and filtering; experimental plugins including PGP via GnuPG.
-- MIT licence, written in Go, by Allison Bayless and contributors.
-- Runs on Linux and macOS, with experimental Windows support.
+- Three-pane terminal UI: accounts and folders, message list, selected message.
+- IMAP and SMTP with a local SQLite cache for retrieval and searching.
+- MIT licensed, written in Go, by Allison Bayless and contributors.
+- Linux and macOS supported, with experimental Windows support.
+- Optional AI summaries, proofreading and filtering; experimental plugin support including PGP via GnuPG.
+- Headless commands with JSON output for automation.
 
-**Details:** It tries to mix terminal mail with graphical conveniences: mouse support, formatted rendering, delayed send with undo, a persistent outbox with retries, global search, attachments, vCard contacts and HTML rendering with inline images on Kitty terminals. Account setup is through interactive screens rather than config files, and there are headless search, draft and send commands with JSON output. The AI features are optional, and plugin support is experimental. I have only read about it. For my homelab I would want a Kubernetes path, backups and metrics, and this is a client, so nothing for my projects. For riff practice and local image work it is not a fit either.
+**Details:** I read about this, I did not run it. TideMail is a keyboard-driven email client that runs in a terminal, with account configuration handled through interactive settings screens rather than config files. The article lists a lot: a unified inbox, IMAP sync of read status, stars, archived messages, moves and deletions, account-specific SMTP settings, signatures, draft folders, delayed sending with undo, a persistent outbox with failed-delivery retries, global search, attachments, address completion, vCard contacts, HTML rendering with inline images on Kitty terminals, customisable themes and optional mouse navigation. That is a lot for a terminal client. The AI features are optional, which is good, but I would keep them off until proven. Experimental plugin support and experimental Windows support both point to unfinished edges. It is not a service for my homelab, and I do not see a real fit for the other projects, so nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
@@ -30,19 +31,17 @@ Morning Brew for 2026-11-13: 7 items written from 7 hoarded bookmarks and feeds,
 **Project:** [gitblit](https://github.com/gitblit-org/gitblit)
 **Source:** https://www.linuxlinks.com/gitblit-self-hosted-git-repository-management-server/ · **Karakeep:** `rlxsgjpht47cnhs696zvl87e`
 
-**In short:** Gitblit is a self-hosted, Java-based Git repository management server with a web UI, tickets and mirroring; I would say it is feature-rich but heavier and less obvious a fit than Gitea or Forgejo.
+**In short:** Gitblit is a Java self-hosted Git server for small teams, with a web UI, tickets and mirroring. I would say it is capable, but it is not an obvious fit for my cluster.
 
 **Key points:**
-- Self-hosted Git server for small teams, written in Java and released under the Apache License 2.0.
-- Hosts repositories over Git, HTTP, HTTPS and SSH, with a responsive web UI for files, branches, tags, history, syntax highlighting, blame and comparisons.
-- Authentication covers LDAP, PAM, Windows authentication and external providers, with repository-level access restrictions and user/team permissions.
-- Includes ticket tracking with comments, milestones, notifications, patchsets and branch-based change proposals, plus server-side merging, voting and watching.
-- Also does repository mirroring, personal repositories, forks, federation between Gitblit installs, hooks, indexing and search.
-- Runs standalone or in a Java servlet container, can act as a repository viewer only, and ships a separate graphical management client.
+- Self-hosted Git repository management server aimed at small development teams and workgroups.
+- Serves repositories over Git, HTTP, HTTPS and SSH.
+- Web interface for browsing files, branches, tags, commit history, blame and comparisons.
+- Authentication via LDAP, PAM, Windows authentication and external providers.
+- Includes ticket tracking with comments, milestones, notifications, patchsets and branch-based proposals.
+- Apache License 2.0; runs on Linux, macOS and Windows.
 
-**Details:** Gitblit is aimed at small development teams and workgroups that want to host their own source code. It can serve repositories over several transports, browse them in a web UI, and manage accounts, teams and permissions. It also has ticket tracking, patchset collaboration, mirroring, federation and hooks, plus Markdown rendering, RSS, email notifications and JSON RPC. Cross-platform support covers Linux, macOS and Windows.
-
-Unfortunately, it is a Java application and the article gives no Kubernetes, backup or metrics story. It can run standalone or inside a servlet container, and it can be configured as a read-only viewer, but that still leaves the operational questions open. I would say it is a capable Git server if a Java stack is already normal for you, but not worth it for me when lighter self-hosted forges exist.
+**Details:** Gitblit is written in Java and can run standalone or inside a Java servlet container. It offers repository-level permissions, mirroring, federation between Gitblit installs, hooks, indexing and Markdown documentation rendering. There is also a separate graphical client for remote administration and JSON RPC for integration. For my homelab, the missing pieces are the boring ones: the article gives no Kubernetes path, backup story or metrics, and it is Java on top of that. I would treat it as a capable self-hosted Git option for a small team, not something I would drag into Flux. Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
@@ -50,16 +49,19 @@ Unfortunately, it is a Java application and the article gives no Kubernetes, bac
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
 **Source:** https://www.linuxlinks.com/ivorysql-oracle-compatible-postgresql-database/ · **Karakeep:** `oze6keypzgmpbw3xzwxf4kzt`
 
-**In short:** IvorySQL is a PostgreSQL-based database with Oracle compatibility modes, PL/iSQL and Oracle-style packages. It is free under Apache 2.0, but it solves no problem in my stack.
+**In short:** IvorySQL is a Postgres-based database with an Oracle compatibility layer on top. I would say it is useful only for Oracle migrations, and nothing for my projects.
 
 **Key points:**
-- PostgreSQL-based relational database with added Oracle compatibility features.
-- Separate PostgreSQL and Oracle compatibility modes, plus PL/iSQL with stored procedures and packages.
-- Keeps PostgreSQL transaction processing, indexing, query optimisation and extension support.
-- Apache License 2.0, written in C, developed by the IvorySQL community.
-- The article gives no version number, pricing or benchmark figures.
+- PostgreSQL-based relational database with Oracle SQL syntax, procedural constructs and database objects
+- Separate PostgreSQL and Oracle compatibility modes
+- PL/iSQL supports Oracle-style stored procedures, functions and packages
+- Keeps Postgres transaction processing, indexing and query optimisation
+- Postgres extensions and administration tools can be used alongside IvorySQL features
+- Apache License 2.0, written in C, developed by the IvorySQL community
 
-**Details:** It is built for the dull migration case: an Oracle application that needs to move to PostgreSQL without rewriting everything. The compatibility layer covers Oracle-style SQL syntax, data types, expressions, functions and procedural constructs, while still leaving PostgreSQL facilities available. I would say that is a sensible migration tool rather than a database I would choose for a new project. For my homelab there is no Oracle anywhere in the stack, and CloudNativePG already covers normal Postgres, so this is nothing for my projects. So yeah, that's that.
+**Details:** IvorySQL extends Postgres rather than replacing it, so the interesting part is the compatibility layer: Oracle-style SQL, PL/iSQL, packages, extra data types and expressions. It also keeps the normal Postgres bits, including transaction processing, indexing and query optimisation, and you can still use Postgres extensions and admin tools. The separate compatibility modes are sensible, because not every app wants Oracle behaviour.
+
+The catch for me is that it is still a database to run and care for, and the article says nothing about Kubernetes, backups or metrics. My homelab already runs Postgres on CloudNativePG with WAL to MinIO, so swapping in an Oracle-compatible fork would be work for no clear gain. Apache 2.0 is permissive, but that does not fix the operational gap. Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
@@ -67,17 +69,17 @@ Unfortunately, it is a Java application and the article gives no Kubernetes, bac
 ![](https://blog.cloudflare.com/_emdash/api/media/file/01M7B8M86AWYDHNF9C7R2V0CXH.png)
 **Source:** https://blog.cloudflare.com/kitesurf-open-source/ · **Karakeep:** `hn4654pzhag8bk0qplzvcmz3`
 
-**In short:** Kitesurf is Cloudflare's open-source browser for agents, tagged with Rust and WebAssembly; unfortunately it is still under heavy development, so I would say watch it rather than adopt it.
+**In short:** Kitesurf is now open source, and Cloudflare describes it as a browser for agents; it is still under heavy development, so I would treat it as something to watch rather than depend on.
 
 **Key points:**
-- Open-sourced by Cloudflare; the post is by Celso Martinho.
-- Described as a browser for agents, with tags including Rust, WebAssembly and Workers.
-- Still under heavy development, focused on compatibility, reliability and efficiency.
-- Contributors must open an issue, get vouched by a maintainer, then open a pull request.
-- Non-code help counts: reproduction pages, failing workflows and documentation fixes.
-- Community chat is on Discord, with updates via the blog, changelog and landing page.
+- Cloudflare has open-sourced Kitesurf.
+- The post describes it as a browser for agents.
+- It is under heavy development, with focus on engine compatibility, reliability and efficiency.
+- Compatibility progress is tracked through Web Platform Tests.
+- Contributors need an issue and maintainer vouching before opening a pull request.
+- Non-code contributions are welcome, including reproduction pages, failing workflows and documentation fixes.
 
-**Details:** Unfortunately, Kitesurf is still under heavy development, and Cloudflare is focused on compatibility, reliability and efficiency rather than polish. It is an open-source browser for agents, posted by Celso Martinho, with tags for Rust, WebAssembly and Workers. The contribution path is gated: open an issue, get vouched by a maintainer, then open a pull request. Focused fixes with tests are preferred, and non-code reports such as a small reproduction page or documentation correction also help. There is Discord for chat, plus blog, changelog and landing page updates. I have not tried it. Nothing for my projects: I do not have an agent browser workload, and this is not a local image tool.
+**Details:** Kitesurf is now open source, and Cloudflare frames it as a browser for agents. From the post, it is under heavy development, with the focus on making the engine more compatible, more reliable and more efficient, including Web Platform Test progress. Contributions are welcome, but the process is guarded: open an issue with a minimal reproduction or proposed approach, get vouched by a maintainer, then open a pull request. Focused fixes with tests and clear scope are preferred over large rewrites. Non-code help counts too, like a small page that reproduces a rendering bug, a failing automation workflow, or a documentation correction. They also point to the blog, changelog, landing page, Web Platform Tests page and benchmarks, and Discord. I would say it is interesting if you want to watch a browser engine for agents take shape, but it is too early to depend on. Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
@@ -85,15 +87,16 @@ Unfortunately, it is a Java application and the article gives no Kubernetes, bac
 ![](https://i.ytimg.com/vi/fkFSWG9oyxE/maxresdefault.jpg)
 **Source:** https://www.youtube.com/watch?v=fkFSWG9oyxE · **Karakeep:** `d5k904vdt16viyw75tq80z1p`
 
-**In short:** A YouTube video about moving typecraft to PlanetScale, but only the title was available, so I cannot say what the migration actually involved.
+**In short:** A YouTube video about moving Typecraft to PlanetScale, but I only have the title and no transcript. I would say there is not enough here to judge.
 
 **Key points:**
-- Title only: "Lets move typecraft to planetscale!"
-- No source text was fetched for this item.
+- Title only: 'Lets move typecraft to planetscale!'.
+- No transcript or description was fetched.
 - No candidate links were supplied.
-- PlanetScale is named in the title, but no version, price, migration step or result is given.
+- Typecraft and PlanetScale specifics are not in the supplied text.
+- I did not watch, install, or run anything.
 
-**Details:** This one is a YouTube video and the body did not come through, so I am working from the title alone. It sounds like a migration story for something called typecraft onto PlanetScale, but that is all I can honestly take from it. I did not watch it, so I cannot say whether it is a database move, a hosting move, or just a discussion. If the video is public, the useful part would be the before and after: what broke, what the bill looked like, and whether the app stayed simple. Without that, there is not much to judge. Nothing for my projects.
+**Details:** This one is a YouTube video, and the body was not available, so I am working from the title alone. The title says someone is moving Typecraft to PlanetScale, but I do not know what Typecraft means in this context, what moved, or whether it is a database migration, a hosting change, or just a channel update. That is the whole problem with a title-only item. I would say it is not useful for a verdict yet. If there is a real migration in there, I would want the steps, the data size, the downtime, and what broke. Nothing for my projects until I have that. So yeah, that's that.
 
 **For my projects:** Nothing for my projects.
 
@@ -101,17 +104,17 @@ Unfortunately, it is a Java application and the article gives no Kubernetes, bac
 ![](https://blog.cloudflare.com/_emdash/api/media/file/01M7B3YCV0VN7GFCA6VK7EE9RR.png)
 **Source:** https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/ · **Karakeep:** `n2tz4onwsup8nxv051vyu2v7`
 
-**In short:** Cloudflare argues that AI penetration-testing orchestrators make old defence-in-depth look tired, and pitches identity-gated access plus micro-segmentation as the modern answer. I would say it is a sales-tinged security model, not a tool I can run.
+**In short:** A Cloudflare post about AI penetration-testing orchestrators and its 'Modern Security Model', built on identity gating and micro-segmentation. I would say it is vendor framing with a sales call at the end, but the containment-first point is sensible.
 
 **Key points:**
-- Cloudflare post tagged Attacks, LLM, Penetration Testing and Security.
-- Says legacy defence-in-depth, with a classic network DMZ, falls short in complex architectures.
-- Proposes identity-gated access for legacy and on-premises devices.
-- Uses micro-segmentation to make lateral movement slower or noisier.
-- Frames the result as a containment-first Modern Security Model.
-- Points readers to Cloudforce One for active incidents and Solutions Engineering for implementation help.
+- By Blake Darché and Myles Sloan on the Cloudflare Blog
+- AI penetration-testing orchestrators and automated attack frameworks are framed as a challenge to legacy defence models
+- Legacy defence-in-depth with a classic network DMZ is described as falling short in complex architectures
+- Legacy and on-premises equipment should be identity-gated and unreachable from the Internet
+- Micro-segmentation aims to slow lateral movement or make it noisier
+- The model is containment-first, aimed at cases where users keep losing keys
 
-**Details:** Cloudflare's argument is that AI penetration testing orchestrators are becoming normal, so the old model with a classic DMZ is not enough. They want legacy and on-premises gear made unreachable without identity, then micro-segmentation to make lateral movement slower or noisier. The whole thing is framed as containment-first, which is fair enough, but it reads like a position paper with a contact form at the end. There are no versions, prices or benchmarks in the supplied text, so I cannot judge cost or effort. For my homelab it is mostly a reminder to keep public tunnels identity-gated and namespaces separated, not a project I need to adopt this week. So yeah, that's that.
+**Details:** The post argues that AI-driven penetration testing changes the threat model enough to break old defence-in-depth habits. The replacement it offers is identity-gated access for legacy and on-premises gear, plus micro-segmentation to make lateral movement slower or noisier, under a containment-first framing. It also says the historical DMZ model is not enough for complex architectures and that attacks will get worse as orchestration tools become normal. Fair enough, yeah, but the piece ends by pointing at Cloudforce One and Solutions Engineering, so it is selling a model as much as explaining one. Nothing for my projects. I run a small k3s homelab with Cloudflare Tunnels, but this is enterprise security positioning rather than a tool I can drop in.
 
 **For my projects:** Nothing for my projects.
 
@@ -119,19 +122,18 @@ Unfortunately, it is a Java application and the article gives no Kubernetes, bac
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/12/117-security.png)
 **Source:** https://www.linuxlinks.com/best-free-open-source-supply-chain-integrity-tools/ · **Karakeep:** `o3cw1nrhmnzh2zgi3jbn653y`
 
-**In short:** LinuxLinks lists seven free and open source supply chain integrity tools, from cosign to gittuf. It is a useful index of names, but it does not tell me which one to actually deploy.
+**In short:** LinuxLinks lists seven free and open source supply chain integrity tools, from cosign and in-toto to Connaisseur and gittuf. It is a useful index, but it is a directory page rather than a test report.
 
 **Key points:**
-- Steve Emms's roundup names seven tools: cosign, in-toto, Connaisseur, Witness, SLSA verifier, Notation and gittuf.
-- Only free and open source software is eligible for the LinuxLinks ratings chart.
-- The tools cover signing and verifying artifacts, build attestations, provenance checks and Git repository tamper evidence.
-- Connaisseur is the one with a direct Kubernetes angle: it enforces container image signature verification in the cluster.
-- The article gives one-line descriptions, not install steps, versions, licences or benchmark numbers.
+- Seven tools are named: cosign, in-toto, Connaisseur, Witness, SLSA verifier, Notation and gittuf.
+- The listed jobs include signing, signature verification, build attestations, policy enforcement, provenance checks and tamper evidence.
+- The article highlights CI/CD, containers and Kubernetes as the main use cases.
+- Only free and open source software is eligible for the LinuxLinks chart.
+- Connaisseur is the Kubernetes-specific entry, enforcing container image signature verification.
 
-**Details:** This is a LinuxLinks roundup dated 13 November 2026, so it reads like a catalogue more than a review. I would say it is handy for names and categories: cosign for signing container images and artifacts, in-toto for verifiable build steps, Witness for attestations, SLSA verifier for provenance, Notation for OCI artifacts, gittuf for Git policies, and Connaisseur for Kubernetes admission checks. The page is short on detail though. There are no versions, no setup notes and no failure modes, so I cannot tell how heavy any of these would be in a real pipeline. The useful bit is the Kubernetes mention, because an admission check would be the natural place to enforce image signatures in my cluster. Still, this list alone is not enough to pick one. I would treat it as a starting index and go read each project's own docs before touching production.
+**Details:** This is a LinuxLinks roundup, so it is a list with one-line jobs rather than a deep review. The useful part for me is the spread: cosign signs and verifies container images and other artifacts, in-toto records verifiable build steps, Witness handles attestations, SLSA verifier checks provenance, Notation signs OCI artifacts, gittuf adds policy and tamper evidence to Git, and Connaisseur enforces image signature verification in Kubernetes. That last one is the closest thing to my world, because homelab-2nd is a k3s cluster, but the page does not say how any of these behave in a Flux-driven setup or what they cost in day-to-day maintenance. I would say the page is a decent starting index, and the tools themselves are only worth judging one at a time. Nothing for my projects right now.
 
-**For my projects:**
-- homelab-2nd: Connaisseur could act as the admission check in my k3s cluster so Flux-deployed images are rejected unless they carry a valid signature.
+**For my projects:** Nothing for my projects.
 
 **Projects:**
 - [cosign](https://github.com/sigstore/cosign): Code signing and transparency for containers and binaries - sigstore/cosign.
