@@ -10,6 +10,7 @@ Morning Brew for 2026-11-13: 7 items written from 7 hoarded bookmarks and feeds,
 
 ## 1. TideMail - keyboard-first terminal email client - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/05/email-text-keyboard-button.jpg)
+**Project:** [TideMail](https://github.com/allisonhere/tidemail)
 **Source:** https://www.linuxlinks.com/tidemail-keyboard-first-terminal-email-client/ · **Karakeep:** `b6gdrgkhwd3d6gt3rlxhr9nb`
 
 **In short:** TideMail is a Go, MIT-licensed terminal email client with IMAP, SMTP and a local SQLite cache, and the feature list is long for a TUI. I would say it looks quite good for terminal mail, but the optional AI bits and experimental plugins make it sound a bit busy.
@@ -47,6 +48,7 @@ Morning Brew for 2026-11-13: 7 items written from 7 hoarded bookmarks and feeds,
 
 ## 3. IvorySQL - Oracle-compatible PostgreSQL database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [IvorySQL](https://github.com/IvorySQL/IvorySQL)
 **Source:** https://www.linuxlinks.com/ivorysql-oracle-compatible-postgresql-database/ · **Karakeep:** `oze6keypzgmpbw3xzwxf4kzt`
 
 **In short:** IvorySQL is a Postgres-based database with an Oracle compatibility layer on top. I would say it is useful only for Oracle migrations, and nothing for my projects.
