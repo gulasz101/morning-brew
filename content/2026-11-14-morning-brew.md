@@ -610,6 +610,7 @@ One comment says an upgrade from 26.10 fixed Thunderbolt and trackpad issues on 
 
 ## 29. EJDB2 - embedded JSON database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [EJDB2](https://github.com/Softmotions/ejdb)
 **Source:** https://www.linuxlinks.com/ejdb2-embedded-json-database/ · **Karakeep:** `voypaf114npc5cmzhwx0bdtm`
 
 **In short:** EJDB2 is a MIT-licensed embedded JSON document database written in C by Softmotions Ltd. I would say it is useful for small local apps, but it is not a replacement for Postgres in my homelab.
