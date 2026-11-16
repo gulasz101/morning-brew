@@ -253,6 +253,7 @@ The video's tests were mixed. The readme example worked: 107 chats of about 32,0
 
 ## 13. Muffin - lightweight asynchronous ASGI web microframework - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/01/002-framework.png)
+**Project:** [Muffin](https://github.com/klen/muffin)
 **Source:** https://www.linuxlinks.com/muffin-lightweight-asynchronous-asgi-web-microframework/ · **Karakeep:** `hl5ov85q2tosy7s6yckp9zb4`
 
 **In short:** Muffin is a small Python ASGI web framework by Kirill Klenov, MIT licensed, with routing, WebSockets and plugins for templates, databases and auth. I would say it looks neat but I have no reason to swap it in for Starlette or FastAPI.
@@ -395,6 +396,21 @@ I read about this, I did not run it. I would say it is a useful extra layer for 
 
 ## 20. 15 Useful Free and Open Source Linux Forensics Memory Tools - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2023/08/people-holding-cloud-network-security-symbols.jpg)
+**Projects:**
+- [MemProcFS](https://github.com/ufrisk/MemProcFS): MemProcFS
+- [pypykatz](https://github.com/skelsec/pypykatz): Mimikatz implementation in pure Python
+- [PCILeech](https://github.com/ufrisk/pcileech): Direct Memory Access (DMA) Attack Software
+- [Volatility](https://www.volatilityfoundation.org/): The Volatility Framework is the world's most widely used memory forensics tool. The Volatility Foundation keeps it free and open to all
+- [AVML](https://github.com/microsoft/avml): AVML - Acquire Volatile Memory for Linux
+- [LiME](https://github.com/jtsylve/LiME): LiME (formerly DMD) is a Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, such as those powered by Android. The tool supports acquir
+- [Volshell](https://volatility3.readthedocs.io/en/latest/volshell.html): Volshell - A CLI tool for working with memory — Volatility 3 2.28.3 documentation
+- [LeechCore](https://github.com/ufrisk/LeechCore): LeechCore - Physical Memory Acquisition Library & The LeechAgent Remote Memory Acquisition Agent
+- [EVTXtract](https://github.com/williballenthin/EVTXtract): EVTXtract recovers and reconstructs fragments of EVTX log files from raw binary data, including unallocated space and memory images
+- [mquire](https://github.com/trailofbits/mquire): Zero-dependency Linux memory forensics, leveraging kernel-embedded BTF and kallsyms for type-aware memory analysis without external debug info
+- [LEMON](https://github.com/eurecom-s3/lemon): EBPF Memory Dump Tool
+- [dwarf2json](https://github.com/volatilityfoundation/dwarf2json): Convert ELF/DWARF symbol and type information into vol3's intermediate JSON
+- [emd](https://github.com/ph0llux/emd): EBPF based memory dumper for linux systems
+- [AutoTimeliner](https://github.com/andreafortuna/autotimeliner): Automagically extract forensic timeline from volatile memory dump
 **Source:** https://www.linuxlinks.com/useful-free-open-source-linux-forensics-memory-tools/ · **Karakeep:** `xksd5h2cmp2m44ylit5r9prr`
 
 **In short:** LinuxLinks lists fifteen free and open source Linux memory forensics tools, and I would say it is useful reference material but not something I need this month.
@@ -411,6 +427,7 @@ I read about this, I did not run it. I would say it is a useful extra layer for 
 
 ## 21. tremc - terminal interface for Transmission - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/01/076-torrent.png)
+**Project:** [tremc](https://github.com/tremc/tremc)
 **Source:** https://www.linuxlinks.com/tremc-terminal-interface-transmission/ · **Karakeep:** `mm3hlpdl2tv1ic7t6l4ukk4l`
 
 **In short:** tremc is a keyboard-driven terminal UI for the Transmission BitTorrent daemon, local or remote. I would say it is useful for headless Transmission boxes, but nothing for my projects.
@@ -430,6 +447,7 @@ I would say it is a sensible tool if you already run Transmission and want to av
 
 ## 22. UnQLite - embedded NoSQL database - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/03/online-business-database.jpg)
+**Project:** [UnQLite](https://github.com/symisc/unqlite)
 **Source:** https://www.linuxlinks.com/unqlite-embedded-nosql-database/ · **Karakeep:** `uxgf6unnzx5412o2gr1o5k66`
 
 **In short:** UnQLite is a small embedded NoSQL database in C with key-value and document storage in one file; I would say it is a tidy library, but it is not a service I would run in my homelab.
@@ -615,6 +633,7 @@ It is one developer's project, which that's a lot for a hospital system, and the
 
 ## 31. Griddle - picture logic puzzle game - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/10/logic_puzzle_banner_700x350.png)
+**Project:** [Griddle](https://codeberg.org/petsoi/griddle)
 **Source:** https://www.linuxlinks.com/griddle-picture-logic-puzzle-game/ · **Karakeep:** `hk6t2bya1klolbu5ybboo2h8`
 
 **In short:** Griddle is a free GPL v3 nonogram puzzle game for Linux, written in Rust; I would say it looks like a neat little puzzle, but nothing for my projects.
