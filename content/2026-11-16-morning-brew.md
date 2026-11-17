@@ -27,6 +27,7 @@ Morning Brew for 2026-11-16: 41 items written from 43 hoarded bookmarks and feed
 
 ## 2. Vistava - minimalist image and video browser - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/09/Console-Image-Compression.jpg)
+**Project:** [Vistava](https://github.com/bauermaximilian/Vistava)
 **Source:** https://www.linuxlinks.com/vistava-minimalist-image-video-browser/ · **Karakeep:** `mgbo8ri923tju4am6hh0hfhn`
 
 **In short:** Vistava is a minimalist local image and video browser with optional LAN sharing; it looks tidy, but it has no place in my projects.
@@ -44,6 +45,7 @@ Morning Brew for 2026-11-16: 41 items written from 43 hoarded bookmarks and feed
 
 ## 3. Klisi - graphical Callgrind profile viewer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/013-coding.png)
+**Project:** [Klisi](https://gitlab.com/ckardaris/klisi)
 **Source:** https://www.linuxlinks.com/klisi-graphical-callgrind-profile-viewer/ · **Karakeep:** `b98ax1ktu3da7hv6xzb2xyvo`
 
 **In short:** Klisi is a GTK4/libadwaita viewer for Callgrind profiles, built to find expensive functions without KCachegrind's full feature set. I would say it's a focused, useful tool for Linux profiling work, but not something I need.
@@ -526,6 +528,7 @@ The guardrails are the honest part: approvals, argv-prefix rules, scope and deny
 
 ## 28. check-jsonschema - command-line JSON Schema validation tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/data-science-software.jpg)
+**Project:** [check-jsonschema](https://github.com/python-jsonschema/check-jsonschema)
 **Source:** https://www.linuxlinks.com/check-jsonschema-command-line-json-schema-validation-tool/ · **Karakeep:** `njflqj057zshjod4lscy4pkr`
 
 **In short:** check-jsonschema is a Python CLI that validates JSON, YAML, TOML and JSON5 against JSON Schema, with built-in schemas for common CI and config files. I would say it is useful glue, not a project on its own.
@@ -544,6 +547,7 @@ The guardrails are the honest part: approvals, argv-prefix rules, scope and deny
 
 ## 29. ilastik - interactive learning and image segmentation toolkit - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/05/medical-tech-science-medicine-doctor-diagnose-checking-coronavirus-covid-19-testing-result-with-virtual-screen-laboratory-inhibition-disease-outbreaks-medical-technology.jpg)
+**Project:** [ilastik](https://github.com/ilastik/ilastik)
 **Source:** https://www.linuxlinks.com/ilastik-interactive-learning-image-segmentation-toolkit/ · **Karakeep:** `m5bt5auuc73o4llc4955o1he`
 
 **In short:** ilastik is an open-source interactive image segmentation toolkit for scientific microscopy, and I would say it is useful for researchers but not for my projects.
@@ -578,6 +582,7 @@ The guardrails are the honest part: approvals, argv-prefix rules, scope and deny
 
 ## 31. Torrra - terminal BitTorrent search and download tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/01/076-torrent.png)
+**Project:** [Torrra](https://github.com/stabldev/torrra)
 **Source:** https://www.linuxlinks.com/torrra-terminal-bittorrent-search-download-tool/ · **Karakeep:** `j2d5w38bh2qovxxx0b0os2dq`
 
 **In short:** Torrra is a Python terminal BitTorrent search and download tool that talks to Jackett or Prowlarr and uses libtorrent; I would say it is a neat single-terminal workflow, but nothing for my projects.
@@ -613,6 +618,7 @@ The guardrails are the honest part: approvals, argv-prefix rules, scope and deny
 
 ## 33. leaves - terminal-based disk usage visualization utility - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/02/person-holding-new-modern-fast-ssd-m2-drive-replace-it-computer.jpg)
+**Project:** [leaves](https://github.com/patonw/leaves)
 **Source:** https://www.linuxlinks.com/leaves-terminal-based-disk-usage-visualization-utility/ · **Karakeep:** `kjt8v9a0a87n1fh4x8f8wejb`
 
 **In short:** leaves is a Rust terminal disk usage analyzer with a character treemap for SSH work. I would say it is handy for a quick look, but crowded out by twenty-seven listed alternatives.
@@ -651,6 +657,7 @@ So yeah, that's that.
 
 ## 35. Ibis - portable DataFrame library for data analysis - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/business-graph-trade-monitor-mixed-media.jpg)
+**Project:** [Ibis](https://github.com/ibis-project/ibis)
 **Source:** https://www.linuxlinks.com/ibis-portable-dataframe-library-data-analysis/ · **Karakeep:** `e2bmnsh653re3z9yadeg4mwx`
 
 **In short:** Ibis is a free Python DataFrame library with the same API across more than 20 backends, from DuckDB to Snowflake. I would say it is a sensible portability layer for data work, but nothing for my projects.
@@ -702,6 +709,7 @@ Nothing for my projects. My data work is small and local, and none of my project
 
 ## 37. stm - structural topic modelling for text analysis - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [stm](https://github.com/bstewart/stm)
 **Source:** https://www.linuxlinks.com/stm-structural-topic-modelling-text-analysis/ · **Karakeep:** `mi6uodhg1aim71v5mem7x5bv`
 
 **In short:** stm is an R package for structural topic modelling that folds document metadata into topic prevalence and content. I would say it is useful for R users, but it is not a fit for my projects.
