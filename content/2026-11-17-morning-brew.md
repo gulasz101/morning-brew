@@ -89,6 +89,7 @@ I would say it is a tidy little utility if your Dropbox folder contains build ou
 
 ## 4. CVXPY - framework for mathematical optimization - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/11/maths-software.jpg)
+**Project:** [CVXPY](https://github.com/cvxpy/cvxpy)
 **Source:** https://www.linuxlinks.com/cvxpy-framework-mathematical-optimization/ · **Karakeep:** `rh4z1gyuiaw5rste4vee2u0k`
 
 **In short:** CVXPY is a free, open source mathematical modelling framework for optimization, written in C++ and Python. I would say it is clever maths tooling, but nothing for my projects.
@@ -453,6 +454,7 @@ The catch is fidelity. It covers services with an API model in AWS's public mode
 
 ## 24. BearWave - graphical internet radio player - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/04/15928-internet-radio-c.png)
+**Project:** [BearWave](https://github.com/spalencsar/bearwave)
 **Source:** https://www.linuxlinks.com/bearwave-graphical-internet-radio-player/ · **Karakeep:** `dz3z4c6gt0qf8zw0fdvb4jpo`
 
 **In short:** BearWave is a free GPL-3 internet radio player for Linux with Radio Browser search and tray controls; I would say it is capable but a bit wonky visually and playback-only.
@@ -489,6 +491,7 @@ The catch is fidelity. It covers services with an API model in AWS's public mode
 
 ## 26. D-Tale - graphical analysis of pandas data structures - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/business-graph-trade-monitor-mixed-media.jpg)
+**Project:** [D-Tale](https://github.com/man-group/dtale)
 **Source:** https://www.linuxlinks.com/d-tale-graphical-analysis-pandas-data-structures/ · **Karakeep:** `g6gwesf4u0byls41h5z22ne7`
 
 **In short:** D-Tale is a browser-based GUI for poking at pandas DataFrames, with sorting, filtering, stats, missing-value checks and charts. I would say it is useful for quick exploration, but it is another layer on top of pandas rather than a replacement for it.
@@ -869,6 +872,7 @@ For me this is another chat app with a familiar safety pitch. Nothing for my pro
 
 ## 46. web.py - minimalist Python web framework - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2026/01/008-framework.png)
+**Project:** [web.py](https://github.com/webpy/webpy)
 **Source:** https://www.linuxlinks.com/fasthtml-html-first-web-application-framework/ · **Karakeep:** `pbqpsz7mxpoostdjcx6kbzxp`
 
 **In short:** web.py is a minimalist Python web framework with explicit URL handlers, templates and a database layer; I would say it is tidy for tiny services, but not worth starting a serious project on.
@@ -887,6 +891,7 @@ For me this is another chat app with a familiar safety pitch. Nothing for my pro
 
 ## 47. Wayback - web archiving and playback tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/06/170y-utilities.jpg)
+**Project:** [Wayback](https://github.com/wabarc/wayback)
 **Source:** https://www.linuxlinks.com/wayback-web-archiving-playback-tool/ · **Karakeep:** `ciavbsdbp6gt2rpyn8gewegj`
 
 **In short:** Wayback is a Go web archiving and playback tool that can snapshot pages to several services and run as a CLI or a service; I would say it looks useful for preserving pages, but I have not run it.
