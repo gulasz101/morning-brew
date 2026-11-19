@@ -575,6 +575,7 @@ The practical advice is blunt: update every Java runtime and restart the service
 
 ## 30. pyspread - spreadsheet with Python expressions in cells - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/business-graph-trade-monitor-mixed-media.jpg)
+**Project:** [pyspread](https://gitlab.com/pyspread/pyspread)
 **Source:** https://www.linuxlinks.com/pyspread-spreadsheet-python-expressions-in-cells/ · **Karakeep:** `n5lq8hq0czg42wip3xecjrwo`
 
 **In short:** pyspread is a GPL v3 spreadsheet where cells evaluate Python expressions, with matplotlib charts and CSV, SVG and PDF import/export; I would say it is a niche but capable tool for Python users, and nothing for my projects.
@@ -743,6 +744,7 @@ The catch is that it is a desktop GUI spreadsheet, so it does not fit my homelab
 
 ## 38. IQ-TREE - phylogenetic inference and model selection - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/05/medical-tech-science-medicine-doctor-diagnose-checking-coronavirus-covid-19-testing-result-with-virtual-screen-laboratory-inhibition-disease-outbreaks-medical-technology.jpg)
+**Project:** [IQ-TREE](https://github.com/iqtree/iqtree3)
 **Source:** https://www.linuxlinks.com/iq-tree-phylogenetic-inference-model-selection/ · **Karakeep:** `m0hs3a8pihzhebz028pmztd9`
 
 **In short:** IQ-TREE is a GPL v2 command-line tool for maximum-likelihood phylogenetic trees, with ModelFinder and ultrafast bootstrap; I would say it is solid for evolutionary biology, but not for my projects.
@@ -832,6 +834,7 @@ The catch is that it is a desktop GUI spreadsheet, so it does not fit my homelab
 
 ## 43. Multi-agent pipeline that turns research notes into LaTeX manuscripts, by Open-source Projects
 ![](https://opengraph.githubassets.com/1/google-research/paper-orchestra)
+**Project:** [paper-orchestra](https://github.com/google-research/paper-orchestra)
 **Source:** https://www.opensourceprojects.dev/post/paper-orchestra · **Karakeep:** `d8m9t0jm99mpapvz673f2d87`
 
 **In short:** PaperOrchestra is a Google Cloud AI Research multi-agent pipeline that turns rough research notes and logs into a LaTeX manuscript with literature and plots. I would say it is interesting for researchers with results ready, but it is not going to invent the contribution for you.
