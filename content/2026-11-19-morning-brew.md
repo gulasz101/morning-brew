@@ -452,6 +452,7 @@ He still wants computer classes back, and he admits Linux has rough edges, like 
 
 ## 24. Chatwoot - omnichannel customer support platform - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2017/12/help-desk-software.jpg)
+**Project:** [Chatwoot](https://github.com/chatwoot/chatwoot)
 **Source:** https://www.linuxlinks.com/chatwoot-omnichannel-customer-support-platform/ · **Karakeep:** `nu0qw87yapd161j18vg2hx56`
 
 **In short:** Chatwoot is an MIT-licensed Ruby omnichannel customer support platform with a self-hosted Community Edition and a paid enterprise tier. I read about it rather than running it, and it is not for my projects.
@@ -1009,6 +1010,7 @@ So yeah, that's that.
 
 ## 52. word2vec - train word embedding models in R - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [word2vec](https://github.com/bnosac/word2vec)
 **Source:** https://www.linuxlinks.com/word2vec-train-word-embedding-models-r/ · **Karakeep:** `irwd6nyvwate1n81r5rhkrp4`
 
 **In short:** word2vec is an R package from BNOSAC for training and using word embedding models on your own text. I would say it is a useful niche tool, but nothing for my projects.
@@ -1292,6 +1294,7 @@ For my homelab, the awkward part is that public services already get individual 
 
 ## 65. ncdu-zig - terminal-based disk usage analyzer - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/02/person-holding-new-modern-fast-ssd-m2-drive-replace-it-computer.jpg)
+**Project:** [ncdu-zig](https://dev.yorhel.nl/ncdu)
 **Source:** https://www.linuxlinks.com/ncdu-zig-terminal-based-disk-usage-analyzer/ · **Karakeep:** `s762dw3b4c4d2wes1bin9zmw`
 
 **In short:** ncdu-zig is Eric Joldasov's maintenance fork of the ncdu disk usage analyzer, keeping Yoran Heling's Zig implementation alive with an ncurses TUI, multi-threaded scans, JSON and binary exports, and an MIT licence. Useful enough on a box over SSH, but it is not something I would add to any of my projects.
