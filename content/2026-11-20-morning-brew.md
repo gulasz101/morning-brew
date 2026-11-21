@@ -10,6 +10,7 @@ Morning Brew for 2026-11-20: 13 items written from 13 hoarded bookmarks and feed
 
 ## 1. GNAT Studio - IDE for Ada and SPARK development - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/01/IDE-Vector.jpg)
+**Project:** [GNAT Studio](https://github.com/AdaCore/gnatstudio)
 **Source:** https://www.linuxlinks.com/gnat-studio-ide-ada-spark-development/ · **Karakeep:** `s2iu7j4704681lw83uekok75`
 
 **In short:** GNAT Studio is AdaCore's IDE for Ada and SPARK, free under GPL v3 and cross-platform. It is not something I would reach for in my own stack.
