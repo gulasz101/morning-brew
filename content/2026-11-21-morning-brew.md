@@ -10,39 +10,38 @@ Morning Brew for 2026-11-21: 3 items written from 3 hoarded bookmarks and feeds,
 
 ## 1. Cartopy - geographic mapping and visualization library - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/11/futuristic-vr-headup-display-design-with-orbital-global-network-3d-rendering.jpg)
+**Project:** [cartopy](https://github.com/SciTools/cartopy)
 **Source:** https://www.linuxlinks.com/cartopy-geographic-mapping-visualization-library/ · **Karakeep:** `ge7nzwri8pac2hrxsuuy10e1`
 
-**In short:** Cartopy is SciTools' Python library for maps and geographic plots on top of Matplotlib, under the BSD 3-Clause licence. I would say it is solid for scientific mapping, but nothing for my projects.
+**In short:** Cartopy is a Python mapping and visualisation library built around Matplotlib, with projections, transforms and geographic features. I would say it is a solid scientific plotting tool, but nothing I need this week.
 
 **Key points:**
 - Free and open source Python library from SciTools / Cartopy contributors.
-- BSD 3-Clause 'New' or 'Revised' Licence.
+- BSD 3-Clause licence.
 - Extends Matplotlib with GeoAxes and geographic projections.
-- Supports Plate Carrée, Mercator, Lambert Conformal, Robinson and Orthographic among others.
-- Draws coastlines, borders, rivers and lakes, and reads Natural Earth and shapefile data.
-- Transforms points, lines, polygons, images and raster data between coordinate systems.
+- Supports Plate Carrée, Mercator, Lambert Conformal, Robinson and Orthographic.
+- Draws coastlines, borders, rivers and lakes, and reads Natural Earth and shapefiles.
+- Can plot points, contours, vector fields and raster data.
 
-**Details:** It is the usual scientific-Python stack piece: projections, coordinate transforms, Shapely geometries, gridlines, contours, vector fields and raster plots, with Matplotlib styling on top. The source lists a long feature set and no version number, release date or install size, so I am judging the page rather than a release. It looks quite good job for meteorology, climatology and oceanography work, and the Natural Earth and shapefile support is the practical bit. For me it is a library to read about, not to deploy: no Kubernetes path, no backup story, no metrics, and no fit with the factory or the agents. So yeah, that's that.
+**Details:** Cartopy is a Python library for maps and geographic visualisation. It handles coordinate reference systems and transforms spatial data between them, then plots through Matplotlib with GeoAxes. The feature list is practical rather than flashy: coastlines, borders, rivers, lakes, Natural Earth datasets, shapefile reading, Shapely geometry handling, gridlines and map extent control. It can also transform raster images and overlay several datasets on one map. That is a lot of capability for a plotting library, and it sounds stable, but my work is not in meteorology, climatology or oceanography, so I do not have a use for it. The BSD 3-Clause licence is friendly enough, and candidate link 1 points at the SciTools repository. Nothing for my projects.
 
 **For my projects:** Nothing for my projects.
 
 ## 2. hUGETracker - Game Boy music tracker - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/12/Music-Trackers.png)
-**Project:** [hUGETracker](https://github.com/SuperDisk/hUGETracker)
 **Source:** https://www.linuxlinks.com/hugetracker-game-boy-music-tracker/ · **Karakeep:** `jznzaa7parpmlq7vtnzqg4nl`
 
-**In short:** hUGETracker is Nick Faro's free Game Boy music tracker with four channels and 64-row patterns; I would say it is quite a good job for chiptune work, but it is not worth it for my projects.
+**In short:** hUGETracker is a free, public-domain Game Boy tracker by Nick Faro that works around the console's four audio channels; I would say it is niche but quite complete for chiptune work.
 
 **Key points:**
-- Developer Nick Faro (SuperDisk); public domain licence
-- Four channels: two pulse, one programmable wave, one noise
-- Each pattern has 64 rows, with separate note, instrument and effect columns
-- Exports standalone Game Boy ROM and GBS files, plus WAV and MP3 renders
-- Cross-platform on Linux, macOS and Windows; written in Pascal
+- Four-channel tracker for the Game Boy pulse, wave and noise channels
+- Pattern editor with 64 rows per pattern and an order editor for full songs
+- Instrument types for pulse, wave and noise, plus a custom waveform editor
+- Tracker effects plus a graphical effect editor instead of manual hex entry
+- Exports standalone Game Boy ROM and GBS files, and renders WAV and MP3
+- Cross-platform on Linux, macOS and Windows; written in Pascal; public domain
 
-**Details:** hUGETracker is a music composition app built around the Game Boy sound hardware, so you get a tracker for the four channels: two pulse, one programmable wave and one noise. It is by Nick Faro (SuperDisk), released as public domain software, and it is written in Pascal, so the source is easy to read if you know the language. Songs are built from 64-row patterns, which that's plenty for a Game Boy loop, with separate note, instrument and effect columns, then combined in an order editor, and each channel can be muted while you listen.
-
-The export side is the useful bit, yeah: standalone Game Boy ROM and GBS files, plus WAV and MP3 renders, and it runs on Linux, macOS and Windows. Unfortunately there is no version number in the piece, so I cannot tell which release this is, and I have not found a reason to fold it into my own projects, so I would say it is quite a good job for chiptune people but not worth it for me.
+**Details:** hUGETracker is built around the Game Boy sound hardware: two pulse channels, one programmable wave channel and one noise channel. Patterns have 64 rows, which is plenty for chiptune work, and instruments handle volume envelopes, note length, sweep and pulse duty. There is also a custom waveform editor, channel muting, playback from the song start or the current position, and exports to a standalone ROM or GBS file, or to WAV and MP3. It is written in Pascal by Nick Faro under a public domain licence and runs on Linux, macOS and Windows. I read about it, I did not try it, so I cannot judge how stable the editor feels, but the feature list is long for a free tool. Nothing for my projects. So yeah, that's that.
 
 **For my projects:** Nothing for my projects.
 
@@ -50,15 +49,15 @@ The export side is the useful bit, yeah: standalone Game Boy ROM and GBS files, 
 ![](https://i.ytimg.com/vi/sSj40n9FmFg/maxresdefault.jpg)
 **Source:** https://www.youtube.com/shorts/sSj40n9FmFg · **Karakeep:** `fe1ohvhq0ikt51qa9cyzj0fv`
 
-**In short:** A short about how GTA 6's 212GB preload moved through CDNs and GeoDNS, with some very large traffic numbers. I would say it is a fun networking anecdote, not something I can use.
+**In short:** GTA 6 is a 212GB download and its preload pushed ISPs and exchanges to record peaks; the DNS and CDN plumbing behind it is the interesting part, and I would say it is a good networking explainer with nothing for my projects.
 
 **Key points:**
-- GTA 6 is a 212GB download; preload opened on 10 November.
-- RIPE Labs, with over 15,000 probes, estimated 2.4 exabytes if everyone pulled from one server.
-- Sony and Microsoft spread the game across several CDNs; consoles use GeoDNS to get different answers by location.
-- Examples in the short: Los Angeles to Farsley, Tokyo to Google Cloud, Istanbul to Amazon CloudFront, Shanghai to Alibaba Cloud.
-- Virgin Media UK peaked 3.8% above a Champions League match; DE-CIX hit 22.3 Tbps, about 13 full copies of GTA per second.
+- GTA 6 is a 212GB download and preload opened on 10 November
+- Ripe Labs measured it with over 15,000 internet probes
+- One server would need 2.4 exabytes and max a gigabit link for more than 600 years
+- Virgin Media UK had its biggest traffic peak ever, 3.8% above a Champions League match
+- DECIX Frankfurt hit 22.3 Tbps, about 13 full copies of GTA 6 per second
 
-**Details:** The short explains the delivery problem behind a 212GB preload. RIPE Labs did the math: 2.4 exabytes from one server would max out a gigabit link for more than 600 years. So Sony and Microsoft spread the files across several CDNs, and the console still has to find the right one. DNS does that with GeoDNS: the same hostname returns different answers depending on where you seem to be, and one answer can hand off to another hostname, so each lookup can land on a different CDN. Los Angeles went to Farsley, Tokyo to Google Cloud, Istanbul to Amazon CloudFront, and Shanghai down a chain to Alibaba Cloud. Paul Vixie once called this a stupid DNS trick, because DNS was not designed for it. RIPE also saw surprisingly few CDN cache servers inside ISPs, and guessed the game is just too large for them. Virgin Media had its biggest peak ever, 3.8% above a Champions League match, and DE-CIX hit 22.3 Tbps, about 13 full copies of GTA every second. So yeah, that is a lot of traffic.
+**Details:** GTA 6 is a 212GB download, and when preload opened on 10 November it pushed traffic records across ISPs and internet exchanges. Ripe Labs ran the numbers across more than 15,000 probes: one server would need 2.4 exabytes and would max out a gigabit link for more than 600 years. Sony and Microsoft spread the game across CDNs instead, and GeoDNS gives a different answer depending on where a console seems to be, sometimes handing the lookup off to another hostname and another CDN. Los Angeles ended up at Farsley, Tokyo at Google Cloud, Istanbul at Amazon CloudFront, and Shanghai went down a long chain that finished at Alibaba Cloud. Internet pioneer Paul Vixie once called this a stupid DNS trick because DNS was never designed for it. RIPE also saw surprisingly few ISP cache servers, guessing the game may just take up too much disk space. Virgin Media UK had its biggest traffic peak ever, 3.8% above a Champions League match, and DECIX Frankfurt hit 22.3 Tbps, which works out to about 13 full copies of GTA 6 every second. Nothing for my projects. So yeah, that's that.
 
 **For my projects:** Nothing for my projects.
