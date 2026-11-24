@@ -67,6 +67,7 @@ The trap mattered more to me: the send button was marked as needing a person, an
 
 ## 4. SerialPlot - real-time serial data plotting tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/018-coding.png)
+**Project:** [SerialPlot](https://github.com/hyOzd/serialplot)
 **Source:** https://www.linuxlinks.com/serialplot-real-time-serial-data-plotting-tool/ · **Karakeep:** `q2juk9bx0zgqs814lmmpo5tg`
 
 **In short:** SerialPlot is a free Qt serial data plotter for Linux and Windows, with binary and ASCII streams, multiple channels and CSV capture. I would say it is a useful debugging tool for embedded work, but nothing for my projects.
@@ -495,6 +496,25 @@ I read about it rather than ran it, so this is judgement from the page, not a te
 
 ## 26. 22 Useful R Natural Language Processing Tools - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Projects:**
+- [tidytext](https://github.com/juliasilge/tidytext): Text mining using tidy tools :sparkles::page_facing_up::sparkles:
+- [quanteda](https://github.com/quanteda/quanteda): An R package for the Quantitative Analysis of Textual Data
+- [text2vec](https://github.com/dselivanov/text2vec): Fast vectorization, topic modeling, distances and GloVe word embeddings in R
+- [stringi](https://github.com/gagolews/stringi): Fast and Portable Character String Processing in R (with the Unicode ICU)
+- [stringr](https://github.com/tidyverse/stringr): A fresh approach to string manipulation in R
+- [UDPipe](https://github.com/bnosac/udpipe): R package for Tokenization, Parts of Speech Tagging, Lemmatization and Dependency Parsing Based on the UDPipe Natural Language Processing Toolkit
+- [tokenizers](https://github.com/ropensci/tokenizers): Fast, Consistent Tokenization of Natural Language Text
+- [spacyr](https://github.com/quanteda/spacyr): R wrapper to spaCy NLP
+- [textTinyR](https://github.com/mlampros/textTinyR): Text Processing for Small or Big Data Files in R
+- [textrecipes](https://github.com/tidymodels/textrecipes): Extra recipes for Text Processing
+- [stm](https://github.com/bstewart/stm): An R Package for the Structural Topic Model
+- [word2vec](https://github.com/bnosac/word2vec): Distributed Representations of Words using word2vec
+- [textclean](https://github.com/trinker/textclean): Tools for cleaning and normalizing text data
+- [TALL](https://github.com/massimoaria/tall): Text Analysis for aLL
+- [corpustools](https://github.com/kasperwelbers/corpustools): An R corpus class for tokenized texts
+- [wordvector](https://github.com/koheiw/wordvector): Train word and document vectors using quanteda
+- [text](https://github.com/OscarKjell/text): Using Transformers from HuggingFace in R
+- [topicmodels](https://cran.r-project.org/package=topicmodels): Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models and Correlated Topics Models (CTM) by David M. Blei and co-authors and the C++ code for fitting LDA models using Gib…
 **Source:** https://www.linuxlinks.com/excellent-r-natural-language-processing-tools/ · **Karakeep:** `t2btpz18okmssbz0r149qtu3`
 
 **In short:** LinuxLinks lists 22 R packages for NLP, from tokenization to transformer models, with Python still getting the bigger spotlight. I would say it's a handy index if you work in R, and nothing I need this month.
@@ -604,6 +624,7 @@ The honest catch is that the article gives no real comparison. It is 17 names wi
 
 ## 31. Serial Monitor - graphical serial monitor and plotter - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/01/018-coding.png)
+**Project:** [Serial Monitor](https://github.com/hacknus/serial-monitor-rust)
 **Source:** https://www.linuxlinks.com/serial-monitor-graphical-serial-monitor-plotter/ · **Karakeep:** `chkyd2kczr9vyp61ggzkmguw`
 
 **In short:** Serial Monitor is a free Rust and egui graphical serial terminal plus plotter for microcontroller work; it looks like a quite good job, but it is another plotter in a crowded field and nothing for my projects.
