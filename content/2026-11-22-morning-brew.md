@@ -306,6 +306,7 @@ This week Frack, running since 1985, published an anonymous confession. The writ
 
 ## 17. openEMS - electromagnetic field simulation software - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/07/physics-tools.png)
+**Project:** [openEMS](https://github.com/thliebig/openEMS-Project)
 **Source:** https://www.linuxlinks.com/openems-electromagnetic-field-simulation-software/ · **Karakeep:** `ohitlm3ej9v69rr9vxtn3w3a`
 
 **In short:** openEMS is a free GPL v3 electromagnetic field simulator using an equivalent-circuit FDTD method. I would say it is a serious scientific tool, but nothing for my projects.
@@ -347,6 +348,7 @@ I read about it, I did not run it. It sounds stable and quite a good job for the
 
 ## 19. blueBerryOS - Debian-based Linux distribution with GNOME - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [blueBerryOS](https://blueberrylinux.com/)
 **Source:** https://www.linuxlinks.com/blueberryos-debian-based-linux-distribution/ · **Karakeep:** `gj5ve52kmm0rsc758xuwxf49`
 
 **In short:** blueBerryOS is a Debian-based GNOME distro with a local Qwen 1.5B assistant and a security GUI; it looks like a desktop OS, not something for my stack.
