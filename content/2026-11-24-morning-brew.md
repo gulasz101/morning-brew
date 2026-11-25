@@ -251,6 +251,7 @@ The useful-sounding parts are the public goods: open datasets, open-source softw
 
 ## 13. Eleria OS - Debian-based Linux distribution - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2024/04/Linux-Distributions.png)
+**Project:** [Eleria OS](https://github.com/eleria-official/Eleria-OS)
 **Source:** https://www.linuxlinks.com/eleria-os-debian-based-linux-distribution/ · **Karakeep:** `cctundzbni9ferka64uhnqdd`
 
 **In short:** Eleria OS is a Debian distro whose desktop is a single HTML document rendered by a modified Chromium browser on X11; I would say it is a curiosity, not something I would install.
@@ -302,6 +303,7 @@ The useful-sounding parts are the public goods: open datasets, open-source softw
 
 ## 16. Mecha - minimalist flat-file content management system - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/10/web-content-management-systems.jpg)
+**Project:** [Mecha](https://github.com/mecha-cms/mecha)
 **Source:** https://www.linuxlinks.com/mecha-minimalist-flat-file-content-management-system/ · **Karakeep:** `i7xbavtocumtwfu414vwesd6`
 
 **In short:** Mecha is a small PHP flat-file CMS for personal sites and blogs, modular enough to run without an admin panel, and I would say it is a decent pick if you want content as plain files, but it is not something I would run in my homelab.
@@ -341,6 +343,7 @@ So the verdict is simple. If Flash Next is the reason for 128 GB, buy the Mac St
 
 ## 18. Pad - desktop sticky note with automatic saving - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/04/Sticky-Notes.png)
+**Project:** [Pad](https://github.com/mariocesar/pad)
 **Source:** https://www.linuxlinks.com/pad-desktop-sticky-note-automatic-saving/ · **Karakeep:** `dlabs9keqrysfew4hj5st24b`
 
 **In short:** Pad is a small Linux sticky note app that edits plain text files and autosaves; I would say it is tidy, but nothing for my projects.
@@ -618,6 +621,7 @@ Nothing for my projects. My homelab wants Kubernetes, backups and metrics, not a
 
 ## 32. gpufetch - GPU architecture information tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2023/06/cpu-motherboard-abstract-3d.jpg)
+**Project:** [gpufetch](https://github.com/Dr-Noob/gpufetch)
 **Source:** https://www.linuxlinks.com/gpufetch-gpu-architecture-information-tool/ · **Karakeep:** `f55givtbn897g1d6f1dyarxv`
 
 **In short:** gpufetch is a C++ CLI that prints GPU model, architecture, memory and peak-performance details with manufacturer ASCII art; I would say it is a neat terminal toy, not something I need.
@@ -921,6 +925,7 @@ Beyond a flat list, it has multiple pages, grouping, theming, smart cards, fuzzy
 
 ## 47. Stanza - multilingual natural language processing toolkit - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2019/10/nlp-natural-language-processing-cognitive-computing-technology-concept.jpg)
+**Project:** [Stanza](https://github.com/stanfordnlp/stanza)
 **Source:** https://www.linuxlinks.com/stanza-multilingual-natural-language-processing-toolkit/ · **Karakeep:** `zlbulole5t0fh79gsawl40p5`
 
 **In short:** Stanza is the Stanford NLP Group's Python toolkit for multilingual text analysis, and I would say it is a solid library to read about, not something I need this week.
@@ -962,6 +967,7 @@ I read this as a gaming bargain with rough edges, not a normal PC. It is still j
 
 ## 49. Outlay - local-first personal finance and expense tracker - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/09/finance-1202.jpg)
+**Project:** [Outlay](https://git.lashman.live/lashman/outlay)
 **Source:** https://www.linuxlinks.com/outlay-local-first-personal-finance-expense-tracker/ · **Karakeep:** `ft034jzzu0g9ruqjf3n6j033`
 
 **In short:** Outlay is a local-first desktop personal finance tracker for Linux, written in Rust and stored in SQLite, with a very long feature list. I would say it is a lot, and for me there is nothing for my projects.
