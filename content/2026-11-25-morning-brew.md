@@ -10,6 +10,7 @@ Morning Brew for 2026-11-25: 35 items written from 37 hoarded bookmarks and feed
 
 ## 1. trurl - parse and manipulate URLs - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2022/06/170y-utilities.jpg)
+**Project:** [trurl](https://github.com/curl/trurl)
 **Source:** https://www.linuxlinks.com/trurl-parse-manipulate-urls/ · **Karakeep:** `bs6fdovuz8a3sjpzbubz3qhe`
 
 **In short:** trurl is a curl-project command-line tool for parsing and rewriting URLs; I would say it is quite useful for shell scripts, but it is not a fetcher.
@@ -45,6 +46,7 @@ Morning Brew for 2026-11-25: 35 items written from 37 hoarded bookmarks and feed
 
 ## 3. Searchmonkey III - real-time desktop search - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2021/10/search-searching-internet-finding-seeking-quest-concept.jpg)
+**Project:** [searchmonkey](https://github.com/cottrela/searchmonkey)
 **Source:** https://www.linuxlinks.com/searchmonkey-iii-real-time-desktop-search/ · **Karakeep:** `nnllkgb29mz9c4gghprwrg3w`
 
 **In short:** Searchmonkey III is a ripgrep-backed desktop search GUI with no persistent index; I would say it is quite good for code and logs, but too much for a whole-disk search.
@@ -304,6 +306,7 @@ The 48GB option is the interesting one for local LLMs with Lemonade Server, beca
 
 ## 16. midgard - encrypted clipboard synchronisation across devices - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/03/003-clipboard.png)
+**Project:** [midgard](https://github.com/changkun/midgard)
 **Source:** https://www.linuxlinks.com/midgard-encrypted-clipboard-synchronisation-devices/ · **Karakeep:** `qqgung9kcvxuixsw0azfqkq1`
 
 **In short:** midgard is a self-hosted, end-to-end encrypted clipboard sync tool with a Go relay and clients for Linux, macOS and Windows; I would say it is interesting for multi-machine work, but the article gives no version and I have no reason to trust a clipboard relay with my actual clipboard.
@@ -325,6 +328,7 @@ I would say it is quite a good job on paper, but I did not see a version number,
 
 ## 17. OpenScreen - screen recorder and video editor - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2018/11/man-recording-studio-music-production.jpg)
+**Project:** [OpenScreen](https://github.com/getopenscreen/openscreen)
 **Source:** https://www.linuxlinks.com/openscreen-screen-recorder-video-editor/ · **Karakeep:** `a9hwbbviiypsg4bnb8xivjw7`
 
 **In short:** OpenScreen is a free MIT screen recorder and editor for software demos and tutorials, with local captions, GPU exports and a headless CLI. I would say it looks useful for polished walkthroughs, but I would not call it an OBS replacement yet.
@@ -389,6 +393,7 @@ I would say it is quite a good job on paper, but I did not see a version number,
 
 ## 20. animfetch - animated terminal system information tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2023/06/cpu-motherboard-abstract-3d.jpg)
+**Project:** [animfetch](https://github.com/Andrew-Velox/animfetch)
 **Source:** https://www.linuxlinks.com/animfetch-animated-terminal-system-information-tool/ · **Karakeep:** `zzduqp79wh8zn8eac21x2bhb`
 
 **In short:** animfetch is a Rust terminal fetch tool that pins an animated system-info panel above a live shell, and I would say it is neat but not something I need.
@@ -640,6 +645,7 @@ This is a desktop OS, and none of my projects need a new desktop. So yeah, that'
 
 ## 32. SyncClipboard - cross-platform clipboard synchronisation tool - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/03/021-clipboard.png)
+**Project:** [SyncClipboard](https://github.com/Jeric-X/SyncClipboard)
 **Source:** https://www.linuxlinks.com/syncclipboard-cross-platform-clipboard-synchronisation-tool/ · **Karakeep:** `lgdxfs6dvekeuubzpyfa07ra`
 
 **In short:** SyncClipboard syncs text, images and files across Linux, macOS and Windows from storage you control, but mobile access is limited by each OS.
@@ -693,6 +699,7 @@ This is a desktop OS, and none of my projects need a new desktop. So yeah, that'
 
 ## 35. whatscli - terminal-based WhatsApp client - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2025/07/008-chat.png)
+**Project:** [whatscli](https://github.com/normen/whatscli)
 **Source:** https://www.linuxlinks.com/whatscli-terminal-based-whatsapp-client/ · **Karakeep:** `hej444c0g4a8thos1a9k8t6v`
 
 **In short:** whatscli is a terminal-based WhatsApp client in Go that talks through WhatsApp's multi-device protocol. I would say it is a tidy TUI, but not worth it for anything I run.
