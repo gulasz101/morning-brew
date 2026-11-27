@@ -46,9 +46,33 @@ SCHEMA = """{
   "in_short": "1-2 sentences: what it is and my verdict",
   "key_points": ["3-6 bullets, hard facts: numbers, versions, prices, licence, who is behind it"],
   "details": "1-3 short paragraphs, 80-200 words (videos up to 300)",
-  "ideas": [{"project": "%(projects)s", "idea": "one concrete idea"}],
+  "ideas": [{"project": "%(projects)s", "fit": "direct|conditional",
+             "idea": "one concrete change, naming the service or stage it touches",
+             "missing": "only for conditional: the one condition that is not met"}],
+  "no_fit_reason": "only when ideas is empty: one clause with what is missing",
   "project_links": [1, 4]
 }"""
+
+PROJECT_LINE = (
+    "PROJECT LINE: every item needs one. A direct fit goes in ideas with the service or stage "
+    "it would change (karakeep, pihole, arr-box, paperclip, the k3s cluster, hindsight, the "
+    "image studio, the tester stage). A conditional fit is the same idea with fit set to "
+    "conditional and the one missing condition in missing. When there is no fit and the item "
+    "is server, CLI, agent or model software, put the missing piece in no_fit_reason as one "
+    "clause. A bare \"Nothing for my projects\" is only for items that are not software I could "
+    "run. Never invent a service or a fit, and never name a project that is not in the list."
+)
+
+
+MATCH_SCHEMA = """{
+  "candidates": ["up to 3 names from the list whose job this thing would do"],
+  "fit": "direct | conditional | none",
+  "project": "<one of: %(projects)s>",
+  "idea": "one concrete change, naming the service or stage it would touch",
+  "missing": "only for conditional: the one condition that is not met",
+  "no_fit_reason": "only for none: one clause naming the job and why it does not land"
+}"""
+
 
 PROJECT_LINK_RULE = {
     "riffradar": "riffradar",
@@ -159,6 +183,8 @@ def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[
         "",
         "Reply with JSON only, exactly this shape:",
         SCHEMA % {"projects": "|".join(allowed)},
+        "",
+        PROJECT_LINE,
     ]
     if roundup:
         bits.append(
@@ -168,9 +194,81 @@ def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[
     return "\n".join(bits)
 
 
+def build_match_prompt(day: str, n: int, it: dict, data: dict, projects: str,
+                       allowed: list[str]) -> str:
+    written = " ".join([
+        str(data.get("in_short") or ""),
+        " ".join(str(p) for p in (data.get("key_points") or [])),
+        str(data.get("details") or ""),
+    ])
+    return "\n".join([
+        f"DAY: {day}",
+        f"ITEM {n}",
+        f"TITLE: {it.get('real_title') or it.get('title') or ''}",
+        f"SOURCE: {it.get('channel') or it.get('publisher') or 'unknown'}",
+        f"URL: {it.get('url') or ''}",
+        "",
+        "MY PROJECTS:",
+        projects,
+        "",
+        "THE ITEM, already written. Do not rewrite it. Use it for context only:",
+        written[:2500],
+        "",
+        "Decide only the project line for this item. Work in this order. First list in "
+        "candidates up to three names from my projects whose job this thing would do. Is it "
+        "software I could run, as a server app, CLI, library, agent tool or model? If not, "
+        "candidates is empty and you answer none. If a candidate exists, the answer is a fit: "
+        "choose the closest one, put the concrete change in idea, and put any doubt in missing "
+        "with fit set to conditional. Only when candidates is empty does it become none, and "
+        "then no_fit_reason names the job and says why it does not land. Never invent a service.",
+        "",
+        "Reply with JSON only, exactly this shape:",
+        MATCH_SCHEMA % {"projects": "|".join(allowed)},
+    ])
+
+
+def apply_project_pass(writer: Writer, system: str, day: str, n: int, it: dict, data: dict,
+                       cands: list[dict], projects: str, allowed: list[str],
+                       components: dict[str, list[str]], max_tokens: int) -> dict:
+    """A second, narrow writer call whose only job is the project line."""
+    ask = build_match_prompt(day, n, it, data, projects, allowed)
+    reply = writer.call(system, ask, max_tokens=max_tokens)
+    got = extract_json(reply)
+    if not isinstance(got, dict):
+        return data
+    fit = str(got.get("fit") or "").strip().lower()
+    out = dict(data)
+    if fit == "none":
+        reason = got.get("no_fit_reason")
+        out["ideas"] = []
+        if isinstance(reason, str) and reason.strip():
+            out["no_fit_reason"] = reason
+        else:
+            out.pop("no_fit_reason", None)
+    elif fit in ("direct", "conditional"):
+        idea = {"project": got.get("project"), "idea": got.get("idea"), "fit": fit}
+        if fit == "conditional":
+            idea["missing"] = got.get("missing")
+        out["ideas"] = [idea]
+        out.pop("no_fit_reason", None)
+    else:
+        return data
+    errors = itemlib.validate(out, max(1, len(cands)), allowed, bool(it.get("video_id")),
+                              False, components)
+    if errors:
+        log(f"project pass rejected for item {n}: {'; '.join(errors)[:160]}")
+        return data
+    lint = itemlib.lint(itemlib.render_probe(out, allowed))
+    if lint:
+        log(f"project pass failed the voice lint for item {n}: {'; '.join(lint)[:160]}")
+        return data
+    return out
+
+
 def write_item(writer: Writer, system: str, prompt: str, cands: list[dict],
                allowed: list[str], is_video: bool, roundup: bool,
-               banned: list[str], max_tokens: int = 2000) -> tuple[dict | None, list[str], int]:
+               banned: list[str], max_tokens: int = 2000,
+               components: dict[str, list[str]] | None = None) -> tuple[dict | None, list[str], int]:
     """One writer call, one retry with the errors attached. Returns (item, errors, tries)."""
     errors: list[str] = []
     reply = ""
@@ -186,7 +284,7 @@ def write_item(writer: Writer, system: str, prompt: str, cands: list[dict],
         except ModelError as exc:
             errors = [f"the reply was not valid JSON: {exc}"]
             continue
-        errors = itemlib.validate(data, len(cands), allowed, is_video, roundup)
+        errors = itemlib.validate(data, len(cands), allowed, is_video, roundup, components)
         if not errors:
             rendered = itemlib.render_probe(data, allowed)
             lint = itemlib.lint(rendered, banned)
@@ -352,6 +450,8 @@ def main(argv: list[str] | None = None) -> int:
     projects = read_prompt("projects.md")
     banned = itemlib.load_banned()
     allowed = list(cfg["projects"]["allowed"])
+    components = cfg["projects"].get("components") or {}
+    project_pass = bool(cfg["writer"].get("project_pass", False))
     limits = model_limits(cfg, model)
     writer = Writer(model, cfg["writer"]["base_url"], api_key,
                     timeout=int(cfg["writer"].get("timeout_sec", 0)) or None)
@@ -393,12 +493,19 @@ def main(argv: list[str] | None = None) -> int:
             try:
                 data, errors, tries = write_item(writer, system, prompt, cands, allowed,
                                                  is_video, roundup, banned,
-                                                 limits["max_tokens"])
+                                                 limits["max_tokens"], components)
             except ModelError as exc:
                 data, errors, tries = None, [str(exc)], 1
             if data is None:
                 row.update(status="dropped", errors=errors)
                 return row
+            if project_pass:
+                try:
+                    data = apply_project_pass(writer, system, day, idx + 1, it, data, cands,
+                                              projects, allowed, components,
+                                              min(4000, limits["max_tokens"]))
+                except ModelError as exc:
+                    log(f"project pass failed for item {idx + 1}: {exc}")
             row.update(status="retried" if tries > 1 else "ok", errors=[], tries=tries)
             done[idx] = {"item": data, "meta": it, "links": cands, "roundup": roundup}
             return row

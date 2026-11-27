@@ -9,6 +9,10 @@ base_url = "https://llm.voitech.dev/v1"
 api_key_env = "BREW_LLM_API_KEY"
 parallel = 4
 retries = 1
+# A second, narrow writer call per item whose only job is the project line. The main call
+# writes four fields at once and lands on "nothing for my projects" by default; this pass
+# sees the finished item plus the project inventory and decides the fit on its own.
+project_pass = true
 # Cloudflare in front of llm.voitech.dev cuts a request at ~100 s with HTTP 524. Stop
 # 5 s earlier so a slow model is a retryable ModelError, not a hang on the edge.
 timeout_sec = 95
@@ -44,6 +48,29 @@ enrich = "~/.hermes/skills/research/karakeep-hoard-digest/scripts/karakeep_enric
 # a project with no paragraph gives the writer nothing to match against.
 allowed = ["riffradar", "homelab-2nd", "ideogram4-local", "code-factory", "agent-fleet",
            "morning-brew"]
+
+# Parts of each project an idea may touch. The validator rejects an idea that names none of
+# its project's tokens, so the writer has to say which service or stage it would change
+# instead of writing "my homelab" and stopping there. Keep the tokens as lowercase words or
+# short phrases that appear in prompts/projects.md.
+[projects.components]
+riffradar = ["riff", "guitar", "practice", "song"]
+homelab-2nd = ["k3s", "kubernetes", "flux", "omv", "minio", "cloudnativepg", "postgres",
+               "sops", "pihole", "pi-hole", "karakeep", "nextcloud", "arr-stack", "arr-box",
+               "sonarr", "radarr", "prowlarr", "bazarr", "qbittorrent", "mattermost",
+               "opengist", "shlink", "excalidraw", "whiteboard", "node-red", "zigbee",
+               "influxdb", "speaches", "voicebox", "hindsight", "docs-mcp", "llm-hub",
+               "litellm", "ollama", "paperclip", "status page", "host-watch", "firecrawl",
+               "mail-archiver", "tunnel", "backup", "monitoring", "alerting", "metrics",
+               "sso", "oauth2-proxy"]
+ideogram4-local = ["comfyui", "stable diffusion", "image", "m1 max", "unified memory",
+                   "image studio", "matejko", "lora", "vram", "gpu"]
+code-factory = ["code factory", "adr-093", "tester", "builder", "reviewer", "verifier",
+                "check", "pull request", "merge", "ci", "test", "sandbox", "skill"]
+agent-fleet = ["hermes", "hindsight", "docs-mcp", "paperclip", "gateway", "m1 air", "agent",
+               "skill", "memory", "model", "mattermost", "email", "approval", "tool"]
+morning-brew = ["karakeep", "parakeet", "marmite", "writer", "blog", "github pages", "llm",
+                "cloudflare", "transcript", "pipeline", "bookmark"]
 
 [limits]
 # The skill used to be one 131k-character prompt. Warn when it grows again.

@@ -68,6 +68,28 @@ def corpus_tags(content_dir: Path) -> set[str]:
     return out
 
 
+FIT_BLOCK_RE = re.compile(r"\*\*For my projects:\*\*(.*?)(?=\n\n|\Z)", re.S)
+
+
+def fit_counts(body: str) -> dict[str, int]:
+    """How many items carry a direct fit, a conditional fit or none. Report only."""
+    out = {"direct": 0, "conditional": 0, "none": 0, "reasoned_none": 0}
+    for block in re.split(r"(?m)^(?=## \d+\. )", body)[1:]:
+        m = FIT_BLOCK_RE.search(block)
+        text = (m.group(1) if m else "").strip()
+        if not text:
+            out["none"] += 1
+        elif text.lower().startswith("nothing for my projects"):
+            out["none"] += 1
+            if "," in text:
+                out["reasoned_none"] += 1
+        elif "would fit if" in text.lower():
+            out["conditional"] += 1
+        else:
+            out["direct"] += 1
+    return out
+
+
 def check_item_blocks(body: str) -> tuple[list[str], list[str]]:
     problems: list[str] = []
     warnings: list[str] = []
@@ -169,6 +191,13 @@ def main(argv: list[str] | None = None) -> int:
     item_problems, _ = check_item_blocks(vbody)
     problems.extend(item_problems)
 
+    fits = fit_counts(vbody)
+    warnings.append(
+        f"project fits: {fits['direct']} direct, {fits['conditional']} conditional, "
+        f"{fits['none']} none ({fits['reasoned_none']} of those with a reason), "
+        f"{len(nums)} items"
+    )
+
     skill = expand(cfg["paths"]["skill_md"])
     budget = int(cfg["limits"]["skill_md_max_lines"])
     if skill.exists():
@@ -191,6 +220,7 @@ def main(argv: list[str] | None = None) -> int:
         "url": url,
         "sections": len(nums),
         "tags": len(tags),
+        "fits": fits,
     }
     if args.json:
         print(json.dumps(result, indent=2))

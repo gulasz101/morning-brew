@@ -22,6 +22,14 @@ MIN_KEY_POINTS, MAX_KEY_POINTS = 3, 6
 MIN_DETAILS_WORDS, MAX_DETAILS_WORDS = 80, 200
 MAX_DETAILS_WORDS_VIDEO = 300
 MAX_IDEAS = 2
+MIN_IDEA_WORDS = 8
+MAX_REASON_WORDS = 40
+FITS = ("direct", "conditional")
+
+
+def _names_component(text: str, tokens: list[str]) -> bool:
+    low = (text or "").lower()
+    return any(t.lower() in low for t in tokens if t)
 
 
 def load_banned(path: Path | None = None) -> list[str]:
@@ -39,7 +47,7 @@ def word_count(text: str) -> int:
 
 
 def validate(item: dict, n_candidates: int, allowed_projects: list[str], is_video: bool,
-             is_roundup: bool) -> list[str]:
+             is_roundup: bool, components: dict[str, list[str]] | None = None) -> list[str]:
     """Everything the writer's reply must satisfy. Returns a list of readable errors."""
     errors: list[str] = []
     if not isinstance(item, dict):
@@ -89,8 +97,44 @@ def validate(item: dict, n_candidates: int, allowed_projects: list[str], is_vide
                 errors.append(
                     f"ideas[{i}].project '{proj}' is not one of {', '.join(allowed_projects)}"
                 )
-            if not isinstance(idea.get("idea"), str) or not idea["idea"].strip():
+            text = idea.get("idea")
+            if not isinstance(text, str) or not text.strip():
                 errors.append(f"ideas[{i}].idea must be a non-empty concrete sentence")
+            elif word_count(text) < MIN_IDEA_WORDS:
+                errors.append(
+                    f"ideas[{i}].idea is {word_count(text)} words, name the part of the "
+                    f"project it touches in at least {MIN_IDEA_WORDS}"
+                )
+            fit = idea.get("fit", "direct")
+            if fit not in FITS:
+                errors.append(f"ideas[{i}].fit must be one of {', '.join(FITS)}")
+            missing = idea.get("missing")
+            if fit == "conditional":
+                if not isinstance(missing, str) or not missing.strip():
+                    errors.append(
+                        f"ideas[{i}] is conditional, so it needs missing: one clause with "
+                        "the condition that is not met"
+                    )
+                elif word_count(missing) > MAX_REASON_WORDS:
+                    errors.append(f"ideas[{i}].missing is {word_count(missing)} words, keep it "
+                                  f"to one clause (max {MAX_REASON_WORDS})")
+            if components and isinstance(text, str) and isinstance(proj, str):
+                tokens = components.get(proj) or []
+                if tokens and not _names_component(" ".join([text, missing or ""]), tokens):
+                    errors.append(
+                        f"ideas[{i}].idea names no part of {proj}: mention one of "
+                        f"{', '.join(tokens[:6])}"
+                    )
+
+        if not ideas:
+            reason = item.get("no_fit_reason")
+            if reason is not None:
+                if not isinstance(reason, str) or not reason.strip():
+                    errors.append("no_fit_reason must be a non-empty clause or left out")
+                elif word_count(reason) > MAX_REASON_WORDS:
+                    errors.append(f"no_fit_reason is {word_count(reason)} words, keep it to one "
+                                  f"clause (max {MAX_REASON_WORDS})")
+
 
     plinks = item.get("project_links", [])
     if not isinstance(plinks, list):
@@ -168,9 +212,21 @@ def render(index: int, item: dict, meta: dict, links: list[dict],
     if ideas:
         lines.append("**For my projects:**")
         for idea in ideas:
-            lines.append(f"- {idea['project']}: {idea['idea'].strip()}")
+            text = idea["idea"].strip().rstrip(".")
+            if idea.get("fit") == "conditional" and idea.get("missing"):
+                condition = idea["missing"].strip().rstrip(".")
+                lines.append(f"- {idea['project']}: {text}. Would fit if {condition}.")
+            else:
+                lines.append(f"- {idea['project']}: {idea['idea'].strip()}")
     else:
-        lines.append("**For my projects:** Nothing for my projects.")
+        reason = (item.get("no_fit_reason") or "").strip().rstrip(".")
+        if "nothing for my projects" in reason.lower():
+            reason = ""
+        if reason:
+            lines.append(f"**For my projects:** Nothing for my projects, {reason}.")
+        else:
+            lines.append("**For my projects:** Nothing for my projects.")
+
     if resolved_projects:
         lines.append("")
         lines.append("**Projects:**")

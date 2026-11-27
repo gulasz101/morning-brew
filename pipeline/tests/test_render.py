@@ -63,3 +63,29 @@ def test_urls_come_only_from_the_candidate_list(items, links):
     found = set(re.findall(r"https?://[^\s\)]+", out))
     allowed = {r["url"] for r in links} | {META["url"], META["image"]}
     assert found <= allowed
+
+
+def test_conditional_fit_renders_the_condition(items, links):
+    reply = dict(items[1]["reply"], ideas=[{
+        "project": "ideogram4-local",
+        "fit": "conditional",
+        "idea": "Run it as a second sampler inside ComfyUI on the M1 Max",
+        "missing": "it needs 24 GB of unified memory",
+    }])
+    out = render(1, reply, META, links)
+    assert ("- ideogram4-local: Run it as a second sampler inside ComfyUI on the M1 Max. "
+            "Would fit if it needs 24 GB of unified memory.") in out
+
+
+def test_no_fit_reason_is_appended(items, links):
+    reply = dict(items[0]["reply"], ideas=[], no_fit_reason="no Kubernetes path and no metrics")
+    out = render(1, reply, META, links)
+    assert ("**For my projects:** Nothing for my projects, "
+            "no Kubernetes path and no metrics.") in out
+
+
+def test_repeated_phrase_as_reason_falls_back_to_the_plain_line(items, links):
+    reply = dict(items[0]["reply"], ideas=[], no_fit_reason="Nothing for my projects.")
+    out = render(1, reply, META, links)
+    assert "**For my projects:** Nothing for my projects.\n" in out
+    assert "Nothing for my projects, Nothing" not in out
