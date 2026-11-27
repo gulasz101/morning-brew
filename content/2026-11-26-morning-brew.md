@@ -52,6 +52,7 @@ I would say it is a tidy TUI release, and it is an Arch desktop package manager,
 
 ## 3. ArchivesSpace - archives information management system - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2023/06/stack-old-books-library-table.jpg)
+**Project:** [ArchivesSpace](https://github.com/archivesspace/archivesspace)
 **Source:** https://www.linuxlinks.com/archivesspace-archives-information-management-system/ · **Karakeep:** `j5uv4xs4uug7se77g3mh7vbo`
 
 **In short:** ArchivesSpace is a free and open source archives information management system written in Ruby, aimed at libraries, universities and museums; I would say it is a solid, specialist tool, and nothing for my projects.
@@ -767,6 +768,7 @@ I read this as study material, not something for my homelab. It has no Kubernete
 
 ## 38. Sequencescape - High-Throughput Sequencing Laboratory Management - LinuxLinks, by LinuxLinks
 ![](https://www.linuxlinks.com/wp-content/uploads/2020/09/modern-laboratory-interior.jpg)
+**Project:** [Sequencescape](https://github.com/sanger/sequencescape)
 **Source:** https://www.linuxlinks.com/sequencescape-high-throughput-sequencing-laboratory-management/ · **Karakeep:** `j2hzx6tt6ejsqd60wcc0fgg8`
 
 **In short:** Sequencescape is a Ruby LIMS from the Wellcome Sanger Institute for high-throughput sequencing labs, with configurable workflows, labware tracking and APIs. It is serious lab software, and it has nothing to do with any of my projects.
