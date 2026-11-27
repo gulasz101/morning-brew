@@ -35,9 +35,24 @@ is missing, and they have no literal fallbacks.
   `config.py`.
 - `plumbing/` — ported from the Hermes skill: `kk.py` (Karakeep fetch + transcription),
   `enrich.py`, `roundup_links.py`, `validate_links.py`, `tags.py`, `extract_repos.py`.
-- `prompts/` — `voice-card.md`, `digest-rules.md`, `projects.md`, `banned.txt`.
-- `gate.py` — the ported deliverable gate with a size guard on the Hermes skill.
+- `prompts/` — `voice-card.md`, `digest-rules.md`, `projects.md`, `banned.txt`. `projects.md`
+  is the writer's only picture of my projects, so it names the services that actually run,
+  not just the stack rules.
+- `gate.py` — the ported deliverable gate with a size guard on the Hermes skill. It also
+  prints the project fit counts per post: report only, never a failing check.
+- `fit_report.py` — `uv run pipeline/fit_report.py --last 10` counts direct, conditional and
+  no-fit lines per post, the number to watch after a prompt or inventory change.
 - `report.json` — written into the run dir and updated as items finish.
+
+## The project line
+
+Every item ends with `**For my projects:**`. It has three shapes: a direct fit, a
+conditional fit (`Would fit if ...`), or no fit, and a no fit on runnable software has to name
+the job and why it does not land. The writer alone lands on "nothing for my projects" by
+default, so `writer.project_pass = true` adds a second narrow call per item whose only job is
+that decision, with the finished item and the inventory in front of it. The `[projects.components]`
+table is the referee: an idea that names none of its project's tokens is rejected before it
+reaches the post. Turn the pass off in `config.toml` to fall back to the single call.
 
 ## The writer
 
