@@ -32,6 +32,13 @@ e. Every item ends with a project line, and it takes one of three shapes. A dire
    names the job and says why it does not land. "Nothing for my projects" on its own, and a
    reason that repeats that phrase, are both wrong. Never invent a project, a service or a
    fit, and never claim one when the connection is not real.
+
+   A spark is separate from a fit and does not replace it. A spark takes something from this
+   item and connects it to a repo, a board or a service in `inventory.md`, even loosely, to
+   give me a new thing to build. "DeChord could recognise the chords in a practice recording
+   and RiffRadar could log the key and progression" is a spark. Most items have none, so
+   write one only when the connection would actually make me open an editor. A spark never
+   invents a repo or a service, and it is allowed to be wildly impractical.
 f. Plain correct grammar. Short sentences. British spelling. No em dashes, no en dashes
    used as a dash, no "not X, but Y" contrasts, no hype words.
 g. Facts only from the supplied text. Numbers, versions, prices, licences and names come

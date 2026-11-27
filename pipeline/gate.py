@@ -72,9 +72,11 @@ FIT_BLOCK_RE = re.compile(r"\*\*For my projects:\*\*(.*?)(?=\n\n|\Z)", re.S)
 
 
 def fit_counts(body: str) -> dict[str, int]:
-    """How many items carry a direct fit, a conditional fit or none. Report only."""
-    out = {"direct": 0, "conditional": 0, "none": 0, "reasoned_none": 0}
+    """How many items carry a direct fit, a conditional fit, none, or a spark. Report only."""
+    out = {"direct": 0, "conditional": 0, "none": 0, "reasoned_none": 0, "spark": 0}
     for block in re.split(r"(?m)^(?=## \d+\. )", body)[1:]:
+        if re.search(r"(?m)^\*\*Spark \(", block):
+            out["spark"] += 1
         m = FIT_BLOCK_RE.search(block)
         text = (m.group(1) if m else "").strip()
         if not text:
@@ -195,7 +197,7 @@ def main(argv: list[str] | None = None) -> int:
     warnings.append(
         f"project fits: {fits['direct']} direct, {fits['conditional']} conditional, "
         f"{fits['none']} none ({fits['reasoned_none']} of those with a reason), "
-        f"{len(nums)} items"
+        f"{fits['spark']} sparks, {len(nums)} items"
     )
 
     skill = expand(cfg["paths"]["skill_md"])

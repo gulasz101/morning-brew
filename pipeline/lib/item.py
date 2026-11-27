@@ -23,6 +23,7 @@ MIN_DETAILS_WORDS, MAX_DETAILS_WORDS = 80, 200
 MAX_DETAILS_WORDS_VIDEO = 300
 MAX_IDEAS = 2
 MIN_IDEA_WORDS = 8
+MAX_SPARK_WORDS = 45
 MAX_REASON_WORDS = 40
 FITS = ("direct", "conditional")
 
@@ -146,6 +147,26 @@ def validate(item: dict, n_candidates: int, allowed_projects: list[str], is_vide
             elif n < 1 or n > n_candidates:
                 errors.append(f"project_links[{i}] = {n} is outside 1..{n_candidates}")
 
+    spark = item.get("spark")
+    if spark is not None:
+        if not isinstance(spark, dict):
+            errors.append("spark must be an object with project and idea, or left out")
+        else:
+            if spark.get("project") not in allowed_projects:
+                errors.append(
+                    f"spark.project '{spark.get('project')}' is not one of "
+                    f"{', '.join(allowed_projects)}"
+                )
+            text = spark.get("idea")
+            if not isinstance(text, str) or not text.strip():
+                errors.append("spark.idea must be a non-empty sentence")
+            elif word_count(text) < MIN_IDEA_WORDS:
+                errors.append(f"spark.idea is {word_count(text)} words, make it a real idea "
+                              f"(at least {MIN_IDEA_WORDS})")
+            elif word_count(text) > MAX_SPARK_WORDS:
+                errors.append(f"spark.idea is {word_count(text)} words, keep it under "
+                              f"{MAX_SPARK_WORDS}")
+
     if is_roundup:
         names = item.get("projects")
         if not isinstance(names, list):
@@ -226,6 +247,11 @@ def render(index: int, item: dict, meta: dict, links: list[dict],
             lines.append(f"**For my projects:** Nothing for my projects, {reason}.")
         else:
             lines.append("**For my projects:** Nothing for my projects.")
+
+    spark = item.get("spark") or {}
+    if isinstance(spark, dict) and spark.get("idea"):
+        lines.append("")
+        lines.append(f"**Spark ({spark.get('project')}):** {str(spark['idea']).strip()}")
 
     if resolved_projects:
         lines.append("")

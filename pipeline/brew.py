@@ -70,7 +70,8 @@ MATCH_SCHEMA = """{
   "project": "<one of: %(projects)s>",
   "idea": "one concrete change, naming the service or stage it would touch",
   "missing": "only for conditional: the one condition that is not met",
-  "no_fit_reason": "only for none: one clause naming the job and why it does not land"
+  "no_fit_reason": "only for none: one clause naming the job and why it does not land",
+  "spark": {"project": "<one of: %(projects)s>", "idea": "one new thing to build from this item, or leave spark out"}
 }"""
 
 
@@ -195,7 +196,7 @@ def build_prompt(day: str, n: int, total: int, it: dict, text: str, cands: list[
 
 
 def build_match_prompt(day: str, n: int, it: dict, data: dict, projects: str,
-                       allowed: list[str]) -> str:
+                       inventory: str, allowed: list[str]) -> str:
     written = " ".join([
         str(data.get("in_short") or ""),
         " ".join(str(p) for p in (data.get("key_points") or [])),
@@ -211,16 +212,31 @@ def build_match_prompt(day: str, n: int, it: dict, data: dict, projects: str,
         "MY PROJECTS:",
         projects,
         "",
+        "MY INVENTORY: repos, boards and services I already have. Use these names, never invent one:",
+        inventory,
+        "",
         "THE ITEM, already written. Do not rewrite it. Use it for context only:",
         written[:2500],
         "",
-        "Decide only the project line for this item. Work in this order. First list in "
-        "candidates up to three names from my projects whose job this thing would do. Is it "
+        "Decide the project line and, when it earns one, a spark. Work in this order. First list "
+        "in candidates up to three names from my projects whose job this thing would do. Is it "
         "software I could run, as a server app, CLI, library, agent tool or model? If not, "
         "candidates is empty and you answer none. If a candidate exists, the answer is a fit: "
         "choose the closest one, put the concrete change in idea, and put any doubt in missing "
         "with fit set to conditional. Only when candidates is empty does it become none, and "
         "then no_fit_reason names the job and says why it does not land. Never invent a service.",
+        "",
+        "Then, separately, decide whether this item sparks something I could build. A spark "
+        "connects the item to a repo, a board or a service from the inventory, even loosely, "
+        "and points at a new thing rather than at a job I already have. Start it from the "
+        "concrete name it borrows: \"DeChord could recognise the chords in a practice "
+        "recording and RiffRadar could log the key and progression\" is a spark. Prefer my own "
+        "repos and boards (DeChord, zwhisper, setlistrs, vrr-departure-board, Osiris, "
+        "OpenPharaoh, Riff Radar, Star Office, Image Studio, honcho) over the homelab services, "
+        "which already get the fit lines. It may be impractical. It must use real names from "
+        "the inventory. Most items do not earn one, so only answer a spark when the connection "
+        "would make me want to build it. A spark never replaces the fit line, and an item can "
+        "have both or neither.",
         "",
         "Reply with JSON only, exactly this shape:",
         MATCH_SCHEMA % {"projects": "|".join(allowed)},
@@ -228,10 +244,10 @@ def build_match_prompt(day: str, n: int, it: dict, data: dict, projects: str,
 
 
 def apply_project_pass(writer: Writer, system: str, day: str, n: int, it: dict, data: dict,
-                       cands: list[dict], projects: str, allowed: list[str],
+                       cands: list[dict], projects: str, inventory: str, allowed: list[str],
                        components: dict[str, list[str]], max_tokens: int) -> dict:
-    """A second, narrow writer call whose only job is the project line."""
-    ask = build_match_prompt(day, n, it, data, projects, allowed)
+    """A second, narrow writer call whose only job is the project line and the spark."""
+    ask = build_match_prompt(day, n, it, data, projects, inventory, allowed)
     reply = writer.call(system, ask, max_tokens=max_tokens)
     got = extract_json(reply)
     if not isinstance(got, dict):
@@ -253,6 +269,9 @@ def apply_project_pass(writer: Writer, system: str, day: str, n: int, it: dict, 
         out.pop("no_fit_reason", None)
     else:
         return data
+    spark = got.get("spark")
+    if isinstance(spark, dict) and spark.get("idea"):
+        out["spark"] = {"project": spark.get("project"), "idea": spark.get("idea")}
     errors = itemlib.validate(out, max(1, len(cands)), allowed, bool(it.get("video_id")),
                               False, components)
     if errors:
@@ -448,6 +467,7 @@ def main(argv: list[str] | None = None) -> int:
 
     system = "\n\n".join([read_prompt("voice-card.md"), read_prompt("digest-rules.md")])
     projects = read_prompt("projects.md")
+    inventory = read_prompt("inventory.md") if (PROMPTS / "inventory.md").exists() else ""
     banned = itemlib.load_banned()
     allowed = list(cfg["projects"]["allowed"])
     components = cfg["projects"].get("components") or {}
@@ -502,8 +522,8 @@ def main(argv: list[str] | None = None) -> int:
             if project_pass:
                 try:
                     data = apply_project_pass(writer, system, day, idx + 1, it, data, cands,
-                                              projects, allowed, components,
-                                              min(4000, limits["max_tokens"]))
+                                              projects, inventory, allowed, components,
+                                              min(6000, limits["max_tokens"]))
                 except ModelError as exc:
                     log(f"project pass failed for item {idx + 1}: {exc}")
             row.update(status="retried" if tries > 1 else "ok", errors=[], tries=tries)

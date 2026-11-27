@@ -18,8 +18,13 @@ BODY = """## 1. A, by b
 
 ## 4. G, by h
 **For my projects:** Nothing for my projects.
+
+## 5. I, by j
+**For my projects:** Nothing for my projects, no Kubernetes path.
+
+**Spark (homelab-2nd):** Point the status page at the departure board for the hallway tablet.
 """
 
 
 def test_fit_counts():
-    assert fit_counts(BODY) == {"direct": 1, "conditional": 1, "none": 2, "reasoned_none": 1}
+    assert fit_counts(BODY) == {"direct": 1, "conditional": 1, "none": 3, "reasoned_none": 2, "spark": 1}

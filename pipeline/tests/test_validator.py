@@ -111,3 +111,21 @@ def test_no_fit_reason_stays_one_clause():
     bad = ok_item(no_fit_reason=long_reason)
     assert any("no_fit_reason is 45 words" in e
                for e in validate(bad, 3, ALLOWED, False, False, None))
+
+
+def test_spark_needs_a_known_project_and_a_real_idea():
+    good = ok_item(spark={"project": "riffradar",
+                          "idea": "Feed DeChord chord detection into the practice log so a riff gets its key"})
+    assert validate(good, 3, ALLOWED, False, False, None) == []
+    bad_project = ok_item(spark={"project": "nope", "idea": "one two three four five six seven eight"})
+    assert any("spark.project" in e for e in validate(bad_project, 3, ALLOWED, False, False, None))
+    short = ok_item(spark={"project": "riffradar", "idea": "short"})
+    assert any("spark.idea is 1 words" in e for e in validate(short, 3, ALLOWED, False, False, None))
+
+
+def test_spark_can_sit_next_to_a_fit():
+    both = ok_item(ideas=[{"project": "homelab-2nd",
+                           "idea": "Run it next to pihole as a second resolver on k3s."}],
+                   spark={"project": "riffradar",
+                          "idea": "Use its audio fingerprinting to tag practice recordings by song"})
+    assert validate(both, 3, ALLOWED, False, False, {"homelab-2nd": ["pihole", "k3s"]}) == []

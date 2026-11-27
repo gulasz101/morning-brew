@@ -89,3 +89,13 @@ def test_repeated_phrase_as_reason_falls_back_to_the_plain_line(items, links):
     out = render(1, reply, META, links)
     assert "**For my projects:** Nothing for my projects.\n" in out
     assert "Nothing for my projects, Nothing" not in out
+
+
+def test_spark_line_renders_after_the_project_line(items, links):
+    reply = dict(items[0]["reply"], ideas=[], spark={
+        "project": "homelab-2nd",
+        "idea": "Point the status page at the vrr departure board so the hallway tablet shows trains",
+    })
+    out = render(1, reply, META, links)
+    assert "**Spark (homelab-2nd):** Point the status page at the vrr departure board" in out
+    assert out.index("**For my projects:**") < out.index("**Spark (")

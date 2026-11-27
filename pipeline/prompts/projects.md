@@ -4,7 +4,8 @@ One short paragraph per project. The writer gets this text verbatim and uses it 
 whether an item has a real fit. The owner corrects it in the PR.
 
 The lists name what runs in the thing today. An item fits when it would replace, sit next to
-or extend one of those, or close one of the gaps a project lists.
+or extend one of those, or close one of the gaps a project lists. The full inventory of boards,
+repos and services is in `inventory.md`, and a spark may start from anything in it.
 
 ## riffradar
 

@@ -34,8 +34,9 @@ def main(argv: list[str] | None = None) -> int:
         print(f"no posts in {content}", file=sys.stderr)
         return 1
 
-    total = fitted = 0
-    print(f"{'post':<12} {'items':>5} {'fit':>4} {'cond':>5} {'none':>5} {'reasoned':>8} {'fit%':>5}")
+    total = fitted = sparks = 0
+    print(f"{'post':<12} {'items':>5} {'direct':>6} {'cond':>5} {'none':>5} {'reasoned':>8} "
+          f"{'spark':>6} {'fit%':>5}")
     for path in posts:
         body = strip_frontmatter(path.read_text())
         c = fit_counts(body)
@@ -43,12 +44,13 @@ def main(argv: list[str] | None = None) -> int:
         fit = c["direct"] + c["conditional"]
         total += items
         fitted += fit
+        sparks += c["spark"]
         pct = f"{100 * fit / items:.0f}%" if items else "-"
-        print(f"{path.name[:12]:<12} {items:>5} {c['direct']:>4} {c['conditional']:>5} "
-              f"{c['none']:>5} {c['reasoned_none']:>8} {pct:>5}")
+        print(f"{path.name[:12]:<12} {items:>5} {c['direct']:>6} {c['conditional']:>5} "
+              f"{c['none']:>5} {c['reasoned_none']:>8} {c['spark']:>6} {pct:>5}")
 
     pct = f"{100 * fitted / total:.0f}%" if total else "-"
-    print(f"{'TOTAL':<12} {total:>5} {'':>4} {'':>5} {'':>5} {'':>8} {pct:>5}")
+    print(f"{'TOTAL':<12} {total:>5} {'':>6} {'':>5} {'':>5} {'':>8} {sparks:>6} {pct:>5}")
     return 0
 
 
